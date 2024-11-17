@@ -3,3 +3,13 @@
 # Path Finder
 
 Next.js / TypeScript application
+
+## <a id="contact-info"></a>📫 Contact info
+
+### Bio Link ⬇️
+
+<a href="https://dimterion.bio.link/">
+  <img src="./public/path_finder_readme_footer.svg" alt="Path Finder readme footer" />
+</a>
+
+**Note:** Ctrl+Click (Windows/Linux) or Cmd+Click (macOS) the image to open link in a new tab.
