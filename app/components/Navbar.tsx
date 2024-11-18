@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { auth } from "@/auth";
+import { auth, signIn, signOut } from "@/auth";
 
 export default async function Navbar() {
   const session = await auth();
@@ -17,15 +17,25 @@ export default async function Navbar() {
               <Link href="/path/create">
                 <span className="max-sm:hidden">Create</span>
               </Link>
-              <form>
-                <button type="submit">
-                  <span className="max-sm:hidden">Logout</span>
-                </button>
+              <form
+                action={async () => {
+                  "use server";
+                  await signOut({ redirectTo: "/" });
+                }}
+              >
+                <button type="submit">Sign out</button>
               </form>
-              <Link href="/">Username</Link>
+              <Link href={`/}`}>
+                <span>{session?.user?.name}</span>
+              </Link>
             </>
           ) : (
-            <form>
+            <form
+              action={async () => {
+                "use server";
+                await signIn("github");
+              }}
+            >
               <button type="submit">Login</button>
             </form>
           )}
