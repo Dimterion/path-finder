@@ -1,4 +1,5 @@
 import SearchForm from "@/components/SearchFrom";
+import PathCard from "@/components/PathCard";
 
 export default async function Home({
   searchParams,
@@ -6,6 +7,20 @@ export default async function Home({
   searchParams: Promise<{ query?: string }>;
 }) {
   const query = (await searchParams).query;
+
+  const paths = [
+    {
+      _createdAt: new Date(),
+      views: 5,
+      author: { _id: 1, name: "Lorem" },
+      _id: 1,
+      description: "Lorem ipsum dolor",
+      image:
+        "https://raw.githubusercontent.com/Dimterion/booking-site/refs/heads/master/public/images/placeholder_img.jpg",
+      category: "Lorem",
+      title: "Lorem Ipsum",
+    },
+  ];
 
   return (
     <>
@@ -18,6 +33,20 @@ export default async function Home({
           debitis ab, perspiciatis consequuntur eius.
         </p>
         <SearchForm query={query} />
+      </section>
+      <section className="section-container">
+        <p className="text-30-semibold">
+          {query ? `Search results for "${query}"` : "All paths"}
+        </p>
+        <ul className="card_grid mt-7">
+          {paths?.length > 0 ? (
+            paths.map((path: PathCardType, index: number) => (
+              <PathCard key={path?._id} path={path} />
+            ))
+          ) : (
+            <p className="no-results">No paths found.</p>
+          )}
+        </ul>
       </section>
     </>
   );
