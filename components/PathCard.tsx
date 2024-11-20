@@ -3,12 +3,15 @@ import Image from "next/image";
 import { formatDate } from "@/lib/utils";
 import { EyeIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Author, Path } from "@/sanity/types";
+
+export type PathTypeCard = Omit<Path, "author"> & { author?: Author };
 
 export default function PathCard({ path }: { path: PathTypeCard }) {
   const {
     _createdAt,
     views,
-    author: { _id: authorId, name },
+    author,
     title,
     category,
     _id,
@@ -27,14 +30,14 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
       </div>
       <div className="flex-between mt-5 gap-5">
         <div className="flex-1">
-          <Link href={`/user/${authorId}`}>
-            <p className="text-16-medium line-clamp-1">{name}</p>
+          <Link href={`/user/${author?._id}`}>
+            <p className="text-16-medium line-clamp-1">{author?.name}</p>
           </Link>
           <Link href={`/path/${_id}`}>
             <h3 className="text-26-semibold line-clamp-1"></h3>
           </Link>
         </div>
-        <Link href={`/user/${authorId}`}>
+        <Link href={`/user/${author?._id}`}>
           <Image
             src="https://placehold.co/48x48"
             alt="Placeholder"
@@ -55,7 +58,7 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
         />
       </Link>
       <div className="flex-between mt-5 gap-3">
-        <Link href={`/?query=${category.toLowerCase()}`}>
+        <Link href={`/?query=${category?.toLowerCase()}`}>
           <p className="text-16-medium">{category}</p>
         </Link>
         <Button className="path-card_btn" asChild>

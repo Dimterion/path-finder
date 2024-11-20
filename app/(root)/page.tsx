@@ -1,5 +1,5 @@
 import SearchForm from "@/components/SearchFrom";
-import PathCard from "@/components/PathCard";
+import PathCard, { PathTypeCard } from "@/components/PathCard";
 import { client } from "@/sanity/lib/client";
 import { PATHS_QUERY } from "@/sanity/lib/queries";
 
@@ -44,7 +44,7 @@ export default async function Home({
         </p>
         <ul className="card_grid mt-7">
           {paths?.length > 0 ? (
-            paths.map((path: PathCardType, index: number) => (
+            paths.map((path: PathTypeCard) => (
               <PathCard key={path?._id} path={path} />
             ))
           ) : (
