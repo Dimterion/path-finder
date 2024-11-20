@@ -1,5 +1,7 @@
 import SearchForm from "@/components/SearchFrom";
 import PathCard from "@/components/PathCard";
+import { client } from "@/sanity/lib/client";
+import { PATHS_QUERY } from "@/sanity/lib/queries";
 
 export default async function Home({
   searchParams,
@@ -8,19 +10,21 @@ export default async function Home({
 }) {
   const query = (await searchParams).query;
 
-  const paths = [
-    {
-      _createdAt: new Date(),
-      views: 5,
-      author: { _id: 1, name: "Lorem" },
-      _id: 1,
-      description: "Lorem ipsum dolor",
-      image:
-        "https://raw.githubusercontent.com/Dimterion/booking-site/refs/heads/master/public/images/placeholder_img.jpg",
-      category: "Lorem",
-      title: "Lorem Ipsum",
-    },
-  ];
+  const paths = await client.fetch(PATHS_QUERY);
+
+  // const paths = [
+  //   {
+  //     _createdAt: new Date(),
+  //     views: 5,
+  //     author: { _id: 1, name: "Lorem" },
+  //     _id: 1,
+  //     description: "Lorem ipsum dolor",
+  //     image:
+  //       "https://raw.githubusercontent.com/Dimterion/booking-site/refs/heads/master/public/images/placeholder_img.jpg",
+  //     category: "Lorem",
+  //     title: "Lorem Ipsum",
+  //   },
+  // ];
 
   return (
     <>
