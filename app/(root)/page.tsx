@@ -1,7 +1,7 @@
 import SearchForm from "@/components/SearchFrom";
 import PathCard, { PathTypeCard } from "@/components/PathCard";
-import { client } from "@/sanity/lib/client";
 import { PATHS_QUERY } from "@/sanity/lib/queries";
+import { sanityFetch, SanityLive } from "@/sanity/lib/live";
 
 export default async function Home({
   searchParams,
@@ -9,8 +9,7 @@ export default async function Home({
   searchParams: Promise<{ query?: string }>;
 }) {
   const query = (await searchParams).query;
-
-  const paths = await client.fetch(PATHS_QUERY);
+  const { data: paths } = await sanityFetch({ query: PATHS_QUERY });
 
   // const paths = [
   //   {
@@ -52,6 +51,7 @@ export default async function Home({
           )}
         </ul>
       </section>
+      <SanityLive />
     </>
   );
 }
