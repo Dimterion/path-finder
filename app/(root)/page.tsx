@@ -9,7 +9,8 @@ export default async function Home({
   searchParams: Promise<{ query?: string }>;
 }) {
   const query = (await searchParams).query;
-  const { data: paths } = await sanityFetch({ query: PATHS_QUERY });
+  const params = { search: query || null };
+  const { data: paths } = await sanityFetch({ query: PATHS_QUERY, params });
 
   // const paths = [
   //   {
