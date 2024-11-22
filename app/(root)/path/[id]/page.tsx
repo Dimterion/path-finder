@@ -1,10 +1,13 @@
+import { Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { notFound } from "next/navigation";
+import markdownit from "markdown-it";
 import { client } from "@/sanity/lib/client";
 import { PATH_BY_ID_QUERY } from "@/sanity/lib/queries";
 import { formatDate } from "@/lib/utils";
-import { notFound } from "next/navigation";
-import markdownit from "markdown-it";
+import { Skeleton } from "@/components/ui/skeleton";
+import View from "@/components/View";
 
 const md = markdownit();
 
@@ -70,7 +73,11 @@ export default async function Path({
             <p className="no-result">No details provided.</p>
           )}
         </div>
+        <hr className="divider" />
       </section>
+      <Suspense fallback={<Skeleton className="view_skeleton" />}>
+        <View id={id} />
+      </Suspense>
     </>
   );
 }
