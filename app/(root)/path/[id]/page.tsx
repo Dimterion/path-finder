@@ -4,6 +4,9 @@ import { client } from "@/sanity/lib/client";
 import { PATH_BY_ID_QUERY } from "@/sanity/lib/queries";
 import { formatDate } from "@/lib/utils";
 import { notFound } from "next/navigation";
+import markdownit from "markdown-it";
+
+const md = markdownit();
 
 export const experimental_ppr = true;
 
@@ -17,6 +20,8 @@ export default async function Path({
   const path = await client.fetch(PATH_BY_ID_QUERY, { id });
 
   if (!path) return notFound();
+
+  const parsedContent = md.render(path?.pitch || "");
 
   return (
     <>
@@ -56,6 +61,14 @@ export default async function Path({
             <p className="category-tag">{path.category}</p>
           </div>
           <h3 className="text-30-bold">Pitch Details</h3>
+          {parsedContent ? (
+            <article
+              className="prose max-w-4xl break-all font-work-sans"
+              dangerouslySetInnerHTML={{ __html: parsedContent }}
+            />
+          ) : (
+            <p className="no-result">No details provided.</p>
+          )}
         </div>
       </section>
     </>
