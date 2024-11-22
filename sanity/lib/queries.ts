@@ -30,3 +30,8 @@ export const PATH_BY_ID_QUERY =
   image,
   pitch,
 }`);
+
+export const PATH_VIEWS_QUERY =
+  defineQuery(`*[_type == "path" && _id == $id][0]{
+  _id, views  
+}`);
