@@ -2,6 +2,7 @@ import SearchForm from "@/components/SearchFrom";
 import PathCard, { PathTypeCard } from "@/components/PathCard";
 import { PATHS_QUERY } from "@/sanity/lib/queries";
 import { sanityFetch, SanityLive } from "@/sanity/lib/live";
+import { auth } from "@/auth";
 
 export default async function Home({
   searchParams,
@@ -10,6 +11,8 @@ export default async function Home({
 }) {
   const query = (await searchParams).query;
   const params = { search: query || null };
+  const session = await auth();
+  console.log(session?.id);
   const { data: paths } = await sanityFetch({ query: PATHS_QUERY, params });
 
   // const paths = [
