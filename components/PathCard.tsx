@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { formatDate } from "@/lib/utils";
 import { EyeIcon } from "lucide-react";
+import { formatDate } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Author, Path } from "@/sanity/types";
 

@@ -1,8 +1,8 @@
 "use server";
 
-import { auth } from "@/auth";
 import slugify from "slugify";
-import { parseServerActionResponse } from "./utils";
+import { auth } from "@/auth";
+import { parseServerActionResponse } from "@/lib/utils";
 import { writeClient } from "@/sanity/lib/write-client";
 
 export const createPitch = async (
