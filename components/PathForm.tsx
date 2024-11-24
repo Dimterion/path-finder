@@ -1,19 +1,59 @@
 "use client";
 
-import { useState } from "react";
+import { useActionState, useState } from "react";
 import { Send } from "lucide-react";
+import { z } from "zod";
 import MDEditor from "@uiw/react-md-editor";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { formSchema } from "@/lib/validation";
 
 export default function PathForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [pitch, setPitch] = useState("");
-  const isPending = false;
+
+  const handleFormSubmit = async (prevState: any, formData: FormData) => {
+    try {
+      const formValues = {
+        title: formData.get("title") as string,
+        description: formData.get("description") as string,
+        category: formData.get("category") as string,
+        link: formData.get("link") as string,
+        pitch,
+      };
+
+      await formSchema.parseAsync(formValues);
+
+      console.log(formValues);
+
+      // const result = await createPath(prevState, formData, pitch);
+
+      // console.log(result);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        const fieldErrors = error.flatten().fieldErrors;
+
+        setErrors(fieldErrors as unknown as Record<string, string>);
+
+        return { ...prevState, error: "Not validated:", status: "ERROR" };
+      }
+
+      return {
+        ...prevState,
+        error: "An error has occurred",
+        status: "ERROR",
+      };
+    }
+  };
+
+  const [state, formAction, isPending] = useActionState(handleFormSubmit, {
+    error: "",
+    status: "INITIAL",
+  });
 
   return (
-    <form action={() => {}} className="path-form">
+    <form action={formAction} className="path-form">
       <div>
         <label htmlFor="title" className="path-form_label">
           Title
