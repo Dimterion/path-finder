@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState, useState } from "react";
+import { useRouter } from "next/navigation";
 import { Send } from "lucide-react";
 import { z } from "zod";
 import MDEditor from "@uiw/react-md-editor";
@@ -8,10 +9,13 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { formSchema } from "@/lib/validation";
+import { useToast } from "@/hooks/use-toast";
 
 export default function PathForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [pitch, setPitch] = useState("");
+  const { toast } = useToast();
+  const router = useRouter();
 
   const handleFormSubmit = async (prevState: any, formData: FormData) => {
     try {
@@ -30,14 +34,37 @@ export default function PathForm() {
       // const result = await createPath(prevState, formData, pitch);
 
       // console.log(result);
+
+      // if (result.status === "SUCCESS") {
+      //   toast({
+      //     title: "Success",
+      //     description: "Your path has been created successfully.",
+      //   });
+
+      //   router.push(`/path/${result.id}`);
+      // }
+
+      // return result;
     } catch (error) {
       if (error instanceof z.ZodError) {
         const fieldErrors = error.flatten().fieldErrors;
 
         setErrors(fieldErrors as unknown as Record<string, string>);
 
+        toast({
+          title: "Error",
+          description: "Please check all the fields",
+          variant: "destructive",
+        });
+
         return { ...prevState, error: "Not validated:", status: "ERROR" };
       }
+
+      toast({
+        title: "Error",
+        description: "An error has occurred",
+        variant: "destructive",
+      });
 
       return {
         ...prevState,
