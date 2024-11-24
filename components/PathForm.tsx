@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { formSchema } from "@/lib/validation";
 import { useToast } from "@/hooks/use-toast";
+import { createPitch } from "@/lib/actions";
 
 export default function PathForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -29,22 +30,18 @@ export default function PathForm() {
 
       await formSchema.parseAsync(formValues);
 
-      console.log(formValues);
+      const result = await createPitch(prevState, formData, pitch);
 
-      // const result = await createPath(prevState, formData, pitch);
+      if (result.status === "SUCCESS") {
+        toast({
+          title: "Success",
+          description: "Your path has been created successfully.",
+        });
 
-      // console.log(result);
+        router.push(`/path/${result._id}`);
+      }
 
-      // if (result.status === "SUCCESS") {
-      //   toast({
-      //     title: "Success",
-      //     description: "Your path has been created successfully.",
-      //   });
-
-      //   router.push(`/path/${result.id}`);
-      // }
-
-      // return result;
+      return result;
     } catch (error) {
       if (error instanceof z.ZodError) {
         const fieldErrors = error.flatten().fieldErrors;
