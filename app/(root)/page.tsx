@@ -1,8 +1,8 @@
-import SearchForm from "@/components/SearchFrom";
-import PathCard, { PathTypeCard } from "@/components/PathCard";
+import { auth } from "@/auth";
 import { PATHS_QUERY } from "@/sanity/lib/queries";
 import { sanityFetch, SanityLive } from "@/sanity/lib/live";
-import { auth } from "@/auth";
+import PathCard, { PathTypeCard } from "@/components/PathCard";
+import SearchForm from "@/components/SearchFrom";
 
 export default async function Home({
   searchParams,
@@ -15,6 +15,7 @@ export default async function Home({
   console.log(session?.id);
   const { data: paths } = await sanityFetch({ query: PATHS_QUERY, params });
 
+  // Paths format example
   // const paths = [
   //   {
   //     _createdAt: new Date(),
