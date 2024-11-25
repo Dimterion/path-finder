@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { auth } from "@/auth";
 import { client } from "@/sanity/lib/client";
 import { AUTHOR_BY_ID_QUERY } from "@/sanity/lib/queries";
@@ -23,6 +24,22 @@ export default async function User({
               {user.name}
             </h3>
           </div>
+          <Image
+            src={user.image}
+            alt={user.name}
+            width={220}
+            height={220}
+            className="profile_image"
+          />
+          <p className="text-30-extrabold mt-7 text-center">
+            @{user?.username}
+          </p>
+          <p className="text-14-normal mt-1 text-center">{user?.bio}</p>
+        </div>
+        <div className="flex flex-1 flex-col gap-5 lg:-mt-5">
+          <p className="text-30-bold">
+            {session?.id === id ? "Your" : "All"} Paths
+          </p>
         </div>
       </section>
     </>
