@@ -14,5 +14,17 @@ export default async function User({
 
   if (!user) return notFound();
 
-  return <>User</>;
+  return (
+    <>
+      <section className="profile_container">
+        <div className="profile_card">
+          <div className="profile_title">
+            <h3 className="text-24-black line-clamp-1 text-center uppercase">
+              {user.name}
+            </h3>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
