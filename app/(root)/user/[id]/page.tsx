@@ -3,6 +3,10 @@ import { auth } from "@/auth";
 import { client } from "@/sanity/lib/client";
 import { AUTHOR_BY_ID_QUERY } from "@/sanity/lib/queries";
 import { notFound } from "next/navigation";
+import UserPaths from "@/components/UserPaths";
+import { Suspense } from "react";
+
+export const experimental_ppr = true;
 
 export default async function User({
   params,
@@ -40,6 +44,11 @@ export default async function User({
           <p className="text-30-bold">
             {session?.id === id ? "Your" : "All"} Paths
           </p>
+          <ul className="card_grid-sm">
+            <Suspense fallback={<p>Loading...</p>}>
+              <UserPaths id={id} />
+            </Suspense>
+          </ul>
         </div>
       </section>
     </>
