@@ -5,6 +5,7 @@ import { AUTHOR_BY_ID_QUERY } from "@/sanity/lib/queries";
 import { notFound } from "next/navigation";
 import UserPaths from "@/components/UserPaths";
 import { Suspense } from "react";
+import { PathCardSkeleton } from "@/components/PathCard";
 
 export const experimental_ppr = true;
 
@@ -45,7 +46,7 @@ export default async function User({
             {session?.id === id ? "Your" : "All"} Paths
           </p>
           <ul className="card_grid-sm">
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<PathCardSkeleton />}>
               <UserPaths id={id} />
             </Suspense>
           </ul>

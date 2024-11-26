@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { EyeIcon } from "lucide-react";
-import { formatDate } from "@/lib/utils";
+import { cn, formatDate } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 import { Author, Path } from "@/sanity/types";
 
 export type PathTypeCard = Omit<Path, "author"> & { author?: Author };
@@ -39,8 +40,8 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
         </div>
         <Link href={`/user/${author?._id}`}>
           <Image
-            src="https://placehold.co/48x48"
-            alt="Placeholder"
+            src={author?.image}
+            alt={author?.name}
             width={48}
             height={48}
             className="rounded-full"
@@ -67,4 +68,14 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
       </div>
     </li>
   );
+}
+
+export function PathCardSkeleton() {
+  <>
+    {[0, 1, 2, 3, 4].map((index: number) => (
+      <li key={cn("skeleton", index)}>
+        <Skeleton className="path-card_skeleton" />
+      </li>
+    ))}
+  </>;
 }
