@@ -4,10 +4,11 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import markdownit from "markdown-it";
 import { client } from "@/sanity/lib/client";
-import { PATH_BY_ID_QUERY } from "@/sanity/lib/queries";
+import { PATH_BY_ID_QUERY, PLAYLIST_BY_SLUG_QUERY } from "@/sanity/lib/queries";
 import { formatDate } from "@/lib/utils";
 import { Skeleton } from "@/components/ui/skeleton";
 import View from "@/components/View";
+import PathCard, { PathTypeCard } from "@/components/PathCard";
 
 const md = markdownit();
 
@@ -21,6 +22,10 @@ export default async function Path({
   const id = (await params).id;
 
   const path = await client.fetch(PATH_BY_ID_QUERY, { id });
+
+  const { select: editorPaths } = await client.fetch(PLAYLIST_BY_SLUG_QUERY, {
+    slug: "editor-picks",
+  });
 
   if (!path) return notFound();
 
@@ -74,6 +79,16 @@ export default async function Path({
           )}
         </div>
         <hr className="divider" />
+        {editorPaths?.length > 0 && (
+          <div className="mx-auto max-w-4xl">
+            <p className="text-30-semibold">Editor Picks</p>
+            <ul className="card_grid-sm mt-7">
+              {editorPaths.map((path: PathTypeCard, index: number) => (
+                <PathCard key={index} path={path} />
+              ))}
+            </ul>
+          </div>
+        )}
       </section>
       <Suspense fallback={<Skeleton className="view_skeleton" />}>
         <View id={id} />
