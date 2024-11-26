@@ -21,11 +21,12 @@ export default async function Path({
 }) {
   const id = (await params).id;
 
-  const path = await client.fetch(PATH_BY_ID_QUERY, { id });
-
-  const { select: editorPaths } = await client.fetch(PLAYLIST_BY_SLUG_QUERY, {
-    slug: "editor-picks",
-  });
+  const [path, { select: editorPaths }] = await Promise.all([
+    client.fetch(PATH_BY_ID_QUERY, { id }),
+    client.fetch(PLAYLIST_BY_SLUG_QUERY, {
+      slug: "editor-picks",
+    }),
+  ]);
 
   if (!path) return notFound();
 
