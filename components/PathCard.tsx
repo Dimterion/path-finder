@@ -35,7 +35,7 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
             <p className="text-16-medium line-clamp-1">{author?.name}</p>
           </Link>
           <Link href={`/path/${_id}`}>
-            <h3 className="text-26-semibold line-clamp-1"></h3>
+            <h2 className="text-26-semibold line-clamp-1"></h2>
           </Link>
         </div>
         <Link href={`/user/${author?._id}`}>
