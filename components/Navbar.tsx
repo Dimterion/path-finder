@@ -11,7 +11,13 @@ export default async function Navbar() {
     <header className="bg-white px-5 py-3 font-work-sans shadow-sm">
       <nav className="flex items-center justify-between">
         <Link href="/">
-          <Image src="/logo.png" alt="Logo" width={144} height={30} />
+          <Image
+            className="h-auto w-auto"
+            src="/logo.png"
+            alt="Logo"
+            width={100}
+            height={30}
+          />
         </Link>
         <div className="flex items-center gap-5 text-black">
           {session && session?.user ? (

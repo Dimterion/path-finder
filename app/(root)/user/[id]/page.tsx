@@ -34,7 +34,7 @@ export default async function User({
             alt={user.name}
             width={220}
             height={220}
-            className="profile_image"
+            className="profile_image h-auto w-auto"
           />
           <p className="text-30-extrabold mt-7 text-center">
             @{user?.username}

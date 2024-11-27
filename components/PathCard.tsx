@@ -44,7 +44,7 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
             alt={author?.name}
             width={48}
             height={48}
-            className="rounded-full"
+            className="h-auto w-auto rounded-full"
           />
         </Link>
       </div>
@@ -55,7 +55,7 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
           alt="Placeholder"
           width={164}
           height={164}
-          className="path-card_img"
+          className="path-card_img h-auto w-auto"
         />
       </Link>
       <div className="flex-between mt-5 gap-3">

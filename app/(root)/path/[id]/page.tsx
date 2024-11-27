@@ -58,7 +58,7 @@ export default async function Path({
                 alt="Avatar"
                 width={64}
                 height={64}
-                className="rounded-full drop-shadow-lg"
+                className="h-auto w-auto rounded-full drop-shadow-lg"
               />
               <div>
                 <p className="text-20-medium">{path.author.name}</p>
