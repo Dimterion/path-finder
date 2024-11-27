@@ -31,14 +31,14 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
       </div>
       <div className="flex-between mt-5 gap-5">
         <div className="flex-1">
-          <Link href={`/user/${author?._id}`}>
+          <Link href={`/user/${author?._id}`} aria-label="Author profile link">
             <p className="text-16-medium line-clamp-1">{author?.name}</p>
           </Link>
-          <Link href={`/path/${_id}`}>
+          <Link href={`/path/${_id}`} aria-label="Path link">
             <h2 className="text-26-semibold line-clamp-1"></h2>
           </Link>
         </div>
-        <Link href={`/user/${author?._id}`}>
+        <Link href={`/user/${author?._id}`} aria-label="Author profile link">
           <Image
             src={author?.image}
             alt={author?.name}
@@ -48,7 +48,7 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
           />
         </Link>
       </div>
-      <Link href={`/path/${_id}`}>
+      <Link href={`/path/${_id}`} aria-label="Path link">
         <p className="path-card_desc">{description}</p>
         <Image
           src={image}
@@ -59,7 +59,7 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
         />
       </Link>
       <div className="flex-between mt-5 gap-3">
-        <Link href={`/?query=${category?.toLowerCase()}`}>
+        <Link href={`/?query=${category?.toLowerCase()}`} aria-label="Category">
           <p className="text-16-medium">{category}</p>
         </Link>
         <Button className="path-card_btn" asChild>

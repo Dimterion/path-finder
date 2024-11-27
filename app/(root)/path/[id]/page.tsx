@@ -50,8 +50,9 @@ export default async function Path({
         <div className="mx-auto mt-10 max-w-4xl space-y-5">
           <div className="flex-between gap-5">
             <Link
-              href={`/user/${path.authro?._id}`}
+              href={`/user/${path.author?._id}`}
               className="mb-3 flex gap-2"
+              aria-label="Author profile link"
             >
               <Image
                 src={path.author.image}

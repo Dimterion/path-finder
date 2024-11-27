@@ -10,7 +10,7 @@ export default async function Navbar() {
   return (
     <header className="bg-white px-5 py-3 font-work-sans shadow-sm">
       <nav className="flex items-center justify-between">
-        <Link href="/">
+        <Link href="/" aria-label="Home page link">
           <Image
             className="h-auto w-auto"
             src="/logo.png"
@@ -22,7 +22,7 @@ export default async function Navbar() {
         <div className="flex items-center gap-5 text-black">
           {session && session?.user ? (
             <>
-              <Link href="/path/create">
+              <Link href="/path/create" aria-label="Create path link">
                 <span className="max-sm:hidden">Create</span>
                 <BadgePlus className="size-6 sm:hidden" />
               </Link>
@@ -37,7 +37,10 @@ export default async function Navbar() {
                   <LogOut className="size-6 text-red-500 sm:hidden" />
                 </button>
               </form>
-              <Link href={`/user/${session?.id}`}>
+              <Link
+                href={`/user/${session?.id}`}
+                aria-label="User profile link"
+              >
                 <Avatar className="size-10">
                   <AvatarImage
                     src={session?.user?.image || ""}
