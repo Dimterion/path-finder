@@ -63,14 +63,14 @@ export default async function Path({
               />
               <div>
                 <p className="text-20-medium">{path.author.name}</p>
-                <p className="text-16-medium !text-black-300">
+                <p className="text-16-medium !text-black-100">
                   @{path.author.username}
                 </p>
               </div>
             </Link>
             <p className="category-tag">{path.category}</p>
           </div>
-          <h3 className="text-30-bold">Pitch Details</h3>
+          <h2 className="text-30-bold">Pitch Details</h2>
           {parsedContent ? (
             <article
               className="prose max-w-4xl break-all font-work-sans"

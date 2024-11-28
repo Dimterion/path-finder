@@ -33,7 +33,7 @@ export default async function Navbar() {
                   await signOut({ redirectTo: "/" });
                 }}
               >
-                <button type="submit">
+                <button type="submit" aria-label="Sign out">
                   <span className="max-sm:hidden">Sign out</span>
                   <LogOut className="size-6 text-red-500 sm:hidden" />
                 </button>
