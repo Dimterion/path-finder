@@ -140,7 +140,7 @@
   }
 
   .path-card_img {
-    @apply h-[164px] w-full rounded-[10px] object-cover;
+    @apply m-auto h-auto max-h-[100px] w-auto rounded-[10px] object-cover;
   }
 
   .path-card_btn {

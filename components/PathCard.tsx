@@ -55,7 +55,7 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
           alt="Placeholder"
           width={164}
           height={164}
-          className="path-card_img h-auto w-auto"
+          className="path-card_img"
         />
       </Link>
       <div className="flex-between mt-5 gap-3">
