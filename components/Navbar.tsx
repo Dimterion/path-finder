@@ -19,7 +19,7 @@ export default async function Navbar() {
             height={30}
           />
         </Link>
-        <div className="flex items-center gap-5 text-black">
+        <section className="flex items-center gap-2 text-black sm:gap-5">
           {session && session?.user ? (
             <>
               <Link href="/path/create" aria-label="Create path link">
@@ -27,6 +27,7 @@ export default async function Navbar() {
                 <BadgePlus className="size-6 sm:hidden" />
               </Link>
               <form
+                className="flex"
                 action={async () => {
                   "use server";
                   await signOut({ redirectTo: "/" });
@@ -60,7 +61,7 @@ export default async function Navbar() {
               <button type="submit">Login</button>
             </form>
           )}
-        </div>
+        </section>
       </nav>
     </header>
   );
