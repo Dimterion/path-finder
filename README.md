@@ -9,7 +9,7 @@ Next.js / TypeScript application
 ### Bio Link ⬇️
 
 <a href="https://dimterion.bio.link/">
-  <img src="./public/path_finder_readme_footer.svg" alt="Path Finder readme footer" />
+  <img src="https://raw.githubusercontent.com/Dimterion/Dimterion/1521172f216f8f90db6b3b986c1cbb19994847eb/images/bio_link_image.svg" alt="Path Finder readme footer" />
 </a>
 
 **Note:** Ctrl+Click (Windows/Linux) or Cmd+Click (macOS) the image to open link in a new tab.
