@@ -45,7 +45,7 @@ export default async function Path({
           alt="Thumbnail"
           width={164}
           height={164}
-          className="m-auto h-auto max-h-[250px] w-full max-w-[250px] rounded-xl"
+          className="m-auto h-auto max-h-[250px] w-full rounded-xl object-cover sm:max-h-[350px]"
         />
         <div className="mx-auto mt-10 max-w-4xl space-y-5">
           <div className="flex-between gap-5">
