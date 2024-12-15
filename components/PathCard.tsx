@@ -40,8 +40,8 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
         </div>
         <Link href={`/user/${author?._id}`} aria-label="Author profile link">
           <Image
-            src={author?.image}
-            alt={author?.name}
+            src={author?.image ?? ""}
+            alt={author?.name ?? "Author default image."}
             width={48}
             height={48}
             className="h-auto w-auto rounded-full"
@@ -49,9 +49,10 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
         </Link>
       </div>
       <Link href={`/path/${_id}`} aria-label="Path link">
+        <h2 className="font-bold">{title}</h2>
         <p className="path-card_desc">{description}</p>
         <Image
-          src={image}
+          src={image ?? ""}
           alt="Placeholder"
           width={164}
           height={164}

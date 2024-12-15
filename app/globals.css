@@ -128,7 +128,7 @@
   }
 
   .path-card {
-    @apply rounded-[22px] border-[5px] border-black bg-white px-5 py-6 shadow-200 transition-all duration-500 hover:border-primary hover:bg-primary-100 hover:shadow-300;
+    @apply rounded-lg border-4 border-black bg-white px-5 py-6 transition-all duration-500 hover:border-primary hover:bg-primary-100 hover:shadow-100;
   }
 
   .path-card_date {
