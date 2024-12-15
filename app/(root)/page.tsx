@@ -2,7 +2,7 @@ import { auth } from "@/auth";
 import { PATHS_QUERY } from "@/sanity/lib/queries";
 import { sanityFetch, SanityLive } from "@/sanity/lib/live";
 import PathCard, { PathTypeCard } from "@/components/PathCard";
-import SearchForm from "@/components/SearchFrom";
+import SearchForm from "@/components/SearchForm";
 
 export default async function Home({
   searchParams,

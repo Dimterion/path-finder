@@ -116,7 +116,7 @@
   }
 
   .search-form {
-    @apply mt-8 flex min-h-[80px] w-full max-w-3xl flex-row items-center gap-5 rounded-[80px] border-[5px] border-black bg-white px-5 text-[24px];
+    @apply mt-8 flex w-full max-w-3xl flex-row items-center rounded-lg border-4 border-black bg-white p-2 text-lg;
   }
 
   .search-input {
