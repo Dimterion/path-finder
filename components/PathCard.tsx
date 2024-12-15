@@ -53,7 +53,7 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
         <p className="path-card_desc">{description}</p>
         <Image
           src={image ?? ""}
-          alt="Placeholder"
+          alt={title ?? "Path default image."}
           width={164}
           height={164}
           className="path-card_img"

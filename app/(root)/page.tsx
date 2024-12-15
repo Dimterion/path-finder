@@ -42,7 +42,7 @@ export default async function Home({
         </p>
         <SearchForm query={query} />
       </section>
-      <section className="section-container">
+      <section className="mt-8 flex flex-col items-center">
         <p className="text-30-semibold">
           {query ? `Search results for "${query}"` : "All paths"}
         </p>

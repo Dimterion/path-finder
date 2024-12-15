@@ -128,7 +128,7 @@
   }
 
   .path-card {
-    @apply rounded-lg border-4 border-black bg-white px-5 py-6 transition-all duration-500 hover:border-primary hover:bg-primary-100 hover:shadow-100;
+    @apply mx-2 max-w-[450px] rounded-lg border-4 border-black bg-white px-5 py-6 transition-all duration-500 hover:border-primary hover:bg-primary-100 hover:shadow-100 sm:mx-0;
   }
 
   .path-card_date {
@@ -136,11 +136,11 @@
   }
 
   .path-card_desc {
-    @apply my-3 line-clamp-2 break-all text-[16px] font-normal text-black-100;
+    @apply my-3 line-clamp-1 break-all text-[16px] font-normal text-black-100;
   }
 
   .path-card_img {
-    @apply m-auto h-auto max-h-[100px] w-auto rounded-[10px] object-cover;
+    @apply m-auto h-auto max-h-[150px] w-full rounded-[10px] object-cover;
   }
 
   .path-card_btn {
