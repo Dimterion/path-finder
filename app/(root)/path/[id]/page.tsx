@@ -34,7 +34,7 @@ export default async function Path({
 
   return (
     <>
-      <section className="pink_container !min-h-[230px]">
+      <section className="gray_container !min-h-[230px]">
         <p className="tag">{formatDate(path?._createdAt)}</p>
         <h1 className="heading">{path.title}</h1>
         <p className="sub-heading !max-w-5xl">{path.description}</p>

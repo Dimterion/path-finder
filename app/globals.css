@@ -47,8 +47,8 @@
     @apply text-sm font-normal text-white-100/80;
   }
 
-  .pink_container {
-    @apply pattern flex min-h-[530px] w-full flex-col items-center justify-center bg-primary px-6 py-10;
+  .gray_container {
+    @apply pattern flex w-full flex-col items-center justify-center bg-primary px-6 py-10;
   }
 
   .tag {
@@ -124,7 +124,7 @@
   }
 
   .search-btn {
-    @apply flex size-[50px] items-center justify-center rounded-full bg-black !important;
+    @apply flex size-10 items-center justify-center rounded-lg bg-black !important;
   }
 
   .path-card {
@@ -195,8 +195,8 @@
     background-image: linear-gradient(
       to right,
       transparent 49.5%,
-      rgba(251, 232, 67, 0.2) 49.5%,
-      rgba(251, 232, 67, 0.6) 50.5%,
+      #f8f9fa 45%,
+      #e9ecef 45%,
       transparent 50.5%
     );
     background-size: 5% 100%;

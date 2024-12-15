@@ -9,7 +9,7 @@ export default async function Create() {
 
   return (
     <>
-      <section className="pink_container !min-h-[230px]">
+      <section className="gray_container !min-h-[230px]">
         <h1 className="heading">Create your path</h1>
       </section>
       <PathForm />

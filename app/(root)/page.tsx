@@ -32,7 +32,7 @@ export default async function Home({
 
   return (
     <>
-      <section className="pink_container">
+      <section className="gray_container">
         <h1 className="heading">
           Lorem ipsum, <br /> Lorem ipsum dolor
         </h1>
