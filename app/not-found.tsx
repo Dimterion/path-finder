@@ -1,17 +1,25 @@
 import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function NotFound() {
   return (
-    <main>
-      <p>404</p>
-      <h1>Page not found</h1>
-      <p>Please check the link and try again.</p>
-      <section>
-        <Link href="/">Home page</Link>
-        <a href="#">
-          Contact <span aria-hidden="true">&rarr;</span>
-        </a>
+    <main className="flex min-h-screen flex-col justify-between">
+      <Navbar />
+      <section className="flex flex-col items-center gap-4">
+        <p className="text-2xl font-bold">404</p>
+        <h1 className="text-4xl">Page not found</h1>
+        <p className="text-xl">Please check the link and try again.</p>
+        <section className="flex flex-row flex-wrap gap-4 text-lg">
+          <Link href="/" className="underline">
+            Home page
+          </Link>
+          <a href="#" className="underline">
+            Contact
+          </a>
+        </section>
       </section>
+      <Footer />
     </main>
   );
 }
