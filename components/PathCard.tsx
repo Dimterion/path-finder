@@ -71,12 +71,14 @@ export default function PathCard({ path }: { path: PathTypeCard }) {
   );
 }
 
-export function PathCardSkeleton() {
-  <>
-    {[0, 1, 2, 3, 4].map((index: number) => (
-      <li key={cn("skeleton", index)}>
-        <Skeleton className="path-card_skeleton" />
-      </li>
-    ))}
-  </>;
-}
+export const PathCardSkeleton = () => {
+  return (
+    <>
+      {[0, 1, 2, 3, 4].map((index: number) => (
+        <li key={cn("skeleton", index)}>
+          <Skeleton className="path-card_skeleton" />
+        </li>
+      ))}
+    </>
+  );
+};
