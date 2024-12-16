@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function Layout({
@@ -6,7 +6,7 @@ export default function Layout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <main className="font-work-sans">
-      <Navbar />
+      <Header />
       {children}
       <Footer />
     </main>

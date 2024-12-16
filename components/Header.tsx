@@ -4,7 +4,7 @@ import { auth, signIn, signOut } from "@/auth";
 import { BadgePlus, LogOut } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-export default async function Navbar() {
+export default async function Header() {
   const session = await auth();
 
   return (
