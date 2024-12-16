@@ -84,11 +84,11 @@
   }
 
   .profile_card {
-    @apply relative z-0 flex h-fit w-80 flex-col items-center justify-center rounded-[30px] border-[5px] border-black bg-primary px-6 pb-6 pt-20 shadow-100 max-lg:w-full;
+    @apply relative z-0 flex h-fit w-80 flex-col items-center justify-center rounded-lg border-4 border-black bg-primary px-6 pb-6 pt-20 shadow-100 max-lg:w-full;
   }
 
   .profile_title {
-    @apply absolute -top-9 w-11/12 rounded-[20px] border-[5px] border-black bg-white px-5 py-3 shadow-100 before:absolute before:-bottom-1 before:left-0 before:-z-[1] before:h-[60px] before:w-full before:-skew-y-6 before:rounded-[20px] before:bg-black before:content-[''] after:absolute after:-top-1 after:right-0 after:-z-[1] after:h-[60px] after:w-full after:-skew-y-6 after:rounded-[20px] after:bg-black after:content-[''];
+    @apply absolute -top-9 w-11/12 rounded-lg border-[5px] border-black bg-white px-5 py-3 shadow-100 before:absolute before:-bottom-1 before:left-0 before:-z-[1] before:h-[60px] before:w-full before:-skew-y-6 before:rounded-lg before:bg-black before:content-[''] after:absolute after:-top-1 after:right-0 after:-z-[1] after:h-[60px] after:w-full after:-skew-y-6 after:rounded-lg after:bg-black after:content-[''];
   }
 
   .profile_image {
@@ -144,7 +144,7 @@
   }
 
   .path-card_btn {
-    @apply rounded-full bg-black-200 px-5 py-3 text-[16px] font-medium text-white !important;
+    @apply rounded-lg bg-black-200 px-5 py-3 text-[16px] font-medium text-white !important;
   }
 
   .path-card_base {
