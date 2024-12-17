@@ -144,7 +144,7 @@ export default function PathForm() {
           id="pitch"
           preview="edit"
           height={300}
-          style={{ borderRadius: 20, overflow: "hidden" }}
+          style={{ borderRadius: 8, overflow: "hidden", marginTop: 12 }}
           textareaProps={{
             placeholder: "Describe your path.",
           }}

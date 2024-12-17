@@ -156,15 +156,15 @@
   }
 
   .path-form_label {
-    @apply text-[18px] font-bold uppercase text-black;
+    @apply text-lg font-bold text-black;
   }
 
   .path-form_input {
-    @apply mt-3 rounded-full border-[3px] border-black px-5 py-7 text-[18px] font-semibold text-black placeholder:text-black-300 !important;
+    @apply mt-3 rounded-lg border-2 border-black p-5 text-lg font-semibold text-black placeholder:text-black-300 !important;
   }
 
   .path-form_textarea {
-    @apply mt-3 rounded-[20px] border-[3px] border-black p-5 text-[18px] font-semibold text-black placeholder:text-black-300 !important;
+    @apply mt-3 rounded-lg border-2 border-black text-lg font-semibold text-black placeholder:text-black-300 !important;
   }
 
   .path-form_error {
@@ -172,11 +172,15 @@
   }
 
   .path-form_editor {
-    @apply mt-3 border-[3px] border-black text-[18px] font-semibold text-black placeholder:text-black-300 !important;
+    @apply mt-3 border-2 border-black text-lg font-semibold text-black placeholder:text-black-300 !important;
   }
 
   .path-form_btn {
-    @apply min-h-[70px] w-full rounded-full border-[4px] border-black bg-primary p-5 text-[18px] font-bold !important;
+    @apply w-full rounded-lg border-2 border-black bg-primary p-5 text-lg font-bold !important;
+  }
+
+  .path-form_btn:hover {
+    @apply opacity-95;
   }
 
   .view-container {
