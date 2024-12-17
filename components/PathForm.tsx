@@ -146,7 +146,7 @@ export default function PathForm() {
           height={300}
           style={{ borderRadius: 8, overflow: "hidden", marginTop: 12 }}
           textareaProps={{
-            placeholder: "Describe your path.",
+            placeholder: "Describe your path",
           }}
           previewOptions={{
             disallowedElements: ["style"],

@@ -132,23 +132,19 @@
   }
 
   .path-card_date {
-    @apply rounded-full bg-primary-100 px-4 py-2 text-[16px] font-medium group-hover:bg-white-100;
+    @apply rounded-full bg-primary-100 px-4 py-2 font-medium group-hover:bg-white-100;
   }
 
   .path-card_desc {
-    @apply my-3 line-clamp-1 break-all text-[16px] font-normal text-black-100;
+    @apply my-3 line-clamp-1 break-all font-normal text-black-100;
   }
 
   .path-card_img {
-    @apply m-auto h-auto max-h-[150px] w-full rounded-[10px] object-cover;
+    @apply m-auto h-auto max-h-[150px] w-full rounded-lg object-cover;
   }
 
   .path-card_btn {
-    @apply rounded-lg bg-black-200 px-5 py-3 text-[16px] font-medium text-white !important;
-  }
-
-  .path-card_base {
-    @apply h-96 w-full rounded-[22px] bg-zinc-400;
+    @apply rounded-lg bg-black-200 px-5 py-3 font-medium text-white !important;
   }
 
   .path-form {
@@ -160,11 +156,11 @@
   }
 
   .path-form_input {
-    @apply mt-3 rounded-lg border-2 border-black p-5 text-lg font-semibold text-black placeholder:text-black-300 !important;
+    @apply mt-2 rounded-lg border-2 border-black px-3 py-2 text-lg font-semibold text-black placeholder:text-black-300 !important;
   }
 
   .path-form_textarea {
-    @apply mt-3 rounded-lg border-2 border-black text-lg font-semibold text-black placeholder:text-black-300 !important;
+    @apply mt-2 rounded-lg border-2 border-black text-lg font-semibold text-black placeholder:text-black-300 !important;
   }
 
   .path-form_error {
