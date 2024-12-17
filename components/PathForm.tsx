@@ -12,13 +12,18 @@ import { formSchema } from "@/lib/validation";
 import { useToast } from "@/hooks/use-toast";
 import { createPitch } from "@/lib/actions";
 
+interface FormState {
+  error?: string;
+  status?: "INITIAL" | "PENDING" | "SUCCESS" | "ERROR";
+}
+
 export default function PathForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [pitch, setPitch] = useState("");
   const { toast } = useToast();
   const router = useRouter();
 
-  const handleFormSubmit = async (prevState: any, formData: FormData) => {
+  const handleFormSubmit = async (prevState: FormState, formData: FormData) => {
     try {
       const formValues = {
         title: formData.get("title") as string,
@@ -71,7 +76,7 @@ export default function PathForm() {
     }
   };
 
-  const [state, formAction, isPending] = useActionState(handleFormSubmit, {
+  const [state, formAction] = useActionState(handleFormSubmit, {
     error: "",
     status: "INITIAL",
   });
@@ -157,9 +162,9 @@ export default function PathForm() {
       <Button
         type="submit"
         className="path-form_btn text-white"
-        disabled={isPending}
+        disabled={state.isPending}
       >
-        {isPending ? "Submitting..." : "Submit"}
+        {state.isPending ? "Submitting..." : "Submit"}
         <Send className="ml-2 size-6" />
       </Button>
     </form>
