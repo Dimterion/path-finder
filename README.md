@@ -8,8 +8,10 @@ Next.js / TypeScript application
 
 ### Bio Link ⬇️
 
-<a href="https://dimterion.bio.link/">
-  <img src="https://raw.githubusercontent.com/Dimterion/Dimterion/1521172f216f8f90db6b3b986c1cbb19994847eb/images/bio_link_image.svg" alt="Path Finder readme footer" />
+### Profile links ⬇️
+
+<a href="https://linktr.ee/dimterion">
+  <img src="https://raw.githubusercontent.com/Dimterion/Dimterion/1521172f216f8f90db6b3b986c1cbb19994847eb/images/bio_link_image.svg" alt="Dimterion Profile links image" />
 </a>
 
 **Note:** Ctrl+Click (Windows/Linux) or Cmd+Click (macOS) the image to open link in a new tab.
