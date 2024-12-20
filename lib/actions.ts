@@ -5,8 +5,12 @@ import { auth } from "@/auth";
 import { parseServerActionResponse } from "@/lib/utils";
 import { writeClient } from "@/sanity/lib/write-client";
 
+interface State {
+  status?: string;
+}
+
 export const createPitch = async (
-  state: any,
+  state: State,
   form: FormData,
   pitch: string,
 ) => {
@@ -39,6 +43,7 @@ export const createPitch = async (
         _ref: session?.id,
       },
       pitch,
+      state,
     };
 
     const result = await writeClient.create({ _type: "path", ...path });
