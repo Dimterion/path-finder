@@ -1,0 +1,64 @@
+import { Link } from "expo-router";
+import { StyleSheet, Text, View, Pressable } from "react-native";
+
+export default function HomeScreen() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Pathfinder</Text>
+      <Text style={styles.subtitle}>A simple app.</Text>
+
+      <Link href="/platforms" asChild>
+        <Pressable style={styles.button}>
+          <Text style={styles.buttonText}>Explore platforms</Text>
+        </Pressable>
+      </Link>
+
+      <Link href="/builder" asChild>
+        <Pressable style={styles.buttonSecondary}>
+          <Text style={styles.buttonText}>Open builder</Text>
+        </Pressable>
+      </Link>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    padding: 24,
+    backgroundColor: "#ffffff",
+  },
+  title: {
+    fontSize: 32,
+    fontWeight: "700",
+    marginBottom: 12,
+    textAlign: "center",
+  },
+  subtitle: {
+    fontSize: 16,
+    lineHeight: 24,
+    textAlign: "center",
+    marginBottom: 32,
+    color: "#444",
+  },
+  button: {
+    backgroundColor: "#1f6feb",
+    paddingVertical: 14,
+    paddingHorizontal: 18,
+    borderRadius: 10,
+    marginBottom: 14,
+  },
+  buttonSecondary: {
+    backgroundColor: "#2da44e",
+    paddingVertical: 14,
+    paddingHorizontal: 18,
+    borderRadius: 10,
+  },
+  buttonText: {
+    color: "#fff",
+    textAlign: "center",
+    fontSize: 16,
+    fontWeight: "600",
+  },
+});
