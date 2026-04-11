@@ -18,6 +18,12 @@ export default function HomeScreen() {
           <Text style={styles.buttonText}>Open builder</Text>
         </Pressable>
       </Link>
+
+      <Link href="/tracker" asChild>
+        <Pressable style={styles.buttonTertiary}>
+          <Text style={styles.buttonText}>Track applications</Text>
+        </Pressable>
+      </Link>
     </View>
   );
 }
@@ -54,6 +60,13 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     paddingHorizontal: 18,
     borderRadius: 10,
+  },
+  buttonTertiary: {
+    backgroundColor: "#2d6a4f",
+    paddingVertical: 14,
+    paddingHorizontal: 18,
+    borderRadius: 10,
+    marginTop: 14,
   },
   buttonText: {
     color: "#fff",

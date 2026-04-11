@@ -13,6 +13,7 @@ export default function RootLayout() {
       />
       <Stack.Screen name="platforms" options={{ title: "Platforms" }} />
       <Stack.Screen name="builder" options={{ title: "Builder" }} />
+      <Stack.Screen name="tracker" options={{ title: "Applications" }} />
     </Stack>
   );
 }
