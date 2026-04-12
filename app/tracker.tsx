@@ -7,7 +7,13 @@ import {
   Text,
   View,
 } from "react-native";
-import { type JobApplication, loadApplications } from "../data/applications";
+import { randomUUID } from "expo-crypto";
+import {
+  type JobApplication,
+  loadApplications,
+  saveApplications,
+} from "../data/applications";
+import AddApplicationModal from "../components/AddApplicationModal";
 
 const COLUMNS = [
   { key: "number", label: "#", width: 48 },
@@ -29,6 +35,7 @@ const STATUS_COLORS: Record<string, string> = {
 export default function TrackerScreen() {
   const [applications, setApplications] = useState<JobApplication[]>([]);
   const [loading, setLoading] = useState(true);
+  const [modalVisible, setModalVisible] = useState(false);
 
   useEffect(() => {
     loadApplications().then((data) => {
@@ -36,6 +43,17 @@ export default function TrackerScreen() {
       setLoading(false);
     });
   }, []);
+
+  async function handleAdd(entry: Omit<JobApplication, "id" | "number">) {
+    const newApp: JobApplication = {
+      ...entry,
+      id: randomUUID(),
+      number: applications.length + 1,
+    };
+    const updated = [...applications, newApp];
+    setApplications(updated);
+    await saveApplications(updated);
+  }
 
   if (loading) {
     return (
@@ -47,9 +65,11 @@ export default function TrackerScreen() {
 
   return (
     <View style={styles.container}>
-      {/* Add button */}
       <View style={styles.toolbar}>
-        <Pressable style={styles.addButton}>
+        <Pressable
+          style={styles.addButton}
+          onPress={() => setModalVisible(true)}
+        >
           <Text style={styles.addButtonText}>+ Add application</Text>
         </Pressable>
       </View>
@@ -62,12 +82,9 @@ export default function TrackerScreen() {
           </Text>
         </View>
       ) : (
-        /* Outer vertical scroll for rows */
         <ScrollView style={styles.tableWrapper}>
-          {/* Inner horizontal scroll for columns */}
           <ScrollView horizontal showsHorizontalScrollIndicator>
             <View>
-              {/* Header row */}
               <View style={[styles.row, styles.headerRow]}>
                 {COLUMNS.map((col) => (
                   <View
@@ -83,7 +100,6 @@ export default function TrackerScreen() {
                 ))}
               </View>
 
-              {/* Data rows */}
               {applications.map((app, index) => (
                 <View
                   key={app.id}
@@ -132,24 +148,20 @@ export default function TrackerScreen() {
           </ScrollView>
         </ScrollView>
       )}
+
+      <AddApplicationModal
+        visible={modalVisible}
+        onClose={() => setModalVisible(false)}
+        onSave={handleAdd}
+      />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#f5f7fb",
-  },
-  centered: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  toolbar: {
-    padding: 16,
-    paddingBottom: 12,
-  },
+  container: { flex: 1, backgroundColor: "#f5f7fb" },
+  centered: { flex: 1, justifyContent: "center", alignItems: "center" },
+  toolbar: { padding: 16, paddingBottom: 12 },
   addButton: {
     backgroundColor: "#1f6feb",
     paddingVertical: 12,
@@ -157,11 +169,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignSelf: "flex-start",
   },
-  addButtonText: {
-    color: "#ffffff",
-    fontSize: 15,
-    fontWeight: "600",
-  },
+  addButtonText: { color: "#ffffff", fontSize: 15, fontWeight: "600" },
   emptyState: {
     flex: 1,
     justifyContent: "center",
@@ -180,23 +188,15 @@ const styles = StyleSheet.create({
     color: "#6b7280",
     textAlign: "center",
   },
-  tableWrapper: {
-    flex: 1,
-  },
+  tableWrapper: { flex: 1 },
   row: {
     flexDirection: "row",
     borderBottomWidth: 1,
     borderBottomColor: "#e5e7eb",
   },
-  headerRow: {
-    backgroundColor: "#1f2937",
-  },
-  rowEven: {
-    backgroundColor: "#ffffff",
-  },
-  rowOdd: {
-    backgroundColor: "#f9fafb",
-  },
+  headerRow: { backgroundColor: "#1f2937" },
+  rowEven: { backgroundColor: "#ffffff" },
+  rowOdd: { backgroundColor: "#f9fafb" },
   cell: {
     paddingVertical: 10,
     paddingHorizontal: 10,
@@ -204,14 +204,8 @@ const styles = StyleSheet.create({
     borderRightWidth: 1,
     borderRightColor: "#e5e7eb",
   },
-  headerCell: {
-    paddingVertical: 12,
-  },
-  cellText: {
-    fontSize: 14,
-    color: "#111827",
-    lineHeight: 20,
-  },
+  headerCell: { paddingVertical: 12 },
+  cellText: { fontSize: 14, color: "#111827", lineHeight: 20 },
   headerText: {
     fontSize: 13,
     fontWeight: "700",
@@ -224,9 +218,5 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     alignSelf: "flex-start",
   },
-  statusText: {
-    fontSize: 12,
-    color: "#ffffff",
-    fontWeight: "600",
-  },
+  statusText: { fontSize: 12, color: "#ffffff", fontWeight: "600" },
 });
