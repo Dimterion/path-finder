@@ -90,12 +90,12 @@ export default function AddApplicationModal({
       transparent
       onRequestClose={onClose}
     >
-      <View style={styles.overlay}>
+      <Pressable style={styles.overlay} onPress={onClose}>
         <KeyboardAvoidingView
           behavior={Platform.OS === "ios" ? "padding" : "height"}
           style={styles.sheetWrapper}
         >
-          <View style={styles.sheet}>
+          <Pressable style={styles.sheet} onPress={(e) => e.stopPropagation()}>
             <View style={styles.handle} />
 
             <ScrollView
@@ -178,9 +178,9 @@ export default function AddApplicationModal({
                 </Pressable>
               </View>
             </ScrollView>
-          </View>
+          </Pressable>
         </KeyboardAvoidingView>
-      </View>
+      </Pressable>
     </Modal>
   );
 }

@@ -1,4 +1,4 @@
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 import { type ApplicationStatus } from "../data/applications";
 
 const STATUSES: ApplicationStatus[] = [
@@ -24,11 +24,7 @@ type StatusPickerProps = {
 
 export default function StatusPicker({ value, onChange }: StatusPickerProps) {
   return (
-    <ScrollView
-      horizontal
-      showsHorizontalScrollIndicator={false}
-      contentContainerStyle={styles.row}
-    >
+    <View style={styles.row}>
       {STATUSES.map((status) => {
         const selected = status === value;
         return (
@@ -54,14 +50,15 @@ export default function StatusPicker({ value, onChange }: StatusPickerProps) {
           </Pressable>
         );
       })}
-    </ScrollView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   row: {
     flexDirection: "row",
-    paddingVertical: 4,
+    flexWrap: "wrap",
+    marginBottom: 4,
   },
   option: {
     paddingVertical: 8,
@@ -69,6 +66,7 @@ const styles = StyleSheet.create({
     borderRadius: 999,
     borderWidth: 1,
     marginRight: 8,
+    marginBottom: 8,
   },
   optionText: {
     fontSize: 13,
