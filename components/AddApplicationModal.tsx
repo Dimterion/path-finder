@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {
+  Alert,
   KeyboardAvoidingView,
   Modal,
   Platform,
@@ -20,6 +21,8 @@ type Props = {
   visible: boolean;
   onClose: () => void;
   onSave: (application: Omit<JobApplication, "id" | "number">) => void;
+  onDelete?: () => void;
+  initialData?: JobApplication;
 };
 
 const EMPTY_FORM = {
@@ -34,19 +37,50 @@ export default function AddApplicationModal({
   visible,
   onClose,
   onSave,
+  onDelete,
+  initialData,
 }: Props) {
   const [form, setForm] = useState(EMPTY_FORM);
+  const isEditing = !!initialData;
 
   useEffect(() => {
-    if (visible) setForm(EMPTY_FORM);
-  }, [visible]);
+    if (visible) {
+      setForm(
+        initialData
+          ? {
+              company: initialData.company,
+              role: initialData.role,
+              date: initialData.date,
+              status: initialData.status,
+              notes: initialData.notes,
+            }
+          : EMPTY_FORM,
+      );
+    }
+  }, [visible, initialData]);
 
   function handleSave() {
-    if (!form.company.trim() || !form.role.trim() || !form.date.trim()) {
-      return;
-    }
+    if (!form.company.trim() || !form.role.trim() || !form.date.trim()) return;
     onSave(form);
     onClose();
+  }
+
+  function handleDelete() {
+    Alert.alert(
+      "Delete application",
+      `Remove ${form.company} — ${form.role}?`,
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Delete",
+          style: "destructive",
+          onPress: () => {
+            onDelete?.();
+            onClose();
+          },
+        },
+      ],
+    );
   }
 
   return (
@@ -62,14 +96,22 @@ export default function AddApplicationModal({
           style={styles.sheetWrapper}
         >
           <View style={styles.sheet}>
-            {/* Handle bar */}
             <View style={styles.handle} />
 
             <ScrollView
               showsVerticalScrollIndicator={false}
               keyboardShouldPersistTaps="handled"
             >
-              <Text style={styles.title}>New Application</Text>
+              <View style={styles.titleRow}>
+                <Text style={styles.title}>
+                  {isEditing ? "Edit Application" : "New Application"}
+                </Text>
+                {isEditing && (
+                  <Pressable onPress={handleDelete} style={styles.deleteButton}>
+                    <Text style={styles.deleteText}>Delete</Text>
+                  </Pressable>
+                )}
+              </View>
 
               <Text style={styles.label}>Company *</Text>
               <TextInput
@@ -130,7 +172,9 @@ export default function AddApplicationModal({
                   ]}
                   onPress={handleSave}
                 >
-                  <Text style={styles.saveText}>Save</Text>
+                  <Text style={styles.saveText}>
+                    {isEditing ? "Update" : "Save"}
+                  </Text>
                 </Pressable>
               </View>
             </ScrollView>
@@ -147,9 +191,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(0,0,0,0.45)",
     justifyContent: "flex-end",
   },
-  sheetWrapper: {
-    justifyContent: "flex-end",
-  },
+  sheetWrapper: { justifyContent: "flex-end" },
   sheet: {
     backgroundColor: "#ffffff",
     borderTopLeftRadius: 20,
@@ -166,11 +208,27 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     marginBottom: 18,
   },
+  titleRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 18,
+  },
   title: {
     fontSize: 20,
     fontWeight: "700",
     color: "#111827",
-    marginBottom: 18,
+  },
+  deleteButton: {
+    paddingVertical: 6,
+    paddingHorizontal: 14,
+    borderRadius: 8,
+    backgroundColor: "#fee2e2",
+  },
+  deleteText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#991b1b",
   },
   label: {
     fontSize: 14,
@@ -215,9 +273,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: "#1f6feb",
   },
-  saveButtonDisabled: {
-    backgroundColor: "#93c5fd",
-  },
+  saveButtonDisabled: { backgroundColor: "#93c5fd" },
   saveText: {
     fontSize: 15,
     fontWeight: "600",

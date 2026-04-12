@@ -32,10 +32,15 @@ const STATUS_COLORS: Record<string, string> = {
   Withdrawn: "#6b7280",
 };
 
+function renumber(list: JobApplication[]): JobApplication[] {
+  return list.map((app, index) => ({ ...app, number: index + 1 }));
+}
+
 export default function TrackerScreen() {
   const [applications, setApplications] = useState<JobApplication[]>([]);
   const [loading, setLoading] = useState(true);
   const [modalVisible, setModalVisible] = useState(false);
+  const [selectedApp, setSelectedApp] = useState<JobApplication | undefined>();
 
   useEffect(() => {
     loadApplications().then((data) => {
@@ -50,9 +55,36 @@ export default function TrackerScreen() {
       id: randomUUID(),
       number: applications.length + 1,
     };
-    const updated = [...applications, newApp];
+    const updated = renumber([...applications, newApp]);
     setApplications(updated);
     await saveApplications(updated);
+  }
+
+  async function handleEdit(entry: Omit<JobApplication, "id" | "number">) {
+    if (!selectedApp) return;
+    const updated = renumber(
+      applications.map((app) =>
+        app.id === selectedApp.id ? { ...app, ...entry } : app,
+      ),
+    );
+    setApplications(updated);
+    await saveApplications(updated);
+  }
+
+  async function handleDelete(id: string) {
+    const updated = renumber(applications.filter((app) => app.id !== id));
+    setApplications(updated);
+    await saveApplications(updated);
+  }
+
+  function openAdd() {
+    setSelectedApp(undefined);
+    setModalVisible(true);
+  }
+
+  function openEdit(app: JobApplication) {
+    setSelectedApp(app);
+    setModalVisible(true);
   }
 
   if (loading) {
@@ -66,10 +98,7 @@ export default function TrackerScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.toolbar}>
-        <Pressable
-          style={styles.addButton}
-          onPress={() => setModalVisible(true)}
-        >
+        <Pressable style={styles.addButton} onPress={openAdd}>
           <Text style={styles.addButtonText}>+ Add application</Text>
         </Pressable>
       </View>
@@ -101,8 +130,9 @@ export default function TrackerScreen() {
               </View>
 
               {applications.map((app, index) => (
-                <View
+                <Pressable
                   key={app.id}
+                  onPress={() => openEdit(app)}
                   style={[
                     styles.row,
                     index % 2 === 0 ? styles.rowEven : styles.rowOdd,
@@ -142,7 +172,7 @@ export default function TrackerScreen() {
                       {app.notes || "—"}
                     </Text>
                   </View>
-                </View>
+                </Pressable>
               ))}
             </View>
           </ScrollView>
@@ -151,8 +181,13 @@ export default function TrackerScreen() {
 
       <AddApplicationModal
         visible={modalVisible}
-        onClose={() => setModalVisible(false)}
-        onSave={handleAdd}
+        onClose={() => {
+          setModalVisible(false);
+          setSelectedApp(undefined);
+        }}
+        onSave={selectedApp ? handleEdit : handleAdd}
+        onDelete={selectedApp ? () => handleDelete(selectedApp.id) : undefined}
+        initialData={selectedApp}
       />
     </View>
   );
