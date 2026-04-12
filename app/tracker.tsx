@@ -8,6 +8,7 @@ import {
   View,
 } from "react-native";
 import { randomUUID } from "expo-crypto";
+import { exportApplicationsCsv } from "../utils/exportCsv";
 import {
   type JobApplication,
   loadApplications,
@@ -101,6 +102,15 @@ export default function TrackerScreen() {
         <Pressable style={styles.addButton} onPress={openAdd}>
           <Text style={styles.addButtonText}>+ Add application</Text>
         </Pressable>
+
+        {applications.length > 0 && (
+          <Pressable
+            style={styles.exportButton}
+            onPress={() => exportApplicationsCsv(applications)}
+          >
+            <Text style={styles.exportButtonText}>Export CSV</Text>
+          </Pressable>
+        )}
       </View>
 
       {applications.length === 0 ? (
@@ -196,7 +206,11 @@ export default function TrackerScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#f5f7fb" },
   centered: { flex: 1, justifyContent: "center", alignItems: "center" },
-  toolbar: { padding: 16, paddingBottom: 12 },
+  toolbar: {
+    flexDirection: "row",
+    padding: 16,
+    paddingBottom: 12,
+  },
   addButton: {
     backgroundColor: "#1f6feb",
     paddingVertical: 12,
@@ -205,6 +219,19 @@ const styles = StyleSheet.create({
     alignSelf: "flex-start",
   },
   addButtonText: { color: "#ffffff", fontSize: 15, fontWeight: "600" },
+  exportButton: {
+    paddingVertical: 12,
+    paddingHorizontal: 18,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#1f6feb",
+    marginLeft: 10,
+  },
+  exportButtonText: {
+    color: "#1f6feb",
+    fontSize: 15,
+    fontWeight: "600",
+  },
   emptyState: {
     flex: 1,
     justifyContent: "center",
