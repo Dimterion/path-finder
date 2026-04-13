@@ -18,6 +18,7 @@ import {
   makeWorkEntry,
   saveCv,
 } from "../data/cv";
+import { exportCvPdf } from "../utils/exportPdf";
 import SectionHeader from "../components/SectionHeader";
 
 const SECTION_KEYS = [
@@ -373,7 +374,7 @@ export default function BuilderScreen() {
       )}
 
       {/* Export */}
-      <Pressable style={styles.exportButton}>
+      <Pressable style={styles.exportButton} onPress={() => exportCvPdf(cv)}>
         <Text style={styles.exportButtonText}>Export PDF</Text>
       </Pressable>
     </ScrollView>
