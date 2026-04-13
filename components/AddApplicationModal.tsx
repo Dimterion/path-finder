@@ -61,6 +61,16 @@ export default function AddApplicationModal({
 
   function handleSave() {
     if (!form.company.trim() || !form.role.trim() || !form.date.trim()) return;
+
+    const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+    if (!dateRegex.test(form.date)) {
+      Alert.alert(
+        "Invalid date",
+        "Please use the format YYYY-MM-DD, e.g. 2026-04-12.",
+      );
+      return;
+    }
+
     onSave(form);
     onClose();
   }
@@ -134,7 +144,7 @@ export default function AddApplicationModal({
               <Text style={styles.label}>Date *</Text>
               <TextInput
                 style={styles.input}
-                placeholder="e.g. 2026-04-12"
+                placeholder="YYYY-MM-DD"
                 placeholderTextColor="#9ca3af"
                 value={form.date}
                 onChangeText={(v) => setForm({ ...form, date: v })}
