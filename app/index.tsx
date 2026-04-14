@@ -15,7 +15,7 @@ export default function HomeScreen() {
         </Pressable>
       </Link>
 
-      <Link href="/builder" asChild>
+      <Link href="/cv-builder" asChild>
         <Pressable style={styles.buttonSecondary}>
           <Text style={styles.buttonText}>CV builder</Text>
         </Pressable>

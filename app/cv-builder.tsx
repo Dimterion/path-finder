@@ -32,7 +32,7 @@ const SECTION_KEYS = [
 
 type SectionKey = (typeof SECTION_KEYS)[number];
 
-export default function BuilderScreen() {
+export default function CVBuilderScreen() {
   const [cv, setCv] = useState<CvData>(EMPTY_CV);
   const [loading, setLoading] = useState(true);
   const [expanded, setExpanded] = useState<Record<SectionKey, boolean>>({
