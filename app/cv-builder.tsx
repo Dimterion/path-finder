@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import {
   ActivityIndicator,
+  Alert,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -84,7 +85,19 @@ export default function CVBuilderScreen() {
   }
 
   function removeExperience(id: string) {
-    updateCv({ experience: cv.experience.filter((e) => e.id !== id) });
+    Alert.alert(
+      "Remove experience",
+      "Are you sure you want to remove this entry? This cannot be undone.",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Remove",
+          style: "destructive",
+          onPress: () =>
+            updateCv({ experience: cv.experience.filter((e) => e.id !== id) }),
+        },
+      ],
+    );
   }
 
   function addEducation() {
@@ -107,7 +120,19 @@ export default function CVBuilderScreen() {
   }
 
   function removeEducation(id: string) {
-    updateCv({ education: cv.education.filter((e) => e.id !== id) });
+    Alert.alert(
+      "Remove education",
+      "Are you sure you want to remove this entry? This cannot be undone.",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Remove",
+          style: "destructive",
+          onPress: () =>
+            updateCv({ education: cv.education.filter((e) => e.id !== id) }),
+        },
+      ],
+    );
   }
 
   if (loading) {
