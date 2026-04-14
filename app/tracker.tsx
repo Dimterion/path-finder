@@ -100,7 +100,7 @@ export default function TrackerScreen() {
     <View style={styles.container}>
       <View style={styles.toolbar}>
         <Pressable style={styles.addButton} onPress={openAdd}>
-          <Text style={styles.addButtonText}>+ Add application</Text>
+          <Text style={styles.addButtonText}>+ Add entry</Text>
         </Pressable>
 
         {applications.length > 0 && (

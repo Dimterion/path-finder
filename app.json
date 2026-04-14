@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "pathfinder",
+    "name": "Pathfinder",
     "slug": "pathfinder",
     "scheme": "pathfinder",
     "version": "1.0.0",
@@ -22,7 +22,8 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.dimterion.pathfinder"
     },
     "web": {
       "favicon": "./assets/favicon.png"

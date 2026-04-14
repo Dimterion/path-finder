@@ -5,23 +5,25 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Pathfinder</Text>
-      <Text style={styles.subtitle}>A simple app.</Text>
+      <Text style={styles.subtitle}>
+        A simple app to organize your job search activities.
+      </Text>
 
       <Link href="/platforms" asChild>
         <Pressable style={styles.button}>
-          <Text style={styles.buttonText}>Explore platforms</Text>
+          <Text style={styles.buttonText}>Job search platforms</Text>
         </Pressable>
       </Link>
 
       <Link href="/builder" asChild>
         <Pressable style={styles.buttonSecondary}>
-          <Text style={styles.buttonText}>Open builder</Text>
+          <Text style={styles.buttonText}>CV builder</Text>
         </Pressable>
       </Link>
 
       <Link href="/tracker" asChild>
         <Pressable style={styles.buttonTertiary}>
-          <Text style={styles.buttonText}>Track applications</Text>
+          <Text style={styles.buttonText}>Application tracker</Text>
         </Pressable>
       </Link>
     </View>
@@ -33,7 +35,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     padding: 24,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#f5f7fb",
   },
   title: {
     fontSize: 32,
