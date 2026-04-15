@@ -20,8 +20,8 @@ const COLUMNS = [
   { key: "number", label: "#", width: 48 },
   { key: "company", label: "Company", width: 140 },
   { key: "role", label: "Role", width: 140 },
-  { key: "date", label: "Date", width: 100 },
-  { key: "status", label: "Status", width: 110 },
+  { key: "date", label: "Date", width: 120 },
+  { key: "status", label: "Status", width: 120 },
   { key: "notes", label: "Notes", width: 200 },
 ];
 

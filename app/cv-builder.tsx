@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import {
   ActivityIndicator,
   Alert,
+  KeyboardAvoidingView,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -144,265 +146,276 @@ export default function CVBuilderScreen() {
   }
 
   return (
-    <ScrollView
-      style={styles.container}
-      contentContainerStyle={styles.content}
-      keyboardShouldPersistTaps="handled"
+    <KeyboardAvoidingView
+      style={{ flex: 1 }}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
-      {/* Personal Info */}
-      <SectionHeader
-        title="Personal Info"
-        expanded={expanded.personal}
-        onToggle={() => toggleSection("personal")}
-      />
-      {expanded.personal && (
-        <View style={styles.section}>
-          <Field
-            label="Full Name"
-            value={cv.name}
-            onChangeText={(v) => updateCv({ name: v })}
-            placeholder="e.g. Jane Smith"
-          />
-          <Field
-            label="Job Title"
-            value={cv.title}
-            onChangeText={(v) => updateCv({ title: v })}
-            placeholder="e.g. Frontend Developer"
-          />
-          <Field
-            label="Email"
-            value={cv.email}
-            onChangeText={(v) => updateCv({ email: v })}
-            placeholder="e.g. jane@email.com"
-            keyboardType="email-address"
-          />
-          <Field
-            label="Phone"
-            value={cv.phone}
-            onChangeText={(v) => updateCv({ phone: v })}
-            placeholder="e.g. +33 6 12 34 56 78"
-            keyboardType="phone-pad"
-          />
-          <Field
-            label="Address"
-            value={cv.address}
-            onChangeText={(v) => updateCv({ address: v })}
-            placeholder="e.g. Paris, France"
-            last
-          />
-        </View>
-      )}
+      <ScrollView
+        style={styles.container}
+        contentContainerStyle={styles.content}
+        keyboardShouldPersistTaps="handled"
+      >
+        {/* Personal Info */}
+        <SectionHeader
+          title="Personal Info"
+          expanded={expanded.personal}
+          onToggle={() => toggleSection("personal")}
+        />
+        {expanded.personal && (
+          <View style={styles.section}>
+            <Field
+              label="Full Name"
+              value={cv.name}
+              onChangeText={(v) => updateCv({ name: v })}
+              placeholder="e.g. Jane Smith"
+            />
+            <Field
+              label="Job Title"
+              value={cv.title}
+              onChangeText={(v) => updateCv({ title: v })}
+              placeholder="e.g. Frontend Developer"
+            />
+            <Field
+              label="Email"
+              value={cv.email}
+              onChangeText={(v) => updateCv({ email: v })}
+              placeholder="e.g. jane@email.com"
+              keyboardType="email-address"
+            />
+            <Field
+              label="Phone"
+              value={cv.phone}
+              onChangeText={(v) => updateCv({ phone: v })}
+              placeholder="e.g. +33 6 12 34 56 78"
+              keyboardType="phone-pad"
+            />
+            <Field
+              label="Address"
+              value={cv.address}
+              onChangeText={(v) => updateCv({ address: v })}
+              placeholder="e.g. Paris, France"
+              last
+            />
+          </View>
+        )}
 
-      {/* Summary */}
-      <SectionHeader
-        title="Summary"
-        expanded={expanded.summary}
-        onToggle={() => toggleSection("summary")}
-      />
-      {expanded.summary && (
-        <View style={styles.section}>
-          <Field
-            label="Summary"
-            value={cv.summary}
-            onChangeText={(v) => updateCv({ summary: v })}
-            placeholder="A brief description of yourself..."
-            multiline
-            last
-          />
-        </View>
-      )}
+        {/* Summary */}
+        <SectionHeader
+          title="Summary"
+          expanded={expanded.summary}
+          onToggle={() => toggleSection("summary")}
+        />
+        {expanded.summary && (
+          <View style={styles.section}>
+            <Field
+              label="Summary"
+              value={cv.summary}
+              onChangeText={(v) => updateCv({ summary: v })}
+              placeholder="A brief description of yourself..."
+              multiline
+              last
+            />
+          </View>
+        )}
 
-      {/* Skills */}
-      <SectionHeader
-        title="Skills"
-        expanded={expanded.skills}
-        onToggle={() => toggleSection("skills")}
-      />
-      {expanded.skills && (
-        <View style={styles.section}>
-          <Field
-            label="Skills"
-            value={cv.skills}
-            onChangeText={(v) => updateCv({ skills: v })}
-            placeholder="e.g. React, TypeScript, Node.js"
-            multiline
-            last
-          />
-        </View>
-      )}
+        {/* Skills */}
+        <SectionHeader
+          title="Skills"
+          expanded={expanded.skills}
+          onToggle={() => toggleSection("skills")}
+        />
+        {expanded.skills && (
+          <View style={styles.section}>
+            <Field
+              label="Skills"
+              value={cv.skills}
+              onChangeText={(v) => updateCv({ skills: v })}
+              placeholder="e.g. React, TypeScript, Node.js"
+              multiline
+              last
+            />
+          </View>
+        )}
 
-      {/* Work Experience */}
-      <SectionHeader
-        title="Work Experience"
-        expanded={expanded.experience}
-        onToggle={() => toggleSection("experience")}
-      />
-      {expanded.experience && (
-        <View style={styles.section}>
-          {cv.experience.map((entry, index) => (
-            <View key={entry.id} style={styles.entryCard}>
-              <View style={styles.entryHeader}>
-                <Text style={styles.entryTitle}>
-                  {entry.role || "New Entry"}
-                  {entry.company ? ` — ${entry.company}` : ""}
-                </Text>
-                <Pressable
-                  onPress={() => removeExperience(entry.id)}
-                  style={styles.removeButton}
-                >
-                  <Text style={styles.removeText}>Remove</Text>
-                </Pressable>
+        {/* Work Experience */}
+        <SectionHeader
+          title="Work Experience"
+          expanded={expanded.experience}
+          onToggle={() => toggleSection("experience")}
+        />
+        {expanded.experience && (
+          <View style={styles.section}>
+            {cv.experience.map((entry, index) => (
+              <View key={entry.id} style={styles.entryCard}>
+                <View style={styles.entryHeader}>
+                  <Text style={styles.entryTitle}>
+                    {entry.role || "New Entry"}
+                    {entry.company ? ` — ${entry.company}` : ""}
+                  </Text>
+                  <Pressable
+                    onPress={() => removeExperience(entry.id)}
+                    style={styles.removeButton}
+                  >
+                    <Text style={styles.removeText}>Remove</Text>
+                  </Pressable>
+                </View>
+                <Field
+                  label="Company"
+                  value={entry.company}
+                  onChangeText={(v) =>
+                    updateExperience(entry.id, { company: v })
+                  }
+                  placeholder="e.g. Acme Corp"
+                />
+                <Field
+                  label="Role"
+                  value={entry.role}
+                  onChangeText={(v) => updateExperience(entry.id, { role: v })}
+                  placeholder="e.g. Frontend Developer"
+                />
+                <Field
+                  label="Start Date"
+                  value={entry.startDate}
+                  onChangeText={(v) =>
+                    updateExperience(entry.id, { startDate: v })
+                  }
+                  placeholder="e.g. 01-2023"
+                />
+                <Field
+                  label="End Date"
+                  value={entry.endDate}
+                  onChangeText={(v) =>
+                    updateExperience(entry.id, { endDate: v })
+                  }
+                  placeholder="e.g. 03-2026 or Present"
+                />
+                <Field
+                  label="Description"
+                  value={entry.description}
+                  onChangeText={(v) =>
+                    updateExperience(entry.id, { description: v })
+                  }
+                  placeholder="Key responsibilities and achievements..."
+                  multiline
+                  last
+                />
               </View>
-              <Field
-                label="Company"
-                value={entry.company}
-                onChangeText={(v) => updateExperience(entry.id, { company: v })}
-                placeholder="e.g. Acme Corp"
-              />
-              <Field
-                label="Role"
-                value={entry.role}
-                onChangeText={(v) => updateExperience(entry.id, { role: v })}
-                placeholder="e.g. Frontend Developer"
-              />
-              <Field
-                label="Start Date"
-                value={entry.startDate}
-                onChangeText={(v) =>
-                  updateExperience(entry.id, { startDate: v })
-                }
-                placeholder="e.g. 01-2023"
-              />
-              <Field
-                label="End Date"
-                value={entry.endDate}
-                onChangeText={(v) => updateExperience(entry.id, { endDate: v })}
-                placeholder="e.g. 03-2026 or Present"
-              />
-              <Field
-                label="Description"
-                value={entry.description}
-                onChangeText={(v) =>
-                  updateExperience(entry.id, { description: v })
-                }
-                placeholder="Key responsibilities and achievements..."
-                multiline
-                last
-              />
-            </View>
-          ))}
-          <Pressable style={styles.addEntryButton} onPress={addExperience}>
-            <Text style={styles.addEntryText}>+ Add experience</Text>
-          </Pressable>
-        </View>
-      )}
+            ))}
+            <Pressable style={styles.addEntryButton} onPress={addExperience}>
+              <Text style={styles.addEntryText}>+ Add experience</Text>
+            </Pressable>
+          </View>
+        )}
 
-      {/* Education */}
-      <SectionHeader
-        title="Education"
-        expanded={expanded.education}
-        onToggle={() => toggleSection("education")}
-      />
-      {expanded.education && (
-        <View style={styles.section}>
-          {cv.education.map((entry) => (
-            <View key={entry.id} style={styles.entryCard}>
-              <View style={styles.entryHeader}>
-                <Text style={styles.entryTitle}>
-                  {entry.degree || "New Entry"}
-                  {entry.institution ? ` — ${entry.institution}` : ""}
-                </Text>
-                <Pressable
-                  onPress={() => removeEducation(entry.id)}
-                  style={styles.removeButton}
-                >
-                  <Text style={styles.removeText}>Remove</Text>
-                </Pressable>
+        {/* Education */}
+        <SectionHeader
+          title="Education"
+          expanded={expanded.education}
+          onToggle={() => toggleSection("education")}
+        />
+        {expanded.education && (
+          <View style={styles.section}>
+            {cv.education.map((entry) => (
+              <View key={entry.id} style={styles.entryCard}>
+                <View style={styles.entryHeader}>
+                  <Text style={styles.entryTitle}>
+                    {entry.degree || "New Entry"}
+                    {entry.institution ? ` — ${entry.institution}` : ""}
+                  </Text>
+                  <Pressable
+                    onPress={() => removeEducation(entry.id)}
+                    style={styles.removeButton}
+                  >
+                    <Text style={styles.removeText}>Remove</Text>
+                  </Pressable>
+                </View>
+                <Field
+                  label="Institution"
+                  value={entry.institution}
+                  onChangeText={(v) =>
+                    updateEducation(entry.id, { institution: v })
+                  }
+                  placeholder="e.g. University of Paris"
+                />
+                <Field
+                  label="Degree"
+                  value={entry.degree}
+                  onChangeText={(v) => updateEducation(entry.id, { degree: v })}
+                  placeholder="e.g. BSc Computer Science"
+                />
+                <Field
+                  label="Start Date"
+                  value={entry.startDate}
+                  onChangeText={(v) =>
+                    updateEducation(entry.id, { startDate: v })
+                  }
+                  placeholder="e.g. 09-2019"
+                />
+                <Field
+                  label="End Date"
+                  value={entry.endDate}
+                  onChangeText={(v) =>
+                    updateEducation(entry.id, { endDate: v })
+                  }
+                  placeholder="e.g. 06-2022 or Present"
+                />
+                <Field
+                  label="Description"
+                  value={entry.description}
+                  onChangeText={(v) =>
+                    updateEducation(entry.id, { description: v })
+                  }
+                  placeholder="Relevant coursework, achievements..."
+                  multiline
+                  last
+                />
               </View>
-              <Field
-                label="Institution"
-                value={entry.institution}
-                onChangeText={(v) =>
-                  updateEducation(entry.id, { institution: v })
-                }
-                placeholder="e.g. University of Paris"
-              />
-              <Field
-                label="Degree"
-                value={entry.degree}
-                onChangeText={(v) => updateEducation(entry.id, { degree: v })}
-                placeholder="e.g. BSc Computer Science"
-              />
-              <Field
-                label="Start Date"
-                value={entry.startDate}
-                onChangeText={(v) =>
-                  updateEducation(entry.id, { startDate: v })
-                }
-                placeholder="e.g. 09-2019"
-              />
-              <Field
-                label="End Date"
-                value={entry.endDate}
-                onChangeText={(v) => updateEducation(entry.id, { endDate: v })}
-                placeholder="e.g. 06-2022 or Present"
-              />
-              <Field
-                label="Description"
-                value={entry.description}
-                onChangeText={(v) =>
-                  updateEducation(entry.id, { description: v })
-                }
-                placeholder="Relevant coursework, achievements..."
-                multiline
-                last
-              />
-            </View>
-          ))}
-          <Pressable style={styles.addEntryButton} onPress={addEducation}>
-            <Text style={styles.addEntryText}>+ Add education</Text>
-          </Pressable>
-        </View>
-      )}
+            ))}
+            <Pressable style={styles.addEntryButton} onPress={addEducation}>
+              <Text style={styles.addEntryText}>+ Add education</Text>
+            </Pressable>
+          </View>
+        )}
 
-      {/* Links */}
-      <SectionHeader
-        title="Links"
-        expanded={expanded.links}
-        onToggle={() => toggleSection("links")}
-      />
-      {expanded.links && (
-        <View style={styles.section}>
-          <Field
-            label="LinkedIn"
-            value={cv.linkedin}
-            onChangeText={(v) => updateCv({ linkedin: v })}
-            placeholder="https://linkedin.com/in/yourname"
-            keyboardType="url"
-          />
-          <Field
-            label="GitHub"
-            value={cv.github}
-            onChangeText={(v) => updateCv({ github: v })}
-            placeholder="https://github.com/yourname"
-            keyboardType="url"
-          />
-          <Field
-            label="Website"
-            value={cv.website}
-            onChangeText={(v) => updateCv({ website: v })}
-            placeholder="https://yoursite.com"
-            keyboardType="url"
-            last
-          />
-        </View>
-      )}
+        {/* Links */}
+        <SectionHeader
+          title="Links"
+          expanded={expanded.links}
+          onToggle={() => toggleSection("links")}
+        />
+        {expanded.links && (
+          <View style={styles.section}>
+            <Field
+              label="LinkedIn"
+              value={cv.linkedin}
+              onChangeText={(v) => updateCv({ linkedin: v })}
+              placeholder="https://linkedin.com/in/yourname"
+              keyboardType="url"
+            />
+            <Field
+              label="GitHub"
+              value={cv.github}
+              onChangeText={(v) => updateCv({ github: v })}
+              placeholder="https://github.com/yourname"
+              keyboardType="url"
+            />
+            <Field
+              label="Website"
+              value={cv.website}
+              onChangeText={(v) => updateCv({ website: v })}
+              placeholder="https://yoursite.com"
+              keyboardType="url"
+              last
+            />
+          </View>
+        )}
 
-      {/* Export */}
-      <Pressable style={styles.exportButton} onPress={() => exportCvPdf(cv)}>
-        <Text style={styles.exportButtonText}>Export PDF</Text>
-      </Pressable>
-    </ScrollView>
+        {/* Export */}
+        <Pressable style={styles.exportButton} onPress={() => exportCvPdf(cv)}>
+          <Text style={styles.exportButtonText}>Export PDF</Text>
+        </Pressable>
+      </ScrollView>
+    </KeyboardAvoidingView>
   );
 }
 
