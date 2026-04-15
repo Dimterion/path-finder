@@ -112,6 +112,9 @@ export default function TrackerScreen() {
           </Pressable>
         )}
       </View>
+      <Text style={styles.hintText}>
+        Tap on your applications to edit or delete them.
+      </Text>
 
       {applications.length === 0 ? (
         <View style={styles.emptyState}>
@@ -232,6 +235,13 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "600",
   },
+  hintText: {
+    fontSize: 12,
+    lineHeight: 22,
+    color: "#6b7280",
+    marginBottom: 2,
+    marginLeft: 2,
+  },
   emptyState: {
     flex: 1,
     justifyContent: "center",
@@ -278,7 +288,13 @@ const styles = StyleSheet.create({
     borderRadius: 999,
     paddingVertical: 4,
     paddingHorizontal: 8,
-    alignSelf: "flex-start",
+    alignSelf: "center",
+    minWidth: 100,
   },
-  statusText: { fontSize: 12, color: "#ffffff", fontWeight: "600" },
+  statusText: {
+    fontSize: 12,
+    color: "#ffffff",
+    fontWeight: "600",
+    textAlign: "center",
+  },
 });
