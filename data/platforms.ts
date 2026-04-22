@@ -8,7 +8,7 @@ export type JobPlatform = {
   title: string;
   websiteUrl: string;
   description: string;
-  imageUrl?: string;
+  image?: ReturnType<typeof require>;
   tags?: string[];
   extraLinks?: PlatformLink[];
 };
@@ -20,7 +20,7 @@ export const platforms: JobPlatform[] = [
     websiteUrl: "https://www.linkedin.com/",
     description:
       "Main starting point. The biggest platform. Create the basis of your profile here and use it further as a template for other platforms, personal profiles, job applications.",
-    imageUrl: "https://api.companyenrich.com/logo/linkedin.com",
+    image: require("../assets/platforms/linkedin.jpg"),
     tags: ["General", "Social", "Profile"],
     extraLinks: [
       { label: "Help Center", url: "https://www.linkedin.com/help/linkedin" },
@@ -32,7 +32,7 @@ export const platforms: JobPlatform[] = [
     websiteUrl: "https://www.welcometothejungle.com/",
     description:
       "A potentially good second option to visit. Narrowed down search (region + sphere). Additional information about the companies. Merged with Otta, hence it might be worth it checking their dedicated app page (see links below) for personal job recommendations.",
-    imageUrl: "https://api.companyenrich.com/logo/welcometothejungle.com",
+    image: require("../assets/platforms/welcometothejungle.jpg"),
     tags: ["Tailored search", "Companies details"],
     extraLinks: [
       {
@@ -47,7 +47,7 @@ export const platforms: JobPlatform[] = [
     websiteUrl: "https://www.glassdoor.com/",
     description:
       "Many job offers. Additional information about companies (including employees reviews). Will send all kinds of offers once subscribed (might need tailoring to not get overwhelmed). In the process of merging with Indeed (both still have their separate pages currently, but better check both sites/profiles for details).",
-    imageUrl: "https://api.companyenrich.com/logo/glassdoor.com",
+    image: require("../assets/platforms/glassdoor.jpg"),
     tags: ["Various offers daily", "Companies details"],
     extraLinks: [
       {

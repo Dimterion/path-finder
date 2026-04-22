@@ -27,9 +27,7 @@ async function openExternalLink(url: string) {
 export default function PlatformCard({ item }: PlatformCardProps) {
   return (
     <View style={styles.card}>
-      {item.imageUrl ? (
-        <Image source={{ uri: item.imageUrl }} style={styles.image} />
-      ) : null}
+      {item.image ? <Image source={item.image} style={styles.image} /> : null}
 
       <Text style={styles.title}>{item.title}</Text>
       <Text style={styles.description}>{item.description}</Text>
