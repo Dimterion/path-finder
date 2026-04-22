@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "Pathfinder",
+    "description": "A simple app to organize your job search activities.",
     "slug": "pathfinder",
     "scheme": "pathfinder",
     "version": "1.0.0",
