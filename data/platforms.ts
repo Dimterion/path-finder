@@ -15,57 +15,45 @@ export type JobPlatform = {
 
 export const platforms: JobPlatform[] = [
   {
-    id: "platform-1",
-    title: "Lorem Jobs",
-    websiteUrl: "https://example.com/lorem-jobs",
+    id: "01_linkedIn",
+    title: "LinkedIn",
+    websiteUrl: "https://www.linkedin.com/",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
-    imageUrl: "https://picsum.photos/seed/platform1/300/180",
-    tags: ["General", "Remote", "Entry Level"],
+      "Main starting point. The biggest platform. Create the basis of your profile here and use it further as a template for other platforms, personal profiles, job applications.",
+    imageUrl: "https://api.companyenrich.com/logo/linkedin.com",
+    tags: ["General", "Social", "Profile"],
     extraLinks: [
-      { label: "Help Center", url: "https://example.com/lorem-jobs/help" },
-      { label: "Career Tips", url: "https://example.com/lorem-jobs/tips" },
+      { label: "Help Center", url: "https://www.linkedin.com/help/linkedin" },
     ],
   },
   {
-    id: "platform-2",
-    title: "Ipsum Careers",
-    websiteUrl: "https://example.com/ipsum-careers",
+    id: "02_welcome_to_the_jungle",
+    title: "Welcome to the Jungle",
+    websiteUrl: "https://www.welcometothejungle.com/",
     description:
-      "Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.",
-    imageUrl: "https://picsum.photos/seed/platform2/300/180",
-    tags: ["Tech", "Internships"],
+      "A potentially good second option to visit. Narrowed down search (region + sphere). Additional information about the companies. Merged with Otta, hence it might be worth it checking their dedicated app page (see links below) for personal job recommendations.",
+    imageUrl: "https://api.companyenrich.com/logo/welcometothejungle.com",
+    tags: ["Tailored search", "Companies details"],
     extraLinks: [
-      { label: "Blog", url: "https://example.com/ipsum-careers/blog" },
+      {
+        label: "Personal search results (account required)",
+        url: "https://app.welcometothejungle.com/",
+      },
     ],
   },
   {
-    id: "platform-3",
-    title: "Dolor Work",
-    websiteUrl: "https://example.com/dolor-work",
+    id: "03_glassdoor",
+    title: "Glassdoor",
+    websiteUrl: "https://www.glassdoor.com/",
     description:
-      "Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
-    tags: ["Freelance", "Creative"],
-  },
-  {
-    id: "platform-4",
-    title: "Sit Talent",
-    websiteUrl: "https://example.com/sit-talent",
-    description:
-      "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor.",
-    imageUrl: "https://picsum.photos/seed/platform4/300/180",
-    tags: ["Corporate", "Full Time"],
+      "Many job offers. Additional information about companies (including employees reviews). Will send all kinds of offers once subscribed (might need tailoring to not get overwhelmed). In the process of merging with Indeed (both still have their separate pages currently, but better check both sites/profiles for details).",
+    imageUrl: "https://api.companyenrich.com/logo/glassdoor.com",
+    tags: ["Various offers daily", "Companies details"],
     extraLinks: [
-      { label: "Guides", url: "https://example.com/sit-talent/guides" },
-      { label: "Support", url: "https://example.com/sit-talent/support" },
+      {
+        label: "Indeed",
+        url: "https://indeed.com/",
+      },
     ],
-  },
-  {
-    id: "platform-5",
-    title: "Amet Finder",
-    websiteUrl: "https://example.com/amet-finder",
-    description:
-      "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.",
-    tags: ["Students", "Part Time", "Local Jobs"],
   },
 ];
