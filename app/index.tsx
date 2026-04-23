@@ -26,6 +26,12 @@ export default function HomeScreen() {
           <Text style={styles.buttonText}>Application tracker</Text>
         </Pressable>
       </Link>
+
+      <Link href="/activities" asChild>
+        <Pressable style={styles.buttonTertiary}>
+          <Text style={styles.buttonText}>Activities</Text>
+        </Pressable>
+      </Link>
     </View>
   );
 }
