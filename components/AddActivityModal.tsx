@@ -12,7 +12,7 @@ import {
   View,
 } from "react-native";
 import { type ActivityStatus, type Activity } from "../data/activities";
-// import StatusPicker from "./StatusPicker";
+import ActivityStatusPicker from "./ActivityStatusPicker";
 
 type Props = {
   visible: boolean;
@@ -25,7 +25,7 @@ type Props = {
 const EMPTY_FORM = {
   activity: "",
   date: "",
-  status: "In progress" as ActivityStatus,
+  status: "Active" as ActivityStatus,
   notes: "",
 };
 
@@ -55,8 +55,7 @@ export default function AddActivityModal({
   }, [visible, initialData]);
 
   function handleSave() {
-    if (!form.activity.trim() || !form.activity.trim() || !form.date.trim())
-      return;
+    if (!form.activity.trim() || !form.date.trim()) return;
 
     const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
     if (!dateRegex.test(form.date)) {
@@ -133,11 +132,11 @@ export default function AddActivityModal({
                 onChangeText={(v) => setForm({ ...form, date: v })}
               />
 
-              {/* <Text style={styles.label}>Status</Text>
-              <StatusPicker
+              <Text style={styles.label}>Status</Text>
+              <ActivityStatusPicker
                 value={form.status}
                 onChange={(v) => setForm({ ...form, status: v })}
-              /> */}
+              />
 
               <Text style={[styles.label, { marginTop: 14 }]}>Notes</Text>
               <TextInput

@@ -8,13 +8,13 @@ import {
   View,
 } from "react-native";
 import { randomUUID } from "expo-crypto";
-// import { exportActivitiesCsv } from "../utils/exportCsv";
+import { exportActivitiesCsv } from "../utils/exportCsv";
 import {
   type Activity,
   loadActivities,
   saveActivities,
 } from "../data/activities";
-import AddApplicationModal from "../components/AddApplicationModal";
+import AddActivityModal from "../components/AddActivityModal";
 
 const COLUMNS = [
   { key: "number", label: "#", width: 48 },
@@ -25,21 +25,21 @@ const COLUMNS = [
 ];
 
 const STATUS_COLORS: Record<string, string> = {
-  InProgress: "#1d4ed8",
+  Active: "#1d4ed8",
   Completed: "#166534",
   Canceled: "#991b1b",
-  OnHold: "#6b7280",
+  Paused: "#6b7280",
 };
 
 function renumber(list: Activity[]): Activity[] {
-  return list.map((app, index) => ({ ...app, number: index + 1 }));
+  return list.map((act, index) => ({ ...act, number: index + 1 }));
 }
 
 export default function ActivitiesScreen() {
   const [activities, setActivities] = useState<Activity[]>([]);
   const [loading, setLoading] = useState(true);
   const [modalVisible, setModalVisible] = useState(false);
-  const [selectedApp, setSelectedApp] = useState<Activity | undefined>();
+  const [selectedAct, setSelectedAct] = useState<Activity | undefined>();
 
   useEffect(() => {
     loadActivities().then((data) => {
@@ -49,21 +49,21 @@ export default function ActivitiesScreen() {
   }, []);
 
   async function handleAdd(entry: Omit<Activity, "id" | "number">) {
-    const newApp: Activity = {
+    const newAct: Activity = {
       ...entry,
       id: randomUUID(),
       number: activities.length + 1,
     };
-    const updated = renumber([...activities, newApp]);
+    const updated = renumber([...activities, newAct]);
     setActivities(updated);
     await saveActivities(updated);
   }
 
   async function handleEdit(entry: Omit<Activity, "id" | "number">) {
-    if (!selectedApp) return;
+    if (!selectedAct) return;
     const updated = renumber(
-      activities.map((app) =>
-        app.id === selectedApp.id ? { ...app, ...entry } : app,
+      activities.map((act) =>
+        act.id === selectedAct.id ? { ...act, ...entry } : act,
       ),
     );
     setActivities(updated);
@@ -71,18 +71,18 @@ export default function ActivitiesScreen() {
   }
 
   async function handleDelete(id: string) {
-    const updated = renumber(activities.filter((app) => app.id !== id));
+    const updated = renumber(activities.filter((act) => act.id !== id));
     setActivities(updated);
     await saveActivities(updated);
   }
 
   function openAdd() {
-    setSelectedApp(undefined);
+    setSelectedAct(undefined);
     setModalVisible(true);
   }
 
-  function openEdit(app: Activity) {
-    setSelectedApp(app);
+  function openEdit(act: Activity) {
+    setSelectedAct(act);
     setModalVisible(true);
   }
 
@@ -101,14 +101,14 @@ export default function ActivitiesScreen() {
           <Text style={styles.addButtonText}>+ Add entry</Text>
         </Pressable>
 
-        {/* {activities.length > 0 && (
+        {activities.length > 0 && (
           <Pressable
             style={styles.exportButton}
             onPress={() => exportActivitiesCsv(activities)}
           >
             <Text style={styles.exportButtonText}>Export CSV</Text>
           </Pressable>
-        )} */}
+        )}
       </View>
       <Text style={styles.hintText}>
         Tap on your activities to edit or delete them.
@@ -140,25 +140,25 @@ export default function ActivitiesScreen() {
                 ))}
               </View>
 
-              {activities.map((app, index) => (
+              {activities.map((act, index) => (
                 <Pressable
-                  key={app.id}
-                  onPress={() => openEdit(app)}
+                  key={act.id}
+                  onPress={() => openEdit(act)}
                   style={[
                     styles.row,
                     index % 2 === 0 ? styles.rowEven : styles.rowOdd,
                   ]}
                 >
                   <View style={[styles.cell, { width: COLUMNS[0].width }]}>
-                    <Text style={styles.cellText}>{app.number}</Text>
+                    <Text style={styles.cellText}>{act.number}</Text>
                   </View>
                   <View style={[styles.cell, { width: COLUMNS[1].width }]}>
                     <Text style={styles.cellText} numberOfLines={2}>
-                      {app.activity}
+                      {act.activity}
                     </Text>
                   </View>
                   <View style={[styles.cell, { width: COLUMNS[3].width }]}>
-                    <Text style={styles.cellText}>{app.date}</Text>
+                    <Text style={styles.cellText}>{act.date}</Text>
                   </View>
                   <View style={[styles.cell, { width: COLUMNS[4].width }]}>
                     <View
@@ -166,16 +166,16 @@ export default function ActivitiesScreen() {
                         styles.statusBadge,
                         {
                           backgroundColor:
-                            STATUS_COLORS[app.status] ?? "#6b7280",
+                            STATUS_COLORS[act.status] ?? "#6b7280",
                         },
                       ]}
                     >
-                      <Text style={styles.statusText}>{app.status}</Text>
+                      <Text style={styles.statusText}>{act.status}</Text>
                     </View>
                   </View>
-                  <View style={[styles.cell, { width: COLUMNS[5].width }]}>
+                  <View style={[styles.cell, { width: COLUMNS[4].width }]}>
                     <Text style={styles.cellText} numberOfLines={3}>
-                      {app.notes || "—"}
+                      {act.notes || "—"}
                     </Text>
                   </View>
                 </Pressable>
@@ -185,16 +185,16 @@ export default function ActivitiesScreen() {
         </ScrollView>
       )}
 
-      {/* <AddApplicationModal
+      <AddActivityModal
         visible={modalVisible}
         onClose={() => {
           setModalVisible(false);
-          setSelectedApp(undefined);
+          setSelectedAct(undefined);
         }}
-        onSave={selectedApp ? handleEdit : handleAdd}
-        onDelete={selectedApp ? () => handleDelete(selectedApp.id) : undefined}
-        initialData={selectedApp}
-      /> */}
+        onSave={selectedAct ? handleEdit : handleAdd}
+        onDelete={selectedAct ? () => handleDelete(selectedAct.id) : undefined}
+        initialData={selectedAct}
+      />
     </View>
   );
 }

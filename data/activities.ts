@@ -1,10 +1,10 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export type ActivityStatus =
-  | "In progress"
+  | "Active"
   | "Completed"
   | "Canceled"
-  | "On hold";
+  | "Paused";
 
 export type Activity = {
   id: string;
