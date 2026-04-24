@@ -25,6 +25,22 @@ type Props = {
   initialData?: JobApplication;
 };
 
+const APPLICATION_STATUSES: ApplicationStatus[] = [
+  "Applied",
+  "Interview",
+  "Offer",
+  "Rejected",
+  "Withdrawn",
+];
+
+const APPLICATION_STATUS_COLORS: Record<ApplicationStatus, string> = {
+  Applied: "#1d4ed8",
+  Interview: "#b45309",
+  Offer: "#166534",
+  Rejected: "#991b1b",
+  Withdrawn: "#6b7280",
+};
+
 const EMPTY_FORM = {
   company: "",
   role: "",
@@ -154,6 +170,8 @@ export default function AddApplicationModal({
               <StatusPicker
                 value={form.status}
                 onChange={(v) => setForm({ ...form, status: v })}
+                statuses={APPLICATION_STATUSES}
+                colors={APPLICATION_STATUS_COLORS}
               />
 
               <Text style={[styles.label, { marginTop: 14 }]}>Notes</Text>

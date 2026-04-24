@@ -12,7 +12,7 @@ import {
   View,
 } from "react-native";
 import { type ActivityStatus, type Activity } from "../data/activities";
-import ActivityStatusPicker from "./ActivityStatusPicker";
+import StatusPicker from "./StatusPicker";
 
 type Props = {
   visible: boolean;
@@ -20,6 +20,20 @@ type Props = {
   onSave: (activity: Omit<Activity, "id" | "number">) => void;
   onDelete?: () => void;
   initialData?: Activity;
+};
+
+const ACTIVITY_STATUSES: ActivityStatus[] = [
+  "Active",
+  "Completed",
+  "Canceled",
+  "Paused",
+];
+
+const ACTIVITY_STATUS_COLORS: Record<ActivityStatus, string> = {
+  Active: "#1d4ed8",
+  Completed: "#166534",
+  Canceled: "#991b1b",
+  Paused: "#6b7280",
 };
 
 const EMPTY_FORM = {
@@ -133,9 +147,11 @@ export default function AddActivityModal({
               />
 
               <Text style={styles.label}>Status</Text>
-              <ActivityStatusPicker
+              <StatusPicker
                 value={form.status}
                 onChange={(v) => setForm({ ...form, status: v })}
+                statuses={ACTIVITY_STATUSES}
+                colors={ACTIVITY_STATUS_COLORS}
               />
 
               <Text style={[styles.label, { marginTop: 14 }]}>Notes</Text>

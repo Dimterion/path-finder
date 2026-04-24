@@ -1,31 +1,21 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
-import { type ApplicationStatus } from "../data/applications";
 
-const STATUSES: ApplicationStatus[] = [
-  "Applied",
-  "Interview",
-  "Offer",
-  "Rejected",
-  "Withdrawn",
-];
-
-const STATUS_COLORS: Record<ApplicationStatus, string> = {
-  Applied: "#1d4ed8",
-  Interview: "#b45309",
-  Offer: "#166534",
-  Rejected: "#991b1b",
-  Withdrawn: "#6b7280",
+type StatusPickerProps<T extends string> = {
+  value: T;
+  onChange: (status: T) => void;
+  statuses: T[];
+  colors: Record<T, string>;
 };
 
-type StatusPickerProps = {
-  value: ApplicationStatus;
-  onChange: (status: ApplicationStatus) => void;
-};
-
-export default function StatusPicker({ value, onChange }: StatusPickerProps) {
+export default function StatusPicker<T extends string>({
+  value,
+  onChange,
+  statuses,
+  colors,
+}: StatusPickerProps<T>) {
   return (
     <View style={styles.row}>
-      {STATUSES.map((status) => {
+      {statuses.map((status) => {
         const selected = status === value;
         return (
           <Pressable
@@ -34,8 +24,8 @@ export default function StatusPicker({ value, onChange }: StatusPickerProps) {
             style={[
               styles.option,
               {
-                backgroundColor: selected ? STATUS_COLORS[status] : "#f3f4f6",
-                borderColor: selected ? STATUS_COLORS[status] : "#d1d5db",
+                backgroundColor: selected ? colors[status] : "#f3f4f6",
+                borderColor: selected ? colors[status] : "#d1d5db",
               },
             ]}
           >
@@ -55,11 +45,7 @@ export default function StatusPicker({ value, onChange }: StatusPickerProps) {
 }
 
 const styles = StyleSheet.create({
-  row: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    marginBottom: 4,
-  },
+  row: { flexDirection: "row", flexWrap: "wrap", marginBottom: 4 },
   option: {
     paddingVertical: 8,
     paddingHorizontal: 14,
@@ -68,8 +54,5 @@ const styles = StyleSheet.create({
     marginRight: 8,
     marginBottom: 8,
   },
-  optionText: {
-    fontSize: 13,
-    fontWeight: "600",
-  },
+  optionText: { fontSize: 13, fontWeight: "600" },
 });
