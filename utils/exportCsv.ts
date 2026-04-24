@@ -2,6 +2,7 @@ import { Alert } from "react-native";
 import { File, Paths } from "expo-file-system";
 import * as Sharing from "expo-sharing";
 import { type JobApplication } from "../data/applications";
+import { type Activity } from "../data/activities";
 
 function escapeCsvValue(value: string | number): string {
   const str = String(value);
@@ -41,6 +42,49 @@ export async function exportApplicationsCsv(
     await Sharing.shareAsync(file.uri, {
       mimeType: "text/csv",
       dialogTitle: "Export applications",
+      UTI: "public.comma-separated-values-text",
+    });
+  } catch (e) {
+    Alert.alert("Export failed", "Something went wrong while exporting.");
+  }
+}
+
+function activitiesToCsv(activities: Activity[]): string {
+  const headers = ["#", "Activity", "Date", "Status", "Notes"];
+  const headerRow = headers.join(",");
+
+  const dataRows = activities.map((activity) =>
+    [
+      activity.number,
+      activity.activity,
+      activity.date,
+      activity.status,
+      activity.notes || "",
+    ]
+      .map(escapeCsvValue)
+      .join(","),
+  );
+
+  return [headerRow, ...dataRows].join("\n");
+}
+
+export async function exportActivitiesCsv(
+  activities: Activity[],
+): Promise<void> {
+  if (activities.length === 0) return;
+
+  try {
+    const csv = activitiesToCsv(activities);
+    const fileName = `activities_${new Date().toISOString().slice(0, 10)}.csv`;
+    const file = new File(Paths.cache, fileName);
+    file.write(csv);
+
+    const canShare = await Sharing.isAvailableAsync();
+    if (!canShare) return;
+
+    await Sharing.shareAsync(file.uri, {
+      mimeType: "text/csv",
+      dialogTitle: "Export activities",
       UTI: "public.comma-separated-values-text",
     });
   } catch (e) {
