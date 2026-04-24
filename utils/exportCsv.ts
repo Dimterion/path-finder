@@ -12,6 +12,26 @@ function escapeCsvValue(value: string | number): string {
   return str;
 }
 
+async function shareAsCsv(
+  csv: string,
+  fileName: string,
+  dialogTitle: string,
+): Promise<void> {
+  try {
+    const file = new File(Paths.cache, fileName);
+    file.write(csv);
+    const canShare = await Sharing.isAvailableAsync();
+    if (!canShare) return;
+    await Sharing.shareAsync(file.uri, {
+      mimeType: "text/csv",
+      dialogTitle,
+      UTI: "public.comma-separated-values-text",
+    });
+  } catch {
+    Alert.alert("Export failed", "Something went wrong while exporting.");
+  }
+}
+
 function applicationsToCsv(applications: JobApplication[]): string {
   const headers = ["#", "Company", "Role", "Date", "Status", "Notes"];
   const headerRow = headers.join(",");
@@ -29,24 +49,12 @@ export async function exportApplicationsCsv(
   applications: JobApplication[],
 ): Promise<void> {
   if (applications.length === 0) return;
-
-  try {
-    const csv = applicationsToCsv(applications);
-    const fileName = `applications_${new Date().toISOString().slice(0, 10)}.csv`;
-    const file = new File(Paths.cache, fileName);
-    file.write(csv);
-
-    const canShare = await Sharing.isAvailableAsync();
-    if (!canShare) return;
-
-    await Sharing.shareAsync(file.uri, {
-      mimeType: "text/csv",
-      dialogTitle: "Export applications",
-      UTI: "public.comma-separated-values-text",
-    });
-  } catch (e) {
-    Alert.alert("Export failed", "Something went wrong while exporting.");
-  }
+  const csv = applicationsToCsv(applications);
+  await shareAsCsv(
+    csv,
+    `applications_${new Date().toISOString().slice(0, 10)}.csv`,
+    "Export applications",
+  );
 }
 
 function activitiesToCsv(activities: Activity[]): string {
@@ -72,22 +80,10 @@ export async function exportActivitiesCsv(
   activities: Activity[],
 ): Promise<void> {
   if (activities.length === 0) return;
-
-  try {
-    const csv = activitiesToCsv(activities);
-    const fileName = `activities_${new Date().toISOString().slice(0, 10)}.csv`;
-    const file = new File(Paths.cache, fileName);
-    file.write(csv);
-
-    const canShare = await Sharing.isAvailableAsync();
-    if (!canShare) return;
-
-    await Sharing.shareAsync(file.uri, {
-      mimeType: "text/csv",
-      dialogTitle: "Export activities",
-      UTI: "public.comma-separated-values-text",
-    });
-  } catch (e) {
-    Alert.alert("Export failed", "Something went wrong while exporting.");
-  }
+  const csv = activitiesToCsv(activities);
+  await shareAsCsv(
+    csv,
+    `activities_${new Date().toISOString().slice(0, 10)}.csv`,
+    "Export activities",
+  );
 }
