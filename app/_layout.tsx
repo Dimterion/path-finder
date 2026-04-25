@@ -7,10 +7,7 @@ export default function RootLayout() {
         headerTitleAlign: "center",
       }}
     >
-      <Stack.Screen
-        name="index"
-        options={{ title: "Pathfinder", headerBackVisible: false }}
-      />
+      <Stack.Screen name="index" options={{ title: "Pathfinder" }} />
       <Stack.Screen name="platforms" options={{ title: "Platforms" }} />
       <Stack.Screen name="cv-builder" options={{ title: "CV Builder" }} />
       <Stack.Screen name="tracker" options={{ title: "Applications" }} />
