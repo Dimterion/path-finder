@@ -1,5 +1,6 @@
 import { Link } from "expo-router";
 import { StyleSheet, Text, View, Pressable } from "react-native";
+import { Colors } from "../styles/constants";
 
 export default function HomeScreen() {
   return (
@@ -10,7 +11,7 @@ export default function HomeScreen() {
       </Text>
 
       <Link href="/platforms" asChild>
-        <Pressable style={styles.button}>
+        <Pressable style={styles.buttonPrimary}>
           <Text style={styles.buttonText}>Job search platforms</Text>
         </Pressable>
       </Link>
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     padding: 24,
-    backgroundColor: "#f5f7fb",
+    backgroundColor: Colors.background,
   },
   title: {
     fontSize: 32,
@@ -54,27 +55,34 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     textAlign: "center",
     marginBottom: 32,
-    color: "#444",
+    color: Colors.textMuted,
   },
   button: {
-    backgroundColor: "#1f6feb",
     paddingVertical: 14,
     paddingHorizontal: 18,
     borderRadius: 10,
     marginBottom: 14,
   },
-  buttonSecondary: {
-    backgroundColor: "#2da44e",
+  buttonPrimary: {
     paddingVertical: 14,
     paddingHorizontal: 18,
     borderRadius: 10,
+    marginBottom: 14,
+    backgroundColor: Colors.primary,
+  },
+  buttonSecondary: {
+    paddingVertical: 14,
+    paddingHorizontal: 18,
+    borderRadius: 10,
+    marginBottom: 14,
+    backgroundColor: Colors.secondary,
   },
   buttonTertiary: {
-    backgroundColor: "#2d6a4f",
     paddingVertical: 14,
     paddingHorizontal: 18,
     borderRadius: 10,
-    marginTop: 14,
+    marginBottom: 14,
+    backgroundColor: Colors.tertiary,
   },
   buttonText: {
     color: "#fff",
