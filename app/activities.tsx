@@ -13,6 +13,7 @@ import {
   type Activity,
   loadActivities,
   saveActivities,
+  ACTIVITY_STATUS_COLORS,
 } from "../data/activities";
 import AddActivityModal from "../components/AddActivityModal";
 
@@ -23,13 +24,6 @@ const COLUMNS = [
   { key: "status", label: "Status", width: 120 },
   { key: "notes", label: "Notes", width: 200 },
 ];
-
-const STATUS_COLORS: Record<string, string> = {
-  Active: "#1d4ed8",
-  Completed: "#166534",
-  Canceled: "#991b1b",
-  Paused: "#6b7280",
-};
 
 function renumber(list: Activity[]): Activity[] {
   return list.map((act, index) => ({ ...act, number: index + 1 }));
@@ -157,16 +151,16 @@ export default function ActivitiesScreen() {
                       {act.activity}
                     </Text>
                   </View>
-                  <View style={[styles.cell, { width: COLUMNS[3].width }]}>
+                  <View style={[styles.cell, { width: COLUMNS[2].width }]}>
                     <Text style={styles.cellText}>{act.date}</Text>
                   </View>
-                  <View style={[styles.cell, { width: COLUMNS[4].width }]}>
+                  <View style={[styles.cell, { width: COLUMNS[3].width }]}>
                     <View
                       style={[
                         styles.statusBadge,
                         {
                           backgroundColor:
-                            STATUS_COLORS[act.status] ?? "#6b7280",
+                            ACTIVITY_STATUS_COLORS[act.status] ?? "#6b7280",
                         },
                       ]}
                     >

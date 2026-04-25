@@ -13,6 +13,7 @@ import {
   type JobApplication,
   loadApplications,
   saveApplications,
+  APPLICATION_STATUS_COLORS,
 } from "../data/applications";
 import AddApplicationModal from "../components/AddApplicationModal";
 
@@ -24,14 +25,6 @@ const COLUMNS = [
   { key: "status", label: "Status", width: 120 },
   { key: "notes", label: "Notes", width: 200 },
 ];
-
-const STATUS_COLORS: Record<string, string> = {
-  Applied: "#1d4ed8",
-  Interview: "#b45309",
-  Offer: "#166534",
-  Rejected: "#991b1b",
-  Withdrawn: "#6b7280",
-};
 
 function renumber(list: JobApplication[]): JobApplication[] {
   return list.map((app, index) => ({ ...app, number: index + 1 }));
@@ -173,7 +166,7 @@ export default function TrackerScreen() {
                         styles.statusBadge,
                         {
                           backgroundColor:
-                            STATUS_COLORS[app.status] ?? "#6b7280",
+                            APPLICATION_STATUS_COLORS[app.status] ?? "#6b7280",
                         },
                       ]}
                     >

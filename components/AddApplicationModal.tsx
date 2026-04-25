@@ -13,6 +13,7 @@ import {
 import {
   type ApplicationStatus,
   type JobApplication,
+  APPLICATION_STATUS_COLORS,
 } from "../data/applications";
 import StatusPicker from "./StatusPicker";
 import { modalStyles as styles } from "../styles/modal";
@@ -32,14 +33,6 @@ const APPLICATION_STATUSES: ApplicationStatus[] = [
   "Rejected",
   "Withdrawn",
 ];
-
-const APPLICATION_STATUS_COLORS: Record<ApplicationStatus, string> = {
-  Applied: "#1d4ed8",
-  Interview: "#b45309",
-  Offer: "#166534",
-  Rejected: "#991b1b",
-  Withdrawn: "#6b7280",
-};
 
 const EMPTY_FORM = {
   company: "",

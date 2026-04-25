@@ -17,6 +17,13 @@ export type Activity = {
 
 const STORAGE_KEY = "pathfinder_activities";
 
+export const ACTIVITY_STATUS_COLORS: Record<ActivityStatus, string> = {
+  Active: "#1d4ed8",
+  Completed: "#166534",
+  Canceled: "#991b1b",
+  Paused: "#6b7280",
+};
+
 export async function loadActivities(): Promise<Activity[]> {
   try {
     const raw = await AsyncStorage.getItem(STORAGE_KEY);

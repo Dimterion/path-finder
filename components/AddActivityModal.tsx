@@ -10,7 +10,11 @@ import {
   TextInput,
   View,
 } from "react-native";
-import { type ActivityStatus, type Activity } from "../data/activities";
+import {
+  type ActivityStatus,
+  type Activity,
+  ACTIVITY_STATUS_COLORS,
+} from "../data/activities";
 import StatusPicker from "./StatusPicker";
 import { modalStyles as styles } from "../styles/modal";
 
@@ -28,13 +32,6 @@ const ACTIVITY_STATUSES: ActivityStatus[] = [
   "Canceled",
   "Paused",
 ];
-
-const ACTIVITY_STATUS_COLORS: Record<ActivityStatus, string> = {
-  Active: "#1d4ed8",
-  Completed: "#166534",
-  Canceled: "#991b1b",
-  Paused: "#6b7280",
-};
 
 const EMPTY_FORM = {
   activity: "",

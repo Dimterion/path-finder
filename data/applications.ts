@@ -19,6 +19,14 @@ export type JobApplication = {
 
 const STORAGE_KEY = "pathfinder_applications";
 
+export const APPLICATION_STATUS_COLORS: Record<ApplicationStatus, string> = {
+  Applied: "#1d4ed8",
+  Interview: "#b45309",
+  Offer: "#166534",
+  Rejected: "#991b1b",
+  Withdrawn: "#6b7280",
+};
+
 export async function loadApplications(): Promise<JobApplication[]> {
   try {
     const raw = await AsyncStorage.getItem(STORAGE_KEY);
