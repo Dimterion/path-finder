@@ -13,7 +13,7 @@ type PlatformCardProps = {
   item: JobPlatform;
 };
 
-async function openExternalLink(url: string) {
+async function openExternalLink(url: string): Promise<void> {
   const supported = await Linking.canOpenURL(url);
 
   if (!supported) {

@@ -56,4 +56,12 @@ export const platforms: JobPlatform[] = [
       },
     ],
   },
+  {
+    id: "04_google",
+    title: "Google Jobs",
+    websiteUrl: "https://www.google.com/",
+    description:
+      "May not be straightforward to find (not to confuse with open jobs at Google). To access this section, search on Google for phrases like: jobs near me, [job sphere] jobs in [City], remote [job sphere] jobs, or similar. The search results page should then have a separate section with a table of job postings, saved jobs, and following. You can use that interface to search for various roles, save them, share, follow the ones you are interested in, etc.",
+    tags: ["Job tracking", "Sharing & following options"],
+  },
 ];
