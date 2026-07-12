@@ -1,8 +1,9 @@
-export const Colors = {
+export const colors = {
   primary: "#1f6feb",
   primaryDisabled: "#93c5fd",
   secondary: "#2da44e",
   tertiary: "#2d6a4f",
+  quaternary: "#0f766e",
   danger: "#991b1b",
   dangerBg: "#fee2e2",
   textPrimary: "#111827",

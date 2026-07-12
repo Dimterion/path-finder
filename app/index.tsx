@@ -1,6 +1,6 @@
 import { Link } from "expo-router";
 import { StyleSheet, Text, View, Pressable } from "react-native";
-import { Colors } from "../styles/constants";
+import { colors } from "../styles/constants";
 
 export default function HomeScreen() {
   return (
@@ -29,7 +29,7 @@ export default function HomeScreen() {
       </Link>
 
       <Link href="/activities" asChild>
-        <Pressable style={styles.buttonTertiary}>
+        <Pressable style={styles.buttonQuaternary}>
           <Text style={styles.buttonText}>Activities</Text>
         </Pressable>
       </Link>
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     padding: 24,
-    backgroundColor: Colors.background,
+    backgroundColor: colors.background,
   },
   title: {
     fontSize: 32,
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     textAlign: "center",
     marginBottom: 32,
-    color: Colors.textMuted,
+    color: colors.textMuted,
   },
   button: {
     paddingVertical: 14,
@@ -68,21 +68,28 @@ const styles = StyleSheet.create({
     paddingHorizontal: 18,
     borderRadius: 10,
     marginBottom: 14,
-    backgroundColor: Colors.primary,
+    backgroundColor: colors.primary,
   },
   buttonSecondary: {
     paddingVertical: 14,
     paddingHorizontal: 18,
     borderRadius: 10,
     marginBottom: 14,
-    backgroundColor: Colors.secondary,
+    backgroundColor: colors.secondary,
   },
   buttonTertiary: {
     paddingVertical: 14,
     paddingHorizontal: 18,
     borderRadius: 10,
     marginBottom: 14,
-    backgroundColor: Colors.tertiary,
+    backgroundColor: colors.tertiary,
+  },
+  buttonQuaternary: {
+    paddingVertical: 14,
+    paddingHorizontal: 18,
+    borderRadius: 10,
+    marginBottom: 14,
+    backgroundColor: colors.quaternary,
   },
   buttonText: {
     color: "#fff",
