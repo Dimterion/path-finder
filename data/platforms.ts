@@ -3,12 +3,14 @@ export type PlatformLink = {
   url: string;
 };
 
+export type PlatformImageKey = "linkedin" | "welcometothejungle" | "glassdoor";
+
 export type JobPlatform = {
   id: string;
   title: string;
   websiteUrl: string;
   description: string;
-  image?: ReturnType<typeof require>;
+  imageKey?: PlatformImageKey;
   tags?: string[];
   extraLinks?: PlatformLink[];
 };
@@ -20,10 +22,13 @@ export const platforms: JobPlatform[] = [
     websiteUrl: "https://www.linkedin.com/",
     description:
       "Main starting point. The biggest platform. Create the basis of your profile here and use it further as a template for other platforms, personal profiles, job applications.",
-    image: require("../assets/platforms/linkedin.jpg"),
+    imageKey: "linkedin",
     tags: ["General", "Social", "Profile"],
     extraLinks: [
-      { label: "Help Center", url: "https://www.linkedin.com/help/linkedin" },
+      {
+        label: "Help Center",
+        url: "https://www.linkedin.com/help/linkedin",
+      },
     ],
   },
   {
@@ -31,8 +36,8 @@ export const platforms: JobPlatform[] = [
     title: "Welcome to the Jungle",
     websiteUrl: "https://www.welcometothejungle.com/",
     description:
-      "A potentially good second option to visit. Narrowed down search (region + sphere). Additional information about the companies. Merged with Otta, hence it might be worth it checking their dedicated app page (see links below) for personal job recommendations.",
-    image: require("../assets/platforms/welcometothejungle.jpg"),
+      "A potentially good second option to visit. Narrowed down search (region + sphere). Additional information about the companies. Merged with Otta, hence it might be worth checking their dedicated app page for personal job recommendations.",
+    imageKey: "welcometothejungle",
     tags: ["Tailored search", "Companies details"],
     extraLinks: [
       {
@@ -46,22 +51,17 @@ export const platforms: JobPlatform[] = [
     title: "Glassdoor",
     websiteUrl: "https://www.glassdoor.com/",
     description:
-      "Many job offers. Additional information about companies (including employees reviews). Will send all kinds of offers once subscribed (might need tailoring to not get overwhelmed). In the process of merging with Indeed (both still have their separate pages currently, but better check both sites/profiles for details).",
-    image: require("../assets/platforms/glassdoor.jpg"),
+      "Many job offers. Additional information about companies, including employee reviews. It may send a high volume of offers once subscribed, so tailoring is useful.",
+    imageKey: "glassdoor",
     tags: ["Various offers daily", "Companies details"],
-    extraLinks: [
-      {
-        label: "Indeed",
-        url: "https://indeed.com/",
-      },
-    ],
+    extraLinks: [{ label: "Indeed", url: "https://indeed.com/" }],
   },
   {
     id: "04_google",
     title: "Google Jobs",
     websiteUrl: "https://www.google.com/",
     description:
-      "May not be straightforward to find (not to confuse with open jobs at Google). To access this section, search on Google for phrases like: jobs near me, [job sphere] jobs in [City], remote [job sphere] jobs, or similar. The search results page should then have a separate section with a table of job postings, saved jobs, and following. You can use that interface to search for various roles, save them, share, follow the ones you are interested in, etc.",
+      "Not always straightforward to find. Search phrases like jobs near me, remote roles, or role plus city to surface the jobs interface in Google search results.",
     tags: ["Job tracking", "Sharing & following options"],
   },
 ];
