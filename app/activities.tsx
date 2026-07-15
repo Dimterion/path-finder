@@ -194,10 +194,11 @@ export default function ActivitiesScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#f5f7fb" },
+  container: { flex: 1, backgroundColor: "#f5f7fb", padding: 4 },
   centered: { flex: 1, justifyContent: "center", alignItems: "center" },
   toolbar: {
-    flexDirection: "row",
+    flexDirection: "column",
+    gap: 10,
     padding: 16,
     paddingBottom: 12,
   },
@@ -205,17 +206,18 @@ const styles = StyleSheet.create({
     backgroundColor: "#1f6feb",
     paddingVertical: 12,
     paddingHorizontal: 18,
-    borderRadius: 10,
+    borderRadius: 15,
     alignSelf: "flex-start",
+    width: "100%",
   },
   addButtonText: { color: "#ffffff", fontSize: 15, fontWeight: "600" },
   exportButton: {
     paddingVertical: 12,
     paddingHorizontal: 18,
-    borderRadius: 10,
+    borderRadius: 15,
     borderWidth: 1,
     borderColor: "#1f6feb",
-    marginLeft: 10,
+    width: "100%",
   },
   exportButtonText: {
     color: "#1f6feb",

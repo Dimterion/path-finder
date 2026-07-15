@@ -12,19 +12,19 @@ export default function HomeScreen() {
 
       <Link href="/platforms" asChild>
         <Pressable style={styles.buttonPrimary}>
-          <Text style={styles.buttonText}>Job search platforms</Text>
+          <Text style={styles.buttonText}>Job Search Platforms</Text>
         </Pressable>
       </Link>
 
       <Link href="/cv-builder" asChild>
         <Pressable style={styles.buttonSecondary}>
-          <Text style={styles.buttonText}>CV builder</Text>
+          <Text style={styles.buttonText}>CV Builder</Text>
         </Pressable>
       </Link>
 
       <Link href="/tracker" asChild>
         <Pressable style={styles.buttonTertiary}>
-          <Text style={styles.buttonText}>Application tracker</Text>
+          <Text style={styles.buttonText}>Application Tracker</Text>
         </Pressable>
       </Link>
 
