@@ -30,7 +30,7 @@ function renumber(list: JobApplication[]): JobApplication[] {
   return list.map((app, index) => ({ ...app, number: index + 1 }));
 }
 
-export default function TrackerScreen() {
+export default function ApplicationTrackerScreen() {
   const [applications, setApplications] = useState<JobApplication[]>([]);
   const [loading, setLoading] = useState(true);
   const [modalVisible, setModalVisible] = useState(false);

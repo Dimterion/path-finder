@@ -22,7 +22,7 @@ export default function HomeScreen() {
         </Pressable>
       </Link>
 
-      <Link href="/tracker" asChild>
+      <Link href="/application-tracker" asChild>
         <Pressable style={styles.buttonTertiary}>
           <Text style={styles.buttonText}>Application Tracker</Text>
         </Pressable>
