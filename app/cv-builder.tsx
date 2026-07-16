@@ -22,7 +22,7 @@ import {
   saveCv,
 } from "../data/cv";
 import { exportCvPdf } from "../utils/exportPdf";
-import SectionHeader from "../components/SectionHeader";
+import SectionHeader from "../features/cv/SectionHeader";
 
 const SECTION_KEYS = [
   "personal",

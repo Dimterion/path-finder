@@ -11,36 +11,38 @@ import {
   View,
 } from "react-native";
 import {
-  type ActivityStatus,
-  type Activity,
-  ACTIVITY_STATUS_COLORS,
-} from "../data/activities";
-import StatusPicker from "./StatusPicker";
-import { modalStyles as styles } from "../styles/modal";
+  type ApplicationStatus,
+  type JobApplication,
+  APPLICATION_STATUS_COLORS,
+} from "../../data/applications";
+import StatusPicker from "../StatusPicker";
+import { modalStyles as styles } from "../../styles/modal";
 
 type Props = {
   visible: boolean;
   onClose: () => void;
-  onSave: (activity: Omit<Activity, "id" | "number">) => void;
+  onSave: (application: Omit<JobApplication, "id" | "number">) => void;
   onDelete?: () => void;
-  initialData?: Activity;
+  initialData?: JobApplication;
 };
 
-const ACTIVITY_STATUSES: ActivityStatus[] = [
-  "Active",
-  "Completed",
-  "Canceled",
-  "Paused",
+const APPLICATION_STATUSES: ApplicationStatus[] = [
+  "Applied",
+  "Interview",
+  "Offer",
+  "Rejected",
+  "Withdrawn",
 ];
 
 const EMPTY_FORM = {
-  activity: "",
+  company: "",
+  role: "",
   date: "",
-  status: "Active" as ActivityStatus,
+  status: "Applied" as ApplicationStatus,
   notes: "",
 };
 
-export default function AddActivityModal({
+export default function AddApplicationModal({
   visible,
   onClose,
   onSave,
@@ -55,7 +57,8 @@ export default function AddActivityModal({
       setForm(
         initialData
           ? {
-              activity: initialData.activity,
+              company: initialData.company,
+              role: initialData.role,
               date: initialData.date,
               status: initialData.status,
               notes: initialData.notes,
@@ -66,7 +69,7 @@ export default function AddActivityModal({
   }, [visible, initialData]);
 
   function handleSave() {
-    if (!form.activity.trim() || !form.date.trim()) return;
+    if (!form.company.trim() || !form.role.trim() || !form.date.trim()) return;
 
     const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
     if (!dateRegex.test(form.date)) {
@@ -82,17 +85,21 @@ export default function AddActivityModal({
   }
 
   function handleDelete() {
-    Alert.alert("Delete activity", `Remove ${form.activity}?`, [
-      { text: "Cancel", style: "cancel" },
-      {
-        text: "Delete",
-        style: "destructive",
-        onPress: () => {
-          onDelete?.();
-          onClose();
+    Alert.alert(
+      "Delete application",
+      `Remove ${form.company} — ${form.role}?`,
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Delete",
+          style: "destructive",
+          onPress: () => {
+            onDelete?.();
+            onClose();
+          },
         },
-      },
-    ]);
+      ],
+    );
   }
 
   return (
@@ -116,7 +123,7 @@ export default function AddActivityModal({
             >
               <View style={styles.titleRow}>
                 <Text style={styles.title}>
-                  {isEditing ? "Edit Activity" : "New Activity"}
+                  {isEditing ? "Edit Application" : "New Application"}
                 </Text>
                 {isEditing && (
                   <Pressable onPress={handleDelete} style={styles.deleteButton}>
@@ -125,13 +132,22 @@ export default function AddActivityModal({
                 )}
               </View>
 
-              <Text style={styles.label}>Activity *</Text>
+              <Text style={styles.label}>Company *</Text>
+              <TextInput
+                style={styles.input}
+                placeholder="e.g. Acme Corp"
+                placeholderTextColor="#9ca3af"
+                value={form.company}
+                onChangeText={(v) => setForm({ ...form, company: v })}
+              />
+
+              <Text style={styles.label}>Role *</Text>
               <TextInput
                 style={styles.input}
                 placeholder="e.g. Frontend Developer"
                 placeholderTextColor="#9ca3af"
-                value={form.activity}
-                onChangeText={(v) => setForm({ ...form, activity: v })}
+                value={form.role}
+                onChangeText={(v) => setForm({ ...form, role: v })}
               />
 
               <Text style={styles.label}>Date *</Text>
@@ -147,8 +163,8 @@ export default function AddActivityModal({
               <StatusPicker
                 value={form.status}
                 onChange={(v) => setForm({ ...form, status: v })}
-                statuses={ACTIVITY_STATUSES}
-                colors={ACTIVITY_STATUS_COLORS}
+                statuses={APPLICATION_STATUSES}
+                colors={APPLICATION_STATUS_COLORS}
               />
 
               <Text style={[styles.label, { marginTop: 14 }]}>Notes</Text>
@@ -170,7 +186,9 @@ export default function AddActivityModal({
                 <Pressable
                   style={[
                     styles.saveButton,
-                    (!form.activity.trim() || !form.date.trim()) &&
+                    (!form.company.trim() ||
+                      !form.role.trim() ||
+                      !form.date.trim()) &&
                       styles.saveButtonDisabled,
                   ]}
                   onPress={handleSave}

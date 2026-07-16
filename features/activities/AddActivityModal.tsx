@@ -11,38 +11,36 @@ import {
   View,
 } from "react-native";
 import {
-  type ApplicationStatus,
-  type JobApplication,
-  APPLICATION_STATUS_COLORS,
-} from "../data/applications";
-import StatusPicker from "./StatusPicker";
-import { modalStyles as styles } from "../styles/modal";
+  type ActivityStatus,
+  type Activity,
+  ACTIVITY_STATUS_COLORS,
+} from "../../data/activities";
+import StatusPicker from "../StatusPicker";
+import { modalStyles as styles } from "../../styles/modal";
 
 type Props = {
   visible: boolean;
   onClose: () => void;
-  onSave: (application: Omit<JobApplication, "id" | "number">) => void;
+  onSave: (activity: Omit<Activity, "id" | "number">) => void;
   onDelete?: () => void;
-  initialData?: JobApplication;
+  initialData?: Activity;
 };
 
-const APPLICATION_STATUSES: ApplicationStatus[] = [
-  "Applied",
-  "Interview",
-  "Offer",
-  "Rejected",
-  "Withdrawn",
+const ACTIVITY_STATUSES: ActivityStatus[] = [
+  "Active",
+  "Completed",
+  "Canceled",
+  "Paused",
 ];
 
 const EMPTY_FORM = {
-  company: "",
-  role: "",
+  activity: "",
   date: "",
-  status: "Applied" as ApplicationStatus,
+  status: "Active" as ActivityStatus,
   notes: "",
 };
 
-export default function AddApplicationModal({
+export default function AddActivityModal({
   visible,
   onClose,
   onSave,
@@ -57,8 +55,7 @@ export default function AddApplicationModal({
       setForm(
         initialData
           ? {
-              company: initialData.company,
-              role: initialData.role,
+              activity: initialData.activity,
               date: initialData.date,
               status: initialData.status,
               notes: initialData.notes,
@@ -69,7 +66,7 @@ export default function AddApplicationModal({
   }, [visible, initialData]);
 
   function handleSave() {
-    if (!form.company.trim() || !form.role.trim() || !form.date.trim()) return;
+    if (!form.activity.trim() || !form.date.trim()) return;
 
     const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
     if (!dateRegex.test(form.date)) {
@@ -85,21 +82,17 @@ export default function AddApplicationModal({
   }
 
   function handleDelete() {
-    Alert.alert(
-      "Delete application",
-      `Remove ${form.company} — ${form.role}?`,
-      [
-        { text: "Cancel", style: "cancel" },
-        {
-          text: "Delete",
-          style: "destructive",
-          onPress: () => {
-            onDelete?.();
-            onClose();
-          },
+    Alert.alert("Delete activity", `Remove ${form.activity}?`, [
+      { text: "Cancel", style: "cancel" },
+      {
+        text: "Delete",
+        style: "destructive",
+        onPress: () => {
+          onDelete?.();
+          onClose();
         },
-      ],
-    );
+      },
+    ]);
   }
 
   return (
@@ -123,7 +116,7 @@ export default function AddApplicationModal({
             >
               <View style={styles.titleRow}>
                 <Text style={styles.title}>
-                  {isEditing ? "Edit Application" : "New Application"}
+                  {isEditing ? "Edit Activity" : "New Activity"}
                 </Text>
                 {isEditing && (
                   <Pressable onPress={handleDelete} style={styles.deleteButton}>
@@ -132,22 +125,13 @@ export default function AddApplicationModal({
                 )}
               </View>
 
-              <Text style={styles.label}>Company *</Text>
-              <TextInput
-                style={styles.input}
-                placeholder="e.g. Acme Corp"
-                placeholderTextColor="#9ca3af"
-                value={form.company}
-                onChangeText={(v) => setForm({ ...form, company: v })}
-              />
-
-              <Text style={styles.label}>Role *</Text>
+              <Text style={styles.label}>Activity *</Text>
               <TextInput
                 style={styles.input}
                 placeholder="e.g. Frontend Developer"
                 placeholderTextColor="#9ca3af"
-                value={form.role}
-                onChangeText={(v) => setForm({ ...form, role: v })}
+                value={form.activity}
+                onChangeText={(v) => setForm({ ...form, activity: v })}
               />
 
               <Text style={styles.label}>Date *</Text>
@@ -163,8 +147,8 @@ export default function AddApplicationModal({
               <StatusPicker
                 value={form.status}
                 onChange={(v) => setForm({ ...form, status: v })}
-                statuses={APPLICATION_STATUSES}
-                colors={APPLICATION_STATUS_COLORS}
+                statuses={ACTIVITY_STATUSES}
+                colors={ACTIVITY_STATUS_COLORS}
               />
 
               <Text style={[styles.label, { marginTop: 14 }]}>Notes</Text>
@@ -186,9 +170,7 @@ export default function AddApplicationModal({
                 <Pressable
                   style={[
                     styles.saveButton,
-                    (!form.company.trim() ||
-                      !form.role.trim() ||
-                      !form.date.trim()) &&
+                    (!form.activity.trim() || !form.date.trim()) &&
                       styles.saveButtonDisabled,
                   ]}
                   onPress={handleSave}

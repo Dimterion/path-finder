@@ -1,5 +1,5 @@
-import { type JobPlatform } from "../data/platforms";
-import { platformImages } from "../assets/platforms/platformsImages";
+import { type JobPlatform } from "../../data/platforms";
+import { platformImages } from "../../assets/platforms/platformsImages";
 import {
   Alert,
   Image,
@@ -26,9 +26,11 @@ async function openExternalLink(url: string): Promise<void> {
 }
 
 export default function PlatformCard({ item }: PlatformCardProps) {
-const imageSource = item.imageKey ? platformImages[item.imageKey] : undefined;
+  const imageSource = item.imageKey ? platformImages[item.imageKey] : undefined;
 
-{imageSource ? <Image source={imageSource} style={styles.image} /> : null}
+  {
+    imageSource ? <Image source={imageSource} style={styles.image} /> : null;
+  }
 
   return (
     <View style={styles.card}>

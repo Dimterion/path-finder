@@ -15,7 +15,7 @@ import {
   saveActivities,
   ACTIVITY_STATUS_COLORS,
 } from "../data/activities";
-import AddActivityModal from "../components/AddActivityModal";
+import AddActivityModal from "../features/activities/AddActivityModal";
 
 const COLUMNS = [
   { key: "number", label: "#", width: 48 },

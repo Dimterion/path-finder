@@ -15,7 +15,7 @@ import {
   saveApplications,
   APPLICATION_STATUS_COLORS,
 } from "../data/applications";
-import AddApplicationModal from "../components/AddApplicationModal";
+import AddApplicationModal from "../features/applications/AddApplicationModal";
 
 const COLUMNS = [
   { key: "number", label: "#", width: 48 },

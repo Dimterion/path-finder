@@ -1,6 +1,6 @@
 import { platforms } from "../data/platforms";
 import { FlatList, StyleSheet, Text, View } from "react-native";
-import PlatformCard from "../components/PlatformCard";
+import PlatformCard from "../features/platforms/PlatformCard";
 
 export default function PlatformsScreen() {
   return (
