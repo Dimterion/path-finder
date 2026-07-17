@@ -14,7 +14,7 @@ import {
   loadApplications,
   saveApplications,
   APPLICATION_STATUS_COLORS,
-} from "../data/applications";
+} from "../features/applications/data";
 import AddApplicationModal from "../features/applications/AddApplicationModal";
 
 const COLUMNS = [

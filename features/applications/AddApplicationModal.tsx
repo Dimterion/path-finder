@@ -14,7 +14,7 @@ import {
   type ApplicationStatus,
   type JobApplication,
   APPLICATION_STATUS_COLORS,
-} from "../../data/applications";
+} from "./data";
 import StatusPicker from "../StatusPicker";
 import { modalStyles as styles } from "../../styles/modal";
 
