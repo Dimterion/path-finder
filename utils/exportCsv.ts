@@ -2,7 +2,7 @@ import { Alert } from "react-native";
 import { File, Paths } from "expo-file-system";
 import * as Sharing from "expo-sharing";
 import { type JobApplication } from "../data/applications";
-import { type Activity } from "../data/activities";
+import { type Activity } from "../features/activities/data";
 
 function escapeCsvValue(value: string | number): string {
   const str = String(value);

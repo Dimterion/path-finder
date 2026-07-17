@@ -14,7 +14,7 @@ import {
   type ActivityStatus,
   type Activity,
   ACTIVITY_STATUS_COLORS,
-} from "../../data/activities";
+} from "./data";
 import StatusPicker from "../StatusPicker";
 import { modalStyles as styles } from "../../styles/modal";
 

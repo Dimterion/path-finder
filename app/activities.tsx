@@ -14,7 +14,7 @@ import {
   loadActivities,
   saveActivities,
   ACTIVITY_STATUS_COLORS,
-} from "../data/activities";
+} from "../features/activities/data";
 import AddActivityModal from "../features/activities/AddActivityModal";
 
 const COLUMNS = [
