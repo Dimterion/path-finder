@@ -1,7 +1,7 @@
 import * as Print from "expo-print";
 import * as Sharing from "expo-sharing";
 import { Alert } from "react-native";
-import { type CvData } from "../data/cv";
+import { type CvData } from "../features/cv/data";
 
 function escapeHtml(str: string): string {
   return str

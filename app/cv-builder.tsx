@@ -20,7 +20,7 @@ import {
   makeEducationEntry,
   makeWorkEntry,
   saveCv,
-} from "../data/cv";
+} from "../features/cv/data";
 import { exportCvPdf } from "../utils/exportPdf";
 import SectionHeader from "../features/cv/SectionHeader";
 
