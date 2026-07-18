@@ -1,4 +1,4 @@
-import { platforms } from "../data/platforms";
+import { platforms } from "../features/platforms/data";
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import PlatformCard from "../features/platforms/PlatformCard";
 

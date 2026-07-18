@@ -1,5 +1,5 @@
 import type { ImageSourcePropType } from "react-native";
-import type { PlatformImageKey } from "../../data/platforms";
+import type { PlatformImageKey } from "../../features/platforms/data";
 
 export const platformImages: Record<PlatformImageKey, ImageSourcePropType> = {
   linkedin: require("../../assets/platforms/linkedin.jpg"),
