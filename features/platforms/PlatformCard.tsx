@@ -1,5 +1,5 @@
 import { type JobPlatform } from "./data";
-import { platformImages } from "../../assets/platforms/platformsImages";
+import { platformImages } from "../../assets/images/platforms/platformsImages";
 import {
   Alert,
   Image,
