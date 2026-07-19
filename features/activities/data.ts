@@ -1,19 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
-
-export type ActivityStatus =
-  | "Active"
-  | "Completed"
-  | "Canceled"
-  | "Paused";
-
-export type Activity = {
-  id: string;
-  number: number;
-  activity: string;
-  date: string;
-  status: ActivityStatus;
-  notes: string;
-};
+import type { Activity, ActivityStatus } from "./types";
 
 const STORAGE_KEY = "pathfinder_activities";
 

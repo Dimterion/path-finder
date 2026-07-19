@@ -10,11 +10,8 @@ import {
   TextInput,
   View,
 } from "react-native";
-import {
-  type ActivityStatus,
-  type Activity,
-  ACTIVITY_STATUS_COLORS,
-} from "./data";
+import { Activity, ActivityStatus } from "./types";
+import { ACTIVITY_STATUS_COLORS } from "./data";
 import StatusPicker from "../StatusPicker";
 import { modalStyles as styles } from "../../styles/modal";
 
