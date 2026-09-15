@@ -17,16 +17,47 @@ export type JobListing = {
 
 export const listings: JobListing[] = [
   {
-    id: "01_listing",
-    title: "Listing Title",
-    websiteUrl: "https://www.example.com/",
-    description: "Listing Description",
-    imageKey: "placeholder",
-    tags: ["Tag 1", "Tag 2", "Tag 3"],
+    id: "360_learning",
+    title: "360Learning",
+    websiteUrl: "https://360learning.com",
+    description:
+      "Online learning platform that helps companies create and share internal courses. Employees can publish short lessons, track progress, and build skills without heavy LMS setup.",
+    // imageKey: "placeholder",
+    tags: [
+      "EdTech",
+      "SaaS",
+      "B2B",
+      "Learning & Development",
+      "Remote-friendly",
+      "Europe",
+    ],
     extraLinks: [
       {
-        label: "Extra link 1",
-        url: "https://www.example.com/",
+        label: "Careers page (Lever)",
+        url: "https://jobs.lever.co/360learning",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/360learning",
+      },
+    ],
+  },
+  {
+    id: "aareon",
+    title: "Aareon",
+    websiteUrl: "https://www.aareon.com",
+    description:
+      "European software company that provides cloud-based property management systems for real estate companies. Their platform helps housing associations and commercial property managers handle rent, contracts, maintenance, and reporting in one system.",
+    // imageKey: "placeholder",
+    tags: ["PropTech", "SaaS", "B2B", "Real Estate", "ERP", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.aareon.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/aareon",
       },
     ],
   },
