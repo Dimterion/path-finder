@@ -1,5 +1,5 @@
-import { type JobPlatform } from "./data";
-import { platformImages } from "../../assets/images/platforms/platformImages";
+import { type JobListing } from "./data";
+import { listingImages } from "../../assets/images/listings/listingImages";
 import {
   Alert,
   Image,
@@ -10,8 +10,8 @@ import {
   View,
 } from "react-native";
 
-type PlatformCardProps = {
-  item: JobPlatform;
+type ListingCardProps = {
+  item: JobListing;
 };
 
 async function openExternalLink(url: string): Promise<void> {
@@ -25,8 +25,8 @@ async function openExternalLink(url: string): Promise<void> {
   await Linking.openURL(url);
 }
 
-export default function PlatformCard({ item }: PlatformCardProps) {
-  const imageSource = item.imageKey ? platformImages[item.imageKey] : undefined;
+export default function ListingCard({ item }: ListingCardProps) {
+  const imageSource = item.imageKey ? listingImages[item.imageKey] : undefined;
 
   {
     imageSource ? <Image source={imageSource} style={styles.image} /> : null;
@@ -53,7 +53,7 @@ export default function PlatformCard({ item }: PlatformCardProps) {
         style={styles.linkButton}
         onPress={() => openExternalLink(item.websiteUrl)}
       >
-        <Text style={styles.linkButtonText}>Visit platform</Text>
+        <Text style={styles.linkButtonText}>Company Site</Text>
       </Pressable>
 
       {item.extraLinks && item.extraLinks.length > 0 ? (

@@ -1,6 +1,6 @@
 import { listings } from "../features/listings/data";
 import { FlatList, StyleSheet, Text, View } from "react-native";
-import PlatformCard from "../features/platforms/PlatformCard";
+import ListingCard from "../features/listings/ListingCard";
 
 export default function ListingsScreen() {
   return (
@@ -8,7 +8,7 @@ export default function ListingsScreen() {
       <FlatList
         data={listings}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <PlatformCard item={item} />}
+        renderItem={({ item }) => <ListingCard item={item} />}
         contentContainerStyle={styles.listContent}
         ListHeaderComponent={
           <View style={styles.header}>
