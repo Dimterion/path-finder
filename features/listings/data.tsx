@@ -61,4 +61,75 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "ab_tasty",
+    title: "AB Tasty",
+    websiteUrl: "https://www.abtasty.com",
+    description:
+      "French SaaS company that provides an all-in-one platform for A/B testing, personalization, and feature management. Marketing and product teams use it to run experiments, optimize websites, and roll out new features safely.",
+    // imageKey: "placeholder",
+    tags: [
+      "MarTech",
+      "SaaS",
+      "B2B",
+      "A/B Testing",
+      "Personalization",
+      "Europe",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.abtasty.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/ab-tasty",
+      },
+    ],
+  },
+  {
+    id: "accuracy",
+    title: "Accuracy",
+    websiteUrl: "https://www.accuracy.com",
+    description:
+      "Independent global consulting firm that advises companies and investors on high-stakes decisions. Teams work on M&A and valuations, disputes and arbitration, crises and restructurings, and corporate strategy.",
+    // imageKey: "placeholder",
+    tags: ["Consulting", "Financial Advisory", "Strategy", "M&A", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.accuracy.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/accuracy",
+      },
+    ],
+  },
+  {
+    id: "actimage",
+    title: "Actimage",
+    websiteUrl: "https://www.actimage.com",
+    description:
+      "French-German digital agency that builds custom software and cloud solutions for companies and public organizations. Teams work on web and mobile apps, UX/UI design, data projects, IoT, and mixed-reality (AR/VR) solutions.",
+    // imageKey: "placeholder",
+    tags: [
+      "Software Development",
+      "Digital Agency",
+      "Cloud",
+      "IoT",
+      "AR/VR",
+      "Europe",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://jobs.actimage.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/actimage",
+      },
+    ],
+  },
 ];
