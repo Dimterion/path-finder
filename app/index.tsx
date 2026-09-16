@@ -16,6 +16,12 @@ export default function HomeScreen() {
         </Pressable>
       </Link>
 
+      <Link href="/listings" asChild>
+        <Pressable style={styles.buttonPrimaryLight}>
+          <Text style={styles.buttonText}>Job Listings</Text>
+        </Pressable>
+      </Link>
+
       <Link href="/cv-builder" asChild>
         <Pressable style={styles.buttonSecondary}>
           <Text style={styles.buttonText}>CV Builder</Text>
@@ -69,6 +75,13 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 14,
     backgroundColor: colors.primary,
+  },
+  buttonPrimaryLight: {
+    paddingVertical: 14,
+    paddingHorizontal: 18,
+    borderRadius: 10,
+    marginBottom: 14,
+    backgroundColor: colors.primaryLight,
   },
   buttonSecondary: {
     paddingVertical: 14,
