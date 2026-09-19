@@ -10,11 +10,11 @@ import {
 import { randomUUID } from "expo-crypto";
 import { exportActivitiesCsv } from "../utils/exportCsv";
 import {
-  type Activity,
   loadActivities,
   saveActivities,
   ACTIVITY_STATUS_COLORS,
 } from "../features/activities/data";
+import { type Activity } from "../features/activities/types";
 import AddActivityModal from "../features/activities/AddActivityModal";
 
 const COLUMNS = [

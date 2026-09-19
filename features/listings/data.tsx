@@ -761,7 +761,7 @@ export const listings: JobListing[] = [
   },
   {
     id: "buildkite",
-    title: "buildkite",
+    title: "Buildkite",
     websiteUrl: "https://buildkite.com",
     description:
       "Continuous integration and delivery (CI/CD) platform for software teams. Orchestrates build, test, and deployment pipelines on infrastructure companies control, used by high-scale engineering organizations.",
@@ -775,6 +775,96 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/buildkite",
+      },
+    ],
+  },
+  {
+    id: "cadence",
+    title: "Cadence",
+    websiteUrl: "https://www.cadence.com",
+    description: "",
+    // imageKey: "placeholder",
+    tags: [],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.cadence.com/en_US/home/company/life-at-cadence/careers.html",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/cadence",
+      },
+    ],
+  },
+  {
+    id: "cainiao",
+    title: "Cainiao",
+    websiteUrl: "https://global.cainiao.com",
+    description: "",
+    // imageKey: "placeholder",
+    tags: [],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://cainiao.teamtailor.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/cainiaogroup",
+      },
+    ],
+  },
+  {
+    id: "canal+",
+    title: "Canal+",
+    websiteUrl: "https://www.canalplusgroup.com",
+    description: "",
+    // imageKey: "placeholder",
+    tags: [],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://joinus.canalplus.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/canal-",
+      },
+    ],
+  },
+  {
+    id: "canonical",
+    title: "Canonical",
+    websiteUrl: "https://canonical.com",
+    description: "",
+    // imageKey: "placeholder",
+    tags: [],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://canonical.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/canonical",
+      },
+    ],
+  },
+  {
+    id: "capi",
+    title: "Capi",
+    websiteUrl: "https://capi.com",
+    description: "",
+    // imageKey: "placeholder",
+    tags: [],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://capi.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/capilux",
       },
     ],
   },
