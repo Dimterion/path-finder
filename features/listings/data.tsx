@@ -362,7 +362,7 @@ export const listings: JobListing[] = [
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
-        url: "https://www.welcometothejungle.com/fr/companies-v1/alma/jobs",
+        url: "https://www.welcometothejungle.com/companies-v1/alma/jobs",
       },
       {
         label: "LinkedIn",
@@ -782,9 +782,10 @@ export const listings: JobListing[] = [
     id: "cadence",
     title: "Cadence",
     websiteUrl: "https://www.cadence.com",
-    description: "",
+    description:
+      "Engineering software company that provides electronic design automation (EDA) tools for designing chips, circuit boards, and complex electronic systems. Used by semiconductor and electronics companies to simulate, verify, and optimize hardware before manufacturing.",
     // imageKey: "placeholder",
-    tags: [],
+    tags: ["Software Development", "EDA", "Semiconductors", "Enterprise", "EU"],
     extraLinks: [
       {
         label: "Careers page",
@@ -800,9 +801,16 @@ export const listings: JobListing[] = [
     id: "cainiao",
     title: "Cainiao",
     websiteUrl: "https://global.cainiao.com",
-    description: "",
+    description:
+      "Global logistics and supply-chain technology company, part of Alibaba Group. Builds smart logistics networks, cross-border shipping solutions, and warehouse/last-mile technology for e-commerce merchants worldwide.",
     // imageKey: "placeholder",
-    tags: [],
+    tags: [
+      "Logistics",
+      "E-commerce",
+      "Supply Chain",
+      "Platform",
+      "Remote-worldwide",
+    ],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -818,9 +826,16 @@ export const listings: JobListing[] = [
     id: "canal+",
     title: "Canal+",
     websiteUrl: "https://www.canalplusgroup.com",
-    description: "",
+    description:
+      "Global media and entertainment group operating pay-TV channels, streaming services, and production studios. Creates and distributes films, series, sports, and original content across Europe, Africa, and Asia.",
     // imageKey: "placeholder",
-    tags: [],
+    tags: [
+      "Media & Entertainment",
+      "Streaming",
+      "Content Production",
+      "Enterprise",
+      "EU",
+    ],
     extraLinks: [
       {
         label: "Careers page",
@@ -836,9 +851,16 @@ export const listings: JobListing[] = [
     id: "canonical",
     title: "Canonical",
     websiteUrl: "https://canonical.com",
-    description: "",
+    description:
+      "Company behind the Ubuntu Linux operating system. Provides enterprise support, security updates, and management tools for Ubuntu on desktops, servers, cloud, and IoT devices, used by developers and IT teams worldwide.",
     // imageKey: "placeholder",
-    tags: [],
+    tags: [
+      "Open Source",
+      "Cloud",
+      "Linux",
+      "Developer Tools",
+      "Remote-worldwide",
+    ],
     extraLinks: [
       {
         label: "Careers page",
@@ -854,9 +876,16 @@ export const listings: JobListing[] = [
     id: "capi",
     title: "Capi",
     websiteUrl: "https://capi.com",
-    description: "",
+    description:
+      "Fintech platform that simplifies cross-border payments for businesses in emerging markets. Enables fast, low-cost international transfers and currency exchange for importers and SMEs in Africa and beyond.",
     // imageKey: "placeholder",
-    tags: [],
+    tags: [
+      "FinTech",
+      "Payments",
+      "B2B",
+      "Emerging Markets",
+      "Remote-worldwide",
+    ],
     extraLinks: [
       {
         label: "Careers page",
@@ -865,6 +894,571 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/capilux",
+      },
+    ],
+  },
+  {
+    id: "cegid",
+    title: "Cegid",
+    websiteUrl: "https://www.cegid.com",
+    description:
+      "French software publisher of cloud-based business management solutions. Offers ERP, payroll, finance, tax, and retail software for accountants, retailers, and mid-sized enterprises.",
+    // imageKey: "placeholder",
+    tags: ["SaaS", "ERP", "Finance", "Retail Tech", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobs.cegid.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/cegid",
+      },
+    ],
+  },
+  {
+    id: "checkout.com",
+    title: "Checkout.com",
+    websiteUrl: "https://www.checkout.com",
+    description:
+      "Global payment service provider that helps online businesses accept and manage payments. Offers payment gateway, acquiring, fraud prevention, and payout solutions through a unified API for enterprise merchants.",
+    // imageKey: "placeholder",
+    tags: ["FinTech", "Payments", "SaaS", "E-commerce", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.checkout.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/checkout",
+      },
+    ],
+  },
+  {
+    id: "christy_media",
+    title: "Christy Media",
+    websiteUrl: "https://www.christy-media.com",
+    description:
+      "Digital media and ad-tech company that operates content sites and monetizes traffic through advertising and affiliate marketing. Teams work on SEO, content strategy, programmatic ads, and revenue optimization.",
+    // imageKey: "placeholder",
+    tags: ["Media & Entertainment", "AdTech", "SEO", "Content", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.christy-media.com/job-results",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/christy-media-solutions",
+      },
+    ],
+  },
+  {
+    id: "clerk",
+    title: "Clerk",
+    websiteUrl: "https://clerk.com",
+    description:
+      "E-commerce personalization platform that helps online shops increase conversions with tailored product recommendations, email capture, and behavioral targeting. Integrates with major e-commerce platforms.",
+    // imageKey: "placeholder",
+    tags: ["E-commerce", "MarTech", "SaaS", "Personalization", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://clerk.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/clerkinc",
+      },
+    ],
+  },
+  {
+    id: "clipboard",
+    title: "Clipboard",
+    websiteUrl: "https://www.clipboard.com",
+    description:
+      "Healthcare software company building tools for clinical documentation and care coordination. Provides digital charting, templates, and workflow automation for hospitals and medical practices.",
+    // imageKey: "placeholder",
+    tags: [
+      "HealthTech",
+      "SaaS",
+      "Clinical Software",
+      "B2B",
+      "Remote-worldwide",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.clipboard.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/clipboard",
+      },
+    ],
+  },
+  {
+    id: "clipmyhorse",
+    title: "ClipMyHorse",
+    websiteUrl: "https://www.clipmyhorse.tv",
+    description:
+      "Streaming platform dedicated to equestrian sports. Broadcasts live competitions, on-demand videos, and original content for horse-riding enthusiasts worldwide.",
+    // imageKey: "placeholder",
+    tags: ["Media & Entertainment", "Streaming", "Sports", "B2C", "EU"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/clipmyhorse-tv",
+      },
+    ],
+  },
+  {
+    id: "cloudflare",
+    title: "Cloudflare",
+    websiteUrl: "https://www.cloudflare.com",
+    description:
+      "Web infrastructure and security company that protects and accelerates websites and applications. Provides CDN, DDoS protection, DNS, Zero Trust security, and developer platforms used by millions of sites.",
+    // imageKey: "placeholder",
+    tags: [
+      "Cybersecurity",
+      "Cloud",
+      "CDN",
+      "Developer Tools",
+      "Remote-worldwide",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.cloudflare.com/careers/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/cloudflare",
+      },
+    ],
+  },
+  {
+    id: "coinspaid",
+    title: "Coinspaid",
+    websiteUrl: "https://coinspaid.com",
+    description:
+      "Crypto payment gateway and treasury platform for online businesses. Enables merchants to accept cryptocurrencies, manage digital assets, and convert to fiat with integrated risk and compliance tools.",
+    // imageKey: "placeholder",
+    tags: ["FinTech", "Crypto", "Payments", "B2B", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.eu.lever.co/coinspaid",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/coinspaid-com",
+      },
+    ],
+  },
+  {
+    id: "consensys",
+    title: "Consensys",
+    websiteUrl: "https://consensys.io",
+    description:
+      "Blockchain software company behind MetaMask and Ethereum infrastructure tools. Builds wallets, developer platforms, and protocol clients that power decentralized applications and onchain finance.",
+    // imageKey: "placeholder",
+    tags: [
+      "Blockchain",
+      "Crypto",
+      "Developer Tools",
+      "Infrastructure",
+      "Remote-worldwide",
+    ],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/consensys-incorporated",
+      },
+    ],
+  },
+  {
+    id: "constellr",
+    title: "ConstellR",
+    websiteUrl: "https://www.constellr.com",
+    description:
+      "Space-tech startup building a constellation of small satellites to measure land surface temperature and other Earth-observation data. Sells analytics to agriculture, climate, and environmental sectors.",
+    // imageKey: "placeholder",
+    tags: [
+      "Space Tech",
+      "Earth Observation",
+      "Data & Analytics",
+      "Deep Tech",
+      "EU",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page (Greenhouse)",
+        url: "https://job-boards.eu.greenhouse.io/constellrgmbh",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/constellr",
+      },
+    ],
+  },
+  {
+    id: "contentsquare",
+    title: "Contentsquare",
+    websiteUrl: "https://contentsquare.com",
+    description:
+      "Digital experience analytics platform that shows how users interact with websites and apps. Combines session replays, heatmaps, journey analytics, and feedback to help teams improve UX and conversions.",
+    // imageKey: "placeholder",
+    tags: ["MarTech", "SaaS", "Analytics", "UX", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.lever.co/contentsquare",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/contentsquare",
+      },
+    ],
+  },
+  {
+    id: "contractbook",
+    title: "Contractbook",
+    websiteUrl: "https://contractbook.com",
+    description:
+      "Legal-tech platform that automates contract creation and management for companies. Provides templates, workflows, and e-signature to streamline drafting, negotiating, and storing contracts.",
+    // imageKey: "placeholder",
+    tags: ["Legal Tech", "SaaS", "Automation", "B2B", "EU"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/contractbook/about",
+      },
+    ],
+  },
+  {
+    id: "converteo",
+    title: "Converteo",
+    websiteUrl: "https://converteo.com",
+    description:
+      "Digital agency specialized in e-commerce and performance marketing. Helps brands optimize conversion rates, run paid campaigns, and improve online sales through data-driven strategies.",
+    // imageKey: "placeholder",
+    tags: [
+      "Digital Agency",
+      "E-commerce",
+      "MarTech",
+      "Performance Marketing",
+      "EU",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://jobs.converteo.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/converteo",
+      },
+    ],
+  },
+  {
+    id: "corma",
+    title: "Corma",
+    websiteUrl: "https://www.corma.io",
+    description:
+      "AI productivity startup building tools to reduce distractions and help knowledge workers focus. Combines AI with workflow management to prioritize tasks and minimize context switching.",
+    // imageKey: "placeholder",
+    tags: ["AI / Data", "Productivity", "SaaS", "Developer Tools", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://corma.welcomekit.co",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/getcorma",
+      },
+    ],
+  },
+  {
+    id: "corsearch",
+    title: "Corsearch",
+    websiteUrl: "https://corsearch.com",
+    description:
+      "Brand protection and trademark management platform. Uses AI and expert services to monitor online channels, detect counterfeits, enforce IP rights, and manage domain portfolios for global brands.",
+    // imageKey: "placeholder",
+    tags: ["Legal Tech", "Brand Protection", "AI / Data", "B2B", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.corsearch.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/corsearchinc",
+      },
+    ],
+  },
+  {
+    id: "creative_fabrica",
+    title: "Creative Fabrica",
+    websiteUrl: "https://www.creativefabrica.com",
+    description:
+      "Online marketplace for digital design assets like fonts, graphics, and templates. Serves designers, crafters, and creators with subscriptions and à la carte downloads for personal and commercial projects.",
+    // imageKey: "placeholder",
+    tags: ["E-commerce", "Marketplace", "Design", "Creator Economy", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.creativefabrica.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/creative-fabrica",
+      },
+    ],
+  },
+  {
+    id: "criteo",
+    title: "Criteo",
+    websiteUrl: "https://www.criteo.com",
+    description:
+      "Ad-tech company that powers performance advertising and retargeting campaigns. Uses AI to deliver personalized ads across the web and help retailers and brands increase online sales.",
+    // imageKey: "placeholder",
+    tags: ["AdTech", "MarTech", "AI / Data", "E-commerce", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.criteo.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/criteo",
+      },
+    ],
+  },
+  {
+    id: "cryptoNext_security",
+    title: "CryptoNext Security",
+    websiteUrl: "https://www.cryptonext-security.com",
+    description:
+      "Cybersecurity firm specialized in quantum-safe cryptography and post-quantum security solutions. Helps organizations protect data and communications against future quantum-computing threats.",
+    // imageKey: "placeholder",
+    tags: ["Cybersecurity", "Cryptography", "Deep Tech", "Enterprise", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Workable)",
+        url: "https://apply.workable.com/cryptonext-security",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/cryptonext-security",
+      },
+    ],
+  },
+  {
+    id: "dailymotion",
+    title: "Dailymotion",
+    websiteUrl: "https://www.dailymotion.com",
+    description:
+      "Video hosting and streaming platform where users can upload, share, and watch videos. Offers ad-supported content and programmatic video advertising for publishers and brands.",
+    // imageKey: "placeholder",
+    tags: ["Media & Entertainment", "Video", "AdTech", "Platform", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.dailymotion.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/dailymotion",
+      },
+    ],
+  },
+  {
+    id: "dash0",
+    title: "Dash0",
+    websiteUrl: "https://www.dash0.com",
+    description:
+      "Observability platform built on OpenTelemetry for monitoring logs, metrics, and traces. Helps engineering teams detect issues, analyze performance, and automate incident response across cloud and AI systems.",
+    // imageKey: "placeholder",
+    tags: ["DevTools", "Observability", "SaaS", "Cloud", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/dash0",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/dash0hq",
+      },
+    ],
+  },
+  {
+    id: "dashdoc",
+    title: "Dashdoc",
+    websiteUrl: "https://www.dashdoc.com",
+    description:
+      "Healthtech startup building digital care pathway and patient engagement tools. Helps clinics and hospitals coordinate care, collect patient-reported outcomes, and improve treatment adherence.",
+    // imageKey: "placeholder",
+    tags: ["HealthTech", "SaaS", "Care Coordination", "B2B", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/dashdoc/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/dashdoc-eu",
+      },
+    ],
+  },
+  {
+    id: "dashlane",
+    title: "Dashlane",
+    websiteUrl: "https://www.dashlane.com",
+    description:
+      "Password manager and digital identity platform for consumers and businesses. Stores passwords, passkeys, and personal data securely, with breach alerts and autofill across devices.",
+    // imageKey: "placeholder",
+    tags: ["Cybersecurity", "SaaS", "Identity", "B2C", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.dashlane.com/about/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/dashlane",
+      },
+    ],
+  },
+  {
+    id: "dassault_systèmes",
+    title: "Dassault Systèmes",
+    websiteUrl: "https://www.3ds.com",
+    description:
+      "Software company behind 3D design, simulation, and product lifecycle management (PLM) solutions. Provides the 3DEXPERIENCE platform used in aerospace, automotive, life sciences, and manufacturing.",
+    // imageKey: "placeholder",
+    tags: ["Software Development", "3D Design", "PLM", "Enterprise", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.3ds.com/careers/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/dassaultsystemes",
+      },
+    ],
+  },
+  {
+    id: "datadog",
+    title: "Datadog",
+    websiteUrl: "https://www.datadoghq.com",
+    description:
+      "Cloud monitoring and analytics platform for applications, infrastructure, and logs. Provides dashboards, alerts, and tracing to help engineering teams detect and fix performance issues.",
+    // imageKey: "placeholder",
+    tags: ["DevTools", "Observability", "SaaS", "Cloud", "Remote-worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.datadoghq.com/all-jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/datadog",
+      },
+    ],
+  },
+  {
+    id: "datagalaxy",
+    title: "DataGalaxy",
+    websiteUrl: "https://www.datagalaxy.com",
+    description:
+      "Data catalog and governance platform that maps metadata, lineage, and business definitions. Helps organizations discover, understand, and trust their data assets across teams.",
+    // imageKey: "placeholder",
+    tags: ["Data & Analytics", "Data Governance", "SaaS", "Enterprise", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/datagalaxy/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/datagalaxy",
+      },
+    ],
+  },
+  {
+    id: "dataiku",
+    title: "Dataiku",
+    websiteUrl: "https://www.dataiku.com",
+    description:
+      "Enterprise AI and data science platform (Data Science Studio) for building, deploying, and governing analytics and machine learning projects. Supports code and no-code workflows for mixed teams.",
+    // imageKey: "placeholder",
+    tags: ["AI / Data", "SaaS", "Machine Learning", "Enterprise", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Greenhouse)",
+        url: "https://job-boards.greenhouse.io/dataiku",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/dataiku",
+      },
+    ],
+  },
+  {
+    id: "deca_games",
+    title: "DECA Games",
+    websiteUrl: "https://decagames.com",
+    description:
+      "Mobile gaming company that acquires, operates, and grows live-service games. Works with external studios on user acquisition, monetization, product management, and live operations.",
+    // imageKey: "placeholder",
+    tags: ["Gaming", "Mobile", "Publishing", "User Acquisition", "EU"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/deca-games",
+      },
+    ],
+  },
+  {
+    id: "dedalus",
+    title: "Dedalus",
+    websiteUrl: "https://www.dedalus.com",
+    description:
+      "Healthcare IT company providing electronic health records, laboratory systems, and diagnostic software for hospitals and care networks. Focuses on clinical workflows and interoperability across care settings.",
+    // imageKey: "placeholder",
+    tags: ["HealthTech", "EHR", "Software Development", "Enterprise", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.dedalus.com/global/working-at-dedalus/our-job-offers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/dedalus-group",
+      },
+    ],
+  },
+  {
+    id: "deel",
+    title: "Deel",
+    websiteUrl: "https://www.deel.com",
+    description:
+      "Global HR and payroll platform for hiring and paying employees and contractors in many countries. Offers employer-of-record, payroll, benefits, and HRIS tools for remote and international teams.",
+    // imageKey: "placeholder",
+    tags: ["HR Tech", "Payroll", "SaaS", "Remote", "Remote-worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.deel.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/deel",
       },
     ],
   },
