@@ -1462,4 +1462,221 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "deezer",
+    title: "Deezer",
+    websiteUrl: "https://www.deezer.com",
+    description:
+      "Music streaming service offering on-demand access to a large catalog of songs, albums, playlists, and podcasts. Provides subscription plans for consumers and family, plus ad-supported tiers and artist tools.",
+    // imageKey: "placeholder",
+    tags: ["Media & Entertainment", "Music Tech", "Streaming", "B2C", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.deezerjobs.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/deezer",
+      },
+    ],
+  },
+  {
+    id: "deloitte",
+    title: "Deloitte",
+    websiteUrl: "https://www.deloitte.com",
+    description:
+      "Global professional services firm offering audit, consulting, tax, and advisory services. Helps large organizations with strategy, technology implementation, operations, risk, and M&A projects.",
+    // imageKey: "placeholder",
+    tags: [
+      "Consulting",
+      "Audit",
+      "Financial Advisory",
+      "Enterprise",
+      "Remote-worldwide",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.deloitte.com/global/en/careers/job-search.html",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/deloitte",
+      },
+    ],
+  },
+  {
+    id: "descartes_&_mauss_verra",
+    title: "Descartes & Mauss (Verra)",
+    websiteUrl: "https://verra.work",
+    description:
+      "Strategy-tech startup building an AI-powered assistant for strategic decision-making. Analyzes market signals and internal data to help leadership teams identify opportunities and model long-term scenarios.",
+    // imageKey: "placeholder",
+    tags: ["AI / Data", "Consulting", "Strategy", "B2B", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/descartes-mauss/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/verra-work",
+      },
+    ],
+  },
+  {
+    id: "descartes_underwriting",
+    title: "Descartes Underwriting",
+    websiteUrl: "https://descartesunderwriting.com",
+    description:
+      "Insurtech specializing in parametric insurance for climate, cyber, and emerging risks. Uses data, AI, and climate science to design policies that pay out automatically when predefined triggers (e.g., wind speed, rainfall) are met.",
+    // imageKey: "placeholder",
+    tags: ["InsurTech", "Climate Tech", "Data & Analytics", "B2B", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://descartesunderwriting.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/descartesunderwriting",
+      },
+    ],
+  },
+  {
+    id: "diduenjoy",
+    title: "Diduenjoy",
+    websiteUrl: "https://www.diduenjoy.com",
+    description:
+      "Customer feedback and voice-of-customer platform. Collects surveys, reviews, and social signals, then uses AI to analyze sentiment and surface actionable insights for product, marketing, and support teams.",
+    // imageKey: "placeholder",
+    tags: ["MarTech", "SaaS", "Customer Feedback", "AI / Data", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/diduenjoy/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/diduenjoy",
+      },
+    ],
+  },
+  {
+    id: "digisap-Solutions",
+    title: "Digisap Solutions",
+    websiteUrl: "https://www.digisap-solutions.com",
+    description:
+      "IT services and consulting company delivering software development, integration, and support projects. Works with clients on custom applications, modernization, and managed services.",
+    // imageKey: "placeholder",
+    tags: [
+      "IT Services",
+      "Software Development",
+      "Consulting",
+      "Enterprise",
+      "EU",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://digisapsolutions.teamtailor.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/digisap-solutions",
+      },
+    ],
+  },
+  {
+    id: "disruptive_games",
+    title: "Disruptive Games",
+    websiteUrl: "https://www.disruptivegames.com",
+    description:
+      "Independent game development studio founded by industry veterans. Builds online and multiplayer games, providing design, engineering, live-ops, and backend services for partners and original titles.",
+    // imageKey: "placeholder",
+    tags: ["Gaming", "Game Development", "Multiplayer", "Entertainment", "EU"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/disruptive-games",
+      },
+    ],
+  },
+  {
+    id: "distribusion",
+    title: "Distribusion",
+    websiteUrl: "https://www.distribusion.com",
+    description:
+      "Ground-transportation technology platform connecting rail, bus, ferry, and airport-transfer operators with travel retailers. Provides APIs and booking tools for search, pricing, and ticketing across multiple carriers.",
+    // imageKey: "placeholder",
+    tags: ["Travel Tech", "Transportation", "API", "B2B", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.distribusion.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/distribusion",
+      },
+    ],
+  },
+  {
+    id: "doctrine",
+    title: "Doctrine",
+    websiteUrl: "https://www.doctrine.fr",
+    description:
+      "Legal-tech platform offering AI-powered legal research, document analysis, and drafting tools. Aggregates court decisions and legal texts to help lawyers and legal departments work faster and more accurately.",
+    // imageKey: "placeholder",
+    tags: ["Legal Tech", "AI / Data", "SaaS", "B2B", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.doctrine.fr/recrutement",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/doctrine",
+      },
+    ],
+  },
+  {
+    id: "doubleVerify",
+    title: "DoubleVerify",
+    websiteUrl: "https://doubleverify.com",
+    description:
+      "Digital advertising verification platform that measures ad viewability, fraud, brand safety, and attention. Helps advertisers and agencies ensure ads are seen by real users in suitable environments.",
+    // imageKey: "placeholder",
+    tags: ["AdTech", "Measurement", "SaaS", "B2B", "Remote-worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://doubleverify.com/en/company/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/doubleverify-inc",
+      },
+    ],
+  },
+  {
+    id: "dust",
+    title: "Dust",
+    websiteUrl: "https://dust.tt",
+    description:
+      "Enterprise AI platform for building and deploying AI agents that connect to company data and tools. Enables teams to automate workflows across apps like Notion, Slack, and Salesforce with shared, governed agents.",
+    // imageKey: "placeholder",
+    tags: ["AI / Data", "SaaS", "Enterprise AI", "Automation", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/dust",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/dust-tt",
+      },
+    ],
+  },
 ];

@@ -35,15 +35,16 @@ export default function ListingsScreen() {
         contentContainerStyle={styles.listContent}
         ListHeaderComponent={
           <View style={styles.header}>
-            <Text style={styles.screenTitle}>Job Listings</Text>
+            <Text style={styles.screenTitle}>
+              Job Listings ({filteredListings.length})
+            </Text>
             <Text style={styles.screenText}>
-              Explore different job search listings and learn what each one can
-              offer.
+              Explore different companies and their potential career options.
             </Text>
             <View style={styles.searchContainer}>
               <TextInput
                 style={styles.searchInput}
-                placeholder="Search jobs..."
+                placeholder="Search companies..."
                 placeholderTextColor="#9ca3af"
                 value={searchQuery}
                 onChangeText={setSearchQuery}
@@ -74,7 +75,7 @@ export default function ListingsScreen() {
         }
         ListEmptyComponent={
           <View style={styles.emptyState}>
-            <Text style={styles.emptyText}>No listings found</Text>
+            <Text style={styles.emptyText}>No listings found.</Text>
           </View>
         }
       />
