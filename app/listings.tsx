@@ -9,9 +9,11 @@ import {
 } from "react-native";
 import { useState } from "react";
 import ListingCard from "../features/listings/ListingCard";
+import { useScrollToTop } from "../hooks/useScrollToTop";
 
 export default function ListingsScreen() {
   const [searchQuery, setSearchQuery] = useState("");
+  const { flatListRef, handleScroll, ScrollToTopComponent } = useScrollToTop();
 
   const filteredListings = listings.filter((item) => {
     const query = searchQuery.toLowerCase().trim();
@@ -29,10 +31,13 @@ export default function ListingsScreen() {
   return (
     <View style={styles.container}>
       <FlatList
+        ref={flatListRef}
         data={filteredListings}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <ListingCard item={item} />}
         contentContainerStyle={styles.listContent}
+        onScroll={handleScroll}
+        scrollEventThrottle={16}
         ListHeaderComponent={
           <View style={styles.header}>
             <Text style={styles.screenTitle}>
@@ -79,6 +84,7 @@ export default function ListingsScreen() {
           </View>
         }
       />
+      <ScrollToTopComponent />
     </View>
   );
 }

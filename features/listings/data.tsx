@@ -760,6 +760,25 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "brevo",
+    title: "Brevo",
+    websiteUrl: "https://www.brevo.com",
+    description:
+      "Cloud marketing platform (formerly Sendinblue) for email, SMS, and marketing automation. Provides tools for campaigns, transactional messages, CRM, landing pages, and chat to help businesses manage customer communication.",
+    // imageKey: "placeholder",
+    tags: ["MarTech", "SaaS", "Email Marketing", "CRM", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.brevo.com/careers/open-positions",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/brevo",
+      },
+    ],
+  },
+  {
     id: "buildkite",
     title: "Buildkite",
     websiteUrl: "https://buildkite.com",
@@ -1564,7 +1583,7 @@ export const listings: JobListing[] = [
     ],
   },
   {
-    id: "digisap-Solutions",
+    id: "digisap-solutions",
     title: "Digisap Solutions",
     websiteUrl: "https://www.digisap-solutions.com",
     description:
@@ -1676,6 +1695,232 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/dust-tt",
+      },
+    ],
+  },
+  {
+    id: "ekimetrics",
+    title: "Ekimetrics",
+    websiteUrl: "https://www.ekimetrics.com",
+    description:
+      "Data science and AI consulting firm helping companies optimize marketing, pricing, and operations. Builds custom analytics solutions, marketing mix models, and decision tools combining data, business strategy, and sustainability.",
+    // imageKey: "placeholder",
+    tags: [
+      "Consulting",
+      "Data & Analytics",
+      "AI / Data",
+      "Marketing Analytics",
+      "EU",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.lever.co/ekimetrics",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/ekimetrics",
+      },
+    ],
+  },
+  {
+    id: "elevenlabs",
+    title: "ElevenLabs",
+    websiteUrl: "https://elevenlabs.io",
+    description:
+      "AI voice research and product company. Provides text-to-speech, voice cloning, dubbing, and conversational voice agents used by creators, developers, and enterprises for content, customer support, and interactive experiences.",
+    // imageKey: "placeholder",
+    tags: [
+      "AI / Data",
+      "Speech Tech",
+      "SaaS",
+      "Developer Tools",
+      "Remote-worldwide",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://elevenlabs.io/careers/positions",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/elevenlabs",
+      },
+    ],
+  },
+  {
+    id: "enapi",
+    title: "ENAPI",
+    websiteUrl: "https://enapi.com",
+    description:
+      "EV charging infrastructure platform providing roaming and clearing services between charge-point operators and e-mobility apps. Implements OCPI standards to enable cross-network charging and settlement across Europe.",
+    // imageKey: "placeholder",
+    tags: ["CleanTech", "EV Charging", "API", "Infrastructure", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://enapi.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/enapi",
+      },
+    ],
+  },
+  {
+    id: "eneba",
+    title: "Eneba",
+    websiteUrl: "https://www.eneba.com",
+    description:
+      "Digital marketplace for video game keys, gift cards, and in-game content. Connects gamers with verified sellers offering PC, console, and subscription products at competitive prices.",
+    // imageKey: "placeholder",
+    tags: ["E-commerce", "Gaming", "Marketplace", "B2C", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/eneba",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/enebagames",
+      },
+    ],
+  },
+  {
+    id: "ensol",
+    title: "Ensol",
+    websiteUrl: "https://www.goensol.com",
+    description:
+      "Residential solar and home energy company offering solar panels, batteries, EV chargers, and heat pumps. Provides end-to-end installation and an app to monitor and optimize energy production and consumption.",
+    // imageKey: "placeholder",
+    tags: ["CleanTech", "Solar", "Energy", "Hardware & Software", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/ensol/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/ensol-solaire",
+      },
+    ],
+  },
+  {
+    id: "equativ",
+    title: "Equativ",
+    websiteUrl: "https://www.equativ.com",
+    description:
+      "Independent adtech platform offering an ad server, SSP, and DSP for publishers and advertisers. Supports programmatic and direct deals across display, video, and connected TV with a focus on transparency and performance.",
+    // imageKey: "placeholder",
+    tags: ["AdTech", "Programmatic", "SaaS", "Video & CTV", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.lever.co/equativ",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/equativ",
+      },
+    ],
+  },
+  {
+    id: "escape_velocity_entertainment",
+    title: "Escape Velocity Entertainment",
+    websiteUrl: "https://eve.games",
+    description:
+      "Independent game development studio creating new genres with inclusive, accessible gameplay. Builds multiplayer and competitive titles designed for players of all skill levels and backgrounds.",
+    // imageKey: "placeholder",
+    tags: [
+      "Gaming",
+      "Game Development",
+      "Multiplayer",
+      "Entertainment",
+      "Remote-worldwide",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://eve.games/home/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/escape-velocity-entertainment",
+      },
+    ],
+  },
+  {
+    id: "euroclear",
+    title: "Euroclear",
+    websiteUrl: "https://www.euroclear.com",
+    description:
+      "Financial market infrastructure providing settlement, custody, and post-trade services for bonds, equities, funds, and derivatives. Operates central securities depositories and clearing systems across multiple European markets.",
+    // imageKey: "placeholder",
+    tags: [
+      "Financial Services",
+      "Market Infrastructure",
+      "Securities",
+      "Enterprise",
+      "EU",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.euroclear.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/euroclear",
+      },
+    ],
+  },
+  {
+    id: "euronext",
+    title: "Euronext",
+    websiteUrl: "https://www.euronext.com",
+    description:
+      "Leading European stock exchange operator running regulated markets in multiple countries. Provides listing, trading, clearing, and settlement for equities, bonds, derivatives, commodities, and indices such as the CAC 40 and AEX.",
+    // imageKey: "placeholder",
+    tags: [
+      "Financial Services",
+      "Stock Exchange",
+      "Capital Markets",
+      "Enterprise",
+      "EU",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.euronext.com/about/careers/open-positions",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/euronext",
+      },
+    ],
+  },
+  {
+    id: "extia",
+    title: "Extia",
+    websiteUrl: "https://www.extia-group.com",
+    description:
+      "IT and digital consulting firm placing consultants in client teams across sectors like finance, telecom, energy, and retail. Supports projects in development, infrastructure, data, cybersecurity, and agile transformation.",
+    // imageKey: "placeholder",
+    tags: [
+      "IT Services",
+      "Consulting",
+      "Software Development",
+      "Enterprise",
+      "EU",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.extia-group.com/join-us",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/extia",
       },
     ],
   },
