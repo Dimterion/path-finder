@@ -13,6 +13,7 @@ import { useScrollToTop } from "../hooks/useScrollToTop";
 
 export default function ListingsScreen() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [showTags, setShowTags] = useState(false);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const { flatListRef, handleScroll, ScrollToTopComponent } = useScrollToTop();
 
@@ -105,37 +106,65 @@ export default function ListingsScreen() {
             {allTags.length > 0 && (
               <View style={styles.tagsSection}>
                 <View style={styles.tagsHeader}>
-                  <Text style={styles.tagsTitle}>Filter by tags</Text>
+                  <TouchableOpacity
+                    style={styles.filterButton}
+                    onPress={() => setShowTags(!showTags)}
+                    accessibilityRole="button"
+                    accessibilityLabel={`Filter by tags, ${showTags ? "expanded" : "collapsed"}`}
+                  >
+                    <Text style={styles.filterButtonText}>
+                      Filter by tags
+                      {selectedTags.length > 0 && (
+                        <Text style={styles.filterBadge}>
+                          {" "}
+                          {selectedTags.length}
+                        </Text>
+                      )}
+                    </Text>
+                    <Text
+                      style={[
+                        styles.chevron,
+                        showTags && styles.chevronRotated,
+                      ]}
+                    >
+                      ▼
+                    </Text>
+                  </TouchableOpacity>
                   {hasActiveFilters && (
                     <TouchableOpacity onPress={clearFilters}>
                       <Text style={styles.clearAllText}>Clear all filters</Text>
                     </TouchableOpacity>
                   )}
                 </View>
-                <View style={styles.tagsRow}>
-                  {allTags.map((tag) => {
-                    const isSelected = selectedTags.includes(tag);
-                    return (
-                      <TouchableOpacity
-                        key={tag}
-                        style={[
-                          styles.tagChip,
-                          isSelected && styles.tagChipSelected,
-                        ]}
-                        onPress={() => toggleTag(tag)}
-                      >
-                        <Text
+
+                {showTags && (
+                  <View style={styles.tagsRow}>
+                    {allTags.map((tag) => {
+                      const isSelected = selectedTags.includes(tag);
+                      return (
+                        <TouchableOpacity
+                          key={tag}
                           style={[
-                            styles.tagChipText,
-                            isSelected && styles.tagChipTextSelected,
+                            styles.tagChip,
+                            isSelected && styles.tagChipSelected,
                           ]}
+                          onPress={() => toggleTag(tag)}
+                          accessibilityRole="checkbox"
+                          accessibilityState={{ checked: isSelected }}
                         >
-                          {tag}
-                        </Text>
-                      </TouchableOpacity>
-                    );
-                  })}
-                </View>
+                          <Text
+                            style={[
+                              styles.tagChipText,
+                              isSelected && styles.tagChipTextSelected,
+                            ]}
+                          >
+                            {tag}
+                          </Text>
+                        </TouchableOpacity>
+                      );
+                    })}
+                  </View>
+                )}
               </View>
             )}
           </View>
@@ -218,11 +247,41 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 12,
+    flexWrap: "wrap",
+    gap: 8,
   },
-  tagsTitle: {
+  filterButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+    backgroundColor: "#1d4ed8",
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: "#1d4ed8",
+  },
+  filterButtonText: {
     fontSize: 14,
     fontWeight: "600",
-    color: "#111827",
+    color: "#ffffff",
+  },
+  filterBadge: {
+    backgroundColor: "rgba(255, 255, 255, 0.2)",
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: 999,
+    fontSize: 12,
+    fontWeight: "600",
+  },
+  chevron: {
+    fontSize: 14,
+    fontWeight: "700",
+    color: "#ffffff",
+    lineHeight: 14,
+  },
+  chevronRotated: {
+    transform: [{ rotate: "180deg" }],
   },
   clearAllText: {
     fontSize: 14,
