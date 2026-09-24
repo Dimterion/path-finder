@@ -1924,4 +1924,262 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "fairly_made",
+    title: "Fairly Made",
+    websiteUrl: "https://www.fairlymade.com",
+    description:
+      "Sustainability platform for fashion and luxury brands. Provides supply-chain traceability, environmental impact measurement (LCA), ecodesign simulations, and digital product passports to help brands meet regulations and communicate transparently with consumers.",
+    // imageKey: "placeholder",
+    tags: ["Sustainability", "SaaS", "Fashion Tech", "Data & Analytics", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.fairlymade.com/career",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/fairly-made",
+      },
+    ],
+  },
+  {
+    id: "figma",
+    title: "Figma",
+    websiteUrl: "https://www.figma.com",
+    description:
+      "Collaborative design platform used by product teams to create UI/UX designs, prototypes, design systems, and websites. Runs in the browser with real-time collaboration, plugins, and AI-assisted workflows.",
+    // imageKey: "placeholder",
+    tags: [
+      "Design Tools",
+      "SaaS",
+      "Collaboration",
+      "Developer Tools",
+      "Remote-worldwide",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.figma.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/figma",
+      },
+    ],
+  },
+  {
+    id: "fingerprint",
+    title: "Fingerprint",
+    websiteUrl: "https://fingerprint.com",
+    description:
+      "Device intelligence platform that identifies browsers and devices to detect fraud, bots, and account abuse. Provides signals for risk scoring, authentication, and payment security used by thousands of online businesses.",
+    // imageKey: "placeholder",
+    tags: [
+      "Cybersecurity",
+      "Fraud Detection",
+      "SaaS",
+      "API",
+      "Remote-worldwide",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://fingerprint.com/careers/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/fingerprintjs",
+      },
+    ],
+  },
+  {
+    id: "flexai",
+    title: "FlexAI",
+    websiteUrl: "https://flex.ai",
+    description:
+      "AI infrastructure platform that orchestrates GPU compute across clouds and hardware providers. Offers managed inference, fine-tuning, and training for AI teams, abstracting away cloud complexity and vendor lock-in.",
+    // imageKey: "placeholder",
+    tags: ["AI / Data", "Cloud", "Infrastructure", "Developer Tools", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://flex.ai/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/flexaihq",
+      },
+    ],
+  },
+  {
+    id: "flowdesk",
+    title: "Flowdesk",
+    websiteUrl: "https://flowdesk.co",
+    description:
+      "Crypto market maker and digital-asset liquidity provider. Offers market-making-as-a-service, brokerage, custody, and treasury management for token issuers, exchanges, and institutions across centralized and decentralized venues.",
+    // imageKey: "placeholder",
+    tags: ["FinTech", "Crypto", "Market Making", "Trading", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.flowdesk.co/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/flowdesk-france",
+      },
+    ],
+  },
+  {
+    id: "fluence_cloud",
+    title: "Fluence Cloud",
+    websiteUrl: "https://fluence.ai",
+    description:
+      "GPU cloud platform for AI workloads. Provides on-demand and reserved GPUs across global data centers for training, inference, fine-tuning, and model serving, with transparent pricing and flexible infrastructure options.",
+    // imageKey: "placeholder",
+    tags: ["AI / Data", "Cloud", "GPU", "Infrastructure", "Remote-worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://cloudless.dev/join",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/fluence-cloud",
+      },
+    ],
+  },
+  {
+    id: "forgotten_empires",
+    title: "Forgotten Empires",
+    websiteUrl: "https://www.forgottenempires.net",
+    description:
+      "Game development studio specializing in real-time strategy titles, notably the Age of Empires series. Provides full-service PC game development, from design and engineering to art, QA, and live operations.",
+    // imageKey: "placeholder",
+    tags: ["Gaming", "Game Development", "Strategy Games", "PC", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Workable)",
+        url: "https://apply.workable.com/forgotten-empires",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/forgotten-empires",
+      },
+    ],
+  },
+  {
+    id: "fountain",
+    title: "Fountain",
+    websiteUrl: "https://www.fountain.com",
+    description:
+      "AI-native hiring and workforce platform for frontline and hourly workers. Provides applicant tracking, AI screening, scheduling, onboarding, and workforce management to help enterprises hire and manage large teams.",
+    // imageKey: "placeholder",
+    tags: [
+      "HR Tech",
+      "AI / Data",
+      "SaaS",
+      "High-Volume Hiring",
+      "Remote-worldwide",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://fountain.scalis.ai/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/fountaininc",
+      },
+    ],
+  },
+  {
+    id: "front",
+    title: "Front",
+    websiteUrl: "https://front.com",
+    description:
+      "Customer operations platform with a shared inbox for email, chat, and other channels. Combines team collaboration, automation, and AI to help support, sales, and operations teams manage customer conversations at scale.",
+    // imageKey: "placeholder",
+    tags: [
+      "Customer Support",
+      "SaaS",
+      "Collaboration",
+      "Communication",
+      "Remote-worldwide",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://front.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/fronthq",
+      },
+    ],
+  },
+  {
+    id: "gameloft",
+    title: "Gameloft",
+    websiteUrl: "https://www.gameloft.com",
+    description:
+      "Mobile game developer and publisher with a large portfolio of franchises (e.g., Asphalt, Disney Dreamlight Valley). Creates and operates games for mobile, PC, and consoles with live-ops and global distribution.",
+    // imageKey: "placeholder",
+    tags: ["Gaming", "Mobile", "Publishing", "Live Operations", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.gameloft.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/gameloft",
+      },
+    ],
+  },
+  {
+    id: "gandi",
+    title: "Gandi",
+    websiteUrl: "https://www.gandi.net",
+    description:
+      "Domain registrar and web services provider offering domain names, hosting, email, and SSL certificates. Focuses on simplicity, security, and ethical practices for individuals and businesses.",
+    // imageKey: "placeholder",
+    tags: ["Web Services", "Domains", "Hosting", "SMB", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Taleez)",
+        url: "https://gandi.taleez.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/gandi",
+      },
+    ],
+  },
+  {
+    id: "ge_healthcare",
+    title: "GE HealthCare",
+    websiteUrl: "https://www.gehealthcare.com",
+    description:
+      "Global medical technology company providing imaging systems, ultrasound, patient monitoring, anesthesia, and pharmaceutical diagnostics. Builds AI-enabled devices and software to support diagnosis, treatment, and hospital workflows.",
+    // imageKey: "placeholder",
+    tags: [
+      "HealthTech",
+      "Medical Devices",
+      "Imaging",
+      "Enterprise",
+      "Remote-worldwide",
+    ],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.gehealthcare.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/gehealthcare",
+      },
+    ],
+  },
 ];

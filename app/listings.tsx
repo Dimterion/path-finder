@@ -1,3 +1,4 @@
+import { useState, useMemo } from "react";
 import { listings } from "../features/listings/data";
 import {
   FlatList,
@@ -7,26 +8,49 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { useState } from "react";
 import ListingCard from "../features/listings/ListingCard";
 import { useScrollToTop } from "../hooks/useScrollToTop";
 
 export default function ListingsScreen() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const { flatListRef, handleScroll, ScrollToTopComponent } = useScrollToTop();
+
+  const allTags = useMemo(() => {
+    const tagsSet = new Set<string>();
+    listings.forEach((listing) => {
+      listing.tags?.forEach((tag) => tagsSet.add(tag));
+    });
+    return Array.from(tagsSet).sort();
+  }, []);
 
   const filteredListings = listings.filter((item) => {
     const query = searchQuery.toLowerCase().trim();
-    if (!query) return true;
+    const matchesSearch =
+      !query ||
+      item.title.toLowerCase().includes(query) ||
+      item.description.toLowerCase().includes(query) ||
+      item.tags?.some((tag) => tag.toLowerCase().includes(query));
 
-    const titleMatch = item.title.toLowerCase().includes(query);
-    const descriptionMatch = item.description.toLowerCase().includes(query);
-    const tagsMatch = item.tags?.some((tag) =>
-      tag.toLowerCase().includes(query),
-    );
+    const matchesTags =
+      selectedTags.length === 0 ||
+      selectedTags.every((tag) => item.tags?.includes(tag));
 
-    return titleMatch || descriptionMatch || tagsMatch;
+    return matchesSearch && matchesTags;
   });
+
+  const toggleTag = (tag: string) => {
+    setSelectedTags((prev) =>
+      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag],
+    );
+  };
+
+  const clearFilters = () => {
+    setSelectedTags([]);
+    setSearchQuery("");
+  };
+
+  const hasActiveFilters = selectedTags.length > 0 || searchQuery;
 
   return (
     <View style={styles.container}>
@@ -76,6 +100,44 @@ export default function ListingsScreen() {
                 </Text>
               </TouchableOpacity>
             </View>
+
+            {/* Tag Filters */}
+            {allTags.length > 0 && (
+              <View style={styles.tagsSection}>
+                <View style={styles.tagsHeader}>
+                  <Text style={styles.tagsTitle}>Filter by tags</Text>
+                  {hasActiveFilters && (
+                    <TouchableOpacity onPress={clearFilters}>
+                      <Text style={styles.clearAllText}>Clear all filters</Text>
+                    </TouchableOpacity>
+                  )}
+                </View>
+                <View style={styles.tagsRow}>
+                  {allTags.map((tag) => {
+                    const isSelected = selectedTags.includes(tag);
+                    return (
+                      <TouchableOpacity
+                        key={tag}
+                        style={[
+                          styles.tagChip,
+                          isSelected && styles.tagChipSelected,
+                        ]}
+                        onPress={() => toggleTag(tag)}
+                      >
+                        <Text
+                          style={[
+                            styles.tagChipText,
+                            isSelected && styles.tagChipTextSelected,
+                          ]}
+                        >
+                          {tag}
+                        </Text>
+                      </TouchableOpacity>
+                    );
+                  })}
+                </View>
+              </View>
+            )}
           </View>
         }
         ListEmptyComponent={
@@ -115,6 +177,7 @@ const styles = StyleSheet.create({
   },
   searchContainer: {
     position: "relative",
+    marginBottom: 20,
   },
   searchInput: {
     backgroundColor: "#ffffff",
@@ -146,6 +209,50 @@ const styles = StyleSheet.create({
   },
   clearButtonTextDisabled: {
     color: "#d1d5db",
+  },
+  tagsSection: {
+    marginTop: 8,
+  },
+  tagsHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 12,
+  },
+  tagsTitle: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#111827",
+  },
+  clearAllText: {
+    fontSize: 14,
+    fontWeight: "500",
+    color: "#1d4ed8",
+  },
+  tagsRow: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 8,
+  },
+  tagChip: {
+    backgroundColor: "#f3f4f6",
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: "#e5e7eb",
+  },
+  tagChipSelected: {
+    backgroundColor: "#1d4ed8",
+    borderColor: "#1d4ed8",
+  },
+  tagChipText: {
+    fontSize: 13,
+    fontWeight: "600",
+    color: "#374151",
+  },
+  tagChipTextSelected: {
+    color: "#ffffff",
   },
   emptyState: {
     padding: 32,
