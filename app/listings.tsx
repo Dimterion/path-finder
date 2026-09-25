@@ -254,12 +254,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 8,
-    backgroundColor: "#1d4ed8",
+    backgroundColor: "#155dfc",
     paddingHorizontal: 16,
     paddingVertical: 8,
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: "#1d4ed8",
+    borderColor: "#155dfc",
   },
   filterButtonText: {
     fontSize: 14,
@@ -268,8 +268,10 @@ const styles = StyleSheet.create({
   },
   filterBadge: {
     backgroundColor: "rgba(255, 255, 255, 0.2)",
-    paddingHorizontal: 8,
+    paddingLeft: 3,
+    paddingRight: 7,
     paddingVertical: 2,
+    marginLeft: 4,
     borderRadius: 999,
     fontSize: 12,
     fontWeight: "600",
@@ -286,7 +288,7 @@ const styles = StyleSheet.create({
   clearAllText: {
     fontSize: 14,
     fontWeight: "500",
-    color: "#1d4ed8",
+    color: "#155dfc",
   },
   tagsRow: {
     flexDirection: "row",
@@ -294,7 +296,7 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   tagChip: {
-    backgroundColor: "#f3f4f6",
+    backgroundColor: "#e5e7eb",
     paddingVertical: 8,
     paddingHorizontal: 14,
     borderRadius: 999,
@@ -302,13 +304,13 @@ const styles = StyleSheet.create({
     borderColor: "#e5e7eb",
   },
   tagChipSelected: {
-    backgroundColor: "#1d4ed8",
-    borderColor: "#1d4ed8",
+    backgroundColor: "#155dfc",
+    borderColor: "#155dfc",
   },
   tagChipText: {
     fontSize: 13,
     fontWeight: "600",
-    color: "#374151",
+    color: "#364153",
   },
   tagChipTextSelected: {
     color: "#ffffff",
