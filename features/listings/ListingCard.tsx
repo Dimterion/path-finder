@@ -7,11 +7,13 @@ import {
   Pressable,
   StyleSheet,
   Text,
+  TouchableOpacity,
   View,
 } from "react-native";
 
 type ListingCardProps = {
   item: JobListing;
+  onTagClick?: (tag: string) => void;
 };
 
 async function openExternalLink(url: string): Promise<void> {
@@ -25,7 +27,7 @@ async function openExternalLink(url: string): Promise<void> {
   await Linking.openURL(url);
 }
 
-export default function ListingCard({ item }: ListingCardProps) {
+export default function ListingCard({ item, onTagClick }: ListingCardProps) {
   const imageSource = item.imageKey ? listingImages[item.imageKey] : undefined;
 
   {
@@ -42,9 +44,15 @@ export default function ListingCard({ item }: ListingCardProps) {
       {item.tags && item.tags.length > 0 ? (
         <View style={styles.tagsRow}>
           {item.tags.map((tag) => (
-            <View key={tag} style={styles.tag}>
+            <TouchableOpacity
+              key={tag}
+              style={styles.tag}
+              onPress={() => onTagClick?.(tag)}
+              accessibilityRole="button"
+              accessibilityLabel={`Filter by ${tag} tag`}
+            >
               <Text style={styles.tagText}>{tag}</Text>
-            </View>
+            </TouchableOpacity>
           ))}
         </View>
       ) : null}

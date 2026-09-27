@@ -46,6 +46,13 @@ export default function ListingsScreen() {
     );
   };
 
+  const handleTagClick = (tag: string) => {
+    if (!selectedTags.includes(tag)) {
+      toggleTag(tag);
+      setShowTags(true);
+    }
+  };
+
   const clearFilters = () => {
     setSelectedTags([]);
     setSearchQuery("");
@@ -59,7 +66,9 @@ export default function ListingsScreen() {
         ref={flatListRef}
         data={filteredListings}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <ListingCard item={item} />}
+        renderItem={({ item }) => (
+          <ListingCard item={item} onTagClick={handleTagClick} />
+        )}
         contentContainerStyle={styles.listContent}
         onScroll={handleScroll}
         scrollEventThrottle={16}

@@ -2774,4 +2774,99 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "inato",
+    title: "Inato",
+    websiteUrl: "https://www.inato.com",
+    description:
+      "Clinical trial management platform for biotech and medtech companies. Provides tools for feasibility, site selection, budgeting, and regulatory tracking to accelerate study start-up and execution.",
+    // imageKey: "placeholder",
+    tags: ["HealthTech", "Clinical Trials", "SaaS", "B2B", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.inato.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/inato",
+      },
+    ],
+  },
+  {
+    id: "inetum",
+    title: "Inetum",
+    websiteUrl: "https://www.inetum.com",
+    description:
+      "European IT services and consulting group supporting digital transformation for large enterprises and public sector. Offers application development, infrastructure, cloud, data, and cybersecurity services.",
+    // imageKey: "placeholder",
+    tags: ["IT Services", "Consulting", "Cloud", "Enterprise", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.inetum.com/global/en/careers/jobs.html",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/inetum",
+      },
+    ],
+  },
+  {
+    id: "ingenico",
+    title: "Ingenico",
+    websiteUrl: "https://ingenico.com",
+    description:
+      "Global provider of payment terminals and solutions for merchants, banks, and service providers. Designs secure hardware and software for in-store, online, and mobile payments, including POS systems and tokenization.",
+    // imageKey: "placeholder",
+    tags: ["FinTech", "Payments", "Hardware & Software", "Enterprise", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobs.ingenico.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/ingenico",
+      },
+    ],
+  },
+  {
+    id: "ingenius",
+    title: "Ingenius",
+    websiteUrl: "https://www.ingenius.global",
+    description:
+      "AI product studio building custom AI applications and agents for companies. Combines product design, engineering, and applied AI to deliver end-to-end solutions from prototype to production.",
+    // imageKey: "placeholder",
+    tags: ["AI / Data", "Software Development", "Product Design", "B2B", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.ingenius.global/career",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/ingeniusai",
+      },
+    ],
+  },
+  {
+    id: "inpulse",
+    title: "Inpulse",
+    websiteUrl: "https://www.inpulse.ai",
+    description:
+      "AI-powered sales intelligence platform for B2B teams. Enriches lead data, scores prospects, and automates outreach to help sales and marketing teams focus on high-potential opportunities.",
+    // imageKey: "placeholder",
+    tags: ["MarTech", "Sales Tech", "AI / Data", "SaaS", "EU"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/deepsight/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/inpulseai",
+      },
+    ],
+  },
 ];
