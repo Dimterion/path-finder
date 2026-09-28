@@ -32,8 +32,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://360learning.com",
     description:
       "Online learning platform that helps companies create and share internal courses. Employees can publish short lessons, track progress, and build skills without heavy LMS setup.",
-    // imageKey: "placeholder",
-    tags: ["EdTech", "SaaS", "Learning & Development", "EU"],
+    tags: ["AI", "SaaS", "Europe"],
     extraLinks: [
       {
         label: "Careers page (Lever)",
@@ -51,8 +50,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.aareon.com",
     description:
       "European software company that provides cloud-based property management systems for real estate companies. Their platform helps housing associations and commercial property managers handle rent, contracts, maintenance, and reporting in one system.",
-    // imageKey: "placeholder",
-    tags: ["PropTech", "SaaS", "Real Estate", "EU"],
+    tags: ["SaaS", "Data", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -70,8 +68,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.abtasty.com",
     description:
       "French SaaS company that provides an all-in-one platform for A/B testing, personalization, and feature management. Marketing and product teams use it to run experiments, optimize websites, and roll out new features safely.",
-    // imageKey: "placeholder",
-    tags: ["MarTech", "SaaS", "A/B Testing", "Personalization", "EU"],
+    tags: ["SaaS", "AI", "France"],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -89,8 +86,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.accuracy.com",
     description:
       "Independent global consulting firm that advises companies and investors on high-stakes decisions. Teams work on M&A and valuations, disputes and arbitration, crises and restructurings, and corporate strategy.",
-    // imageKey: "placeholder",
-    tags: ["Consulting", "Financial Advisory", "M&A", "EU"],
+    tags: ["Consulting", "FinTech", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -108,15 +104,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.actimage.com",
     description:
       "French-German digital agency that builds custom software and cloud solutions for companies and public organizations. Teams work on web and mobile apps, UX/UI design, data projects, IoT, and mixed-reality (AR/VR) solutions.",
-    // imageKey: "placeholder",
-    tags: [
-      "Software Development",
-      "Digital Agency",
-      "Cloud",
-      "IoT",
-      "AR/VR",
-      "EU",
-    ],
+    tags: ["ITServices", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -134,14 +122,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.adelean.com",
     description:
       "Paris-based consulting and software company specialized in search engines and data platforms. Teams build and optimize enterprise search, data extraction/transformation, and analytics solutions using technologies like Elasticsearch, Solr, and OpenSearch.",
-    // imageKey: "placeholder",
-    tags: [
-      "Data & Analytics",
-      "Search",
-      "Big Data",
-      "Software Development",
-      "EU",
-    ],
+    tags: ["Data", "ITServices", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -159,14 +140,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.advanced-schema.com",
     description:
       "International data consulting firm that helps companies build data warehouses, business intelligence, and CRM systems. Teams work on data engineering, analytics, cloud platforms, and digital transformation projects across Europe and North America.",
-    // imageKey: "placeholder",
-    tags: [
-      "Data & Analytics",
-      "Business Intelligence",
-      "Big Data",
-      "Cloud",
-      "EU",
-    ],
+    tags: ["Data", "Consulting", "France"],
     extraLinks: [
       {
         label: "LinkedIn",
@@ -180,8 +154,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://aircall.io",
     description:
       "Cloud phone system for sales and support teams. Combines VoIP calling with CRM integrations, call analytics, and automation so teams can manage calls, follow-ups, and performance in one place.",
-    // imageKey: "placeholder",
-    tags: ["MarTech", "SaaS", "Sales Tech", "Cloud", "EU"],
+    tags: ["SaaS", "Media", "Europe"],
     extraLinks: [
       {
         label: "Careers page (Greenhouse)",
@@ -199,8 +172,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.akeneo.com",
     description:
       "Product information management (PIM) platform that helps brands centralize, enrich, and distribute product data across e-commerce, marketplaces, and print. Used by retail and manufacturing teams to keep product catalogs consistent.",
-    // imageKey: "placeholder",
-    tags: ["E-commerce", "SaaS", "Product Data", "Retail Tech", "EU"],
+    tags: ["SaaS", "Ecommerce", "France"],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -218,14 +190,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.akqa.com",
     description:
       "Global design and innovation agency that creates digital products, campaigns, and experiences for large brands. Teams work on strategy, UX/UI, content, and technology for web, mobile, and connected devices.",
-    // imageKey: "placeholder",
-    tags: [
-      "Digital Agency",
-      "Design",
-      "Advertising",
-      "Software Development",
-      "EU",
-    ],
+    tags: ["ITServices", "Media", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -243,8 +208,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.akur8.com",
     description:
       "Insurtech company that provides AI-powered pricing and underwriting software for insurers. Their platform uses advanced statistical models to help insurance companies set more accurate premiums and manage risk.",
-    // imageKey: "placeholder",
-    tags: ["InsurTech", "AI / Data", "SaaS", "Financial Services", "EU"],
+    tags: ["FinTech", "AI", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -262,8 +226,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://alan.com",
     description:
       "Digital health insurance company offering simple, online health plans for employees and self-employed people. Combines insurance coverage with a mobile app for claims, reimbursements, and telemedicine services.",
-    // imageKey: "placeholder",
-    tags: ["HealthTech", "InsurTech", "SaaS", "B2C", "EU"],
+    tags: ["HealthTech", "FinTech", "France"],
     extraLinks: [
       {
         label: "Careers page (Ashby)",
@@ -281,8 +244,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.al-enterprise.com",
     description:
       "Global provider of networking and communications solutions for enterprises and service providers. Products include cloud PBX, Wi‑Fi, LAN, and unified communications systems for offices and campuses.",
-    // imageKey: "placeholder",
-    tags: ["Telecom", "Networking", "Enterprise", "Hardware & Software", "EU"],
+    tags: ["ITServices", "SaaS", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -300,8 +262,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.aletiq.com",
     description:
       "French IT services company that designs and manages secure IT infrastructure for mid-sized and large organizations. Services cover cloud, cybersecurity, networks, workplace support, and project management.",
-    // imageKey: "placeholder",
-    tags: ["IT Services", "Cloud", "Cybersecurity", "Enterprise", "EU"],
+    tags: ["ITServices", "France"],
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
@@ -319,8 +280,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.algolia.com",
     description:
       "Search and discovery API platform that helps apps and websites add fast, relevant search, recommendations, and personalization. Used by e-commerce and media companies to improve product and content discovery.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "SaaS", "Search", "E-commerce", "EU"],
+    tags: ["AI", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -338,8 +298,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://alice-bob.com",
     description:
       "Quantum computing startup building fault-tolerant quantum processors and software. Focuses on hardware architecture and error correction to make quantum computers reliable for real-world problems.",
-    // imageKey: "placeholder",
-    tags: ["Quantum Computing", "Hardware", "AI / Data", "Deep Tech", "EU"],
+    tags: ["AI", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -357,8 +316,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://almapay.com",
     description:
       "Buy-now-pay-later and installment payment solution for online merchants. Integrates with e-commerce platforms to offer flexible payment options at checkout while managing risk and compliance for shops.",
-    // imageKey: "placeholder",
-    tags: ["FinTech", "E-commerce", "Payments", "SaaS", "EU"],
+    tags: ["FinTech", "Ecommerce", "France"],
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
@@ -376,14 +334,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.americanexpress.com",
     description:
       "Global financial services company known for credit cards, charge cards, and travel services. Offers consumer and business payment products, plus rewards, lounge access, and merchant services.",
-    // imageKey: "placeholder",
-    tags: [
-      "FinTech",
-      "Financial Services",
-      "Payments",
-      "Enterprise",
-      "Remote-worldwide",
-    ],
+    tags: ["FinTech", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -401,8 +352,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.amplemarket.com",
     description:
       "Sales engagement and lead generation platform for B2B teams. Provides email automation, calling, LinkedIn outreach, and analytics to help sales and marketing teams find and convert prospects.",
-    // imageKey: "placeholder",
-    tags: ["MarTech", "SaaS", "Sales Tech", "B2B", "EU"],
+    tags: ["SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -416,8 +366,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://appquantum.com",
     description:
       "Mobile game publisher and developer that acquires, optimizes, and scales games across app stores. Works with external studios and internal teams on user acquisition, monetization, and live operations.",
-    // imageKey: "placeholder",
-    tags: ["Gaming", "Mobile", "Publishing", "User Acquisition", "EU"],
+    tags: ["Gaming", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -435,8 +384,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.apsia.eu",
     description:
       "Cybersecurity and digital sovereignty consulting firm. Helps organizations secure their systems, manage identities, and implement trusted cloud and data solutions, often for public-sector and regulated industries.",
-    // imageKey: "placeholder",
-    tags: ["Cybersecurity", "Consulting", "Cloud", "Public Sector", "EU"],
+    tags: ["ITServices", "Consulting", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -454,14 +402,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.arkema.com",
     description:
       "Global materials science company producing specialty chemicals and advanced materials for industries like aerospace, automotive, electronics, and construction. Focuses on sustainable and high-performance solutions.",
-    // imageKey: "placeholder",
-    tags: [
-      "Materials Science",
-      "Chemicals",
-      "Manufacturing",
-      "Enterprise",
-      "EU",
-    ],
+    tags: ["Climate", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -479,8 +420,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.artefact.com",
     description:
       "Data and AI consulting company that helps businesses use data for marketing, sales, and product decisions. Services include analytics, customer data platforms, personalization, and AI-driven campaigns.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "Consulting", "MarTech", "Data & Analytics", "EU"],
+    tags: ["AI", "Data", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -498,8 +438,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.ashbyhq.com",
     description:
       "Recruitment software platform combining ATS, CRM, and analytics for hiring teams. Helps companies manage candidates, automate workflows, and track recruiting metrics in one system.",
-    // imageKey: "placeholder",
-    tags: ["HR Tech", "SaaS", "Recruiting", "B2B", "EU"],
+    tags: ["SaaS", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -517,8 +456,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.asobostudio.com",
     description:
       "Animation and visual effects studio creating content for film, series, and games. Teams work on 2D/3D animation, character design, and storytelling for entertainment projects.",
-    // imageKey: "placeholder",
-    tags: ["Gaming", "Animation", "VFX", "Entertainment", "EU"],
+    tags: ["Gaming", "Media", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -536,14 +474,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.assemblyai.com",
     description:
       "API platform for speech-to-text and audio understanding. Provides transcription, speaker diarization, summarization, and other NLP features for developers building voice and audio applications.",
-    // imageKey: "placeholder",
-    tags: [
-      "AI / Data",
-      "SaaS",
-      "Speech Tech",
-      "Developer Tools",
-      "Remote-worldwide",
-    ],
+    tags: ["AI", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -561,8 +492,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.aviv-group.com",
     description:
       "European real estate investment and asset management group focused on office and mixed-use properties. Manages property portfolios, development projects, and leasing across major cities.",
-    // imageKey: "placeholder",
-    tags: ["Real Estate", "Asset Management", "Investment", "Enterprise", "EU"],
+    tags: ["FinTech", "Europe"],
     extraLinks: [
       {
         label: "Careers page (SmartRecruiters)",
@@ -580,8 +510,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.axa.com",
     description:
       "Global insurance and asset management group offering life, health, property, and casualty insurance. Operates in many countries with large teams in underwriting, claims, IT, and digital products.",
-    // imageKey: "placeholder",
-    tags: ["InsurTech", "Financial Services", "Enterprise", "HealthTech", "EU"],
+    tags: ["FinTech", "HealthTech", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -599,14 +528,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.backmarket.com",
     description:
       "Global online marketplace for professionally refurbished electronics. Connects buyers with vetted refurbishers for phones, laptops, and appliances, with warranties and quality checks to extend device lifecycles and reduce e-waste.",
-    // imageKey: "placeholder",
-    tags: [
-      "E-commerce",
-      "Marketplace",
-      "Sustainability",
-      "Consumer Tech",
-      "EU",
-    ],
+    tags: ["Ecommerce", "Climate", "Europe"],
     extraLinks: [
       {
         label: "Careers page (Ashby)",
@@ -624,14 +546,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.basikon.com",
     description:
       "French IT consulting firm that advises companies on systems, software, and digital projects. Services include IT strategy, architecture, software design, and implementation for mid-sized and large organizations.",
-    // imageKey: "placeholder",
-    tags: [
-      "Consulting",
-      "IT Services",
-      "Software Development",
-      "Enterprise",
-      "EU",
-    ],
+    tags: ["ITServices", "Consulting", "France"],
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
@@ -649,8 +564,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.bevoiceai.com",
     description:
       "AI startup focused on voice and audio technologies. Builds tools for analyzing, transcribing, or enhancing audio content using machine learning and speech-processing models.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "Speech Tech", "SaaS", "Deep Tech", "EU"],
+    tags: ["AI", "France"],
     extraLinks: [
       {
         label: "LinkedIn",
@@ -664,14 +578,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.believe.com",
     description:
       "Global digital music company that distributes and promotes music for independent artists and labels. Offers distribution to streaming platforms, marketing, analytics, and label services through brands like TuneCore.",
-    // imageKey: "placeholder",
-    tags: [
-      "Music Tech",
-      "Digital Distribution",
-      "SaaS",
-      "Media & Entertainment",
-      "EU",
-    ],
+    tags: ["Media", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -689,8 +596,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://bendingspoons.com",
     description:
       "Technology company that builds and acquires consumer mobile apps and digital products. Operates a portfolio of apps (e.g., Evernote, Remini, WeTransfer) with a shared infrastructure for growth and monetization.",
-    // imageKey: "placeholder",
-    tags: ["Mobile", "Consumer Apps", "AI / Data", "Publishing", "EU"],
+    tags: ["SaaS", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -708,8 +614,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.binance.com",
     description:
       "Global cryptocurrency exchange and digital-asset platform. Enables users to trade, stake, and store cryptocurrencies, with products for spot and derivatives trading, NFTs, and yield services.",
-    // imageKey: "placeholder",
-    tags: ["FinTech", "Crypto", "Trading Platform", "B2C", "Remote-worldwide"],
+    tags: ["FinTech", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -727,8 +632,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.bitstack-app.com",
     description:
       "Mobile app that makes saving and investing in Bitcoin simple. Offers recurring purchases and round-up savings on everyday spending, targeting long-term Bitcoin savers in Europe.",
-    // imageKey: "placeholder",
-    tags: ["FinTech", "Crypto", "Mobile", "Savings & Investment", "EU"],
+    tags: ["FinTech", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -746,8 +650,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://botpress.com",
     description:
       "Conversational AI platform for building chatbots and AI agents. Provides tools to design, train, and deploy LLM-powered bots for customer support, lead capture, and workflow automation.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "SaaS", "Chatbots", "Developer Tools", "EU"],
+    tags: ["AI", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -765,8 +668,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.brevo.com",
     description:
       "Cloud marketing platform (formerly Sendinblue) for email, SMS, and marketing automation. Provides tools for campaigns, transactional messages, CRM, landing pages, and chat to help businesses manage customer communication.",
-    // imageKey: "placeholder",
-    tags: ["MarTech", "SaaS", "Email Marketing", "CRM", "EU"],
+    tags: ["SaaS", "Media", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -784,8 +686,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://buildkite.com",
     description:
       "Continuous integration and delivery (CI/CD) platform for software teams. Orchestrates build, test, and deployment pipelines on infrastructure companies control, used by high-scale engineering organizations.",
-    // imageKey: "placeholder",
-    tags: ["DevTools", "CI/CD", "SaaS", "Software Development", "EU"],
+    tags: ["SaaS", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -803,8 +704,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.cadence.com",
     description:
       "Engineering software company that provides electronic design automation (EDA) tools for designing chips, circuit boards, and complex electronic systems. Used by semiconductor and electronics companies to simulate, verify, and optimize hardware before manufacturing.",
-    // imageKey: "placeholder",
-    tags: ["Software Development", "EDA", "Semiconductors", "Enterprise", "EU"],
+    tags: ["SaaS", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -822,14 +722,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://global.cainiao.com",
     description:
       "Global logistics and supply-chain technology company, part of Alibaba Group. Builds smart logistics networks, cross-border shipping solutions, and warehouse/last-mile technology for e-commerce merchants worldwide.",
-    // imageKey: "placeholder",
-    tags: [
-      "Logistics",
-      "E-commerce",
-      "Supply Chain",
-      "Platform",
-      "Remote-worldwide",
-    ],
+    tags: ["Ecommerce", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -847,14 +740,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.canalplusgroup.com",
     description:
       "Global media and entertainment group operating pay-TV channels, streaming services, and production studios. Creates and distributes films, series, sports, and original content across Europe, Africa, and Asia.",
-    // imageKey: "placeholder",
-    tags: [
-      "Media & Entertainment",
-      "Streaming",
-      "Content Production",
-      "Enterprise",
-      "EU",
-    ],
+    tags: ["Media", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -872,14 +758,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://canonical.com",
     description:
       "Company behind the Ubuntu Linux operating system. Provides enterprise support, security updates, and management tools for Ubuntu on desktops, servers, cloud, and IoT devices, used by developers and IT teams worldwide.",
-    // imageKey: "placeholder",
-    tags: [
-      "Open Source",
-      "Cloud",
-      "Linux",
-      "Developer Tools",
-      "Remote-worldwide",
-    ],
+    tags: ["SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -897,14 +776,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://capi.com",
     description:
       "Fintech platform that simplifies cross-border payments for businesses in emerging markets. Enables fast, low-cost international transfers and currency exchange for importers and SMEs in Africa and beyond.",
-    // imageKey: "placeholder",
-    tags: [
-      "FinTech",
-      "Payments",
-      "B2B",
-      "Emerging Markets",
-      "Remote-worldwide",
-    ],
+    tags: ["FinTech", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -922,8 +794,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.cegid.com",
     description:
       "French software publisher of cloud-based business management solutions. Offers ERP, payroll, finance, tax, and retail software for accountants, retailers, and mid-sized enterprises.",
-    // imageKey: "placeholder",
-    tags: ["SaaS", "ERP", "Finance", "Retail Tech", "EU"],
+    tags: ["SaaS", "FinTech", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -941,8 +812,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.checkout.com",
     description:
       "Global payment service provider that helps online businesses accept and manage payments. Offers payment gateway, acquiring, fraud prevention, and payout solutions through a unified API for enterprise merchants.",
-    // imageKey: "placeholder",
-    tags: ["FinTech", "Payments", "SaaS", "E-commerce", "EU"],
+    tags: ["FinTech", "Ecommerce", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -960,8 +830,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.christy-media.com",
     description:
       "Digital media and ad-tech company that operates content sites and monetizes traffic through advertising and affiliate marketing. Teams work on SEO, content strategy, programmatic ads, and revenue optimization.",
-    // imageKey: "placeholder",
-    tags: ["Media & Entertainment", "AdTech", "SEO", "Content", "EU"],
+    tags: ["Media", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -979,8 +848,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://clerk.com",
     description:
       "E-commerce personalization platform that helps online shops increase conversions with tailored product recommendations, email capture, and behavioral targeting. Integrates with major e-commerce platforms.",
-    // imageKey: "placeholder",
-    tags: ["E-commerce", "MarTech", "SaaS", "Personalization", "EU"],
+    tags: ["SaaS", "Ecommerce", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -998,14 +866,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.clipboard.com",
     description:
       "Healthcare software company building tools for clinical documentation and care coordination. Provides digital charting, templates, and workflow automation for hospitals and medical practices.",
-    // imageKey: "placeholder",
-    tags: [
-      "HealthTech",
-      "SaaS",
-      "Clinical Software",
-      "B2B",
-      "Remote-worldwide",
-    ],
+    tags: ["HealthTech", "SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1023,8 +884,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.clipmyhorse.tv",
     description:
       "Streaming platform dedicated to equestrian sports. Broadcasts live competitions, on-demand videos, and original content for horse-riding enthusiasts worldwide.",
-    // imageKey: "placeholder",
-    tags: ["Media & Entertainment", "Streaming", "Sports", "B2C", "EU"],
+    tags: ["Media", "Europe"],
     extraLinks: [
       {
         label: "LinkedIn",
@@ -1038,14 +898,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.cloudflare.com",
     description:
       "Web infrastructure and security company that protects and accelerates websites and applications. Provides CDN, DDoS protection, DNS, Zero Trust security, and developer platforms used by millions of sites.",
-    // imageKey: "placeholder",
-    tags: [
-      "Cybersecurity",
-      "Cloud",
-      "CDN",
-      "Developer Tools",
-      "Remote-worldwide",
-    ],
+    tags: ["SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1063,8 +916,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://coinspaid.com",
     description:
       "Crypto payment gateway and treasury platform for online businesses. Enables merchants to accept cryptocurrencies, manage digital assets, and convert to fiat with integrated risk and compliance tools.",
-    // imageKey: "placeholder",
-    tags: ["FinTech", "Crypto", "Payments", "B2B", "EU"],
+    tags: ["FinTech", "Europe"],
     extraLinks: [
       {
         label: "Careers page (Lever)",
@@ -1082,14 +934,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://consensys.io",
     description:
       "Blockchain software company behind MetaMask and Ethereum infrastructure tools. Builds wallets, developer platforms, and protocol clients that power decentralized applications and onchain finance.",
-    // imageKey: "placeholder",
-    tags: [
-      "Blockchain",
-      "Crypto",
-      "Developer Tools",
-      "Infrastructure",
-      "Remote-worldwide",
-    ],
+    tags: ["FinTech", "Worldwide"],
     extraLinks: [
       {
         label: "LinkedIn",
@@ -1103,14 +948,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.constellr.com",
     description:
       "Space-tech startup building a constellation of small satellites to measure land surface temperature and other Earth-observation data. Sells analytics to agriculture, climate, and environmental sectors.",
-    // imageKey: "placeholder",
-    tags: [
-      "Space Tech",
-      "Earth Observation",
-      "Data & Analytics",
-      "Deep Tech",
-      "EU",
-    ],
+    tags: ["Climate", "Data", "Europe"],
     extraLinks: [
       {
         label: "Careers page (Greenhouse)",
@@ -1128,8 +966,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://contentsquare.com",
     description:
       "Digital experience analytics platform that shows how users interact with websites and apps. Combines session replays, heatmaps, journey analytics, and feedback to help teams improve UX and conversions.",
-    // imageKey: "placeholder",
-    tags: ["MarTech", "SaaS", "Analytics", "UX", "EU"],
+    tags: ["Data", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Lever)",
@@ -1147,8 +984,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://contractbook.com",
     description:
       "Legal-tech platform that automates contract creation and management for companies. Provides templates, workflows, and e-signature to streamline drafting, negotiating, and storing contracts.",
-    // imageKey: "placeholder",
-    tags: ["Legal Tech", "SaaS", "Automation", "B2B", "EU"],
+    tags: ["LegalTech", "SaaS", "Europe"],
     extraLinks: [
       {
         label: "LinkedIn",
@@ -1162,14 +998,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://converteo.com",
     description:
       "Digital agency specialized in e-commerce and performance marketing. Helps brands optimize conversion rates, run paid campaigns, and improve online sales through data-driven strategies.",
-    // imageKey: "placeholder",
-    tags: [
-      "Digital Agency",
-      "E-commerce",
-      "MarTech",
-      "Performance Marketing",
-      "EU",
-    ],
+    tags: ["ITServices", "Ecommerce", "France"],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -1187,8 +1016,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.corma.io",
     description:
       "AI productivity startup building tools to reduce distractions and help knowledge workers focus. Combines AI with workflow management to prioritize tasks and minimize context switching.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "Productivity", "SaaS", "Developer Tools", "EU"],
+    tags: ["AI", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
@@ -1206,8 +1034,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://corsearch.com",
     description:
       "Brand protection and trademark management platform. Uses AI and expert services to monitor online channels, detect counterfeits, enforce IP rights, and manage domain portfolios for global brands.",
-    // imageKey: "placeholder",
-    tags: ["Legal Tech", "Brand Protection", "AI / Data", "B2B", "EU"],
+    tags: ["LegalTech", "AI", "Europe"],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -1225,8 +1052,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.creativefabrica.com",
     description:
       "Online marketplace for digital design assets like fonts, graphics, and templates. Serves designers, crafters, and creators with subscriptions and à la carte downloads for personal and commercial projects.",
-    // imageKey: "placeholder",
-    tags: ["E-commerce", "Marketplace", "Design", "Creator Economy", "EU"],
+    tags: ["Ecommerce", "Media", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1244,8 +1070,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.criteo.com",
     description:
       "Ad-tech company that powers performance advertising and retargeting campaigns. Uses AI to deliver personalized ads across the web and help retailers and brands increase online sales.",
-    // imageKey: "placeholder",
-    tags: ["AdTech", "MarTech", "AI / Data", "E-commerce", "EU"],
+    tags: ["AI", "Media", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1263,8 +1088,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.cryptonext-security.com",
     description:
       "Cybersecurity firm specialized in quantum-safe cryptography and post-quantum security solutions. Helps organizations protect data and communications against future quantum-computing threats.",
-    // imageKey: "placeholder",
-    tags: ["Cybersecurity", "Cryptography", "Deep Tech", "Enterprise", "EU"],
+    tags: ["FinTech", "France"],
     extraLinks: [
       {
         label: "Careers page (Workable)",
@@ -1282,8 +1106,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.dailymotion.com",
     description:
       "Video hosting and streaming platform where users can upload, share, and watch videos. Offers ad-supported content and programmatic video advertising for publishers and brands.",
-    // imageKey: "placeholder",
-    tags: ["Media & Entertainment", "Video", "AdTech", "Platform", "EU"],
+    tags: ["Media", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1301,8 +1124,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.dash0.com",
     description:
       "Observability platform built on OpenTelemetry for monitoring logs, metrics, and traces. Helps engineering teams detect issues, analyze performance, and automate incident response across cloud and AI systems.",
-    // imageKey: "placeholder",
-    tags: ["DevTools", "Observability", "SaaS", "Cloud", "EU"],
+    tags: ["SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Ashby)",
@@ -1320,8 +1142,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.dashdoc.com",
     description:
       "Healthtech startup building digital care pathway and patient engagement tools. Helps clinics and hospitals coordinate care, collect patient-reported outcomes, and improve treatment adherence.",
-    // imageKey: "placeholder",
-    tags: ["HealthTech", "SaaS", "Care Coordination", "B2B", "EU"],
+    tags: ["HealthTech", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
@@ -1339,8 +1160,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.dashlane.com",
     description:
       "Password manager and digital identity platform for consumers and businesses. Stores passwords, passkeys, and personal data securely, with breach alerts and autofill across devices.",
-    // imageKey: "placeholder",
-    tags: ["Cybersecurity", "SaaS", "Identity", "B2C", "EU"],
+    tags: ["FinTech", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1358,8 +1178,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.3ds.com",
     description:
       "Software company behind 3D design, simulation, and product lifecycle management (PLM) solutions. Provides the 3DEXPERIENCE platform used in aerospace, automotive, life sciences, and manufacturing.",
-    // imageKey: "placeholder",
-    tags: ["Software Development", "3D Design", "PLM", "Enterprise", "EU"],
+    tags: ["SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1377,8 +1196,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.datadoghq.com",
     description:
       "Cloud monitoring and analytics platform for applications, infrastructure, and logs. Provides dashboards, alerts, and tracing to help engineering teams detect and fix performance issues.",
-    // imageKey: "placeholder",
-    tags: ["DevTools", "Observability", "SaaS", "Cloud", "Remote-worldwide"],
+    tags: ["SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1396,8 +1214,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.datagalaxy.com",
     description:
       "Data catalog and governance platform that maps metadata, lineage, and business definitions. Helps organizations discover, understand, and trust their data assets across teams.",
-    // imageKey: "placeholder",
-    tags: ["Data & Analytics", "Data Governance", "SaaS", "Enterprise", "EU"],
+    tags: ["Data", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
@@ -1415,8 +1232,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.dataiku.com",
     description:
       "Enterprise AI and data science platform (Data Science Studio) for building, deploying, and governing analytics and machine learning projects. Supports code and no-code workflows for mixed teams.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "SaaS", "Machine Learning", "Enterprise", "EU"],
+    tags: ["AI", "Data", "France"],
     extraLinks: [
       {
         label: "Careers page (Greenhouse)",
@@ -1434,8 +1250,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://decagames.com",
     description:
       "Mobile gaming company that acquires, operates, and grows live-service games. Works with external studios on user acquisition, monetization, product management, and live operations.",
-    // imageKey: "placeholder",
-    tags: ["Gaming", "Mobile", "Publishing", "User Acquisition", "EU"],
+    tags: ["Gaming", "Europe"],
     extraLinks: [
       {
         label: "LinkedIn",
@@ -1449,8 +1264,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.dedalus.com",
     description:
       "Healthcare IT company providing electronic health records, laboratory systems, and diagnostic software for hospitals and care networks. Focuses on clinical workflows and interoperability across care settings.",
-    // imageKey: "placeholder",
-    tags: ["HealthTech", "EHR", "Software Development", "Enterprise", "EU"],
+    tags: ["HealthTech", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1468,8 +1282,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.deel.com",
     description:
       "Global HR and payroll platform for hiring and paying employees and contractors in many countries. Offers employer-of-record, payroll, benefits, and HRIS tools for remote and international teams.",
-    // imageKey: "placeholder",
-    tags: ["HR Tech", "Payroll", "SaaS", "Remote", "Remote-worldwide"],
+    tags: ["FinTech", "SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1487,8 +1300,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.deezer.com",
     description:
       "Music streaming service offering on-demand access to a large catalog of songs, albums, playlists, and podcasts. Provides subscription plans for consumers and family, plus ad-supported tiers and artist tools.",
-    // imageKey: "placeholder",
-    tags: ["Media & Entertainment", "Music Tech", "Streaming", "B2C", "EU"],
+    tags: ["Media", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1506,14 +1318,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.deloitte.com",
     description:
       "Global professional services firm offering audit, consulting, tax, and advisory services. Helps large organizations with strategy, technology implementation, operations, risk, and M&A projects.",
-    // imageKey: "placeholder",
-    tags: [
-      "Consulting",
-      "Audit",
-      "Financial Advisory",
-      "Enterprise",
-      "Remote-worldwide",
-    ],
+    tags: ["Consulting", "FinTech", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1531,8 +1336,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://verra.work",
     description:
       "Strategy-tech startup building an AI-powered assistant for strategic decision-making. Analyzes market signals and internal data to help leadership teams identify opportunities and model long-term scenarios.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "Consulting", "Strategy", "B2B", "EU"],
+    tags: ["AI", "Consulting", "France"],
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
@@ -1550,8 +1354,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://descartesunderwriting.com",
     description:
       "Insurtech specializing in parametric insurance for climate, cyber, and emerging risks. Uses data, AI, and climate science to design policies that pay out automatically when predefined triggers (e.g., wind speed, rainfall) are met.",
-    // imageKey: "placeholder",
-    tags: ["InsurTech", "Climate Tech", "Data & Analytics", "B2B", "EU"],
+    tags: ["FinTech", "Climate", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1569,8 +1372,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.diduenjoy.com",
     description:
       "Customer feedback and voice-of-customer platform. Collects surveys, reviews, and social signals, then uses AI to analyze sentiment and surface actionable insights for product, marketing, and support teams.",
-    // imageKey: "placeholder",
-    tags: ["MarTech", "SaaS", "Customer Feedback", "AI / Data", "EU"],
+    tags: ["Data", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
@@ -1588,14 +1390,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.digisap-solutions.com",
     description:
       "IT services and consulting company delivering software development, integration, and support projects. Works with clients on custom applications, modernization, and managed services.",
-    // imageKey: "placeholder",
-    tags: [
-      "IT Services",
-      "Software Development",
-      "Consulting",
-      "Enterprise",
-      "EU",
-    ],
+    tags: ["ITServices", "Consulting", "France"],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -1613,8 +1408,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.disruptivegames.com",
     description:
       "Independent game development studio founded by industry veterans. Builds online and multiplayer games, providing design, engineering, live-ops, and backend services for partners and original titles.",
-    // imageKey: "placeholder",
-    tags: ["Gaming", "Game Development", "Multiplayer", "Entertainment", "EU"],
+    tags: ["Gaming", "Europe"],
     extraLinks: [
       {
         label: "LinkedIn",
@@ -1628,8 +1422,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.distribusion.com",
     description:
       "Ground-transportation technology platform connecting rail, bus, ferry, and airport-transfer operators with travel retailers. Provides APIs and booking tools for search, pricing, and ticketing across multiple carriers.",
-    // imageKey: "placeholder",
-    tags: ["Travel Tech", "Transportation", "API", "B2B", "EU"],
+    tags: ["SaaS", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1647,8 +1440,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.doctrine.fr",
     description:
       "Legal-tech platform offering AI-powered legal research, document analysis, and drafting tools. Aggregates court decisions and legal texts to help lawyers and legal departments work faster and more accurately.",
-    // imageKey: "placeholder",
-    tags: ["Legal Tech", "AI / Data", "SaaS", "B2B", "EU"],
+    tags: ["LegalTech", "AI", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1666,8 +1458,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://doubleverify.com",
     description:
       "Digital advertising verification platform that measures ad viewability, fraud, brand safety, and attention. Helps advertisers and agencies ensure ads are seen by real users in suitable environments.",
-    // imageKey: "placeholder",
-    tags: ["AdTech", "Measurement", "SaaS", "B2B", "Remote-worldwide"],
+    tags: ["Media", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1685,8 +1476,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://dust.tt",
     description:
       "Enterprise AI platform for building and deploying AI agents that connect to company data and tools. Enables teams to automate workflows across apps like Notion, Slack, and Salesforce with shared, governed agents.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "SaaS", "Enterprise AI", "Automation", "EU"],
+    tags: ["AI", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Ashby)",
@@ -1704,14 +1494,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.ekimetrics.com",
     description:
       "Data science and AI consulting firm helping companies optimize marketing, pricing, and operations. Builds custom analytics solutions, marketing mix models, and decision tools combining data, business strategy, and sustainability.",
-    // imageKey: "placeholder",
-    tags: [
-      "Consulting",
-      "Data & Analytics",
-      "AI / Data",
-      "Marketing Analytics",
-      "EU",
-    ],
+    tags: ["Data", "AI", "France"],
     extraLinks: [
       {
         label: "Careers page (Lever)",
@@ -1729,14 +1512,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://elevenlabs.io",
     description:
       "AI voice research and product company. Provides text-to-speech, voice cloning, dubbing, and conversational voice agents used by creators, developers, and enterprises for content, customer support, and interactive experiences.",
-    // imageKey: "placeholder",
-    tags: [
-      "AI / Data",
-      "Speech Tech",
-      "SaaS",
-      "Developer Tools",
-      "Remote-worldwide",
-    ],
+    tags: ["AI", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1754,8 +1530,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://enapi.com",
     description:
       "EV charging infrastructure platform providing roaming and clearing services between charge-point operators and e-mobility apps. Implements OCPI standards to enable cross-network charging and settlement across Europe.",
-    // imageKey: "placeholder",
-    tags: ["CleanTech", "EV Charging", "API", "Infrastructure", "EU"],
+    tags: ["Climate", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1773,8 +1548,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.eneba.com",
     description:
       "Digital marketplace for video game keys, gift cards, and in-game content. Connects gamers with verified sellers offering PC, console, and subscription products at competitive prices.",
-    // imageKey: "placeholder",
-    tags: ["E-commerce", "Gaming", "Marketplace", "B2C", "EU"],
+    tags: ["Gaming", "Ecommerce", "Europe"],
     extraLinks: [
       {
         label: "Careers page (Ashby)",
@@ -1792,8 +1566,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.goensol.com",
     description:
       "Residential solar and home energy company offering solar panels, batteries, EV chargers, and heat pumps. Provides end-to-end installation and an app to monitor and optimize energy production and consumption.",
-    // imageKey: "placeholder",
-    tags: ["CleanTech", "Solar", "Energy", "Hardware & Software", "EU"],
+    tags: ["Climate", "France"],
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
@@ -1811,8 +1584,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.equativ.com",
     description:
       "Independent adtech platform offering an ad server, SSP, and DSP for publishers and advertisers. Supports programmatic and direct deals across display, video, and connected TV with a focus on transparency and performance.",
-    // imageKey: "placeholder",
-    tags: ["AdTech", "Programmatic", "SaaS", "Video & CTV", "EU"],
+    tags: ["Media", "France"],
     extraLinks: [
       {
         label: "Careers page (Lever)",
@@ -1830,14 +1602,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://eve.games",
     description:
       "Independent game development studio creating new genres with inclusive, accessible gameplay. Builds multiplayer and competitive titles designed for players of all skill levels and backgrounds.",
-    // imageKey: "placeholder",
-    tags: [
-      "Gaming",
-      "Game Development",
-      "Multiplayer",
-      "Entertainment",
-      "Remote-worldwide",
-    ],
+    tags: ["Gaming", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1855,14 +1620,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.euroclear.com",
     description:
       "Financial market infrastructure providing settlement, custody, and post-trade services for bonds, equities, funds, and derivatives. Operates central securities depositories and clearing systems across multiple European markets.",
-    // imageKey: "placeholder",
-    tags: [
-      "Financial Services",
-      "Market Infrastructure",
-      "Securities",
-      "Enterprise",
-      "EU",
-    ],
+    tags: ["FinTech", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1880,14 +1638,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.euronext.com",
     description:
       "Leading European stock exchange operator running regulated markets in multiple countries. Provides listing, trading, clearing, and settlement for equities, bonds, derivatives, commodities, and indices such as the CAC 40 and AEX.",
-    // imageKey: "placeholder",
-    tags: [
-      "Financial Services",
-      "Stock Exchange",
-      "Capital Markets",
-      "Enterprise",
-      "EU",
-    ],
+    tags: ["FinTech", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1905,14 +1656,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.extia-group.com",
     description:
       "IT and digital consulting firm placing consultants in client teams across sectors like finance, telecom, energy, and retail. Supports projects in development, infrastructure, data, cybersecurity, and agile transformation.",
-    // imageKey: "placeholder",
-    tags: [
-      "IT Services",
-      "Consulting",
-      "Software Development",
-      "Enterprise",
-      "EU",
-    ],
+    tags: ["ITServices", "Consulting", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1930,8 +1674,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.fairlymade.com",
     description:
       "Sustainability platform for fashion and luxury brands. Provides supply-chain traceability, environmental impact measurement (LCA), ecodesign simulations, and digital product passports to help brands meet regulations and communicate transparently with consumers.",
-    // imageKey: "placeholder",
-    tags: ["Sustainability", "SaaS", "Fashion Tech", "Data & Analytics", "EU"],
+    tags: ["Climate", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1949,14 +1692,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.figma.com",
     description:
       "Collaborative design platform used by product teams to create UI/UX designs, prototypes, design systems, and websites. Runs in the browser with real-time collaboration, plugins, and AI-assisted workflows.",
-    // imageKey: "placeholder",
-    tags: [
-      "Design Tools",
-      "SaaS",
-      "Collaboration",
-      "Developer Tools",
-      "Remote-worldwide",
-    ],
+    tags: ["SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1974,14 +1710,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://fingerprint.com",
     description:
       "Device intelligence platform that identifies browsers and devices to detect fraud, bots, and account abuse. Provides signals for risk scoring, authentication, and payment security used by thousands of online businesses.",
-    // imageKey: "placeholder",
-    tags: [
-      "Cybersecurity",
-      "Fraud Detection",
-      "SaaS",
-      "API",
-      "Remote-worldwide",
-    ],
+    tags: ["FinTech", "SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -1999,8 +1728,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://flex.ai",
     description:
       "AI infrastructure platform that orchestrates GPU compute across clouds and hardware providers. Offers managed inference, fine-tuning, and training for AI teams, abstracting away cloud complexity and vendor lock-in.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "Cloud", "Infrastructure", "Developer Tools", "EU"],
+    tags: ["AI", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2018,8 +1746,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://flowdesk.co",
     description:
       "Crypto market maker and digital-asset liquidity provider. Offers market-making-as-a-service, brokerage, custody, and treasury management for token issuers, exchanges, and institutions across centralized and decentralized venues.",
-    // imageKey: "placeholder",
-    tags: ["FinTech", "Crypto", "Market Making", "Trading", "EU"],
+    tags: ["FinTech", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2037,8 +1764,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://fluence.ai",
     description:
       "GPU cloud platform for AI workloads. Provides on-demand and reserved GPUs across global data centers for training, inference, fine-tuning, and model serving, with transparent pricing and flexible infrastructure options.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "Cloud", "GPU", "Infrastructure", "Remote-worldwide"],
+    tags: ["AI", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2056,8 +1782,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.forgottenempires.net",
     description:
       "Game development studio specializing in real-time strategy titles, notably the Age of Empires series. Provides full-service PC game development, from design and engineering to art, QA, and live operations.",
-    // imageKey: "placeholder",
-    tags: ["Gaming", "Game Development", "Strategy Games", "PC", "EU"],
+    tags: ["Gaming", "France"],
     extraLinks: [
       {
         label: "Careers page (Workable)",
@@ -2075,14 +1800,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.fountain.com",
     description:
       "AI-native hiring and workforce platform for frontline and hourly workers. Provides applicant tracking, AI screening, scheduling, onboarding, and workforce management to help enterprises hire and manage large teams.",
-    // imageKey: "placeholder",
-    tags: [
-      "HR Tech",
-      "AI / Data",
-      "SaaS",
-      "High-Volume Hiring",
-      "Remote-worldwide",
-    ],
+    tags: ["SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2100,14 +1818,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://front.com",
     description:
       "Customer operations platform with a shared inbox for email, chat, and other channels. Combines team collaboration, automation, and AI to help support, sales, and operations teams manage customer conversations at scale.",
-    // imageKey: "placeholder",
-    tags: [
-      "Customer Support",
-      "SaaS",
-      "Collaboration",
-      "Communication",
-      "Remote-worldwide",
-    ],
+    tags: ["SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2125,8 +1836,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.gameloft.com",
     description:
       "Mobile game developer and publisher with a large portfolio of franchises (e.g., Asphalt, Disney Dreamlight Valley). Creates and operates games for mobile, PC, and consoles with live-ops and global distribution.",
-    // imageKey: "placeholder",
-    tags: ["Gaming", "Mobile", "Publishing", "Live Operations", "EU"],
+    tags: ["Gaming", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2144,8 +1854,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.gandi.net",
     description:
       "Domain registrar and web services provider offering domain names, hosting, email, and SSL certificates. Focuses on simplicity, security, and ethical practices for individuals and businesses.",
-    // imageKey: "placeholder",
-    tags: ["Web Services", "Domains", "Hosting", "SMB", "EU"],
+    tags: ["SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Taleez)",
@@ -2163,14 +1872,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.gehealthcare.com",
     description:
       "Global medical technology company providing imaging systems, ultrasound, patient monitoring, anesthesia, and pharmaceutical diagnostics. Builds AI-enabled devices and software to support diagnosis, treatment, and hospital workflows.",
-    // imageKey: "placeholder",
-    tags: [
-      "HealthTech",
-      "Medical Devices",
-      "Imaging",
-      "Enterprise",
-      "Remote-worldwide",
-    ],
+    tags: ["HealthTech", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2188,8 +1890,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.gentis.com",
     description:
       "Global recruitment and staffing agency specializing in IT, engineering, finance, life sciences, and construction. Connects professionals with permanent and contract roles across Europe, the Middle East, and North America.",
-    // imageKey: "placeholder",
-    tags: ["Recruitment", "HR Tech", "Staffing", "B2B", "EU"],
+    tags: ["ITServices", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2207,8 +1908,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.gestimum.com",
     description:
       "French ERP software publisher for SMEs. Provides integrated modules for sales, purchasing, inventory, accounting, and asset management, with industry-specific configurations and web services for integrations.",
-    // imageKey: "placeholder",
-    tags: ["SaaS", "ERP", "SMB", "Finance", "EU"],
+    tags: ["SaaS", "FinTech", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2226,8 +1926,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.getvocal.ai",
     description:
       "AI voice platform for realistic text-to-speech and voice cloning. Enables creators and businesses to generate natural-sounding audio in multiple languages for content, ads, and applications.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "Speech Tech", "SaaS", "Creator Tools", "EU"],
+    tags: ["AI", "France"],
     extraLinks: [
       {
         label: "Careers page (Workable)",
@@ -2245,8 +1944,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.gitguardian.com",
     description:
       "Secrets detection and security platform for code and developer tools. Scans repositories, CI/CD pipelines, and collaboration apps to find and remediate leaked API keys, credentials, and tokens before they cause breaches.",
-    // imageKey: "placeholder",
-    tags: ["Cybersecurity", "DevSecOps", "SaaS", "Developer Tools", "EU"],
+    tags: ["SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2264,14 +1962,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://about.gitlab.com",
     description:
       "DevOps platform that combines source code management, CI/CD, security scanning, and project management in a single application. Enables teams to plan, build, test, and ship software with end-to-end traceability.",
-    // imageKey: "placeholder",
-    tags: [
-      "DevTools",
-      "CI/CD",
-      "SaaS",
-      "Software Development",
-      "Remote-worldwide",
-    ],
+    tags: ["SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2289,8 +1980,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.gladia.io",
     description:
       "AI audio infrastructure API for speech recognition, transcription, and enrichment. Provides multilingual, real-time transcription and speaker diarization for apps, contact centers, and media platforms.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "Speech Tech", "API", "SaaS", "EU"],
+    tags: ["AI", "France"],
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
@@ -2308,8 +1998,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.glera-games.com",
     description:
       "Mobile game development studio creating casual and mid-core games for global audiences. Handles full production from concept and art to live operations and monetization.",
-    // imageKey: "placeholder",
-    tags: ["Gaming", "Mobile", "Game Development", "Live Operations", "EU"],
+    tags: ["Gaming", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2327,8 +2016,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.graphmytech.com",
     description:
       "Innovation intelligence platform using AI and graph modeling to analyze patents, scientific papers, and technical data. Helps R&D and strategy teams detect emerging technologies and prioritize innovation opportunities.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "R&D", "SaaS", "Enterprise", "EU"],
+    tags: ["AI", "Data", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2346,8 +2034,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://greenly.earth",
     description:
       "Carbon accounting and climate management platform for businesses. Automates Scope 1–3 emissions measurement, reduction planning, and regulatory reporting (CSRD, CBAM) with expert support.",
-    // imageKey: "placeholder",
-    tags: ["Climate Tech", "SaaS", "Carbon Accounting", "Sustainability", "EU"],
+    tags: ["Climate", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -2365,8 +2052,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.getgreenspark.com",
     description:
       "Climate action plugin and API for e-commerce and apps. Enables brands to plant trees, rescue plastic, and offset carbon per order, review, or subscription, with impact dashboards and customer-facing widgets.",
-    // imageKey: "placeholder",
-    tags: ["Climate Tech", "E-commerce", "Sustainability", "API", "EU"],
+    tags: ["Climate", "Ecommerce", "Europe"],
     extraLinks: [
       {
         label: "Careers page (Notion)",
@@ -2384,8 +2070,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.groupebpce.com",
     description:
       "Second-largest banking group in France, operating retail banks (Banque Populaire, Caisse d'Epargne), corporate and investment banking (Natixis), asset management, insurance, and payment services across Europe.",
-    // imageKey: "placeholder",
-    tags: ["Financial Services", "Banking", "Enterprise", "Insurance", "EU"],
+    tags: ["FinTech", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2403,8 +2088,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://hcompany.ai",
     description:
       "AI research and product company building action-oriented agents that operate computers and browsers. Develops models and tools that automate complex workflows for enterprises.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "Automation", "Enterprise AI", "Deep Tech", "EU"],
+    tags: ["AI", "France"],
     extraLinks: [
       {
         label: "Careers page (Ashby)",
@@ -2422,8 +2106,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://harfanglab.io",
     description:
       "French cybersecurity company providing EDR (Endpoint Detection and Response) and endpoint protection. Offers a unified, ANSSI-certified platform for preventing, detecting, and responding to cyberattacks on workstations and servers.",
-    // imageKey: "placeholder",
-    tags: ["Cybersecurity", "EDR", "Enterprise", "SaaS", "EU"],
+    tags: ["FinTech", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -2441,8 +2124,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.harvest.fr",
     description:
       "French digital group offering consulting, integration, and managed services in cloud, data, cybersecurity, and application development. Supports large enterprises and public sector organizations in their digital transformation.",
-    // imageKey: "placeholder",
-    tags: ["IT Services", "Consulting", "Cloud", "Enterprise", "EU"],
+    tags: ["ITServices", "Consulting", "France"],
     extraLinks: [
       {
         label: "Careers page (Taleez)",
@@ -2460,8 +2142,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.harvey.ai",
     description:
       "Legal AI platform for law firms and corporate legal teams. Uses specialized models and agents to automate contract analysis, due diligence, compliance, litigation research, and document drafting.",
-    // imageKey: "placeholder",
-    tags: ["Legal Tech", "AI / Data", "SaaS", "Enterprise", "Remote-worldwide"],
+    tags: ["LegalTech", "AI", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2479,8 +2160,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://hegia.fr",
     description:
       "Legal-tech startup building AI tools for legal professionals. Focuses on automating legal research, document review, and analysis to help lawyers and in-house teams work more efficiently.",
-    // imageKey: "placeholder",
-    tags: ["Legal Tech", "AI / Data", "SaaS", "B2B", "EU"],
+    tags: ["LegalTech", "AI", "France"],
     extraLinks: [
       {
         label: "LinkedIn",
@@ -2494,8 +2174,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://hellobetter.de",
     description:
       "Digital mental health company offering evidence-based online therapy programs and an AI companion for stress, anxiety, sleep, and other conditions. Provides prescription-covered digital therapeutics in Germany.",
-    // imageKey: "placeholder",
-    tags: ["HealthTech", "Mental Health", "Digital Therapeutics", "B2C", "EU"],
+    tags: ["HealthTech", "Europe"],
     extraLinks: [
       {
         label: "Careers page (Personio)",
@@ -2513,8 +2192,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.helpline.fr",
     description:
       "IT service desk and digital workplace provider. Delivers user support, application support, and IT asset management for enterprises, combining human expertise with AI-enhanced tools.",
-    // imageKey: "placeholder",
-    tags: ["IT Services", "Service Desk", "Enterprise", "Support", "EU"],
+    tags: ["ITServices", "France"],
     extraLinks: [
       {
         label: "Careers page (SmartRecruiters)",
@@ -2532,8 +2210,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.hexa.com",
     description:
       "Crypto wallet and on-ramp platform simplifying access to Web3. Provides a user-friendly interface for buying, storing, and managing digital assets across multiple blockchains.",
-    // imageKey: "placeholder",
-    tags: ["Crypto", "Wallet", "Web3", "B2C", "Remote-worldwide"],
+    tags: ["FinTech", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2551,8 +2228,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.hexaly.com",
     description:
       "Mathematical optimization software company. Provides a next-generation solver and low-code studio for routing, scheduling, packing, and supply-chain problems used by logistics, manufacturing, and tech companies.",
-    // imageKey: "placeholder",
-    tags: ["Optimization", "SaaS", "Operations Research", "Enterprise", "EU"],
+    tags: ["SaaS", "Data", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2570,14 +2246,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://hgh-infrared.com",
     description:
       "Electro-optics and infrared technology company designing surveillance, thermography, and test-and-measurement systems. Serves defense, security, and industrial markets with panoramic IR cameras and calibration equipment.",
-    // imageKey: "placeholder",
-    tags: [
-      "Defense Tech",
-      "Infrared",
-      "Hardware & Software",
-      "Enterprise",
-      "EU",
-    ],
+    tags: ["ITServices", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2595,14 +2264,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://hightouch.com",
     description:
       "Data activation and composable CDP platform. Syncs customer data from warehouses to 300+ marketing, sales, and support tools, and provides AI-driven audience building and campaign orchestration.",
-    // imageKey: "placeholder",
-    tags: [
-      "MarTech",
-      "Data & Analytics",
-      "SaaS",
-      "Customer Data",
-      "Remote-worldwide",
-    ],
+    tags: ["Data", "SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2620,8 +2282,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.homagames.com",
     description:
       "Mobile game developer and publisher focused on hyper-casual and casual titles. Provides data-driven tools, funding, and user-acquisition expertise to help studios scale hit games.",
-    // imageKey: "placeholder",
-    tags: ["Gaming", "Mobile", "Publishing", "User Acquisition", "EU"],
+    tags: ["Gaming", "France"],
     extraLinks: [
       {
         label: "Careers page (Workable)",
@@ -2639,8 +2300,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://honore-gaming.com",
     description:
       "Betting software provider for regulated iGaming operators. Offers a turnkey platform for sports betting, horse racing (pari-mutuel), lottery, and casino with integrated odds, risk management, and reporting.",
-    // imageKey: "placeholder",
-    tags: ["Gaming", "Betting", "B2B", "Platform", "EU"],
+    tags: ["Gaming", "FinTech", "France"],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -2658,8 +2318,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://hublo.com",
     description:
       "Alumni and community engagement platform for schools, universities, and organizations. Provides networking, mentoring, job boards, and events tools to strengthen alumni relations and career support.",
-    // imageKey: "placeholder",
-    tags: ["EdTech", "Community", "SaaS", "Networking", "EU"],
+    tags: ["SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -2677,14 +2336,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.ibm.com",
     description:
       "Global technology and consulting company providing hybrid cloud, AI, quantum computing, and enterprise software. Offers consulting, infrastructure, security, and automation solutions for large organizations.",
-    // imageKey: "placeholder",
-    tags: [
-      "Enterprise",
-      "Cloud",
-      "AI / Data",
-      "Consulting",
-      "Remote-worldwide",
-    ],
+    tags: ["AI", "Consulting", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2702,8 +2354,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://icdint.fr",
     description:
       "Engineering and digital consulting firm supporting clients in automotive, aerospace, energy, and industry. Provides R&D, embedded systems, IT, and digital transformation services across Europe.",
-    // imageKey: "placeholder",
-    tags: ["Engineering", "Consulting", "Embedded Systems", "Enterprise", "EU"],
+    tags: ["ITServices", "Consulting", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2721,14 +2372,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.ideawisegroup.com",
     description:
       "Digital product and technology group building web and mobile applications for startups and scale-ups. Combines product strategy, UX/UI design, and engineering to launch and scale digital products.",
-    // imageKey: "placeholder",
-    tags: [
-      "Digital Agency",
-      "Software Development",
-      "Product Design",
-      "Startups",
-      "EU",
-    ],
+    tags: ["ITServices", "France"],
     extraLinks: [
       {
         label: "LinkedIn",
@@ -2742,8 +2386,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.iliad.fr",
     description:
       "French telecom group operating Free Mobile, Freebox, and data-center infrastructure. Provides mobile, fixed-line, and internet services to consumers and businesses in Europe.",
-    // imageKey: "placeholder",
-    tags: ["Telecom", "ISP", "Infrastructure", "Consumer", "EU"],
+    tags: ["ITServices", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2761,8 +2404,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://implicity.com",
     description:
       "Digital health startup offering remote monitoring and decision-support tools for breast cancer care. Provides AI-assisted imaging analysis and care coordination for radiologists and oncologists.",
-    // imageKey: "placeholder",
-    tags: ["HealthTech", "AI / Data", "Medical Imaging", "B2B", "EU"],
+    tags: ["HealthTech", "AI", "France"],
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
@@ -2780,8 +2422,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.inato.com",
     description:
       "Clinical trial management platform for biotech and medtech companies. Provides tools for feasibility, site selection, budgeting, and regulatory tracking to accelerate study start-up and execution.",
-    // imageKey: "placeholder",
-    tags: ["HealthTech", "Clinical Trials", "SaaS", "B2B", "EU"],
+    tags: ["HealthTech", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2799,8 +2440,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.inetum.com",
     description:
       "European IT services and consulting group supporting digital transformation for large enterprises and public sector. Offers application development, infrastructure, cloud, data, and cybersecurity services.",
-    // imageKey: "placeholder",
-    tags: ["IT Services", "Consulting", "Cloud", "Enterprise", "EU"],
+    tags: ["ITServices", "Consulting", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2818,8 +2458,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://ingenico.com",
     description:
       "Global provider of payment terminals and solutions for merchants, banks, and service providers. Designs secure hardware and software for in-store, online, and mobile payments, including POS systems and tokenization.",
-    // imageKey: "placeholder",
-    tags: ["FinTech", "Payments", "Hardware & Software", "Enterprise", "EU"],
+    tags: ["FinTech", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2837,8 +2476,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.ingenius.global",
     description:
       "AI product studio building custom AI applications and agents for companies. Combines product design, engineering, and applied AI to deliver end-to-end solutions from prototype to production.",
-    // imageKey: "placeholder",
-    tags: ["AI / Data", "Software Development", "Product Design", "B2B", "EU"],
+    tags: ["AI", "ITServices", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -2856,8 +2494,7 @@ export const listings: JobListing[] = [
     websiteUrl: "https://www.inpulse.ai",
     description:
       "AI-powered sales intelligence platform for B2B teams. Enriches lead data, scores prospects, and automates outreach to help sales and marketing teams focus on high-potential opportunities.",
-    // imageKey: "placeholder",
-    tags: ["MarTech", "Sales Tech", "AI / Data", "SaaS", "EU"],
+    tags: ["AI", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Welcome to the Jungle)",
@@ -2866,6 +2503,110 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/inpulseai",
+      },
+    ],
+  },
+  {
+    id: "institut_français_d'intelligence_artificielle",
+    title: "Institut Français d'Intelligence Artificielle",
+    websiteUrl: "https://www.institut-ia.com",
+    description:
+      "French AI research and training institute offering courses, certifications, and applied research projects in machine learning, deep learning, and generative AI. Works with students, professionals, and companies to build AI skills and solutions.",
+    tags: ["AI", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/institut-fran%C3%A7ais-d-intelligence-artificielle",
+      },
+    ],
+  },
+  {
+    id: "jobadder",
+    title: "JobAdder",
+    websiteUrl: "https://jobadder.com",
+    description:
+      "Cloud-based recruitment software for staffing agencies and HR teams. Provides applicant tracking, candidate management, job posting, and reporting tools to streamline hiring workflows.",
+    tags: ["SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobadder.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/jobadder-com",
+      },
+    ],
+  },
+  {
+    id: "jobgether",
+    title: "Jobgether",
+    websiteUrl: "https://jobgether.com",
+    description:
+      "Remote job board and career platform focused on flexible and location-independent roles. Aggregates remote opportunities across tech, marketing, customer support, and more, with company profiles and salary insights.",
+    tags: ["SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobgether.com/remote-jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/jobgether",
+      },
+    ],
+  },
+  {
+    id: "joko",
+    title: "Joko",
+    websiteUrl: "https://home.joko.com",
+    description:
+      "Cashback and rewards app that gives users money back on everyday purchases. Partners with major retailers and brands to offer automatic cashback when shopping online or in-store via linked cards.",
+    tags: ["FinTech", "Ecommerce", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/joko/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/jokoapp",
+      },
+    ],
+  },
+  {
+    id: "jus_mundi",
+    title: "Jus Mundi",
+    websiteUrl: "https://jusmundi.com",
+    description:
+      "Legal research platform specializing in international arbitration and public international law. Provides access to case law, treaties, awards, and scholarly content with AI-powered search for lawyers and academics.",
+    tags: ["LegalTech", "AI", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://jus-mundi.welcomekit.co",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/jus-mundi",
+      },
+    ],
+  },
+  {
+    id: "justrelate",
+    title: "JustRelate",
+    websiteUrl: "https://www.justrelate.com",
+    description:
+      "Digital agency and software studio building web and mobile products for startups and enterprises. Offers product strategy, UX/UI design, and full-stack development with a focus on scalable, user-centric solutions.",
+    tags: ["ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.justrelate.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/justrelate-group",
       },
     ],
   },
