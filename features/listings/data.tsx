@@ -2610,4 +2610,432 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "kaisa",
+    title: "Kaisa",
+    websiteUrl: "https://www.kaisa.io",
+    description:
+      "Customer engagement platform for high-consideration purchases such as cars and marketplaces. Combines conversational data, AI voice agents, and automation to personalize buyer journeys and improve conversion across channels.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.kaisa.io/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/kaisa-io",
+      },
+    ],
+  },
+  {
+    id: "kbrw",
+    title: "Kbrw",
+    websiteUrl: "https://kbrw.com",
+    description:
+      "Supply chain software publisher offering OMS and WMS solutions for retailers, luxury brands, and industrial companies. Orchestrates orders, inventory, and fulfillment in real time across complex, multi-channel environments.",
+    tags: ["SaaS", "Data", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.kbrw.fr/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/kbrw",
+      },
+    ],
+  },
+  {
+    id: "klara",
+    title: "Klara",
+    websiteUrl: "https://www.klarahr.com",
+    description:
+      "Employee development and skills platform for frontline and deskless teams. Uses AI to map skills, track progress, and guide training and career paths, helping managers improve performance and retention.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/madtech/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/klarahr",
+      },
+    ],
+  },
+  {
+    id: "kolsquare",
+    title: "Kolsquare",
+    websiteUrl: "https://www.kolsquare.com",
+    description:
+      "Influencer marketing platform that uses AI and big data to find creators, manage campaigns, and measure ROI. Covers Instagram, TikTok, YouTube, and other social networks for brands and agencies.",
+    tags: ["AI", "Media", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://kolsquareteamblue.teamtailor.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/kolsquare",
+      },
+    ],
+  },
+  {
+    id: "komodo",
+    title: "Komodo",
+    websiteUrl: "https://www.komodohealth.com",
+    description:
+      "Healthcare data and AI company building a large-scale patient journey map. Provides analytics and insights for life sciences, payers, and providers to improve treatments, access, and outcomes.",
+    tags: ["HealthTech", "Data", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Greenhouse)",
+        url: "https://job-boards.greenhouse.io/komodohealth",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/komodo-health",
+      },
+    ],
+  },
+  {
+    id: "koyeb",
+    title: "Koyeb",
+    websiteUrl: "https://www.koyeb.com",
+    description:
+      "Serverless platform for deploying and running applications, APIs, and workers globally. Lets developers ship from Git or containers without managing servers or Kubernetes, with automatic scaling and edge deployment.",
+    tags: ["SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.koyeb.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/koyeb",
+      },
+    ],
+  },
+  {
+    id: "kpmg",
+    title: "KPMG",
+    websiteUrl: "http://www.kpmg.com",
+    description:
+      "Global professional services firm offering audit, tax, and advisory services. Helps organizations with financial reporting, risk, compliance, strategy, and digital transformation across industries.",
+    tags: ["Consulting", "FinTech", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://kpmg.com/xx/en/careers/job-search.html",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/kpmg",
+      },
+    ],
+  },
+  {
+    id: "kyriba",
+    title: "Kyriba",
+    websiteUrl: "https://www.kyriba.com",
+    description:
+      "Cloud treasury and liquidity performance platform for CFOs and treasurers. Centralizes cash management, payments, forecasting, and risk to give real-time visibility and control over global liquidity.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/kyriba/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/kyriba",
+      },
+    ],
+  },
+  {
+    id: "lagardère_travel_retail",
+    title: "Lagardère Travel Retail",
+    websiteUrl: "https://www.lagardere-tr.com",
+    description:
+      "Global travel retail operator running shops and restaurants in airports and train stations. Manages duty-free, fashion, travel essentials, and dining brands such as Relay and Aelia across dozens of countries.",
+    tags: ["Ecommerce", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.lagardere-tr.com/join-us/join-us",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lagarderetravelretail",
+      },
+    ],
+  },
+  {
+    id: "lago",
+    title: "Lago",
+    websiteUrl: "https://getlago.com",
+    description:
+      "Open-source billing infrastructure for usage-based and subscription pricing. Provides APIs and dashboards to meter usage, configure plans, generate invoices, and sync with payment providers and accounting tools.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://getlago.com/hiring",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/getlago",
+      },
+    ],
+  },
+  {
+    id: "launchmetrics",
+    title: "Launchmetrics",
+    websiteUrl: "https://www.launchmetrics.com",
+    description:
+      "Brand performance cloud for fashion, luxury, and beauty. Combines media monitoring, influencer data, and event management to measure campaign impact and optimize marketing strategies.",
+    tags: ["Media", "Data", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.launchmetrics.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/launchmetrics",
+      },
+    ],
+  },
+  {
+    id: "le_wagon",
+    title: "Le Wagon",
+    websiteUrl: "https://www.lewagon.com",
+    description:
+      "Tech bootcamp offering intensive courses in web development, data, and AI. Trains students and professionals through live, project-based programs on campus and online, with career support.",
+    tags: ["ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Notion)",
+        url: "https://lewagon.notion.site/career-at-le-wagon",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/school/le-wagon",
+      },
+    ],
+  },
+  {
+    id: "leboncoin",
+    title: "Leboncoin",
+    websiteUrl: "https://www.leboncoin.fr",
+    description:
+      "Leading French online marketplace for classified ads. Connects buyers and sellers for real estate, cars, jobs, home goods, and services, with both consumer and professional listings.",
+    tags: ["Ecommerce", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.leboncoin.fr/boutique/11532/postulez_aux_offres_d_emploi_leboncoin.htm",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/leboncoin",
+      },
+    ],
+  },
+  {
+    id: "ledger",
+    title: "Ledger",
+    websiteUrl: "https://www.ledger.com",
+    description:
+      "Crypto security company designing hardware wallets and software for self-custody of digital assets. Provides devices and apps to store, manage, and transact with cryptocurrencies and NFTs securely.",
+    tags: ["FinTech", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/ledger",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/ledgerhq",
+      },
+    ],
+  },
+  {
+    id: "lemlist",
+    title: "Lemlist",
+    websiteUrl: "https://www.lemlist.com",
+    description:
+      "AI-powered sales engagement platform for multichannel outbound. Combines lead database, enrichment, and automated sequences across email, LinkedIn, calls, and messaging to personalize outreach at scale.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/lemlist",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lemlist",
+      },
+    ],
+  },
+  {
+    id: "licorne_society",
+    title: "Licorne Society",
+    websiteUrl: "https://www.licornesociety.com",
+    description:
+      "Recruitment firm specialized in tech, digital, and startups. Connects startups and scale-ups with candidates in engineering, data, product, sales, marketing, and operations across France and Europe.",
+    tags: ["ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.licornesociety.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/licorne-society",
+      },
+    ],
+  },
+  {
+    id: "lightdash",
+    title: "Lightdash",
+    websiteUrl: "https://www.lightdash.com",
+    description:
+      "Open-source, AI-first BI platform for modern data teams. Connects to dbt and data warehouses to define metrics once and expose them via dashboards, AI agents, and embedded analytics.",
+    tags: ["Data", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/lightdash",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lightdash",
+      },
+    ],
+  },
+  {
+    id: "lightspeed",
+    title: "Lightspeed",
+    websiteUrl: "https://www.lightspeedhq.com",
+    description:
+      "Cloud commerce platform providing POS, payments, inventory, and ecommerce for retail and hospitality. Unifies in-store and online sales, procurement, and reporting for merchants worldwide.",
+    tags: ["Ecommerce", "FinTech", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.lightspeedhq.com/careers/openings",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lightspeedcommerce",
+      },
+    ],
+  },
+  {
+    id: "limova.ai",
+    title: "Limova.ai",
+    websiteUrl: "https://www.limova.ai",
+    description:
+      "Platform of autonomous AI agents for business operations. Automates legal documents, compliance checks, marketing, sales, and customer tasks by connecting to everyday tools via chat interfaces.",
+    tags: ["AI", "LegalTech", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/limova",
+      },
+    ],
+  },
+  {
+    id: "linear",
+    title: "Linear",
+    websiteUrl: "https://linear.app",
+    description:
+      "Product development system for software teams. Combines issue tracking, roadmaps, and AI-powered workflows to plan, build, and ship products with tight integration to code and CI/CD.",
+    tags: ["SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://linear.app/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/linearapp",
+      },
+    ],
+  },
+  {
+    id: "lity",
+    title: "Lity",
+    websiteUrl: "https://lity.so",
+    description:
+      "Multi-specialist recruitment agency covering tech, sales, marketing, finance, legal, and people roles. Supports startups and large companies across France with permanent and freelance hiring.",
+    tags: ["ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://lity.so/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lityso",
+      },
+    ],
+  },
+  {
+    id: "lseg",
+    title: "LSEG",
+    websiteUrl: "https://www.lseg.com",
+    description:
+      "Global financial markets infrastructure and data provider. Operates the London Stock Exchange and offers data & analytics, indices, risk intelligence, trading, clearing, and post-trade services.",
+    tags: ["FinTech", "Data", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Workday)",
+        url: "https://lseg.wd3.myworkdayjobs.com/Careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/london-stock-exchange-group",
+      },
+    ],
+  },
+  {
+    id: "luma_ai",
+    title: "Luma AI",
+    websiteUrl: "https://lumalabs.ai",
+    description:
+      "Creative AI platform for generating and editing video, images, and 3D content. Provides AI agents and models that assist with visual creation from concept to final render.",
+    tags: ["AI", "Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://lumalabs.ai/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lumalabsai",
+      },
+    ],
+  },
+  {
+    id: "lumapps",
+    title: "Lumapps",
+    websiteUrl: "https://www.lumapps.com",
+    description:
+      "Employee experience platform combining intranet, communications, AI, and workflows. Connects employees, tools, and knowledge in a unified hub for internal comms, learning, and operations.",
+    tags: ["SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://job.lumapps.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lumapps",
+      },
+    ],
+  },
 ];
