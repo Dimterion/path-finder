@@ -3038,4 +3038,252 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "madbox",
+    title: "Madbox",
+    websiteUrl: "https://madbox.io",
+    description:
+      "Mobile gaming studio that creates and self-publishes casual games for a global audience. Focuses on hyper-casual and hybrid-casual titles with large-scale user acquisition and live operations.",
+    tags: ["Gaming", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.madbox.io",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/madbox",
+      },
+    ],
+  },
+  {
+    id: "mallow",
+    title: "Mallow",
+    websiteUrl: "https://mallow.fr",
+    description:
+      "Edtech startup creating screen-free audio learning experiences for children. Combines storytelling, voice interaction, and AI to build educational games that develop concentration, memory, and confidence.",
+    tags: ["EdTech", "AI", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/mallow-kids",
+      },
+    ],
+  },
+  {
+    id: "malou",
+    title: "Malou",
+    websiteUrl: "https://www.malou.io",
+    description:
+      "AI-powered marketing platform for multi-location restaurant groups. Centralizes local SEO, listings, reviews, and social media to improve visibility, attract diners, and automate reputation management.",
+    tags: ["AI", "Media", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/malou/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/malou",
+      },
+    ],
+  },
+  {
+    id: "mambu",
+    title: "Mambu",
+    websiteUrl: "https://mambu.com",
+    description:
+      "Cloud-native core banking platform for lenders and financial institutions. Provides composable SaaS infrastructure for deposits, loans, and digital banking products with open APIs and integrations.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers-mambu.icims.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/mambu",
+      },
+    ],
+  },
+  {
+    id: "mastercard",
+    title: "Mastercard",
+    websiteUrl: "https://www.mastercard.com",
+    description:
+      "Global payments technology company operating one of the world’s largest card networks. Enables secure electronic transactions for consumers, merchants, and financial institutions across debit, credit, and digital payments.",
+    tags: ["FinTech", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.mastercard.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/mastercard",
+      },
+    ],
+  },
+  {
+    id: "medusa",
+    title: "Medusa",
+    websiteUrl: "https://medusajs.com",
+    description:
+      "Open-source, headless commerce platform for building custom ecommerce experiences. Provides a modular backend with APIs for products, cart, checkout, payments, and order management, designed for developers.",
+    tags: ["Ecommerce", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://medusajs.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/medusajs",
+      },
+    ],
+  },
+  {
+    id: "meltwater",
+    title: "Meltwater",
+    websiteUrl: "https://www.meltwater.com",
+    description:
+      "Media and consumer intelligence platform for PR, marketing, and insights teams. Monitors news, social media, and online conversations, and uses AI to analyze sentiment, trends, and brand perception.",
+    tags: ["Media", "AI", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://meltwatercareers.ttcportals.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/meltwater",
+      },
+    ],
+  },
+  {
+    id: "meritis",
+    title: "Meritis",
+    websiteUrl: "https://meritis.fr",
+    description:
+      "IT and digital transformation consulting group. Supports clients with IT strategy, project management, software engineering, data, cloud, cybersecurity, and finance-related technology projects.",
+    tags: ["ITServices", "Consulting", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://meritis.fr/home-career",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/meritis-b-corp%E2%84%A2",
+      },
+    ],
+  },
+  {
+    id: "metabase",
+    title: "Metabase",
+    websiteUrl: "https://www.metabase.com",
+    description:
+      "Open-source business intelligence and analytics platform. Lets teams explore data, build dashboards, and ask questions via a visual interface or AI, with options to embed analytics in other products.",
+    tags: ["Data", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.metabase.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/metabase",
+      },
+    ],
+  },
+  {
+    id: "mind7_consulting",
+    title: "Mind7 Consulting",
+    websiteUrl: "https://mind7.com",
+    description:
+      "Consulting and services group helping organizations with digital transformation, IT strategy, and sustainable tech. Combines project management, microservices architecture, data engineering, and Green IT expertise.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/mind7/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/groupe-mind7-consulting",
+      },
+    ],
+  },
+  {
+    id: "mistral",
+    title: "Mistral",
+    websiteUrl: "https://mistral.ai",
+    description:
+      "French AI company developing large language models and an enterprise AI platform. Offers open-weight models, custom model training, and sovereign AI infrastructure for deploying assistants and agents from cloud to edge.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/mistral.ai",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/mistralai",
+      },
+    ],
+  },
+  {
+    id: "mobiapps",
+    title: "Mobiapps",
+    websiteUrl: "https://mobiapps.fr",
+    description:
+      "Mobile and digital agency designing, developing, and managing multi-platform apps and enterprise mobility solutions. Covers UX/UI, native and hybrid development, testing, and mobile device management for businesses.",
+    tags: ["ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://mobiapps.fr/job/nos-offres-demploi",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/mobiappsfr",
+      },
+    ],
+  },
+  {
+    id: "molotov",
+    title: "Molotov",
+    websiteUrl: "https://www.molotov.tv",
+    description:
+      "Streaming TV platform aggregating live channels, replay, and on-demand content in a unified interface. Provides free and premium plans with cloud recording, multi-screen support, and advanced discovery features.",
+    tags: ["Media", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/molotov/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/molotov-tv",
+      },
+    ],
+  },
+  {
+    id: "mui",
+    title: "MUI",
+    websiteUrl: "https://mui.com",
+    description:
+      "Open-source React component library and design system toolkit. Provides Material UI, Base UI, and advanced components (data grid, date pickers, charts) to help teams build accessible, production-ready interfaces.",
+    tags: ["SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://mui.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/mui",
+      },
+    ],
+  },
 ];

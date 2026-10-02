@@ -15,6 +15,7 @@ export default function ListingsScreen() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showTags, setShowTags] = useState(false);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [showMoreText, setShowMoreText] = useState(false);
   const { flatListRef, handleScroll, ScrollToTopComponent } = useScrollToTop();
 
   const allTags = useMemo(() => {
@@ -77,9 +78,45 @@ export default function ListingsScreen() {
             <Text style={styles.screenTitle}>
               Job Listings ({filteredListings.length})
             </Text>
-            <Text style={styles.screenText}>
-              Explore different companies and their potential career options.
-            </Text>
+
+            <View style={styles.descriptionContainer}>
+              <Text style={styles.screenText}>
+                Explore different companies and their potential career options.
+              </Text>
+
+              {showMoreText && (
+                <View style={styles.additionalText}>
+                  <Text style={styles.screenText}>
+                    This is a list of companies that may have open positions
+                    remotely (around the world), within Europe, or France.
+                  </Text>
+                  <Text style={styles.screenText}>
+                    You can use the search or available tags to filter the
+                    results.
+                  </Text>
+                  <Text style={styles.screenText}>
+                    Main link leads to the company's website and then there are
+                    additional links directly to the jobs page and LinkedIn.
+                  </Text>
+                  <Text style={styles.screenText}>
+                    Some companies may not have a dedicated jobs page or
+                    LinkedIn profile, or they may use a separate platform (in
+                    that case its name is mentioned in parenthesis).
+                  </Text>
+                </View>
+              )}
+
+              <TouchableOpacity
+                onPress={() => setShowMoreText(!showMoreText)}
+                accessibilityRole="button"
+                accessibilityLabel={showMoreText ? "Show less" : "Read more"}
+              >
+                <Text style={styles.readMoreText}>
+                  {showMoreText ? "Show less" : "Read more"}
+                </Text>
+              </TouchableOpacity>
+            </View>
+
             <View style={styles.searchContainer}>
               <TextInput
                 style={styles.searchInput}
@@ -207,11 +244,23 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     color: "#111827",
   },
+  descriptionContainer: {
+    marginBottom: 16,
+  },
   screenText: {
     fontSize: 16,
     lineHeight: 24,
     color: "#4b5563",
-    marginBottom: 16,
+    marginBottom: 12,
+  },
+  additionalText: {
+    marginBottom: 8,
+  },
+  readMoreText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#155dfc",
+    marginTop: 4,
   },
   searchContainer: {
     position: "relative",
