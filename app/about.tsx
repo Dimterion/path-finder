@@ -1,11 +1,22 @@
 import { Link } from "expo-router";
-import { StyleSheet, Text, View, Pressable } from "react-native";
+import { StyleSheet, Text, View, Pressable, Linking } from "react-native";
 import { colors } from "../styles/constants";
 
 export default function HomeScreen() {
+  const openMediumArticle = async () => {
+    const url =
+      "https://medium.com/@dimterion/documenting-the-process-of-making-a-mobile-app-working-on-individual-screens-cv-builder-3a2b0ceb5fb4?sharedUserId=dimterion";
+    const supported = await Linking.canOpenURL(url);
+
+    if (supported) {
+      await Linking.openURL(url);
+    }
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>About Pathfinder</Text>
+
       <View style={styles.listContainer}>
         <Text style={styles.subtitle}>
           A simple app to organize your job search activities.
@@ -41,11 +52,24 @@ export default function HomeScreen() {
         </View>
       </View>
 
+      <Text style={styles.infoText}>
+        No login or account creation. Information is saved locally on your
+        current device. CV, applications and activities lists can be exported.
+      </Text>
+
       <Link href="/" asChild>
         <Pressable style={styles.buttonPrimary}>
           <Text style={styles.buttonText}>Start here</Text>
         </Pressable>
       </Link>
+
+      <Text style={styles.workInProgress}>
+        Work in progress. Features and functionality might change in the future.
+      </Text>
+
+      <Pressable onPress={openMediumArticle} style={styles.moreInfoLink}>
+        <Text style={styles.moreInfoText}>More info</Text>
+      </Pressable>
     </View>
   );
 }
@@ -107,5 +131,30 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 24,
     color: colors.textMuted,
+  },
+  infoText: {
+    fontSize: 15,
+    lineHeight: 24,
+    color: colors.textMuted,
+    textAlign: "center",
+    marginBottom: 32,
+    paddingHorizontal: 8,
+  },
+  workInProgress: {
+    fontSize: 14,
+    lineHeight: 20,
+    color: colors.textMuted,
+    textAlign: "center",
+    marginTop: 32,
+    marginBottom: 12,
+    paddingHorizontal: 8,
+  },
+  moreInfoLink: {
+    alignItems: "center",
+  },
+  moreInfoText: {
+    fontSize: 14,
+    color: colors.textMuted,
+    textDecorationLine: "underline",
   },
 });

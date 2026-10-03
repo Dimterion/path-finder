@@ -3286,4 +3286,94 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "murex",
+    title: "Murex",
+    websiteUrl: "https://www.murex.com",
+    description:
+      "Enterprise software platform for cross-asset trading, risk management, and post-trade processing. Serves banks, asset managers, and corporates with an integrated front-to-back solution for derivatives, securities, and commodities.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Workday)",
+        url: "https://murex.wd3.myworkdayjobs.com/MurexCareerPage1",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/murex",
+      },
+    ],
+  },
+  {
+    id: "my.games",
+    title: "MY.GAMES",
+    websiteUrl: "https://my.games",
+    description:
+      "European video game developer and publisher with over a billion registered users. Creates and operates mobile, PC, and console titles across genres including shooters, strategy, and RPGs, plus a premium publishing label.",
+    tags: ["Gaming", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.my.games",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/mygames",
+      },
+    ],
+  },
+  {
+    id: "myconnectedcompany",
+    title: "myConnectedCompany",
+    websiteUrl: "https://www.myconnectedcompany.com",
+    description:
+      "Digital workplace consultancy and IT services firm. Helps companies with digital transformation, VIP/Apple support, workspace design, and employee experience through consulting, managed services, and custom tools.",
+    tags: ["ITServices", "Consulting", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (SmartRecruiters)",
+        url: "https://careers.smartrecruiters.com/EVERIENCE/myconnectedcompany",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/myconnectedcompany",
+      },
+    ],
+  },
+  {
+    id: "myedspace",
+    title: "myEdSpace",
+    websiteUrl: "https://myedspace.co.uk",
+    description:
+      "Online education platform offering live, interactive group lessons for UK students. Combines expert teachers, structured curriculum, and a learning platform with recordings, workbooks, and practice for KS3, GCSE, and A-level.",
+    tags: ["EdTech", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/myedspacecareers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/myedspace",
+      },
+    ],
+  },
+  {
+    id: "n8n",
+    title: "n8n",
+    websiteUrl: "https://n8n.io",
+    description:
+      "Workflow automation platform with native AI capabilities. Enables teams to visually build and code-customize automations and AI agents that connect apps, APIs, and data sources, with self-hosted or cloud deployment.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://n8n.io/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/n8n",
+      },
+    ],
+  },
 ];
