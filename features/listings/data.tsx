@@ -3376,4 +3376,166 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "natixis",
+    title: "Natixis",
+    websiteUrl: "https://www.interepargne.natixis.com",
+    description:
+      "Leading French provider of employee savings and retirement products. Manages company savings plans, pension schemes, and investment funds for corporate clients and individual savers.",
+    tags: ["FinTech", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.interepargne.natixis.com/epargnants/a-propos/rejoignez-nous",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/natixis-interepargne",
+      },
+    ],
+  },
+  {
+    id: "neo4j",
+    title: "Neo4j",
+    websiteUrl: "https://neo4j.com",
+    description:
+      "Graph database and graph intelligence platform. Stores and queries data as nodes and relationships to power use cases like fraud detection, recommendations, master data management, and AI knowledge graphs.",
+    tags: ["Data", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://neo4j.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/neo4j",
+      },
+    ],
+  },
+  {
+    id: "neon",
+    title: "Neon",
+    websiteUrl: "https://neon.com",
+    description:
+      "Serverless Postgres platform that separates compute and storage. Provides instant database branching, scale-to-zero, and a modern developer experience for building backend services and AI applications.",
+    tags: ["Data", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.databricks.com/company/careers/open-positions",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/neondatabase",
+      },
+    ],
+  },
+  {
+    id: "new_tales",
+    title: "New Tales",
+    websiteUrl: "https://www.newtales.com",
+    description:
+      "Independent video game publisher and developer. Partners with external studios to publish titles internationally and builds its own IPs, covering PC, console, mobile, and VR with community-centric marketing.",
+    tags: ["Gaming", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.newtales.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/newtales",
+      },
+    ],
+  },
+  {
+    id: "nexen",
+    title: "Nexen",
+    websiteUrl: "https://nexen-tech.fr",
+    description:
+      "Virtual Power Plant (VPP) software for residential and commercial batteries. Aggregates distributed storage to optimize self-consumption and participate in grid flexibility markets using AI-driven control.",
+    tags: ["Climate", "AI", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://nexen-tech.fr/carrieres",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/nexen-grid-technologies",
+      },
+    ],
+  },
+  {
+    id: "nexway",
+    title: "Nexway",
+    websiteUrl: "https://www.nexway.com",
+    description:
+      "Global eCommerce and payment solutions provider acting as Merchant of Record. Helps software and digital businesses scale with subscription management, tax compliance, fraud prevention, and worldwide payment acceptance.",
+    tags: ["Ecommerce", "FinTech", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.nexway.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/nexway",
+      },
+    ],
+  },
+  {
+    id: "nonplusultra",
+    title: "Nonplusultra",
+    websiteUrl: "https://nonplusultra.eu",
+    description:
+      "EMEA Retail as a Service partner for consumer electronics brands. Manages distribution, field sales, data intelligence, and marketplace operations across Europe as an embedded retail team.",
+    tags: ["Ecommerce", "Consulting", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://nonplusultra.eu/career",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/nonplusultra",
+      },
+    ],
+  },
+  {
+    id: "notion",
+    title: "Notion",
+    websiteUrl: "https://www.notion.com",
+    description:
+      "All-in-one AI workspace for notes, docs, wikis, databases, and project management. Combines structured knowledge with AI writing, Q&A, and agents to automate tasks across teams.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.notion.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/notionhq",
+      },
+    ],
+  },
+  {
+    id: "novutech",
+    title: "Novutech",
+    websiteUrl: "https://www.novutech.com",
+    description:
+      "Finance transformation partner for European scale-ups. Implements and integrates NetSuite and adjacent finance tools, and builds AI-powered workflows to automate quote-to-cash and reporting.",
+    tags: ["FinTech", "ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.novutech.com/company/career",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/novutech",
+      },
+    ],
+  },
 ];

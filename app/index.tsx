@@ -10,35 +10,43 @@ export default function HomeScreen() {
         A simple app to organize your job search activities.
       </Text>
 
-      <Link href="/platforms" asChild>
-        <Pressable style={styles.buttonPrimary}>
-          <Text style={styles.buttonText}>Job Search Platforms</Text>
+      <Link href="/about" asChild>
+        <Pressable>
+          <Text style={styles.readMoreLink}>Read more about the app.</Text>
         </Pressable>
       </Link>
 
-      <Link href="/listings" asChild>
-        <Pressable style={styles.buttonPrimaryLight}>
-          <Text style={styles.buttonText}>Job Listings</Text>
-        </Pressable>
-      </Link>
+      <View style={styles.buttonsContainer}>
+        <Link href="/platforms" asChild>
+          <Pressable style={styles.buttonPrimary}>
+            <Text style={styles.buttonText}>Job Search Platforms</Text>
+          </Pressable>
+        </Link>
 
-      <Link href="/cv-builder" asChild>
-        <Pressable style={styles.buttonSecondary}>
-          <Text style={styles.buttonText}>CV Builder</Text>
-        </Pressable>
-      </Link>
+        <Link href="/listings" asChild>
+          <Pressable style={styles.buttonPrimaryLight}>
+            <Text style={styles.buttonText}>Job Listings</Text>
+          </Pressable>
+        </Link>
 
-      <Link href="/application-tracker" asChild>
-        <Pressable style={styles.buttonTertiary}>
-          <Text style={styles.buttonText}>Application Tracker</Text>
-        </Pressable>
-      </Link>
+        <Link href="/cv-builder" asChild>
+          <Pressable style={styles.buttonSecondary}>
+            <Text style={styles.buttonText}>CV Builder</Text>
+          </Pressable>
+        </Link>
 
-      <Link href="/activities" asChild>
-        <Pressable style={styles.buttonQuaternary}>
-          <Text style={styles.buttonText}>Activities</Text>
-        </Pressable>
-      </Link>
+        <Link href="/application-tracker" asChild>
+          <Pressable style={styles.buttonTertiary}>
+            <Text style={styles.buttonText}>Application Tracker</Text>
+          </Pressable>
+        </Link>
+
+        <Link href="/activities" asChild>
+          <Pressable style={styles.buttonQuaternary}>
+            <Text style={styles.buttonText}>Activities</Text>
+          </Pressable>
+        </Link>
+      </View>
     </View>
   );
 }
@@ -60,14 +68,19 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 24,
     textAlign: "center",
-    marginBottom: 32,
     color: colors.textMuted,
   },
-  button: {
-    paddingVertical: 14,
-    paddingHorizontal: 18,
-    borderRadius: 10,
-    marginBottom: 14,
+  readMoreLink: {
+    fontSize: 15,
+    lineHeight: 24,
+    textAlign: "center",
+    color: colors.textMuted,
+    textDecorationLine: "underline",
+    marginTop: 8,
+    marginBottom: 32,
+  },
+  buttonsContainer: {
+    marginTop: 8,
   },
   buttonPrimary: {
     paddingVertical: 14,
