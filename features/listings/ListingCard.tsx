@@ -30,10 +30,6 @@ async function openExternalLink(url: string): Promise<void> {
 export default function ListingCard({ item, onTagClick }: ListingCardProps) {
   const imageSource = item.imageKey ? listingImages[item.imageKey] : undefined;
 
-  {
-    imageSource ? <Image source={imageSource} style={styles.image} /> : null;
-  }
-
   return (
     <View style={styles.card}>
       {imageSource ? <Image source={imageSource} style={styles.image} /> : null}
@@ -83,7 +79,7 @@ export default function ListingCard({ item, onTagClick }: ListingCardProps) {
 const styles = StyleSheet.create({
   card: {
     backgroundColor: "#ffffff",
-    borderRadius: 14,
+    borderRadius: 16,
     padding: 16,
     marginBottom: 16,
     borderWidth: 1,
@@ -92,7 +88,7 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: 150,
-    borderRadius: 10,
+    borderRadius: 12,
     marginBottom: 14,
   },
   title: {
@@ -110,12 +106,12 @@ const styles = StyleSheet.create({
   tagsRow: {
     flexDirection: "row",
     flexWrap: "wrap",
-    marginBottom: 14,
+    marginBottom: 16,
   },
   tag: {
     backgroundColor: "#e8f0fe",
     paddingVertical: 6,
-    paddingHorizontal: 10,
+    paddingHorizontal: 12,
     borderRadius: 999,
     marginRight: 8,
     marginBottom: 8,
@@ -129,7 +125,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#1f6feb",
     paddingVertical: 12,
     paddingHorizontal: 14,
-    borderRadius: 10,
+    borderRadius: 12,
     marginBottom: 12,
   },
   linkButtonText: {
@@ -139,7 +135,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   extraLinksBlock: {
-    marginTop: 2,
+    marginTop: 4,
   },
   extraLinkText: {
     fontSize: 14,
