@@ -270,7 +270,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     borderWidth: 1,
     borderColor: "#e5e7eb",
-    borderRadius: 10,
+    borderRadius: 12,
     paddingHorizontal: 14,
     paddingVertical: 12,
     paddingRight: 40,
@@ -368,7 +368,7 @@ const styles = StyleSheet.create({
   tagChipText: {
     fontSize: 13,
     fontWeight: "600",
-    color: "#364153",
+    color: "#374151",
   },
   tagChipTextSelected: {
     color: "#ffffff",

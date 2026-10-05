@@ -3538,4 +3538,234 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "odaseva",
+    title: "Odaseva",
+    websiteUrl: "https://www.odaseva.com",
+    description:
+      "Enterprise data platform for Salesforce. Provides backup, archiving, encryption, masking, and data movement to secure and manage large-scale Salesforce data across orgs and regions.",
+    tags: ["Data", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.lever.co/odaseva",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/odaseva",
+      },
+    ],
+  },
+  {
+    id: "ogury",
+    title: "Ogury",
+    websiteUrl: "https://www.ogury.com",
+    description:
+      "Global adtech company delivering personified, privacy-first advertising. Uses consented personas and attention-optimized formats to activate audiences across mobile, in-app, and digital channels.",
+    tags: ["Media", "AI", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.ogury.com/job-listings",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/ogury-ltd",
+      },
+    ],
+  },
+  {
+    id: "okta",
+    title: "Okta",
+    websiteUrl: "https://www.okta.com",
+    description:
+      "Identity and access management platform for workforce and customers. Provides single sign-on, multi-factor authentication, lifecycle management, and API security to connect people safely to applications.",
+    tags: ["SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.okta.com/company/careers/job-listing",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/okta-inc-",
+      },
+    ],
+  },
+  {
+    id: "old_skull_games",
+    title: "Old Skull Games",
+    websiteUrl: "https://www.oldskullgames.com",
+    description:
+      "Independent video game studio creating original IPs. Focuses on community-driven development and player-centric design across PC and console titles.",
+    tags: ["Gaming", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.oldskullgames.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/old-skull-games",
+      },
+    ],
+  },
+  {
+    id: "onepoint",
+    title: "Onepoint",
+    websiteUrl: "https://www.groupeonepoint.com",
+    description:
+      "International consulting and tech group driving digital transformation. Combines strategy, design, data, AI, cloud, cybersecurity, and software engineering for enterprises and public sector clients.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Workday)",
+        url: "https://onepoint.wd3.myworkdayjobs.com/OnepointFR",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/onepoint",
+      },
+    ],
+  },
+  {
+    id: "openreplay",
+    title: "OpenReplay",
+    websiteUrl: "https://openreplay.com",
+    description:
+      "Open-source session replay and product analytics platform. Enables self-hosted replay of user sessions, error tracking, and co-browsing to debug issues and improve UX while keeping data under full control.",
+    tags: ["Data", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/openreplay",
+      },
+    ],
+  },
+  {
+    id: "orchestrade",
+    title: "Orchestrade",
+    websiteUrl: "https://www.orchestrade.com",
+    description:
+      "Cross-asset trading and risk management platform for finance and energy markets. Covers front-to-back workflows for derivatives, commodities, power, gas, emissions, and renewables with real-time risk analytics.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.orchestrade.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/orchestrade",
+      },
+    ],
+  },
+  {
+    id: "orisha",
+    title: "Orisha",
+    websiteUrl: "https://www.orisha.com",
+    description:
+      "European B2B software publisher serving retail, real estate, healthcare, agrifood, and construction. Provides sector-specific management software enhanced with AI to automate tasks and support decision-making.",
+    tags: ["SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.orisha.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/orisha-group",
+      },
+    ],
+  },
+  {
+    id: "orki",
+    title: "Orki",
+    websiteUrl: "https://orki.green",
+    description:
+      "Climate software for corporate carbon accounting and LCA. Helps companies calculate emissions, define reduction plans, and report in line with regulations and CSR goals.",
+    tags: ["Climate", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/orki",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/orkigreen",
+      },
+    ],
+  },
+  {
+    id: "orus",
+    title: "Orus",
+    websiteUrl: "https://www.orus.eu",
+    description:
+      "Digital insurer for SMBs and self-employed professionals. Offers professional liability, multi-risk, and health insurance with instant quotes, flexible contracts, and fast claims handling.",
+    tags: ["FinTech", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.orus.eu/carrieres",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/orus-insurance",
+      },
+    ],
+  },
+  {
+    id: "outsight",
+    title: "Outsight",
+    websiteUrl: "https://www.outsight.ai",
+    description:
+      "Physical AI company turning 3D LiDAR data into spatial intelligence. Tracks people and vehicles in real time to optimize operations, safety, and visitor experience in airports, venues, and infrastructure.",
+    tags: ["AI", "Data", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.outsight.ai/company/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/outsight",
+      },
+    ],
+  },
+  {
+    id: "ovhcloud",
+    title: "OVHcloud",
+    websiteUrl: "https://www.ovhcloud.com",
+    description:
+      "Leading European cloud provider offering public and private cloud, VPS, dedicated servers, and web hosting. Operates its own data centers and network to deliver open, reversible, and cost-effective infrastructure.",
+    tags: ["ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.ovhcloud.com/search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/ovhgroup",
+      },
+    ],
+  },
+  {
+    id: "ovrsea",
+    title: "OVRSEA",
+    websiteUrl: "https://www.ovrsea.com",
+    description:
+      "Digital freight forwarder simplifying international shipping. Combines logistics expertise with a platform for quotes, booking, customs, and real-time tracking across sea, air, and road.",
+    tags: ["FinTech", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/ovrsea/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/ovrsea",
+      },
+    ],
+  },
 ];
