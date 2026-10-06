@@ -1,15 +1,21 @@
 import { platforms } from "../features/platforms/data";
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import PlatformCard from "../features/platforms/PlatformCard";
+import { useScrollToTop } from "../hooks/useScrollToTop";
 
 export default function PlatformsScreen() {
+  const { flatListRef, handleScroll, ScrollToTopComponent } = useScrollToTop();
+
   return (
     <View style={styles.container}>
       <FlatList
+        ref={flatListRef}
         data={platforms}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <PlatformCard item={item} />}
         contentContainerStyle={styles.listContent}
+        onScroll={handleScroll}
+        scrollEventThrottle={16}
         ListHeaderComponent={
           <View style={styles.header}>
             <Text style={styles.screenTitle}>Job Platforms</Text>
@@ -20,6 +26,7 @@ export default function PlatformsScreen() {
           </View>
         }
       />
+      <ScrollToTopComponent />
     </View>
   );
 }
