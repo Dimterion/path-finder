@@ -88,16 +88,17 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   subtitle: {
-    fontSize: 16,
+    fontSize: 18,
     lineHeight: 24,
     textAlign: "center",
     marginBottom: 32,
     color: colors.textMuted,
+    fontWeight: "600",
   },
   buttonPrimary: {
     paddingVertical: 14,
     paddingHorizontal: 18,
-    borderRadius: 10,
+    borderRadius: 12,
     marginBottom: 14,
     backgroundColor: colors.primary,
   },
@@ -108,10 +109,10 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   listContainer: {
-    marginBottom: 32,
+    marginBottom: 40,
   },
   list: {
-    marginTop: 24,
+    marginTop: 40,
     marginLeft: 8,
   },
   listItem: {
@@ -137,7 +138,7 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     color: colors.textMuted,
     textAlign: "center",
-    marginBottom: 32,
+    marginBottom: 40,
     paddingHorizontal: 8,
   },
   workInProgress: {
@@ -145,8 +146,8 @@ const styles = StyleSheet.create({
     lineHeight: 20,
     color: colors.textMuted,
     textAlign: "center",
-    marginTop: 32,
-    marginBottom: 12,
+    marginTop: 40,
+    marginBottom: 16,
     paddingHorizontal: 8,
   },
   moreInfoLink: {
