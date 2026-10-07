@@ -3966,4 +3966,198 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "pivot",
+    title: "Pivot",
+    websiteUrl: "https://www.pivotapp.ai",
+    description:
+      "AI operating system for procurement. Connects to ERPs and finance systems to manage intake, sourcing, contracts, purchasing, invoicing, and payments with real-time visibility into committed spend and AI-driven workflows.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/Pivot",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/pivothq",
+      },
+    ],
+  },
+  {
+    id: "playmakers",
+    title: "PlayMakers",
+    websiteUrl: "https://www.playmakers.co",
+    description:
+      "Community toolset for game studios. Enables user-generated content, social quests, voting, and referral campaigns to drive installs, engagement, and liveops through a no-code platform with API and Discord integration.",
+    tags: ["Gaming", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Wellfound)",
+        url: "https://wellfound.com/company/playmakers-3",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/playmakersgames",
+      },
+    ],
+  },
+  {
+    id: "playrix",
+    title: "Playrix",
+    websiteUrl: "https://playrix.com",
+    description:
+      "Global mobile game developer and publisher behind hits like Gardenscapes, Homescapes, Township, and Fishdom. Combines match-3 puzzles with story-driven decoration mechanics for a worldwide audience.",
+    tags: ["Gaming", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://playrix.com/job/open",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/playrix-entertainment",
+      },
+    ],
+  },
+  {
+    id: "posthog",
+    title: "PostHog",
+    websiteUrl: "https://posthog.com",
+    description:
+      "Open-source product analytics and experimentation platform. Combines event analytics, session replay, feature flags, experiments, surveys, error tracking, and a built-in data warehouse in a single system.",
+    tags: ["Data", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://posthog.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/posthog",
+      },
+    ],
+  },
+  {
+    id: "prelude",
+    title: "Prelude",
+    websiteUrl: "https://prelude.so",
+    description:
+      "Authentication and fraud prevention infrastructure. Uses telco intelligence and device/network signals to verify users via phone or email, detect abuse, and manage risk-based controls across 230+ countries.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://prelude.so/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/prelude-so",
+      },
+    ],
+  },
+  {
+    id: "primer",
+    title: "Primer",
+    websiteUrl: "https://primer.io",
+    description:
+      "Unified payments infrastructure platform. Provides a single API and no-code workflows to connect hundreds of PSPs, payment methods, and fraud tools, optimizing routing, reconciliation, FX, and checkout performance.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/primer.io",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/primerapi",
+      },
+    ],
+  },
+  {
+    id: "prisma",
+    title: "Prisma",
+    websiteUrl: "https://www.prisma.io",
+    description:
+      "Next-generation ORM and data layer for TypeScript and Node.js. Offers type-safe queries, migrations, and a visual data editor for PostgreSQL, MongoDB, MySQL, and SQLite with strong developer ergonomics.",
+    tags: ["Data", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.prisma.io/company/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/prisma-io",
+      },
+    ],
+  },
+  {
+    id: "proton",
+    title: "Proton",
+    websiteUrl: "https://proton.me",
+    description:
+      "Privacy-focused suite of encrypted services including email, calendar, drive, VPN, and password manager. Uses end-to-end and zero-access encryption with servers in Switzerland to protect user data.",
+    tags: ["SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://proton.me/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/protonprivacy",
+      },
+    ],
+  },
+  {
+    id: "pubstack",
+    title: "Pubstack",
+    websiteUrl: "https://www.pubstack.io",
+    description:
+      "Monetization management platform for digital publishers. Provides a no-code interface to connect, control, monitor, and optimize all ad inventory and revenue sources across client- and server-side setups.",
+    tags: ["Media", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/pubstack",
+      },
+    ],
+  },
+  {
+    id: "pullup_entertainment",
+    title: "Pullup Entertainment",
+    websiteUrl: "https://pullupent.com",
+    description:
+      "Independent video game group developing, publishing, and distributing AA and indie titles worldwide. Operates multiple studios and labels across action, simulation, strategy, and narrative genres.",
+    tags: ["Gaming", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://pullupent.com/career/open-positions",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/pullup-entertainment",
+      },
+    ],
+  },
+  {
+    id: "pwc",
+    title: "PwC",
+    websiteUrl: "https://www.pwc.fr",
+    description:
+      "French member firm of the PwC network offering audit, consulting, tax, legal, and transaction services. Supports organizations across strategy, risk, deals, managed services, and digital transformation.",
+    tags: ["Consulting", "FinTech", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://carrieres.pwc.fr",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/pwc-france",
+      },
+    ],
+  },
 ];

@@ -56,6 +56,12 @@ export default function CVBuilderScreen() {
     });
   }, []);
 
+  useEffect(() => {
+    return () => {
+      if (saveTimeout.current) clearTimeout(saveTimeout.current);
+    };
+  }, []);
+
   function updateCv(patch: Partial<CvData>) {
     const updated = { ...cv, ...patch };
     setCv(updated);
@@ -155,6 +161,14 @@ export default function CVBuilderScreen() {
         contentContainerStyle={styles.content}
         keyboardShouldPersistTaps="handled"
       >
+        {/* Header */}
+        <View style={styles.header}>
+          <Text style={styles.headerTitle}>CV Builder</Text>
+          <Text style={styles.headerSubtitle}>
+            Your changes are saved automatically.
+          </Text>
+        </View>
+
         {/* Personal Info */}
         <SectionHeader
           title="Personal Info"
@@ -465,16 +479,29 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#f5f7fb" },
   content: { padding: 16, paddingBottom: 40 },
   centered: { flex: 1, justifyContent: "center", alignItems: "center" },
+  header: {
+    marginBottom: 24,
+  },
+  headerTitle: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#111827",
+  },
+  headerSubtitle: {
+    fontSize: 14,
+    color: "#6b7280",
+    marginTop: 8,
+  },
   section: {
     backgroundColor: "#ffffff",
-    borderRadius: 10,
+    borderRadius: 16,
     padding: 16,
     marginBottom: 12,
     borderWidth: 1,
     borderColor: "#e5e7eb",
   },
   label: {
-    fontSize: 13,
+    fontSize: 14,
     fontWeight: "600",
     color: "#374151",
     marginBottom: 5,
@@ -482,10 +509,10 @@ const styles = StyleSheet.create({
   input: {
     borderWidth: 1,
     borderColor: "#d1d5db",
-    borderRadius: 8,
+    borderRadius: 12,
     paddingVertical: 9,
     paddingHorizontal: 12,
-    fontSize: 15,
+    fontSize: 14,
     color: "#111827",
     backgroundColor: "#f9fafb",
   },
@@ -495,7 +522,7 @@ const styles = StyleSheet.create({
   },
   entryCard: {
     backgroundColor: "#f9fafb",
-    borderRadius: 8,
+    borderRadius: 12,
     padding: 12,
     marginBottom: 12,
     borderWidth: 1,
@@ -506,6 +533,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 12,
+    gap: 12,
   },
   entryTitle: {
     fontSize: 14,
@@ -515,9 +543,9 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   removeButton: {
-    paddingVertical: 4,
-    paddingHorizontal: 10,
-    borderRadius: 6,
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+    borderRadius: 8,
     backgroundColor: "#fee2e2",
   },
   removeText: {
@@ -529,8 +557,9 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#1f6feb",
     borderStyle: "dashed",
-    borderRadius: 8,
+    borderRadius: 12,
     paddingVertical: 12,
+    paddingHorizontal: 16,
     alignItems: "center",
   },
   addEntryText: {
@@ -541,13 +570,14 @@ const styles = StyleSheet.create({
   exportButton: {
     backgroundColor: "#1f6feb",
     paddingVertical: 14,
-    borderRadius: 10,
+    paddingHorizontal: 20,
+    borderRadius: 16,
     alignItems: "center",
     marginTop: 8,
   },
   exportButtonText: {
     color: "#ffffff",
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: "700",
   },
 });
