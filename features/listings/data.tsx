@@ -4160,4 +4160,220 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "qevlar",
+    title: "Qevlar",
+    websiteUrl: "https://www.qevlar.com",
+    description:
+      "AI SOC platform that autonomously investigates security alerts across the entire stack. Delivers evidence-based verdicts, reduces false positives and MTTR, and turns each case into reusable intelligence for detection and response.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://qevlar-1721317262.teamtailor.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/qevlar",
+      },
+    ],
+  },
+  {
+    id: "qlik",
+    title: "Qlik",
+    websiteUrl: "https://www.qlik.com",
+    description:
+      "End-to-end data integration and analytics platform. Combines data pipelines, catalogs, and an associative analytics engine with AI-powered insights to enable self-service BI and governed data products.",
+    tags: ["Data", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careerhub.qlik.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/qlik",
+      },
+    ],
+  },
+  {
+    id: "qonto",
+    title: "Qonto",
+    websiteUrl: "https://qonto.com",
+    description:
+      "All-in-one business banking and finance management platform for freelancers and SMEs. Provides IBAN accounts, cards, invoicing, bookkeeping, spend controls, and cash-flow tools with local compliance across Europe.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://qonto.com/en/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/qonto",
+      },
+    ],
+  },
+  {
+    id: "qualcomm",
+    title: "Qualcomm",
+    websiteUrl: "https://www.qualcomm.com",
+    description:
+      "Semiconductor and wireless technology company. Designs Snapdragon mobile and edge AI platforms, modems, RF systems, and connectivity solutions, and licenses foundational cellular and Wi‑Fi patents used in billions of devices.",
+    tags: ["FinTech", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.qualcomm.com/company/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/qualcomm",
+      },
+    ],
+  },
+  {
+    id: "qualio",
+    title: "Qualio",
+    websiteUrl: "https://www.qualio.com",
+    description:
+      "AI-powered quality and compliance platform for life sciences. Unifies QMS, document control, training, risk, and supplier management with automated gap analysis and continuous monitoring for FDA/ISO/GxP readiness.",
+    tags: ["HealthTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.qualio.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/qualiohq",
+      },
+    ],
+  },
+  {
+    id: "quantic_dream",
+    title: "Quantic Dream",
+    websiteUrl: "https://www.quanticdream.com",
+    description:
+      "French video game developer and publisher known for narrative-driven interactive experiences. Creator of Heavy Rain, Beyond: Two Souls, and Detroit: Become Human, and publisher of independent story-focused titles.",
+    tags: ["Gaming", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.eu.lever.co/quanticdream",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/quantic-dream",
+      },
+    ],
+  },
+  {
+    id: "reality_defender",
+    title: "Reality Defender",
+    websiteUrl: "https://www.realitydefender.com",
+    description:
+      "Deepfake and synthetic media detection company. Provides real-time voice, video, image, and text detection APIs and tools for enterprises, platforms, and governments to prevent fraud and disinformation.",
+    tags: ["AI", "Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.realitydefender.com/careers/open-roles",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/reality-defender",
+      },
+    ],
+  },
+  {
+    id: "relationalai",
+    title: "RelationalAI",
+    websiteUrl: "https://www.relational.ai",
+    description:
+      "Decision intelligence platform and AI coprocessor for Snowflake. Builds relational knowledge graphs and semantic models to enable graph analytics, reasoning, optimization, and composite AI workloads on enterprise data.",
+    tags: ["Data", "AI", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Greenhouse)",
+        url: "https://job-boards.greenhouse.io/relationalai",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/relationalai",
+      },
+    ],
+  },
+  {
+    id: "rerun",
+    title: "Rerun",
+    websiteUrl: "https://rerun.io",
+    description:
+      "Unified data layer for physical AI. Provides SDKs and a visualizer to log, query, and explore multimodal, time-series data from robotics, computer vision, simulation, and embodied AI pipelines.",
+    tags: ["AI", "Data", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://rerun.io/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/rerun-io",
+      },
+    ],
+  },
+  {
+    id: "riot",
+    title: "Riot",
+    websiteUrl: "https://tryriot.com",
+    description:
+      "Hiring platform connecting candidates with top startups and tech companies. Combines curated opportunities, skill-based matching, and a streamlined application process to accelerate recruitment for engineering and product roles.",
+    tags: ["ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Workable)",
+        url: "https://apply.workable.com/riot",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/tryriot",
+      },
+    ],
+  },
+  {
+    id: "rtb_house",
+    title: "RTB House",
+    websiteUrl: "https://www.rtbhouse.com",
+    description:
+      "Next-generation performance DSP powered by proprietary deep learning. Runs first‑party, privacy-safe display and retargeting campaigns across web and app, with self-serve and managed solutions for brands and agencies.",
+    tags: ["Media", "AI", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.rtbhouse.com/careers-offers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/rtb-house/",
+      },
+    ],
+  },
+  {
+    id: "runway",
+    title: "Runway",
+    websiteUrl: "https://runway.com",
+    description:
+      "Generative AI company building foundational models and tools for video, image, and audio creation. Offers text-to-video, editing, and multimodal generation used by creators, filmmakers, and developers via cloud and API.",
+    tags: ["AI", "Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://runway.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/runwayml",
+      },
+    ],
+  },
 ];
