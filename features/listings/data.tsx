@@ -4376,4 +4376,634 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "saas.group",
+    title: "saas.group",
+    websiteUrl: "https://saas.group",
+    description:
+      "SaaS holding company that acquires, operates, and grows bootstrapped or lightly funded B2B software businesses. Focuses on product-led, profitable SaaS in marketing, development, CX, and productivity, providing capital and shared expertise post-acquisition.",
+    tags: ["SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://saas.group/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/saas-group",
+      },
+    ],
+  },
+  {
+    id: "sabio",
+    title: "Sabio",
+    websiteUrl: "https://sabiogroup.com",
+    description:
+      "Customer experience consultancy and technology partner. Combines CX strategy, contact centre solutions, AI automation, and data analytics to transform customer service operations for large enterprises across Europe.",
+    tags: ["Consulting", "AI", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Pinpoint)",
+        url: "https://sabio.pinpointhq.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sabio",
+      },
+    ],
+  },
+  {
+    id: "sagemcom",
+    title: "Sagemcom",
+    websiteUrl: "https://sagemcom.com",
+    description:
+      "Global provider of connected terminals and solutions for broadband, audio‑video, and smart energy. Supplies CPE, set‑top boxes, smart meters, and grid communication systems to ISPs, utilities, and broadcasters worldwide.",
+    tags: ["ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.sagemcom.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sagemcom",
+      },
+    ],
+  },
+  {
+    id: "sander",
+    title: "Sander",
+    websiteUrl: "https://www.wearesander.com",
+    description:
+      "Recruitment consultancy specializing in Finance, IT, Legal, and HR roles. Supports permanent and contract hiring with sector‑expert consultants across Belgium and Europe, combining traditional search with HR‑tech tools.",
+    tags: ["ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.wearesander.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/wearesander",
+      },
+    ],
+  },
+  {
+    id: "sanofi",
+    title: "Sanofi",
+    websiteUrl: "https://www.sanofi.com",
+    description:
+      "Global biopharmaceutical company focused on immunology, rare diseases, oncology, neurology, and vaccines. Develops, manufactures, and markets prescription medicines and vaccines, increasingly leveraging AI in R&D and operations.",
+    tags: ["HealthTech", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobs.sanofi.com/search-jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sanofi",
+      },
+    ],
+  },
+  {
+    id: "sap",
+    title: "SAP",
+    websiteUrl: "https://www.sap.com",
+    description:
+      "Enterprise software company best known for ERP and cloud business applications. Provides integrated suites for finance, supply chain, HR, procurement, and analytics, with embedded AI and industry-specific solutions.",
+    tags: ["SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobs.sap.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sap",
+      },
+    ],
+  },
+  {
+    id: "scaleway",
+    title: "Scaleway",
+    websiteUrl: "https://www.scaleway.com",
+    description:
+      "European sovereign cloud and AI provider. Offers compute, storage, networking, Kubernetes, managed databases, serverless, and GPU infrastructure for AI workloads, with a focus on transparency, sustainability, and data residency in Europe.",
+    tags: ["ITServices", "AI", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.lever.co/scaleway",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/scaleway",
+      },
+    ],
+  },
+  {
+    id: "scortex",
+    title: "Scortex",
+    websiteUrl: "https://scortex.io",
+    description:
+      "AI-powered visual inspection solutions for manufacturing quality control. Provides turnkey camera kits and software that use deep learning to detect defects in real time on production lines across cosmetics, automotive, electronics, and packaging.",
+    tags: ["AI", "Climate", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://scortex.welcomekit.co",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/scortex",
+      },
+    ],
+  },
+  {
+    id: "sekoia",
+    title: "Sekoia",
+    websiteUrl: "https://www.sekoia.com",
+    description:
+      "Agentic cybersecurity company building an autonomous SOC platform. Combines detection, threat intelligence, and AI agents to investigate alerts end-to-end and deliver audit-ready verdicts with automated response actions.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.sekoia.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sekoia",
+      },
+    ],
+  },
+  {
+    id: "seyna",
+    title: "Seyna",
+    websiteUrl: "https://www.seyna.eu",
+    description:
+      "AI-native insurer and platform for brokers. Enables rapid design and launch of white-label insurance products (professional risks, health, pet, protection, affinity) with built-in distribution and management tools to optimize performance.",
+    tags: ["FinTech", "AI", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/seyna",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/seyna-insurance",
+      },
+    ],
+  },
+  {
+    id: "seyos",
+    title: "Seyos",
+    websiteUrl: "https://www.seyos.fr",
+    description:
+      "IT and digital recruitment consultancy based in France. Specializes in technical, functional, and leadership roles across software, infrastructure, data, cybersecurity, and AI, supporting startups to large enterprises nationwide.",
+    tags: ["ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.seyos.fr/offres",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/seyos-recrutement-it",
+      },
+    ],
+  },
+  {
+    id: "shadow",
+    title: "Shadow",
+    websiteUrl: "https://shadow.tech",
+    description:
+      "Cloud PC platform that streams a full Windows machine with high-end GPU to any device. Lets gamers, creators, and businesses run games, apps, and workloads remotely with low latency and full software freedom.",
+    tags: ["Gaming", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/shadow/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/shadowpc",
+      },
+    ],
+  },
+  {
+    id: "shift",
+    title: "Shift",
+    websiteUrl: "https://www.shift-technology.com",
+    description:
+      "AI platform for insurers. Provides agentic and generative AI to detect fraud, automate claims, assess liability, and optimize underwriting across P&C, health, travel, and life insurance.",
+    tags: ["AI", "FinTech", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.shift-technology.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/shift-technology",
+      },
+    ],
+  },
+  {
+    id: "shine",
+    title: "Shine",
+    websiteUrl: "https://shine.co",
+    description:
+      "Business finance platform for freelancers and small businesses. Combines banking, invoicing, accounting, payroll, payments, and tax filing in one tool to simplify day-to-day administration.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.shine.co/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/shine-global-tools",
+      },
+    ],
+  },
+  {
+    id: "shippeo",
+    title: "Shippeo",
+    websiteUrl: "https://www.shippeo.com",
+    description:
+      "Real-time multimodal transportation visibility platform. Connects shippers, carriers, and logistics systems across road, rail, sea, and air to provide predictive ETAs, exception alerts, and AI-driven operational insights.",
+    tags: ["FinTech", "AI", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.shippeo.com/company/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/shippeo",
+      },
+    ],
+  },
+  {
+    id: "shopify",
+    title: "Shopify",
+    websiteUrl: "https://www.shopify.com",
+    description:
+      "All-in-one commerce platform for online and in-person selling. Provides storefronts, payments, inventory, fulfillment, marketing, and APIs for merchants and developers to run businesses globally.",
+    tags: ["Ecommerce", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.shopify.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/shopify",
+      },
+    ],
+  },
+  {
+    id: "sidetrade",
+    title: "Sidetrade",
+    websiteUrl: "https://www.sidetrade.com",
+    description:
+      "AI-native Order-to-Cash platform for large enterprises. Automates credit, invoicing, collections, cash application, and dispute resolution with domain-specific AI agents and a proprietary O2C data lake.",
+    tags: ["FinTech", "AI", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.sidetrade.com/company/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sidetrade",
+      },
+    ],
+  },
+  {
+    id: "sinch",
+    title: "Sinch",
+    websiteUrl: "https://sinch.com",
+    description:
+      "Global CPaaS provider for customer communications. Offers APIs and platforms for SMS, RCS, voice, video, email, verification, and fraud prevention across 60+ countries.",
+    tags: ["SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.group.sinch.com/careers/join-us",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sinch",
+      },
+    ],
+  },
+  {
+    id: "sitecore",
+    title: "Sitecore",
+    websiteUrl: "https://www.sitecore.com",
+    description:
+      "Digital experience and content platform for enterprises. Combines CMS, DAM, personalization, commerce, and AI to manage and deliver content across web, mobile, and other channels.",
+    tags: ["SaaS", "Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/sitecore",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sitecore",
+      },
+    ],
+  },
+  {
+    id: "skello",
+    title: "Skello",
+    websiteUrl: "https://www.skello.io",
+    description:
+      "Workforce management platform for shift-based teams. Automates scheduling, time tracking, payroll prep, and HR administration for hospitality, retail, healthcare, and other frontline industries.",
+    tags: ["SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://skello.teamtailor.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/skello",
+      },
+    ],
+  },
+  {
+    id: "sloclap",
+    title: "Sloclap",
+    websiteUrl: "https://sloclap.com",
+    description:
+      "Independent video game studio known for stylized action titles. Creator of Absolver and Sifu, focusing on challenging gameplay systems, martial arts-inspired combat, and hand-crafted animation.",
+    tags: ["Gaming", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.sloclap.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sloclap",
+      },
+    ],
+  },
+  {
+    id: "sofatutor",
+    title: "Sofatutor",
+    websiteUrl: "https://www.sofatutor.com",
+    description:
+      "German online learning platform for K-12 students. Provides explainer videos, interactive exercises, worksheets, and teacher support across school subjects, with tools for self-paced and classroom learning.",
+    tags: ["EdTech", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobs.sofatutor.com/job-uebersicht",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sofatutor-gmbh",
+      },
+    ],
+  },
+  {
+    id: "solina",
+    title: "Solina",
+    websiteUrl: "https://www.solina.com",
+    description:
+      "Global food solutions company creating customized culinary ingredients for savory food manufacturers. Provides seasonings, sauces, coatings, and functional mixes with R&D and production across Europe and beyond.",
+    tags: ["Climate", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Workday)",
+        url: "https://solina.wd502.myworkdayjobs.com/Sol_ext_car",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/solina-group",
+      },
+    ],
+  },
+  {
+    id: "sopra_steria",
+    title: "Sopra Steria",
+    websiteUrl: "https://www.soprasteria.com",
+    description:
+      "European technology and consulting group. Provides digital transformation, systems integration, software development, cloud, cybersecurity, and AI services to public and private sector clients.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.soprasteria.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/soprasteria",
+      },
+    ],
+  },
+  {
+    id: "sparteo",
+    title: "Sparteo",
+    websiteUrl: "https://corporate.sparteo.com",
+    description:
+      "Adtech suite for publishers combining display, video, audio, consent management, and analytics. Uses AI and first-party data to optimize ad monetization on sustainable, sovereign infrastructure.",
+    tags: ["Media", "AI", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://sparteo.teamtailor.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sparteo",
+      },
+    ],
+  },
+  {
+    id: "spendesk",
+    title: "Spendesk",
+    websiteUrl: "https://www.spendesk.com",
+    description:
+      "Spend management platform for finance teams. Centralizes corporate cards, expenses, invoices, procurement, and budgets with automated approvals, reconciliation, and real-time visibility into company spend.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://career.spendesk.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/spendesk",
+      },
+    ],
+  },
+  {
+    id: "spinergie",
+    title: "Spinergie",
+    websiteUrl: "https://www.spinergie.com",
+    description:
+      "Maritime data intelligence platform. Uses vessel, operational, and environmental data to optimize fleet performance, reduce fuel consumption, and support decarbonization across shipping and offshore operations.",
+    tags: ["Climate", "Data", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.spinergie.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/spinergie",
+      },
+    ],
+  },
+  {
+    id: "station_f",
+    title: "Station F",
+    websiteUrl: "https://stationf.co",
+    description:
+      "World’s largest startup campus in Paris. Hosts 1,000+ startups and 30+ programs with access to investors, corporates, mentors, and services for founders from idea to scale.",
+    tags: ["ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://jobs.stationf.co/search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/stationf",
+      },
+    ],
+  },
+  {
+    id: "storyblok",
+    title: "Storyblok",
+    websiteUrl: "https://www.storyblok.com",
+    description:
+      "Headless CMS with a visual editor for developers and marketers. Provides API-first content modeling, workflows, localization, and omnichannel delivery for websites, apps, and AI-driven experiences.",
+    tags: ["SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.storyblok.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/storyblok",
+      },
+    ],
+  },
+  {
+    id: "strangebee",
+    title: "StrangeBee",
+    websiteUrl: "https://strangebee.com",
+    description:
+      "Cybersecurity company behind TheHive and Cortex. Provides collaborative case management, alert triage, threat intelligence, and automated response tools for SOCs, CERTs, and MSSPs.",
+    tags: ["SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.strangebee.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/strangebee",
+      },
+    ],
+  },
+  {
+    id: "supabase",
+    title: "Supabase",
+    websiteUrl: "https://supabase.com",
+    description:
+      "Open-source backend platform built on Postgres. Provides database, auth, storage, realtime, edge functions, and vector embeddings with auto-generated APIs for building full-stack applications.",
+    tags: ["Data", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://supabase.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/supabase",
+      },
+    ],
+  },
+  {
+    id: "suse",
+    title: "SUSE",
+    websiteUrl: "https://www.suse.com",
+    description:
+      "Enterprise open-source software company. Provides Linux, Kubernetes, edge, and cloud-native solutions with support and services to run and secure workloads from data center to edge.",
+    tags: ["ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Workday)",
+        url: "https://suse.wd3.myworkdayjobs.com/Jobsatsuse",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/suse",
+      },
+    ],
+  },
+  {
+    id: "swan",
+    title: "Swan",
+    websiteUrl: "https://www.swan.io",
+    description:
+      "European Banking-as-a-Service platform. Enables companies to embed accounts, cards, payments, and compliance into their products via APIs and white-label interfaces across Europe.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/swan/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/swan-embedded-banking",
+      },
+    ],
+  },
+  {
+    id: "synapsys",
+    title: "Synapsys",
+    websiteUrl: "https://synapsys-groupe.com",
+    description:
+      "IT infrastructure consulting and services firm. Helps clients modernize cloud, DevOps, digital workplace, cybersecurity, and AI/data platforms from strategy to implementation and training.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://synapsys-groupe.com/offres-emploi",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/synapsys-sas",
+      },
+    ],
+  },
+  {
+    id: "syndigo",
+    title: "Syndigo",
+    websiteUrl: "https://syndigo.com",
+    description:
+      "Product experience cloud for brands, retailers, and distributors. Centralizes product data and content, manages master data, and syndicates listings to thousands of retailers, marketplaces, and AI surfaces.",
+    tags: ["Ecommerce", "Data", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://syndigo.com/open-positions",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/syndigo",
+      },
+    ],
+  },
 ];

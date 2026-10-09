@@ -81,6 +81,11 @@ export default function ApplicationTrackerScreen() {
     setModalVisible(true);
   }
 
+  function closeModal() {
+    setModalVisible(false);
+    setSelectedApp(undefined);
+  }
+
   if (loading) {
     return (
       <View style={styles.centered}>
@@ -196,10 +201,7 @@ export default function ApplicationTrackerScreen() {
 
       <AddApplicationModal
         visible={modalVisible}
-        onClose={() => {
-          setModalVisible(false);
-          setSelectedApp(undefined);
-        }}
+        onClose={closeModal}
         onSave={selectedApp ? handleEdit : handleAdd}
         onDelete={selectedApp ? () => handleDelete(selectedApp.id) : undefined}
         initialData={selectedApp}

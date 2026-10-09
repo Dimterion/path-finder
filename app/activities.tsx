@@ -18,11 +18,11 @@ import { type Activity } from "../features/activities/types";
 import AddActivityModal from "../features/activities/AddActivityModal";
 
 const COLUMNS = [
-  { key: "number", label: "#", width: 48 },
-  { key: "activity", label: "Activity", width: 140 },
-  { key: "date", label: "Date", width: 120 },
-  { key: "status", label: "Status", width: 120 },
-  { key: "notes", label: "Notes", width: 200 },
+  { key: "number", label: "#", width: 64 },
+  { key: "activity", label: "Activity", width: 180 },
+  { key: "date", label: "Date", width: 140 },
+  { key: "status", label: "Status", width: 140 },
+  { key: "notes", label: "Notes", width: 440 },
 ];
 
 function renumber(list: Activity[]): Activity[] {
@@ -80,6 +80,11 @@ export default function ActivitiesScreen() {
     setModalVisible(true);
   }
 
+  function closeModal() {
+    setModalVisible(false);
+    setSelectedAct(undefined);
+  }
+
   if (loading) {
     return (
       <View style={styles.centered}>
@@ -90,6 +95,12 @@ export default function ActivitiesScreen() {
 
   return (
     <View style={styles.container}>
+      <View style={styles.header}>
+        <Text style={styles.headerTitle}>Activities Tracker</Text>
+        <Text style={styles.headerSubtitle}>
+          Track and manage your job search activities.
+        </Text>
+      </View>
       <View style={styles.toolbar}>
         <Pressable style={styles.addButton} onPress={openAdd}>
           <Text style={styles.addButtonText}>+ Add entry</Text>
@@ -116,75 +127,74 @@ export default function ActivitiesScreen() {
           </Text>
         </View>
       ) : (
-        <ScrollView style={styles.tableWrapper}>
-          <ScrollView horizontal showsHorizontalScrollIndicator>
-            <View>
-              <View style={[styles.row, styles.headerRow]}>
-                {COLUMNS.map((col) => (
-                  <View
-                    key={col.key}
-                    style={[
-                      styles.cell,
-                      styles.headerCell,
-                      { width: col.width },
-                    ]}
-                  >
-                    <Text style={styles.headerText}>{col.label}</Text>
-                  </View>
-                ))}
-              </View>
-
-              {activities.map((act, index) => (
-                <Pressable
-                  key={act.id}
-                  onPress={() => openEdit(act)}
-                  style={[
-                    styles.row,
-                    index % 2 === 0 ? styles.rowEven : styles.rowOdd,
-                  ]}
-                >
-                  <View style={[styles.cell, { width: COLUMNS[0].width }]}>
-                    <Text style={styles.cellText}>{act.number}</Text>
-                  </View>
-                  <View style={[styles.cell, { width: COLUMNS[1].width }]}>
-                    <Text style={styles.cellText} numberOfLines={2}>
-                      {act.activity}
-                    </Text>
-                  </View>
-                  <View style={[styles.cell, { width: COLUMNS[2].width }]}>
-                    <Text style={styles.cellText}>{act.date}</Text>
-                  </View>
-                  <View style={[styles.cell, { width: COLUMNS[3].width }]}>
+        <View style={styles.tableContainer}>
+          <ScrollView style={styles.tableWrapper}>
+            <ScrollView horizontal showsHorizontalScrollIndicator>
+              <View>
+                <View style={[styles.row, styles.headerRow]}>
+                  {COLUMNS.map((col) => (
                     <View
+                      key={col.key}
                       style={[
-                        styles.statusBadge,
-                        {
-                          backgroundColor:
-                            ACTIVITY_STATUS_COLORS[act.status] ?? "#6b7280",
-                        },
+                        styles.cell,
+                        styles.headerCell,
+                        { width: col.width },
                       ]}
                     >
-                      <Text style={styles.statusText}>{act.status}</Text>
+                      <Text style={styles.headerText}>{col.label}</Text>
                     </View>
-                  </View>
-                  <View style={[styles.cell, { width: COLUMNS[4].width }]}>
-                    <Text style={styles.cellText} numberOfLines={3}>
-                      {act.notes || "—"}
-                    </Text>
-                  </View>
-                </Pressable>
-              ))}
-            </View>
+                  ))}
+                </View>
+
+                {activities.map((act, index) => (
+                  <Pressable
+                    key={act.id}
+                    onPress={() => openEdit(act)}
+                    style={[
+                      styles.row,
+                      index % 2 === 0 ? styles.rowEven : styles.rowOdd,
+                    ]}
+                  >
+                    <View style={[styles.cell, { width: COLUMNS[0].width }]}>
+                      <Text style={styles.cellText}>{act.number}</Text>
+                    </View>
+                    <View style={[styles.cell, { width: COLUMNS[1].width }]}>
+                      <Text style={styles.cellText} numberOfLines={2}>
+                        {act.activity}
+                      </Text>
+                    </View>
+                    <View style={[styles.cell, { width: COLUMNS[2].width }]}>
+                      <Text style={styles.cellText}>{act.date}</Text>
+                    </View>
+                    <View style={[styles.cell, { width: COLUMNS[3].width }]}>
+                      <View
+                        style={[
+                          styles.statusBadge,
+                          {
+                            backgroundColor:
+                              ACTIVITY_STATUS_COLORS[act.status] ?? "#6b7280",
+                          },
+                        ]}
+                      >
+                        <Text style={styles.statusText}>{act.status}</Text>
+                      </View>
+                    </View>
+                    <View style={[styles.cell, { width: COLUMNS[4].width }]}>
+                      <Text style={styles.cellText} numberOfLines={3}>
+                        {act.notes || "—"}
+                      </Text>
+                    </View>
+                  </Pressable>
+                ))}
+              </View>
+            </ScrollView>
           </ScrollView>
-        </ScrollView>
+        </View>
       )}
 
       <AddActivityModal
         visible={modalVisible}
-        onClose={() => {
-          setModalVisible(false);
-          setSelectedAct(undefined);
-        }}
+        onClose={closeModal}
         onSave={selectedAct ? handleEdit : handleAdd}
         onDelete={selectedAct ? () => handleDelete(selectedAct.id) : undefined}
         initialData={selectedAct}
@@ -195,6 +205,21 @@ export default function ActivitiesScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#f5f7fb", padding: 4 },
+  header: {
+    padding: 16,
+    paddingBottom: 12,
+    marginBottom: 4,
+  },
+  headerTitle: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#111827",
+  },
+  headerSubtitle: {
+    fontSize: 14,
+    color: "#6b7280",
+    marginTop: 8,
+  },
   centered: { flex: 1, justifyContent: "center", alignItems: "center" },
   toolbar: {
     flexDirection: "column",
@@ -205,23 +230,27 @@ const styles = StyleSheet.create({
   addButton: {
     backgroundColor: "#1f6feb",
     paddingVertical: 12,
-    paddingHorizontal: 18,
-    borderRadius: 15,
+    paddingHorizontal: 20,
+    borderRadius: 16,
     alignSelf: "flex-start",
     width: "100%",
   },
-  addButtonText: { color: "#ffffff", fontSize: 15, fontWeight: "600" },
+  addButtonText: {
+    color: "#ffffff",
+    fontSize: 14,
+    fontWeight: "600",
+  },
   exportButton: {
     paddingVertical: 12,
-    paddingHorizontal: 18,
-    borderRadius: 15,
+    paddingHorizontal: 20,
+    borderRadius: 16,
     borderWidth: 1,
     borderColor: "#1f6feb",
     width: "100%",
   },
   exportButtonText: {
     color: "#1f6feb",
-    fontSize: 15,
+    fontSize: 14,
     fontWeight: "600",
   },
   hintText: {
@@ -232,10 +261,16 @@ const styles = StyleSheet.create({
     marginLeft: 2,
   },
   emptyState: {
-    flex: 1,
+    minHeight: 320,
     justifyContent: "center",
     alignItems: "center",
-    padding: 32,
+    padding: 24,
+    borderRadius: 24,
+    borderWidth: 1,
+    borderStyle: "dashed",
+    borderColor: "#d1d5db",
+    backgroundColor: "#f9fafb",
+    margin: 16,
   },
   emptyTitle: {
     fontSize: 20,
@@ -244,10 +279,19 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   emptyText: {
-    fontSize: 15,
+    fontSize: 14,
     lineHeight: 22,
     color: "#6b7280",
     textAlign: "center",
+    maxWidth: 360,
+  },
+  tableContainer: {
+    flex: 1,
+    borderRadius: 24,
+    borderWidth: 1,
+    borderColor: "#e5e7eb",
+    backgroundColor: "#ffffff",
+    overflow: "hidden",
   },
   tableWrapper: { flex: 1 },
   row: {
@@ -255,12 +299,12 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "#e5e7eb",
   },
-  headerRow: { backgroundColor: "#1f2937" },
+  headerRow: { backgroundColor: "#111827" },
   rowEven: { backgroundColor: "#ffffff" },
   rowOdd: { backgroundColor: "#f9fafb" },
   cell: {
-    paddingVertical: 10,
-    paddingHorizontal: 10,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
     justifyContent: "center",
     borderRightWidth: 1,
     borderRightColor: "#e5e7eb",
@@ -276,7 +320,7 @@ const styles = StyleSheet.create({
   statusBadge: {
     borderRadius: 999,
     paddingVertical: 4,
-    paddingHorizontal: 8,
+    paddingHorizontal: 12,
     alignSelf: "center",
     minWidth: 100,
   },
