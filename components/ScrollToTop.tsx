@@ -1,29 +1,30 @@
-import { TouchableOpacity, StyleSheet, Text } from "react-native";
+import { Pressable, StyleSheet, Text } from "react-native";
 
 type ScrollToTopProps = {
   scrollY: number;
   onScrollToTop: () => void;
+  threshold?: number;
 };
 
 export default function ScrollToTop({
   scrollY,
   onScrollToTop,
+  threshold = 300,
 }: ScrollToTopProps) {
-  const threshold = 300;
   const visible = scrollY > threshold;
 
   if (!visible) return null;
 
   return (
-    <TouchableOpacity
-      style={styles.button}
+    <Pressable
+      style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
       onPress={onScrollToTop}
-      activeOpacity={0.7}
+      accessibilityRole="button"
       accessibilityLabel="Scroll to top"
       hitSlop={{ top: 10, right: 10, bottom: 10, left: 10 }}
     >
       <Text style={styles.arrowText}>↑</Text>
-    </TouchableOpacity>
+    </Pressable>
   );
 }
 
@@ -46,10 +47,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  buttonPressed: {
+    backgroundColor: "#f9fafb",
+  },
   arrowText: {
-    fontSize: 22,
-    fontWeight: "600",
-    color: "#6b7280",
-    lineHeight: 22,
+    fontSize: 20,
+    fontWeight: "700",
+    color: "#111827",
+    lineHeight: 24,
+    marginTop: -2,
   },
 });

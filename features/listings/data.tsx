@@ -5006,4 +5006,334 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "tactical_adventures",
+    title: "Tactical Adventures",
+    websiteUrl: "https://www.tactical-adventures.com",
+    description:
+      "French video game development and publishing studio specializing in tactical role-playing games. Known for Solasta: Crown of the Magister and focused on bringing tabletop RPG-style systems to PC and console games.",
+    tags: ["Gaming", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/tactical-adventures",
+      },
+    ],
+  },
+  {
+    id: "teads",
+    title: "Teads",
+    websiteUrl: "https://www.teads.com",
+    description:
+      "Omnichannel advertising platform connecting brands with premium publishers. Uses audience and contextual data, creative formats, and predictive technology to run and measure advertising campaigns across screens.",
+    tags: ["Media", "AI", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.teads.com/teads-careers/job-openings",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/teads",
+      },
+    ],
+  },
+  {
+    id: "team.is",
+    title: "team.is",
+    websiteUrl: "https://team-is.fr",
+    description:
+      "Recruitment firm focused on strategic hiring in technology, AI, deep tech, gaming, engineering, industry, and business roles. Works with startups, scale-ups, and established companies in France and internationally.",
+    tags: ["Consulting", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://team-is.fr/offres",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/teamis",
+      },
+    ],
+  },
+  {
+    id: "tekkare",
+    title: "Tekkare",
+    websiteUrl: "https://tekkare.com",
+    description:
+      "French HealthTech company building data and AI tools for healthcare and life sciences. Its Open Innovation Program organizes official medical and scientific data to support research, market access, competitive intelligence, analytics, and AI projects.",
+    tags: ["HealthTech", "Data", "AI", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/tekkare",
+      },
+    ],
+  },
+  {
+    id: "temporal",
+    title: "Temporal",
+    websiteUrl: "https://temporal.io",
+    description:
+      "Durable execution platform for building reliable distributed applications. Lets developers define workflows in code and automatically recover, retry, or resume them after failures.",
+    tags: ["SaaS", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://temporal.io/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/temporal-technologies",
+      },
+    ],
+  },
+  {
+    id: "tesla",
+    title: "Tesla",
+    websiteUrl: "https://www.tesla.com",
+    description:
+      "Electric vehicle and clean energy company. Designs and sells electric cars, battery storage, and solar energy products, alongside charging, software, and related services.",
+    tags: ["Climate", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.tesla.com/careers/search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/tesla-motors",
+      },
+    ],
+  },
+  {
+    id: "theodo",
+    title: "Theodo",
+    websiteUrl: "https://www.theodo.com",
+    description:
+      "Digital and technology consulting group that designs and builds software products. Helps organizations with product strategy, web and mobile development, data, cloud, and digital transformation.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.theodo.com/offres-emploi",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/theodo",
+      },
+    ],
+  },
+  {
+    id: "theory",
+    title: "Theory",
+    websiteUrl: "https://www.theory.com",
+    description:
+      "Contemporary fashion brand producing clothing and accessories for women and men, with a focus on modern design, premium fabrics, and everyday wear.",
+    tags: ["Ecommerce", "Worldwide"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/theory",
+      },
+    ],
+  },
+  {
+    id: "tiger_data",
+    title: "Tiger Data",
+    websiteUrl: "https://www.tigerdata.com",
+    description:
+      "PostgreSQL data platform built for time-series, sensor, and machine data. Offers managed cloud and enterprise products that support fast ingestion, real-time queries, analytics, and AI workloads.",
+    tags: ["Data", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.tigerdata.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/tigerdata",
+      },
+    ],
+  },
+  {
+    id: "too_good_to_go",
+    title: "Too Good To Go",
+    websiteUrl: "https://www.toogoodtogo.com/",
+    description:
+      "Social impact company helping prevent food waste. Its marketplace connects consumers with shops, restaurants, and food businesses selling surplus food, and it also provides surplus-food management tools for retailers.",
+    tags: ["Climate", "Ecommerce", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.toogoodtogo.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/too-good-to-go",
+      },
+    ],
+  },
+  {
+    id: "totalenergies",
+    title: "TotalEnergies",
+    websiteUrl: "https://totalenergies.com",
+    description:
+      "Global integrated energy company producing and marketing oil, natural gas, electricity, biofuels, and renewable energy. Operates across the energy value chain while investing in lower-carbon power and fuels.",
+    tags: ["Climate", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobs.totalenergies.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/totalenergies",
+      },
+    ],
+  },
+  {
+    id: "ubisoft",
+    title: "Ubisoft",
+    websiteUrl: "https://www.ubisoft.com",
+    description:
+      "Global video game developer and publisher behind franchises including Assassin’s Creed, Far Cry, Rainbow Six, Just Dance, and The Crew. Creates games, live services, Ubisoft Connect, and Ubisoft+ subscription offerings.",
+    tags: ["Gaming", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.ubisoft.com/en-us/company/careers/working-at-ubisoft",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/ubisoft",
+      },
+    ],
+  },
+  {
+    id: "understanding_recruitment",
+    title: "Understanding Recruitment",
+    websiteUrl: "https://www.understandingrecruitment.com",
+    description:
+      "Technology recruitment consultancy connecting companies with talent across software engineering, AI, data, cloud, and emerging technology. Operates in the UK, Europe, and the US.",
+    tags: ["ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.lifeatur.com/job-search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/understanding-recruitment",
+      },
+    ],
+  },
+  {
+    id: "unikraft",
+    title: "Unikraft",
+    websiteUrl: "https://unikraft.com",
+    description:
+      "Cloud infrastructure platform for running Docker-based workloads as lightweight, isolated microVMs. Provides millisecond cold starts, scale-to-zero, and high-density compute for AI agents, sandboxes, CI, and serverless workloads.",
+    tags: ["ITServices", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.unikraft.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/unikraft-sdk",
+      },
+    ],
+  },
+  {
+    id: "upbound",
+    title: "Upbound",
+    websiteUrl: "https://www.upbound.io",
+    description:
+      "Cloud infrastructure platform built around Crossplane. Helps platform teams create, operate, and govern declarative control planes for provisioning and managing cloud resources across environments.",
+    tags: ["SaaS", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.upbound.io/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/upbound-io",
+      },
+    ],
+  },
+  {
+    id: "upcloud",
+    title: "UpCloud",
+    websiteUrl: "https://upcloud.com",
+    description:
+      "European cloud hosting provider offering compute, storage, networking, managed databases, and Kubernetes. Serves developers and businesses with high-performance infrastructure and a 100% uptime SLA.",
+    tags: ["ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://upcloud.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/upcloud",
+      },
+    ],
+  },
+  {
+    id: "upfluence",
+    title: "Upfluence",
+    websiteUrl: "https://www.upfluence.com",
+    description:
+      "Influencer marketing platform for ecommerce and social commerce brands. Helps identify creators, manage partnerships and affiliates, run UGC campaigns, and attribute sales through Shopify, WooCommerce, Amazon, and other integrations.",
+    tags: ["Media", "AI", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (JazzHR)",
+        url: "https://20210622225953_gzcqqm2mip0nmi2b.applytojob.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/upfluence",
+      },
+    ],
+  },
+  {
+    id: "upway",
+    title: "Upway",
+    websiteUrl: "https://upway.fr",
+    description:
+      "Marketplace for new and professionally refurbished electric bikes. Buys, inspects, repairs, and resells e-bikes with warranty, return options, and trade-in services across Europe and the US.",
+    tags: ["Climate", "Ecommerce", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.upway.shop",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/shopupway",
+      },
+    ],
+  },
+  {
+    id: "urban_linker",
+    title: "Urban Linker",
+    websiteUrl: "https://urbanlinker.com",
+    description:
+      "Tech and AI recruitment firm specializing in software engineering, data, cloud, product, and technology leadership roles. Supports startups, scale-ups, and technology companies across France and Europe.",
+    tags: ["ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://urbanlinker.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/urban-linker",
+      },
+    ],
+  },
 ];
