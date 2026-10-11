@@ -46,6 +46,7 @@ export default function AddActivityModal({
 }: Props) {
   const [form, setForm] = useState(EMPTY_FORM);
   const isEditing = !!initialData;
+  const isSaveDisabled = !form.activity.trim() || !form.date.trim();
 
   useEffect(() => {
     if (visible) {
@@ -63,10 +64,14 @@ export default function AddActivityModal({
   }, [visible, initialData]);
 
   function handleSave() {
-    if (!form.activity.trim() || !form.date.trim()) return;
+    const activity = form.activity.trim();
+    const date = form.date.trim();
+    const notes = form.notes.trim();
+
+    if (!activity || !date) return;
 
     const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
-    if (!dateRegex.test(form.date)) {
+    if (!dateRegex.test(date)) {
       Alert.alert(
         "Invalid date",
         "Please use the format YYYY-MM-DD, e.g. 2026-04-12.",
@@ -74,7 +79,13 @@ export default function AddActivityModal({
       return;
     }
 
-    onSave(form);
+    onSave({
+      activity,
+      date,
+      status: form.status,
+      notes,
+    });
+
     onClose();
   }
 
@@ -129,6 +140,7 @@ export default function AddActivityModal({
                 placeholderTextColor="#9ca3af"
                 value={form.activity}
                 onChangeText={(v) => setForm({ ...form, activity: v })}
+                accessibilityLabel="Activity"
               />
 
               <Text style={styles.label}>Date *</Text>
@@ -138,6 +150,10 @@ export default function AddActivityModal({
                 placeholderTextColor="#9ca3af"
                 value={form.date}
                 onChangeText={(v) => setForm({ ...form, date: v })}
+                autoCapitalize="none"
+                autoCorrect={false}
+                keyboardType="numbers-and-punctuation"
+                accessibilityLabel="Date"
               />
 
               <Text style={styles.label}>Status</Text>
@@ -158,6 +174,7 @@ export default function AddActivityModal({
                 multiline
                 numberOfLines={4}
                 textAlignVertical="top"
+                accessibilityLabel="Notes"
               />
 
               <View style={styles.actions}>
@@ -167,10 +184,10 @@ export default function AddActivityModal({
                 <Pressable
                   style={[
                     styles.saveButton,
-                    (!form.activity.trim() || !form.date.trim()) &&
-                      styles.saveButtonDisabled,
+                    isSaveDisabled && styles.saveButtonDisabled,
                   ]}
                   onPress={handleSave}
+                  disabled={isSaveDisabled}
                 >
                   <Text style={styles.saveText}>
                     {isEditing ? "Update" : "Save"}

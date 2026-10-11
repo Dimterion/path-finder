@@ -5336,4 +5336,158 @@ export const listings: JobListing[] = [
       },
     ],
   },
+  {
+    id: "vaadigm",
+    title: "Vaadigm",
+    websiteUrl: "https://vaadigm.studio",
+    description:
+      "Paris-based multidisciplinary creative studio shaping brand narratives through visual identity, digital design, editorial work, motion, and video. Works with brands, public institutions, and cultural organizations.",
+    tags: ["Media", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/vaadigm",
+      },
+    ],
+  },
+  {
+    id: "valtech",
+    title: "Valtech",
+    websiteUrl: "https://www.valtech.com",
+    description:
+      "Global experience innovation and digital transformation consultancy. Combines strategy, design, commerce, data, AI, and engineering to build digital products and customer experiences for enterprises.",
+    tags: ["Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.valtech.com/career/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/valtech",
+      },
+    ],
+  },
+  {
+    id: "veesual",
+    title: "Veesual",
+    websiteUrl: "https://www.veesual.ai",
+    description:
+      "AI company for fashion e-commerce. Uses generative AI to create virtual try-on, model switching, styling, and product-video experiences that help brands personalize and scale visual content.",
+    tags: ["AI", "Ecommerce", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://veesual.welcomekit.co",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/veesual",
+      },
+    ],
+  },
+  {
+    id: "veeva",
+    title: "Veeva",
+    websiteUrl: "https://www.veeva.com",
+    description:
+      "Industry cloud for life sciences. Provides cloud software, data, AI, and consulting for clinical development, regulatory, quality, safety, medical affairs, and commercial operations.",
+    tags: ["HealthTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.veeva.com/job-search-results",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/veeva-systems",
+      },
+    ],
+  },
+  {
+    id: "vianova",
+    title: "Vianova",
+    websiteUrl: "https://vianova.io",
+    description:
+      "Mobility intelligence platform for cities, fleets, and transport providers. Aggregates spatial and mobility data to improve traffic management, road safety, shared mobility, curb management, and decarbonization.",
+    tags: ["Climate", "Data", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/vianova-io",
+      },
+    ],
+  },
+  {
+    id: "virtuos",
+    title: "Virtuos",
+    websiteUrl: "https://www.virtuosgames.com",
+    description:
+      "Global video game development and art production company. Provides full-cycle development, engineering, art, porting, remakes, and live-service support for console, PC, and mobile games.",
+    tags: ["Gaming", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Oracle Cloud)",
+        url: "https://fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/virtuosgames",
+      },
+    ],
+  },
+  {
+    id: "visable",
+    title: "Visable",
+    websiteUrl: "https://www.visable.com",
+    description:
+      "B2B digital visibility company operating europages and wer liefert was (wlw) marketplaces. Helps industrial and B2B companies reach professional buyers through listings, digital marketing, and advertising services.",
+    tags: ["Ecommerce", "Media", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.visable.com/en_int/career/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/visable-company",
+      },
+    ],
+  },
+  {
+    id: "vizzia",
+    title: "Vizzia",
+    websiteUrl: "https://www.vizzia.com",
+    description:
+      "Cleantech company providing connected tools for local authorities. Uses 4G/5G sensors, image analysis, and remote monitoring to detect illegal dumping, support urban safety, and improve public-space management.",
+    tags: ["Climate", "AI", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/vizzia/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/vizziafr",
+      },
+    ],
+  },
+  {
+    id: "voodoo",
+    title: "Voodoo",
+    websiteUrl: "https://voodoo.io",
+    description:
+      "Global mobile games and apps company. Develops and publishes casual and hyper-casual titles, while supporting creators and studios with technology, distribution, and monetization tools.",
+    tags: ["Gaming", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://voodoo.io/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/voodoo.io",
+      },
+    ],
+  },
 ];
