@@ -5157,6 +5157,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "tohmo",
+    title: "Tohmo",
+    websiteUrl: "https://go-tohmo.com",
+    description:
+      "European EV-charging company helping residents and businesses install and manage charging infrastructure. Provides charging stations, installation, maintenance, and support for homes, apartment buildings, and workplaces.",
+    tags: ["Climate", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/tohmo",
+      },
+    ],
+  },
+  {
     id: "too_good_to_go",
     title: "Too Good To Go",
     websiteUrl: "https://www.toogoodtogo.com/",
@@ -5487,6 +5501,276 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/voodoo.io",
+      },
+    ],
+  },
+  {
+    id: "wakeo",
+    title: "Wakeo",
+    websiteUrl: "https://wakeo.co",
+    description:
+      "AI-powered SaaS platform providing real-time, multimodal visibility for international shipments. Combines predictive ETAs, disruption alerts, transport analytics, and emissions tracking to help shippers and logistics providers build more resilient supply chains.",
+    tags: ["Data", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/wakeo/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/wakeo",
+      },
+    ],
+  },
+  {
+    id: "walter_learning",
+    title: "Walter Learning",
+    websiteUrl: "https://walter-learning.com",
+    description:
+      "French online training company that designs, produces, and delivers professional courses. Its e-learning combines expert-led video lessons, quizzes, downloadable materials, virtual classes, and learner support.",
+    tags: ["EdTech", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (We Recruit)",
+        url: "https://careers.werecruit.io/walter-learning",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/walter-learning",
+      },
+    ],
+  },
+  {
+    id: "webb_traders",
+    title: "WEBB Traders",
+    websiteUrl: "https://www.webbtraders.com",
+    description:
+      "Proprietary trading and market-making firm using its own capital and electronic trading technology in global equity and derivatives markets. WEBB Traders is now part of Marex’s Market Making division.",
+    tags: ["FinTech", "Data", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.webbtraders.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/webb-traders",
+      },
+    ],
+  },
+  {
+    id: "webnet",
+    title: "Webnet",
+    websiteUrl: "https://www.webnet.fr",
+    description:
+      "French digital services and IT consulting firm specializing in web and mobile architectures. Provides custom software, product and UX design, cloud and DevOps, application maintenance, data, and AI services.",
+    tags: ["ITServices", "Consulting", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/webnet/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/webnet",
+      },
+    ],
+  },
+  {
+    id: "welcome_to_the_jungle",
+    title: "Welcome To The Jungle",
+    websiteUrl: "https://www.welcometothejungle.com",
+    description:
+      "Recruitment and employer-branding platform helping candidates discover companies and jobs while giving employers tools for sourcing, applicant tracking, and recruiting. Combines company profiles, job matching, recruitment software, and career content.",
+    tags: ["SaaS", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/en/companies/wttj/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/wttj-en",
+      },
+    ],
+  },
+  {
+    id: "wiremind",
+    title: "Wiremind",
+    websiteUrl: "https://www.wiremind.io",
+    description:
+      "AI-powered SaaS company building revenue, inventory, distribution, and capacity optimization software for passenger transport, air cargo, and live events. Its tools support forecasting, pricing, ticketing, and operational planning.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.wiremind.io/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/wiremind",
+      },
+    ],
+  },
+  {
+    id: "witco",
+    title: "Witco",
+    websiteUrl: "https://www.witco.io",
+    description:
+      "Workplace experience platform that brings hybrid-work management, desk and room booking, visitor management, workplace services, and employee communications into one app.",
+    tags: ["SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/witco/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/witcoapp",
+      },
+    ],
+  },
+  {
+    id: "withings",
+    title: "Withings",
+    websiteUrl: "https://www.withings.com",
+    description:
+      "French connected-health company making smart scales, health-tracking watches, blood-pressure monitors, sleep devices, and related apps. Its products help consumers and healthcare professionals monitor health measurements over time.",
+    tags: ["HealthTech", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Workable)",
+        url: "https://apply.workable.com/withings",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/withings",
+      },
+    ],
+  },
+  {
+    id: "wiz",
+    title: "Wiz",
+    websiteUrl: "https://www.wiz.io",
+    description:
+      "Cloud and AI security platform that connects code, cloud, and runtime context to identify, prioritize, and help remediate security risks across cloud environments.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.wiz.io/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/wizsecurity",
+      },
+    ],
+  },
+  {
+    id: "worldline",
+    title: "Worldline",
+    websiteUrl: "https://worldline.com",
+    description:
+      "Global payments technology company providing payment services for merchants, banks, and public-sector organizations. Offers in-store and online acquiring, payment processing, digital services, and financial-services technology.",
+    tags: ["FinTech", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobs.worldline.com/search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/worldlineglobal",
+      },
+    ],
+  },
+  {
+    id: "xbow",
+    title: "XBOW",
+    websiteUrl: "https://xbow.com",
+    description:
+      "Autonomous offensive security platform that uses AI agents to discover, chain, and validate exploitable vulnerabilities in web applications and APIs. Delivers continuous penetration testing with proof-of-exploit findings.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/xbowcareers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/xbow",
+      },
+    ],
+  },
+  {
+    id: "youtrust",
+    title: "Youtrust",
+    websiteUrl: "https://youtrust.com",
+    description:
+      "European digital-trust platform, formerly Yousign. Combines e-signature, identity and document verification, KYC/KYB workflows, electronic seals, and API-based automation for compliant digital transactions.",
+    tags: ["LegalTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/youtrust/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/youtrust",
+      },
+    ],
+  },
+  {
+    id: "zama",
+    title: "Zama",
+    websiteUrl: "https://www.zama.org",
+    description:
+      "Open-source cryptography company building fully homomorphic encryption (FHE) technology. Enables confidential computation on encrypted data for blockchain, AI, cloud, and privacy-preserving applications.",
+    tags: ["AI", "FinTech", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobs.zama.org",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/zama-org",
+      },
+    ],
+  },
+  {
+    id: "zeffy",
+    title: "Zeffy",
+    websiteUrl: "https://www.zeffy.com",
+    description:
+      "Free fundraising and donor-management platform for nonprofits. Provides donation forms, event ticketing, memberships, auctions, peer-to-peer campaigns, payments, and donor communications with no platform or transaction fees.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.zeffy.com/home/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/zeffy",
+      },
+    ],
+  },
+  {
+    id: "zefir",
+    title: "Zefir",
+    websiteUrl: "https://www.zefir.fr",
+    description:
+      "AI-powered real-estate sales platform that coordinates a network of agents to sell homes faster. Provides valuation, listing distribution, buyer matching, and transaction support for property sellers.",
+    tags: ["AI", "FinTech", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/zefir",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/zefir-fr",
       },
     ],
   },
