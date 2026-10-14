@@ -8,3 +8,5 @@ export type Activity = {
   status: ActivityStatus;
   notes: string;
 };
+
+export type ActivityFormData = Omit<Activity, "id" | "number">;

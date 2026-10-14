@@ -10,7 +10,7 @@ import {
   TextInput,
   View,
 } from "react-native";
-import { Activity, ActivityStatus } from "./types";
+import { Activity, ActivityFormData, ActivityStatus } from "./types";
 import { ACTIVITY_STATUS_COLORS } from "./data";
 import StatusPicker from "../StatusPicker";
 import { modalStyles as styles } from "../../styles/modal";
@@ -18,7 +18,7 @@ import { modalStyles as styles } from "../../styles/modal";
 type Props = {
   visible: boolean;
   onClose: () => void;
-  onSave: (activity: Omit<Activity, "id" | "number">) => void;
+  onSave: (activity: ActivityFormData) => void;
   onDelete?: () => void;
   initialData?: Activity;
 };
@@ -30,10 +30,10 @@ const ACTIVITY_STATUSES: ActivityStatus[] = [
   "Paused",
 ];
 
-const EMPTY_FORM = {
+const EMPTY_FORM: ActivityFormData = {
   activity: "",
   date: "",
-  status: "Active" as ActivityStatus,
+  status: "Active",
   notes: "",
 };
 
