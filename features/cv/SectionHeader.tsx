@@ -8,7 +8,16 @@ type Props = {
 
 export default function SectionHeader({ title, expanded, onToggle }: Props) {
   return (
-    <Pressable style={styles.container} onPress={onToggle}>
+    <Pressable
+      style={({ pressed }) => [
+        styles.container,
+        pressed && styles.containerPressed,
+      ]}
+      onPress={onToggle}
+      accessibilityRole="button"
+      accessibilityState={{ expanded }}
+      accessibilityLabel={`${title} section`}
+    >
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.chevron}>{expanded ? "▲" : "▼"}</Text>
     </Pressable>
@@ -23,11 +32,14 @@ const styles = StyleSheet.create({
     backgroundColor: "#1f2937",
     paddingVertical: 12,
     paddingHorizontal: 16,
-    borderRadius: 10,
+    borderRadius: 16,
     marginBottom: 2,
   },
+  containerPressed: {
+    backgroundColor: "#374151",
+  },
   title: {
-    fontSize: 15,
+    fontSize: 14,
     fontWeight: "700",
     color: "#ffffff",
     textTransform: "uppercase",

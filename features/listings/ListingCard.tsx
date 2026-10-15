@@ -17,14 +17,14 @@ type ListingCardProps = {
 };
 
 async function openExternalLink(url: string): Promise<void> {
-  const supported = await Linking.canOpenURL(url);
-
-  if (!supported) {
-    Alert.alert("Cannot open link", "This link could not be opened.");
-    return;
+  try {
+    await Linking.openURL(url);
+  } catch {
+    Alert.alert(
+      "Cannot open link",
+      "This link could not be opened on this device.",
+    );
   }
-
-  await Linking.openURL(url);
 }
 
 export default function ListingCard({ item, onTagClick }: ListingCardProps) {
@@ -66,6 +66,8 @@ export default function ListingCard({ item, onTagClick }: ListingCardProps) {
             <Pressable
               key={link.url}
               onPress={() => openExternalLink(link.url)}
+              accessibilityRole="link"
+              accessibilityLabel={`Open ${link.label}`}
             >
               <Text style={styles.extraLinkText}>{link.label}</Text>
             </Pressable>
@@ -124,7 +126,7 @@ const styles = StyleSheet.create({
   linkButton: {
     backgroundColor: "#1f6feb",
     paddingVertical: 12,
-    paddingHorizontal: 14,
+    paddingHorizontal: 16,
     borderRadius: 12,
     marginBottom: 12,
   },
