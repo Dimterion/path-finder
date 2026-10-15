@@ -119,4 +119,34 @@ export const platforms: JobPlatform[] = [
       },
     ],
   },
+  {
+    id: "hellowork",
+    title: "HelloWork",
+    websiteUrl: "https://www.hellowork.com",
+    description:
+      "Use HelloWork primarily for job searching in France, with listings across permanent contracts, temporary work, internships, and apprenticeships. Create a profile and alerts for relevant roles, then filter by location, sector, function, and contract type. It is a good general-purpose French platform for both broad discovery and more targeted local searches.",
+    tags: ["Jobs", "Search", "France"],
+  },
+  {
+    id: "malt",
+    title: "Malt",
+    websiteUrl: "https://www.malt.com",
+    description:
+      "Use Malt mainly to find freelance and independent contract work, particularly for tech, design, data, marketing, and communication projects in France and other European markets. Create a clear profile with your skills, rate, and portfolio, then respond to relevant project proposals or client searches. It is best suited to freelancers who want a European client base and integrated contracting and payment tools.",
+    tags: ["Freelance", "Remote", "Contracts"],
+  },
+  {
+    id: "jobteaser",
+    title: "JobTeaser",
+    websiteUrl: "https://www.jobteaser.com",
+    description:
+      "Use JobTeaser primarily for internships, apprenticeships, first jobs, and early-career opportunities offered through schools and universities. Check whether your institution provides access to its Career Center, where you can find employer profiles, vacancies, career events, and guidance. It is especially useful for students and recent graduates looking for roles targeted at their field of study.",
+    tags: ["Jobs", "Internships", "Early Career"],
+    extraLinks: [
+      {
+        label: "Career Advice",
+        url: "https://www.jobteaser.com/advices",
+      },
+    ],
+  },
 ];

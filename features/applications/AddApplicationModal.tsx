@@ -51,6 +51,8 @@ export default function AddApplicationModal({
 }: Props) {
   const [form, setForm] = useState(EMPTY_FORM);
   const isEditing = !!initialData;
+  const isSaveDisabled =
+    !form.company.trim() || !form.role.trim() || !form.date.trim();
 
   useEffect(() => {
     if (visible) {
@@ -69,10 +71,15 @@ export default function AddApplicationModal({
   }, [visible, initialData]);
 
   function handleSave() {
-    if (!form.company.trim() || !form.role.trim() || !form.date.trim()) return;
+    const company = form.company.trim();
+    const role = form.role.trim();
+    const date = form.date.trim();
+    const notes = form.notes.trim();
+
+    if (!company || !role || !date) return;
 
     const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
-    if (!dateRegex.test(form.date)) {
+    if (!dateRegex.test(date)) {
       Alert.alert(
         "Invalid date",
         "Please use the format YYYY-MM-DD, e.g. 2026-04-12.",
@@ -80,7 +87,14 @@ export default function AddApplicationModal({
       return;
     }
 
-    onSave(form);
+    onSave({
+      company,
+      role,
+      date,
+      status: form.status,
+      notes,
+    });
+
     onClose();
   }
 
@@ -134,6 +148,7 @@ export default function AddApplicationModal({
 
               <Text style={styles.label}>Company *</Text>
               <TextInput
+                accessibilityLabel="Company"
                 style={styles.input}
                 placeholder="e.g. Acme Corp"
                 placeholderTextColor="#9ca3af"
@@ -143,6 +158,7 @@ export default function AddApplicationModal({
 
               <Text style={styles.label}>Role *</Text>
               <TextInput
+                accessibilityLabel="Role"
                 style={styles.input}
                 placeholder="e.g. Frontend Developer"
                 placeholderTextColor="#9ca3af"
@@ -152,11 +168,15 @@ export default function AddApplicationModal({
 
               <Text style={styles.label}>Date *</Text>
               <TextInput
+                accessibilityLabel="Date"
                 style={styles.input}
                 placeholder="YYYY-MM-DD"
                 placeholderTextColor="#9ca3af"
                 value={form.date}
                 onChangeText={(v) => setForm({ ...form, date: v })}
+                autoCapitalize="none"
+                autoCorrect={false}
+                keyboardType="numbers-and-punctuation"
               />
 
               <Text style={styles.label}>Status</Text>
@@ -169,6 +189,7 @@ export default function AddApplicationModal({
 
               <Text style={[styles.label, { marginTop: 14 }]}>Notes</Text>
               <TextInput
+                accessibilityLabel="Notes"
                 style={[styles.input, styles.textArea]}
                 placeholder="Any extra details..."
                 placeholderTextColor="#9ca3af"
@@ -186,12 +207,10 @@ export default function AddApplicationModal({
                 <Pressable
                   style={[
                     styles.saveButton,
-                    (!form.company.trim() ||
-                      !form.role.trim() ||
-                      !form.date.trim()) &&
-                      styles.saveButtonDisabled,
+                    isSaveDisabled && styles.saveButtonDisabled,
                   ]}
                   onPress={handleSave}
+                  disabled={isSaveDisabled}
                 >
                   <Text style={styles.saveText}>
                     {isEditing ? "Update" : "Save"}
