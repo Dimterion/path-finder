@@ -158,6 +158,7 @@ export default function AddActivityModal({
 
               <Text style={styles.label}>Status</Text>
               <StatusPicker
+                label="Activity status"
                 value={form.status}
                 onChange={(v) => setForm({ ...form, status: v })}
                 statuses={ACTIVITY_STATUSES}

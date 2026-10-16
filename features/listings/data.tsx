@@ -861,6 +861,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "click&boat",
+    title: "Click&Boat",
+    websiteUrl: "https://www.clickandboat.com",
+    description:
+      "Peer-to-peer boat rental marketplace connecting private and professional owners with renters. Lets users charter sailboats, motorboats, yachts, and other vessels with or without a skipper across Europe and beyond.",
+    tags: ["Ecommerce", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://clickboat.teamtailor.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/click-&-boat",
+      },
+    ],
+  },
+  {
     id: "clipboard",
     title: "Clipboard",
     websiteUrl: "https://www.clipboard.com",
@@ -1083,7 +1101,7 @@ export const listings: JobListing[] = [
     ],
   },
   {
-    id: "cryptoNext_security",
+    id: "cryptonext_security",
     title: "CryptoNext Security",
     websiteUrl: "https://www.cryptonext-security.com",
     description:
@@ -1453,7 +1471,7 @@ export const listings: JobListing[] = [
     ],
   },
   {
-    id: "doubleVerify",
+    id: "doubleverify",
     title: "DoubleVerify",
     websiteUrl: "https://doubleverify.com",
     description:
@@ -1597,6 +1615,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "escape",
+    title: "Escape",
+    websiteUrl: "https://escape.tech",
+    description:
+      "AI-powered offensive security platform for APIs, web applications, and cloud infrastructure. Discovers attack surface, runs business-logic-aware testing and agentic penetration testing, and helps teams validate and remediate vulnerabilities.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://escape.tech/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/escapetech",
+      },
+    ],
+  },
+  {
     id: "escape_velocity_entertainment",
     title: "Escape Velocity Entertainment",
     websiteUrl: "https://eve.games",
@@ -1647,6 +1683,20 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/euronext",
+      },
+    ],
+  },
+  {
+    id: "expaceo",
+    title: "EXPACEO",
+    websiteUrl: "https://www.expaceo.com",
+    description:
+      "French IT consulting and expertise firm focused on Microsoft technologies. Supports enterprises with Azure, cloud platforming, data and AI, security, software engineering, and Microsoft-centric digital transformation.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/expaceo",
       },
     ],
   },
@@ -1791,6 +1841,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/forgotten-empires",
+      },
+    ],
+  },
+  {
+    id: "formance",
+    title: "Formance",
+    websiteUrl: "https://www.formance.com",
+    description:
+      "Open-source financial infrastructure platform for building and operating flows of funds. Provides a programmable ledger, payment connectivity, wallet and workflow orchestration, and reconciliation across banks and payment providers.",
+    tags: ["FinTech", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/formance",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/formancehq",
       },
     ],
   },

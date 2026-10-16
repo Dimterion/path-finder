@@ -181,6 +181,7 @@ export default function AddApplicationModal({
 
               <Text style={styles.label}>Status</Text>
               <StatusPicker
+                label="Application status"
                 value={form.status}
                 onChange={(v) => setForm({ ...form, status: v })}
                 statuses={APPLICATION_STATUSES}
