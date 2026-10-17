@@ -11,8 +11,7 @@ export function useScrollToTop() {
   };
 
   const handleScroll = (event: any) => {
-    const offsetY = event.nativeEvent.contentOffset.y;
-    setScrollY(offsetY);
+    setScrollY(event.nativeEvent.contentOffset.y);
   };
 
   return {

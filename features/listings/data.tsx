@@ -2381,6 +2381,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "horizon3",
+    title: "Horizon3",
+    websiteUrl: "https://horizon3.ai",
+    description:
+      "AI-native proactive security company behind NodeZero. Autonomously tests infrastructure, cloud, identity, and web applications to uncover exploitable attack paths, prioritize remediation, and verify fixes.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://horizon3.ai/join-our-team",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/horizon3ai",
+      },
+    ],
+  },
+  {
     id: "hublo",
     title: "Hublo",
     websiteUrl: "https://hublo.com",
@@ -3369,6 +3387,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/murex",
+      },
+    ],
+  },
+  {
+    id: "mwm",
+    title: "MWM",
+    websiteUrl: "https://mwm.ai",
+    description:
+      "Mobile-app technology company covering creation, growth, operations, publishing, and data intelligence. Known for creative apps in music, photo, and video, it also offers AI tools for building and launching native mobile apps.",
+    tags: ["AI", "Media", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://mwm.teamtailor.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/mwmcompany",
       },
     ],
   },
@@ -4927,6 +4963,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/spinergie",
+      },
+    ],
+  },
+  {
+    id: "stackblitz",
+    title: "StackBlitz",
+    websiteUrl: "https://stackblitz.com",
+    description:
+      "Developer platform behind WebContainers and Bolt. Lets developers run full web development environments in the browser and use AI to create, edit, and launch web applications from natural-language prompts.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Greenhouse)",
+        url: "https://job-boards.greenhouse.io/stackblitz",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/boltdotnew",
       },
     ],
   },
