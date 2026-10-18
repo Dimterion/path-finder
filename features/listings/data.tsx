@@ -149,6 +149,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "aghanim",
+    title: "Aghanim",
+    websiteUrl: "https://aghanim.com",
+    description:
+      "Commerce, live-ops automation, community engagement, and payments platform for video games. Helps game studios sell directly to players, manage digital goods and payments, and operate direct-to-player relationships.",
+    tags: ["Gaming", "FinTech", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/aghanim",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/aghanim",
+      },
+    ],
+  },
+  {
+    id: "air_apps",
+    title: "Air Apps",
+    websiteUrl: "https://airapps.co",
+    description:
+      "Consumer app company building AI-powered utility and productivity apps. Develops and operates apps such as Translate Now and Calculator Air, with a focus on mobile tools that simplify everyday tasks.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/airapps",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/airapps",
+      },
+    ],
+  },
+  {
     id: "aircall",
     title: "Aircall",
     websiteUrl: "https://aircall.io",
@@ -311,6 +347,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "allphins",
+    title: "Allphins",
+    websiteUrl: "https://www.allphins.com",
+    description:
+      "InsurTech platform for risk management in insurance and reinsurance. Uses data and machine learning to help underwriters analyze exposure, assess complex risks, and make more informed underwriting decisions.",
+    tags: ["FinTech", "Data", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/allphins/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/allphins",
+      },
+    ],
+  },
+  {
     id: "alma",
     title: "Alma",
     websiteUrl: "https://almapay.com",
@@ -325,6 +379,34 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/almapay",
+      },
+    ],
+  },
+  {
+    id: "alpic",
+    title: "Alpic",
+    websiteUrl: "https://alpic.ai",
+    description:
+      "Cloud platform for building, deploying, monitoring, and distributing MCP servers and ChatGPT apps. Provides developer tooling, hosting, security, observability, and distribution for AI-native conversational interfaces.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/alpic-ai",
+      },
+    ],
+  },
+  {
+    id: "altherias",
+    title: "Altherias",
+    websiteUrl: "https://altherias.com",
+    description:
+      "Automation-first IT staffing and consulting firm focused on European institutions and regulated markets. Provides staff augmentation, project teams, and consulting for technology, data, and transformation roles.",
+    tags: ["ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/altherias",
       },
     ],
   },

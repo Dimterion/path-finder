@@ -10,13 +10,15 @@ import {
 } from "react-native";
 import ListingCard from "../features/listings/ListingCard";
 import { useScrollToTop } from "../hooks/useScrollToTop";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function ListingsScreen() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showTags, setShowTags] = useState(false);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [showMoreText, setShowMoreText] = useState(false);
-  const { flatListRef, handleScroll, ScrollToTopComponent } = useScrollToTop();
+  const { flatListRef, showScrollToTop, scrollToTop, handleScroll } =
+    useScrollToTop(300);
 
   const allTags = useMemo(() => {
     const tagsSet = new Set<string>();
@@ -72,7 +74,7 @@ export default function ListingsScreen() {
         )}
         contentContainerStyle={styles.listContent}
         onScroll={handleScroll}
-        scrollEventThrottle={16}
+        scrollEventThrottle={32}
         ListHeaderComponent={
           <View style={styles.header}>
             <Text style={styles.screenTitle}>
@@ -221,7 +223,7 @@ export default function ListingsScreen() {
           </View>
         }
       />
-      <ScrollToTopComponent />
+      <ScrollToTop visible={showScrollToTop} onScrollToTop={scrollToTop} />
     </View>
   );
 }

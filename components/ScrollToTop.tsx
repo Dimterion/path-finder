@@ -1,18 +1,14 @@
 import { Pressable, StyleSheet, Text } from "react-native";
 
 type ScrollToTopProps = {
-  scrollY: number;
+  visible: boolean;
   onScrollToTop: () => void;
-  threshold?: number;
 };
 
 export default function ScrollToTop({
-  scrollY,
+  visible,
   onScrollToTop,
-  threshold = 300,
 }: ScrollToTopProps) {
-  const visible = scrollY > threshold;
-
   if (!visible) return null;
 
   return (

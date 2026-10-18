@@ -1,26 +1,45 @@
-import { useState, useRef } from "react";
-import { FlatList } from "react-native";
-import ScrollToTop from "../components/ScrollToTop";
+import { useCallback, useRef, useState } from "react";
+import {
+  FlatList,
+  type NativeScrollEvent,
+  type NativeSyntheticEvent,
+} from "react-native";
 
-export function useScrollToTop() {
-  const [scrollY, setScrollY] = useState(0);
-  const flatListRef = useRef<FlatList>(null);
+type UseScrollToTopResult = {
+  flatListRef: React.RefObject<FlatList | null>;
+  showScrollToTop: boolean;
+  scrollToTop: () => void;
+  handleScroll: (event: NativeSyntheticEvent<NativeScrollEvent>) => void;
+};
 
-  const scrollToTop = () => {
-    flatListRef.current?.scrollToOffset({ offset: 0, animated: true });
-  };
+export function useScrollToTop(threshold = 300): UseScrollToTopResult {
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
 
-  const handleScroll = (event: any) => {
-    setScrollY(event.nativeEvent.contentOffset.y);
-  };
+  const flatListRef = useRef<FlatList | null>(null);
+
+  const scrollToTop = useCallback(() => {
+    flatListRef.current?.scrollToOffset({
+      offset: 0,
+      animated: true,
+    });
+  }, []);
+
+  const handleScroll = useCallback(
+    (event: NativeSyntheticEvent<NativeScrollEvent>) => {
+      const offsetY = event.nativeEvent.contentOffset.y;
+      const shouldShow = offsetY > threshold;
+
+      setShowScrollToTop((previous) =>
+        previous === shouldShow ? previous : shouldShow,
+      );
+    },
+    [threshold],
+  );
 
   return {
     flatListRef,
-    scrollY,
+    showScrollToTop,
     scrollToTop,
     handleScroll,
-    ScrollToTopComponent: () => (
-      <ScrollToTop scrollY={scrollY} onScrollToTop={scrollToTop} />
-    ),
   };
 }
