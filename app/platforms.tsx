@@ -1,35 +1,26 @@
+import { StyleSheet, Text, View } from "react-native";
 import { platforms } from "../features/platforms/data";
-import { FlatList, StyleSheet, Text, View } from "react-native";
 import PlatformCard from "../features/platforms/PlatformCard";
-import { useScrollToTop } from "../hooks/useScrollToTop";
-import ScrollToTop from "../components/ScrollToTop";
+import ScreenWrapper from "../components/ScreenWrapper";
 
 export default function PlatformsScreen() {
-  const { flatListRef, showScrollToTop, scrollToTop, handleScroll } =
-    useScrollToTop(300);
-
   return (
-    <View style={styles.container}>
-      <FlatList
-        ref={flatListRef}
-        data={platforms}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <PlatformCard item={item} />}
-        contentContainerStyle={styles.listContent}
-        onScroll={handleScroll}
-        scrollEventThrottle={32}
-        ListHeaderComponent={
-          <View style={styles.header}>
-            <Text style={styles.screenTitle}>Job Platforms</Text>
-            <Text style={styles.screenText}>
-              Explore different job search platforms and learn what each one can
-              offer.
-            </Text>
-          </View>
-        }
-      />
-      <ScrollToTop visible={showScrollToTop} onScrollToTop={scrollToTop} />
-    </View>
+    <ScreenWrapper
+      data={platforms}
+      keyExtractor={(item) => item.id}
+      renderItem={({ item }) => <PlatformCard item={item} />}
+      contentContainerStyle={styles.listContent}
+      containerStyle={styles.container}
+      ListHeaderComponent={
+        <View style={styles.header}>
+          <Text style={styles.screenTitle}>Job Platforms</Text>
+          <Text style={styles.screenText}>
+            Explore different job search platforms and learn what each one can
+            offer.
+          </Text>
+        </View>
+      }
+    />
   );
 }
 

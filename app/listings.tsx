@@ -1,35 +1,34 @@
 import { useState, useMemo } from "react";
-import { listings } from "../features/listings/data";
 import {
-  FlatList,
   StyleSheet,
   Text,
   TextInput,
   TouchableOpacity,
   View,
 } from "react-native";
+import { listings } from "../features/listings/data";
 import ListingCard from "../features/listings/ListingCard";
-import { useScrollToTop } from "../hooks/useScrollToTop";
-import ScrollToTop from "../components/ScrollToTop";
+import ScreenWrapper from "../components/ScreenWrapper";
 
 export default function ListingsScreen() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showTags, setShowTags] = useState(false);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [showMoreText, setShowMoreText] = useState(false);
-  const { flatListRef, showScrollToTop, scrollToTop, handleScroll } =
-    useScrollToTop(300);
 
   const allTags = useMemo(() => {
     const tagsSet = new Set<string>();
+
     listings.forEach((listing) => {
       listing.tags?.forEach((tag) => tagsSet.add(tag));
     });
+
     return Array.from(tagsSet).sort();
   }, []);
 
   const filteredListings = listings.filter((item) => {
     const query = searchQuery.toLowerCase().trim();
+
     const matchesSearch =
       !query ||
       item.title.toLowerCase().includes(query) ||
@@ -61,170 +60,163 @@ export default function ListingsScreen() {
     setSearchQuery("");
   };
 
-  const hasActiveFilters = selectedTags.length > 0 || searchQuery;
+  const hasActiveFilters =
+    selectedTags.length > 0 || searchQuery.trim().length > 0;
 
   return (
-    <View style={styles.container}>
-      <FlatList
-        ref={flatListRef}
-        data={filteredListings}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
-          <ListingCard item={item} onTagClick={handleTagClick} />
-        )}
-        contentContainerStyle={styles.listContent}
-        onScroll={handleScroll}
-        scrollEventThrottle={32}
-        ListHeaderComponent={
-          <View style={styles.header}>
-            <Text style={styles.screenTitle}>
-              Job Listings ({filteredListings.length})
+    <ScreenWrapper
+      data={filteredListings}
+      keyExtractor={(item) => item.id}
+      renderItem={({ item }) => (
+        <ListingCard item={item} onTagClick={handleTagClick} />
+      )}
+      contentContainerStyle={styles.listContent}
+      containerStyle={styles.container}
+      ListHeaderComponent={
+        <View style={styles.header}>
+          <Text style={styles.screenTitle}>
+            Job Listings ({filteredListings.length})
+          </Text>
+
+          <View style={styles.descriptionContainer}>
+            <Text style={styles.screenText}>
+              Explore different companies and their potential career options.
             </Text>
 
-            <View style={styles.descriptionContainer}>
-              <Text style={styles.screenText}>
-                Explore different companies and their potential career options.
-              </Text>
-
-              {showMoreText && (
-                <View style={styles.additionalText}>
-                  <Text style={styles.screenText}>
-                    This is a list of companies that may have open positions
-                    remotely (around the world), within Europe, or France.
-                  </Text>
-                  <Text style={styles.screenText}>
-                    You can use the search or available tags to filter the
-                    results.
-                  </Text>
-                  <Text style={styles.screenText}>
-                    Main link leads to the company's website and then there are
-                    additional links directly to the jobs page and LinkedIn.
-                  </Text>
-                  <Text style={styles.screenText}>
-                    Some companies may not have a dedicated jobs page or
-                    LinkedIn profile, or they may use a separate platform (in
-                    that case its name is mentioned in parenthesis).
-                  </Text>
-                </View>
-              )}
-
-              <TouchableOpacity
-                onPress={() => setShowMoreText(!showMoreText)}
-                accessibilityRole="button"
-                accessibilityLabel={showMoreText ? "Show less" : "Read more"}
-              >
-                <Text style={styles.readMoreText}>
-                  {showMoreText ? "Show less" : "Read more"}
+            {showMoreText && (
+              <View style={styles.additionalText}>
+                <Text style={styles.screenText}>
+                  This is a list of companies that may have open positions
+                  remotely (around the world), within Europe, or France.
                 </Text>
-              </TouchableOpacity>
-            </View>
-
-            <View style={styles.searchContainer}>
-              <TextInput
-                style={styles.searchInput}
-                placeholder="Search companies..."
-                placeholderTextColor="#9ca3af"
-                value={searchQuery}
-                onChangeText={setSearchQuery}
-                autoCapitalize="none"
-                autoCorrect={false}
-              />
-              <TouchableOpacity
-                style={[
-                  styles.clearButton,
-                  !searchQuery && styles.clearButtonDisabled,
-                ]}
-                onPress={() => setSearchQuery("")}
-                disabled={!searchQuery}
-                accessibilityLabel="Clear search"
-                hitSlop={{ top: 10, right: 10, bottom: 10, left: 10 }}
-              >
-                <Text
-                  style={[
-                    styles.clearButtonText,
-                    !searchQuery && styles.clearButtonTextDisabled,
-                  ]}
-                >
-                  ✕
+                <Text style={styles.screenText}>
+                  You can use the search or available tags to filter the
+                  results.
                 </Text>
-              </TouchableOpacity>
-            </View>
-
-            {/* Tag Filters */}
-            {allTags.length > 0 && (
-              <View style={styles.tagsSection}>
-                <View style={styles.tagsHeader}>
-                  <TouchableOpacity
-                    style={styles.filterButton}
-                    onPress={() => setShowTags(!showTags)}
-                    accessibilityRole="button"
-                    accessibilityLabel={`Filter by tags, ${showTags ? "expanded" : "collapsed"}`}
-                  >
-                    <Text style={styles.filterButtonText}>
-                      Filter by tags
-                      {selectedTags.length > 0 && (
-                        <Text style={styles.filterBadge}>
-                          {" "}
-                          {selectedTags.length}
-                        </Text>
-                      )}
-                    </Text>
-                    <Text
-                      style={[
-                        styles.chevron,
-                        showTags && styles.chevronRotated,
-                      ]}
-                    >
-                      ▼
-                    </Text>
-                  </TouchableOpacity>
-                  {hasActiveFilters && (
-                    <TouchableOpacity onPress={clearFilters}>
-                      <Text style={styles.clearAllText}>Clear all filters</Text>
-                    </TouchableOpacity>
-                  )}
-                </View>
-
-                {showTags && (
-                  <View style={styles.tagsRow}>
-                    {allTags.map((tag) => {
-                      const isSelected = selectedTags.includes(tag);
-                      return (
-                        <TouchableOpacity
-                          key={tag}
-                          style={[
-                            styles.tagChip,
-                            isSelected && styles.tagChipSelected,
-                          ]}
-                          onPress={() => toggleTag(tag)}
-                          accessibilityRole="checkbox"
-                          accessibilityState={{ checked: isSelected }}
-                        >
-                          <Text
-                            style={[
-                              styles.tagChipText,
-                              isSelected && styles.tagChipTextSelected,
-                            ]}
-                          >
-                            {tag}
-                          </Text>
-                        </TouchableOpacity>
-                      );
-                    })}
-                  </View>
-                )}
+                <Text style={styles.screenText}>
+                  Main link leads to the company's website and then there are
+                  additional links directly to the jobs page and LinkedIn.
+                </Text>
+                <Text style={styles.screenText}>
+                  Some companies may not have a dedicated jobs page or LinkedIn
+                  profile, or they may use a separate platform (in that case its
+                  name is mentioned in parenthesis).
+                </Text>
               </View>
             )}
+
+            <TouchableOpacity
+              onPress={() => setShowMoreText(!showMoreText)}
+              accessibilityRole="button"
+              accessibilityLabel={showMoreText ? "Show less" : "Read more"}
+            >
+              <Text style={styles.readMoreText}>
+                {showMoreText ? "Show less" : "Read more"}
+              </Text>
+            </TouchableOpacity>
           </View>
-        }
-        ListEmptyComponent={
-          <View style={styles.emptyState}>
-            <Text style={styles.emptyText}>No listings found.</Text>
+
+          <View style={styles.searchContainer}>
+            <TextInput
+              style={styles.searchInput}
+              placeholder="Search companies..."
+              placeholderTextColor="#9ca3af"
+              value={searchQuery}
+              onChangeText={setSearchQuery}
+              autoCapitalize="none"
+              autoCorrect={false}
+            />
+            <TouchableOpacity
+              style={[
+                styles.clearButton,
+                !searchQuery && styles.clearButtonDisabled,
+              ]}
+              onPress={() => setSearchQuery("")}
+              disabled={!searchQuery}
+              accessibilityLabel="Clear search"
+              hitSlop={{ top: 10, right: 10, bottom: 10, left: 10 }}
+            >
+              <Text
+                style={[
+                  styles.clearButtonText,
+                  !searchQuery && styles.clearButtonTextDisabled,
+                ]}
+              >
+                ✕
+              </Text>
+            </TouchableOpacity>
           </View>
-        }
-      />
-      <ScrollToTop visible={showScrollToTop} onScrollToTop={scrollToTop} />
-    </View>
+
+          {/* Tag Filters */}
+          {allTags.length > 0 && (
+            <View style={styles.tagsSection}>
+              <View style={styles.tagsHeader}>
+                <TouchableOpacity
+                  style={styles.filterButton}
+                  onPress={() => setShowTags(!showTags)}
+                  accessibilityRole="button"
+                  accessibilityLabel={`Filter by tags, ${showTags ? "expanded" : "collapsed"}`}
+                >
+                  <Text style={styles.filterButtonText}>
+                    Filter by tags
+                    {selectedTags.length > 0 && (
+                      <Text style={styles.filterBadge}>
+                        {" "}
+                        {selectedTags.length}
+                      </Text>
+                    )}
+                  </Text>
+                  <Text
+                    style={[styles.chevron, showTags && styles.chevronRotated]}
+                  >
+                    ▼
+                  </Text>
+                </TouchableOpacity>
+                {hasActiveFilters && (
+                  <TouchableOpacity onPress={clearFilters}>
+                    <Text style={styles.clearAllText}>Clear all filters</Text>
+                  </TouchableOpacity>
+                )}
+              </View>
+
+              {showTags && (
+                <View style={styles.tagsRow}>
+                  {allTags.map((tag) => {
+                    const isSelected = selectedTags.includes(tag);
+                    return (
+                      <TouchableOpacity
+                        key={tag}
+                        style={[
+                          styles.tagChip,
+                          isSelected && styles.tagChipSelected,
+                        ]}
+                        onPress={() => toggleTag(tag)}
+                        accessibilityRole="checkbox"
+                        accessibilityState={{ checked: isSelected }}
+                      >
+                        <Text
+                          style={[
+                            styles.tagChipText,
+                            isSelected && styles.tagChipTextSelected,
+                          ]}
+                        >
+                          {tag}
+                        </Text>
+                      </TouchableOpacity>
+                    );
+                  })}
+                </View>
+              )}
+            </View>
+          )}
+        </View>
+      }
+      ListEmptyComponent={
+        <View style={styles.emptyState}>
+          <Text style={styles.emptyText}>No listings found.</Text>
+        </View>
+      }
+    />
   );
 }
 
