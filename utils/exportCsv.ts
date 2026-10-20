@@ -4,12 +4,20 @@ import * as Sharing from "expo-sharing";
 import { type JobApplication } from "../features/applications/data";
 import { type Activity } from "../features/activities/types";
 
+const UTF8_BOM = "\uFEFF";
+
 function escapeCsvValue(value: string | number): string {
   const str = String(value);
+
   if (str.includes(",") || str.includes('"') || str.includes("\n")) {
     return `"${str.replace(/"/g, '""')}"`;
   }
+
   return str;
+}
+
+function getDateStamp(): string {
+  return new Date().toISOString().slice(0, 10);
 }
 
 async function shareAsCsv(
@@ -19,9 +27,23 @@ async function shareAsCsv(
 ): Promise<void> {
   try {
     const file = new File(Paths.cache, fileName);
-    file.write(csv);
+
+    if (file.exists) {
+      file.delete();
+    }
+
+    file.write(`${UTF8_BOM}${csv}`);
+
     const canShare = await Sharing.isAvailableAsync();
-    if (!canShare) return;
+
+    if (!canShare) {
+      Alert.alert(
+        "Sharing unavailable",
+        "Your device does not support sharing the exported file.",
+      );
+      return;
+    }
+
     await Sharing.shareAsync(file.uri, {
       mimeType: "text/csv",
       dialogTitle,
@@ -49,10 +71,12 @@ export async function exportApplicationsCsv(
   applications: JobApplication[],
 ): Promise<void> {
   if (applications.length === 0) return;
+
   const csv = applicationsToCsv(applications);
+
   await shareAsCsv(
     csv,
-    `applications_${new Date().toISOString().slice(0, 10)}.csv`,
+    `applications_${getDateStamp()}.csv`,
     "Export applications",
   );
 }
@@ -80,10 +104,12 @@ export async function exportActivitiesCsv(
   activities: Activity[],
 ): Promise<void> {
   if (activities.length === 0) return;
+
   const csv = activitiesToCsv(activities);
+
   await shareAsCsv(
     csv,
-    `activities_${new Date().toISOString().slice(0, 10)}.csv`,
+    `activities_${getDateStamp()}.csv`,
     "Export activities",
   );
 }

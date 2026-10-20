@@ -691,6 +691,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "banqup",
+    title: "Banqup",
+    websiteUrl: "https://www.banqup.com",
+    description:
+      "Business finance platform for e-invoicing, e-payments, e-reporting, and compliance. Automates invoicing, payment, and reporting workflows while helping companies exchange compliant electronic documents across international networks.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.banqup.com/working-at-banqup",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/banqup-group",
+      },
+    ],
+  },
+  {
     id: "basikon",
     title: "Basikon",
     websiteUrl: "https://www.basikon.com",
@@ -705,6 +723,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/basikon",
+      },
+    ],
+  },
+  {
+    id: "bastion_technologies",
+    title: "Bastion Technologies",
+    websiteUrl: "https://bastion.tech",
+    description:
+      "AI-native security and compliance platform for technology companies. Automates compliance evidence, security controls, and remediation workflows while embedding security tooling and expert guidance into engineering workflows.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://bastion.tech/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/bastiontech",
       },
     ],
   },
@@ -773,6 +809,20 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/binance",
+      },
+    ],
+  },
+  {
+    id: "biomemory",
+    title: "Biomemory",
+    websiteUrl: "https://www.biomemory.com",
+    description:
+      "Deep-tech company industrializing DNA data storage for long-term, low-energy digital preservation. Builds molecular storage infrastructure and DNA Shield, a managed service for sovereign protection of critical data.",
+    tags: ["Climate", "Data", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/biomemory",
       },
     ],
   },
