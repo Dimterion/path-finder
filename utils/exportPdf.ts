@@ -15,6 +15,25 @@ function optional(value: string, render: (v: string) => string): string {
   return value.trim() ? render(value.trim()) : "";
 }
 
+function isSafeHttpUrl(value: string): boolean {
+  try {
+    const url = new URL(value.trim());
+    return url.protocol === "https:" || url.protocol === "http:";
+  } catch {
+    return false;
+  }
+}
+
+function optionalLink(value: string, label: string): string {
+  const trimmed = value.trim();
+
+  if (!trimmed || !isSafeHttpUrl(trimmed)) {
+    return "";
+  }
+
+  return `<a href="${escapeHtml(trimmed)}">${label}</a>`;
+}
+
 function buildHtml(cv: CvData): string {
   const skills = cv.skills
     .split(",")
@@ -48,9 +67,9 @@ function buildHtml(cv: CvData): string {
     .join("");
 
   const links = [
-    cv.linkedin && `<a href="${escapeHtml(cv.linkedin)}">LinkedIn</a>`,
-    cv.github && `<a href="${escapeHtml(cv.github)}">GitHub</a>`,
-    cv.website && `<a href="${escapeHtml(cv.website)}">Website</a>`,
+    optionalLink(cv.linkedin, "LinkedIn"),
+    optionalLink(cv.github, "GitHub"),
+    optionalLink(cv.website, "Website"),
   ]
     .filter(Boolean)
     .join(" &nbsp;·&nbsp; ");
@@ -65,6 +84,7 @@ function buildHtml(cv: CvData): string {
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>CV Export</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -115,10 +135,16 @@ function buildHtml(cv: CvData): string {
       justify-content: space-between;
       align-items: baseline;
       margin-bottom: 3px;
+      gap: 12px;
     }
     .entry-title { font-weight: bold; font-size: 10.5pt; }
     .entry-meta { font-size: 9.5pt; color: #555; text-align: right; }
     .entry-desc { font-size: 10pt; color: #333; margin-top: 3px; line-height: 1.5; }
+    @media print {
+      body {
+        padding: 24px 32px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -186,9 +212,14 @@ export async function exportCvPdf(cv: CvData): Promise<void> {
 
   try {
     const html = buildHtml(cv);
-    const { uri } = await Print.printToFileAsync({ html, base64: false });
+
+    const { uri } = await Print.printToFileAsync({
+      html,
+      base64: false,
+    });
 
     const canShare = await Sharing.isAvailableAsync();
+
     if (!canShare) {
       Alert.alert(
         "Sharing unavailable",

@@ -971,20 +971,38 @@ export const listings: JobListing[] = [
     ],
   },
   {
-    id: "capi",
-    title: "Capi",
-    websiteUrl: "https://capi.com",
+    id: "capi_money",
+    title: "Capi Money",
+    websiteUrl: "https://capimoney.com",
     description:
-      "Fintech platform that simplifies cross-border payments for businesses in emerging markets. Enables fast, low-cost international transfers and currency exchange for importers and SMEs in Africa and beyond.",
-    tags: ["FinTech", "Worldwide"],
+      "Cross-border payments platform for businesses in emerging markets. Helps importers pay international suppliers faster and at lower cost through local payment methods, FX, compliance, and settlement infrastructure.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
     extraLinks: [
       {
-        label: "Careers page",
-        url: "https://capi.com/careers",
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/capimoney",
       },
       {
         label: "LinkedIn",
-        url: "https://www.linkedin.com/company/capilux",
+        url: "https://www.linkedin.com/company/capimoney",
+      },
+    ],
+  },
+  {
+    id: "carrefour",
+    title: "Carrefour",
+    websiteUrl: "https://www.carrefour.fr",
+    description:
+      "Global multi-format retailer operating hypermarkets, supermarkets, convenience stores, cash-and-carry, e-commerce, and franchise networks. Sells food, household goods, and services while investing in digital commerce, data, and supply chain.",
+    tags: ["Ecommerce", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://recrute.carrefour.fr/offres",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/carrefour",
       },
     ],
   },
@@ -1265,6 +1283,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "cozycozy",
+    title: "Cozycozy",
+    websiteUrl: "https://www.cozycozy.com",
+    description:
+      "Travel-tech platform that aggregates accommodation listings across booking sites. Helps travelers compare hotels, apartments, cabins, and other stays in one search, with filters for price, location, and amenities.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobs.cozycozy.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/cozycozy",
+      },
+    ],
+  },
+  {
     id: "creative_fabrica",
     title: "Creative Fabrica",
     websiteUrl: "https://www.creativefabrica.com",
@@ -1315,6 +1351,42 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/cryptonext-security",
+      },
+    ],
+  },
+  {
+    id: "cursor",
+    title: "Cursor",
+    websiteUrl: "https://cursor.com",
+    description:
+      "AI-native code editor and software development environment. Helps developers write, edit, and debug code with AI agents, codebase context, terminal actions, and multi-step task execution.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://cursor.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/cursorai",
+      },
+    ],
+  },
+  {
+    id: "cyera",
+    title: "Cyera",
+    websiteUrl: "https://www.cyera.com",
+    description:
+      "Data, identity, and AI security platform that helps organizations discover sensitive data, govern identities, and secure AI agents. Combines classification, context, and automated remediation to reduce enterprise data risk.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.cyera.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/cyera",
       },
     ],
   },
