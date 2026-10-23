@@ -1165,6 +1165,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "connecting_flow",
+    title: "Connecting Flow",
+    websiteUrl: "https://www.connectingflow.com",
+    description:
+      "Document automation platform for asset managers. Centralizes data, automates production and translation of regulatory and marketing documents, and manages compliant publication across languages and jurisdictions.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Indeed)",
+        url: "https://fr.indeed.com/cmp/Connecting-Flow/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/connectingflow",
+      },
+    ],
+  },
+  {
     id: "consensys",
     title: "Consensys",
     websiteUrl: "https://consensys.io",
@@ -1387,6 +1405,20 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/cyera",
+      },
+    ],
+  },
+  {
+    id: "d_studio",
+    title: "D-Studio",
+    websiteUrl: "https://www.dstudio.company",
+    description:
+      "Paris-based creative and technology agency helping brands and entrepreneurs design digital products and experiences. Combines branding, UX/UI, web and mobile development, AI, marketing, and scalable architecture.",
+    tags: ["ITServices", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/d-studio-company",
       },
     ],
   },
@@ -1797,6 +1829,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "electra",
+    title: "Electra",
+    websiteUrl: "https://www.go-electra.com",
+    description:
+      "European EV fast-charging network operator. Deploys and operates high-power charging hubs for drivers, fleets, and businesses while building charging, payment, and energy-management technology.",
+    tags: ["Climate", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.go-electra.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/electra-charge",
+      },
+    ],
+  },
+  {
     id: "elevenlabs",
     title: "ElevenLabs",
     websiteUrl: "https://elevenlabs.io",
@@ -1865,6 +1915,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/ensol-solaire",
+      },
+    ],
+  },
+  {
+    id: "epam",
+    title: "Epam",
+    websiteUrl: "https://www.epam.com",
+    description:
+      "Global digital platform engineering and consulting company. Helps enterprises with software engineering, cloud, data, AI, product design, cybersecurity, and digital transformation across industries.",
+    tags: ["Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.epam.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/epam-systems",
       },
     ],
   },
