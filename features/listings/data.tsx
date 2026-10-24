@@ -2077,6 +2077,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "fairmat",
+    title: "Fairmat",
+    websiteUrl: "https://www.fairmat.tech",
+    description:
+      "Deep-tech company recycling carbon fiber composite waste into high-performance recycled materials. Combines robotics, AI, software, and a proprietary recycling process to build a circular supply chain for mobility, sports, energy, and industrial applications.",
+    tags: ["Climate", "AI", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.lever.co/Fairmat",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/fairmat-tech",
+      },
+    ],
+  },
+  {
     id: "figma",
     title: "Figma",
     websiteUrl: "https://www.figma.com",
@@ -2091,6 +2109,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/figma",
+      },
+    ],
+  },
+  {
+    id: "filigran",
+    title: "Filigran",
+    websiteUrl: "https://filigran.io",
+    description:
+      "Open-source cybersecurity company building an eXtended Threat Management platform. Combines threat intelligence, exposure validation, breach and attack simulation, and cyber risk management to help security teams act proactively.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://filigran.io/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/filigran",
       },
     ],
   },
@@ -2221,6 +2257,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "france_billet",
+    title: "France billet",
+    websiteUrl: "https://www.francebillet.com",
+    description:
+      "French ticketing platform for cultural and entertainment events. Provides ticket sales, distribution, marketing, and audience solutions for venues, promoters, festivals, and event organizers.",
+    tags: ["Media", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/francebillet",
+      },
+    ],
+  },
+  {
     id: "front",
     title: "Front",
     websiteUrl: "https://front.com",
@@ -2235,6 +2285,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/fronthq",
+      },
+    ],
+  },
+  {
+    id: "galadrim",
+    title: "Galadrim",
+    websiteUrl: "https://galadrim.fr",
+    description:
+      "Digital product agency designing and building AI, web, and mobile products. Supports clients with product strategy, UX/UI, software engineering, AI agents, and end-to-end delivery from prototype to production.",
+    tags: ["AI", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://galadrim.fr/carrieres",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/galadrim",
       },
     ],
   },
@@ -2325,6 +2393,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/gestimum",
+      },
+    ],
+  },
+  {
+    id: "gestinnov",
+    title: "Gestinnov",
+    websiteUrl: "https://www.gestinnov.com",
+    description:
+      "Microsoft-focused consulting and systems-integration firm. Helps organizations implement ERP, CRM, HRIS, e-commerce, data, AI, and Power Platform solutions to modernize operations and digital workflows.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.gestinnov.com/carriere",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/gestinnov",
       },
     ],
   },
