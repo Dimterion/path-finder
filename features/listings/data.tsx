@@ -2505,6 +2505,60 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "global_enterprise_partners",
+    title: "Global Enterprise Partners",
+    websiteUrl: "https://www.globalenterprisepartners.com",
+    description:
+      "Global technology recruitment and consulting firm connecting enterprises with SAP, ERP, cloud, AI, cybersecurity, and digital-transformation talent. Provides contract recruitment, permanent hiring, and global employment solutions.",
+    tags: ["Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.globalenterprisepartners.com/en-us/job-search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/globalenterprisepartners",
+      },
+    ],
+  },
+  {
+    id: "google",
+    title: "Google",
+    websiteUrl: "https://www.google.com",
+    description:
+      "Global technology company building search, advertising, cloud, AI, Android, Chrome, hardware, and developer products. Helps people and businesses access, organize, and act on information at internet scale.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.google.com/about/careers/applications/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/google",
+      },
+    ],
+  },
+  {
+    id: "gorgias",
+    title: "Gorgias",
+    websiteUrl: "https://www.gorgias.com",
+    description:
+      "Conversational AI platform for ecommerce. Helps brands automate customer support, personalize shopping experiences, and drive sales through an AI agent, helpdesk, chat, and deep Shopify and ecommerce integrations.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.gorgias.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/gorgias",
+      },
+    ],
+  },
+  {
     id: "graphmytech",
     title: "GraphMyTech",
     websiteUrl: "https://www.graphmytech.com",
@@ -2649,6 +2703,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "hcltech",
+    title: "HCLTech",
+    websiteUrl: "https://www.hcltech.com",
+    description:
+      "Global technology and IT-services company delivering digital, engineering, cloud, AI, cybersecurity, and business-process services. Works with enterprises across industries to modernize technology and operations.",
+    tags: ["Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Workday)",
+        url: "https://careers.hcltech.com/go/NonTPDemand/9558355",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/hcltech",
+      },
+    ],
+  },
+  {
     id: "hegia",
     title: "Hegia",
     websiteUrl: "https://hegia.fr",
@@ -2695,6 +2767,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/helpline-service-desk",
+      },
+    ],
+  },
+  {
+    id: "hercules",
+    title: "Hercules",
+    websiteUrl: "https://hercules.app",
+    description:
+      "AI app builder for businesses. Lets users create and deploy custom software such as CRMs, ERPs, HRIS platforms, client portals, and inventory systems using AI agents and a full-stack application platform.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://hercules.app/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/herculeshq",
       },
     ],
   },
@@ -2821,6 +2911,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/horizon3ai",
+      },
+    ],
+  },
+  {
+    id: "hrflow_ai",
+    title: "HrFlow.ai",
+    websiteUrl: "https://hrflow.ai",
+    description:
+      "API-first AI platform for HR and talent data. Provides parsing, tagging, embedding, search, scoring, matching, and upskilling APIs, plus connectors that help employers, staffing firms, and HR-tech products automate hiring workflows.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://hrflow.ai/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/hrflowai",
       },
     ],
   },
