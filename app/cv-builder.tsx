@@ -14,10 +14,12 @@ import {
 import {
   type CvData,
   type EducationEntry,
+  type LinkEntry,
   type WorkEntry,
   EMPTY_CV,
   loadCv,
   makeEducationEntry,
+  makeLinkEntry,
   makeWorkEntry,
   saveCv,
 } from "../features/cv/data";
@@ -138,6 +140,41 @@ export default function CVBuilderScreen() {
           style: "destructive",
           onPress: () =>
             updateCv({ education: cv.education.filter((e) => e.id !== id) }),
+        },
+      ],
+    );
+  }
+
+  function addLink() {
+    const entry = makeLinkEntry({
+      label: "",
+      url: "",
+    });
+
+    updateCv({ links: [...cv.links, entry] });
+  }
+
+  function updateLink(id: string, patch: Partial<LinkEntry>) {
+    updateCv({
+      links: cv.links.map((link) =>
+        link.id === id ? { ...link, ...patch } : link,
+      ),
+    });
+  }
+
+  function removeLink(id: string) {
+    Alert.alert(
+      "Remove link",
+      "Are you sure you want to remove this link? This cannot be undone.",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Remove",
+          style: "destructive",
+          onPress: () =>
+            updateCv({
+              links: cv.links.filter((link) => link.id !== id),
+            }),
         },
       ],
     );
@@ -399,28 +436,43 @@ export default function CVBuilderScreen() {
         />
         {expanded.links && (
           <View style={styles.section}>
-            <Field
-              label="LinkedIn"
-              value={cv.linkedin}
-              onChangeText={(v) => updateCv({ linkedin: v })}
-              placeholder="https://linkedin.com/in/yourname"
-              keyboardType="url"
-            />
-            <Field
-              label="GitHub"
-              value={cv.github}
-              onChangeText={(v) => updateCv({ github: v })}
-              placeholder="https://github.com/yourname"
-              keyboardType="url"
-            />
-            <Field
-              label="Website"
-              value={cv.website}
-              onChangeText={(v) => updateCv({ website: v })}
-              placeholder="https://yoursite.com"
-              keyboardType="url"
-              last
-            />
+            {cv.links.map((link) => (
+              <View key={link.id} style={styles.entryCard}>
+                <View style={styles.entryHeader}>
+                  <Text style={styles.entryTitle}>
+                    {link.label || "New Link"}
+                  </Text>
+
+                  <Pressable
+                    onPress={() => removeLink(link.id)}
+                    style={styles.removeButton}
+                  >
+                    <Text style={styles.removeText}>Remove</Text>
+                  </Pressable>
+                </View>
+
+                <Field
+                  label="Link Name"
+                  value={link.label}
+                  onChangeText={(value) =>
+                    updateLink(link.id, { label: value })
+                  }
+                  placeholder="e.g. LinkedIn, Portfolio, Dribbble"
+                />
+                <Field
+                  label="URL"
+                  value={link.url}
+                  onChangeText={(value) => updateLink(link.id, { url: value })}
+                  placeholder="https://example.com"
+                  keyboardType="url"
+                  last
+                />
+              </View>
+            ))}
+
+            <Pressable style={styles.addEntryButton} onPress={addLink}>
+              <Text style={styles.addEntryText}>+ Add link</Text>
+            </Pressable>
           </View>
         )}
 

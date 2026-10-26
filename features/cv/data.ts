@@ -19,6 +19,12 @@ export type EducationEntry = {
   description: string;
 };
 
+export type LinkEntry = {
+  id: string;
+  label: string;
+  url: string;
+};
+
 export type CvData = {
   name: string;
   title: string;
@@ -29,9 +35,7 @@ export type CvData = {
   skills: string;
   experience: WorkEntry[];
   education: EducationEntry[];
-  linkedin: string;
-  github: string;
-  website: string;
+  links: LinkEntry[];
 };
 
 export const EMPTY_CV: CvData = {
@@ -44,9 +48,7 @@ export const EMPTY_CV: CvData = {
   skills: "",
   experience: [],
   education: [],
-  linkedin: "",
-  github: "",
-  website: "",
+  links: [],
 };
 
 export function makeWorkEntry(partial: Omit<WorkEntry, "id">): WorkEntry {
@@ -59,12 +61,62 @@ export function makeEducationEntry(
   return { ...partial, id: randomUUID() };
 }
 
+export function makeLinkEntry(partial: Omit<LinkEntry, "id">): LinkEntry {
+  return { ...partial, id: randomUUID() };
+}
+
 const STORAGE_KEY = "pathfinder_cv";
 
 export async function loadCv(): Promise<CvData> {
   try {
     const raw = await AsyncStorage.getItem(STORAGE_KEY);
-    return raw ? { ...EMPTY_CV, ...JSON.parse(raw) } : EMPTY_CV;
+
+    if (!raw) {
+      return EMPTY_CV;
+    }
+
+    const parsed = JSON.parse(raw) as Partial<CvData> & {
+      linkedin?: string;
+      github?: string;
+      website?: string;
+    };
+
+    const existingLinks = Array.isArray(parsed.links) ? parsed.links : [];
+
+    const legacyLinks: LinkEntry[] = [];
+
+    if (parsed.linkedin?.trim()) {
+      legacyLinks.push(
+        makeLinkEntry({
+          label: "LinkedIn",
+          url: parsed.linkedin.trim(),
+        }),
+      );
+    }
+
+    if (parsed.github?.trim()) {
+      legacyLinks.push(
+        makeLinkEntry({
+          label: "GitHub",
+          url: parsed.github.trim(),
+        }),
+      );
+    }
+
+    if (parsed.website?.trim()) {
+      legacyLinks.push(
+        makeLinkEntry({
+          label: "Website",
+          url: parsed.website.trim(),
+        }),
+      );
+    }
+
+    return {
+      ...EMPTY_CV,
+      ...parsed,
+      links: existingLinks.length > 0 ? existingLinks : legacyLinks,
+    };
   } catch {
     return EMPTY_CV;
   }
