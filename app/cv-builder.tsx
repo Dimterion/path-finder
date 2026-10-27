@@ -224,7 +224,7 @@ export default function CVBuilderScreen() {
               label="Job Title"
               value={cv.title}
               onChangeText={(v) => updateCv({ title: v })}
-              placeholder="e.g. Frontend Developer"
+              placeholder="e.g. Web Developer"
             />
             <Field
               label="Email"
@@ -281,7 +281,7 @@ export default function CVBuilderScreen() {
               label="Skills"
               value={cv.skills}
               onChangeText={(v) => updateCv({ skills: v })}
-              placeholder="e.g. React, TypeScript, Node.js"
+              placeholder="e.g. Project Management, Data Analysis, Search Engine Optimization"
               multiline
               last
             />
@@ -322,7 +322,7 @@ export default function CVBuilderScreen() {
                   label="Role"
                   value={entry.role}
                   onChangeText={(v) => updateExperience(entry.id, { role: v })}
-                  placeholder="e.g. Frontend Developer"
+                  placeholder="e.g. Web Developer"
                 />
                 <Field
                   label="Start Date"
@@ -392,7 +392,7 @@ export default function CVBuilderScreen() {
                   label="Degree"
                   value={entry.degree}
                   onChangeText={(v) => updateEducation(entry.id, { degree: v })}
-                  placeholder="e.g. BSc Computer Science"
+                  placeholder="e.g. Bachelor in Computer Science"
                 />
                 <Field
                   label="Start Date"
@@ -457,7 +457,7 @@ export default function CVBuilderScreen() {
                   onChangeText={(value) =>
                     updateLink(link.id, { label: value })
                   }
-                  placeholder="e.g. LinkedIn, Portfolio, Dribbble"
+                  placeholder="e.g. LinkedIn, Portfolio, GitHub"
                 />
                 <Field
                   label="URL"
