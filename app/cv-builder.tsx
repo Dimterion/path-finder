@@ -180,6 +180,42 @@ export default function CVBuilderScreen() {
     );
   }
 
+  function clearCv() {
+    Alert.alert(
+      "Clear CV",
+      "Are you sure you want to clear your CV? All fields, experience, education, and links will be removed. This cannot be undone.",
+      [
+        {
+          text: "Cancel",
+          style: "cancel",
+        },
+        {
+          text: "Clear CV",
+          style: "destructive",
+          onPress: () => {
+            if (saveTimeout.current) {
+              clearTimeout(saveTimeout.current);
+              saveTimeout.current = null;
+            }
+
+            setCv(EMPTY_CV);
+
+            setExpanded({
+              personal: true,
+              summary: false,
+              skills: false,
+              experience: false,
+              education: false,
+              links: false,
+            });
+
+            saveCv(EMPTY_CV);
+          },
+        },
+      ],
+    );
+  }
+
   if (loading) {
     return (
       <View style={styles.centered}>
@@ -476,10 +512,19 @@ export default function CVBuilderScreen() {
           </View>
         )}
 
-        {/* Export */}
-        <Pressable style={styles.exportButton} onPress={() => exportCvPdf(cv)}>
-          <Text style={styles.exportButtonText}>Export PDF</Text>
-        </Pressable>
+        {/* Export and Clear */}
+        <View style={styles.actionRow}>
+          <Pressable
+            style={styles.exportButton}
+            onPress={() => exportCvPdf(cv)}
+          >
+            <Text style={styles.exportButtonText}>Export PDF</Text>
+          </Pressable>
+
+          <Pressable style={styles.clearButton} onPress={clearCv}>
+            <Text style={styles.clearButtonText}>Clear CV</Text>
+          </Pressable>
+        </View>
       </ScrollView>
     </KeyboardAvoidingView>
   );
@@ -620,15 +665,36 @@ const styles = StyleSheet.create({
     color: "#1f6feb",
   },
   exportButton: {
+    flex: 1,
     backgroundColor: "#1f6feb",
     paddingVertical: 14,
     paddingHorizontal: 20,
     borderRadius: 16,
     alignItems: "center",
-    marginTop: 8,
+    justifyContent: "center",
   },
   exportButtonText: {
     color: "#ffffff",
+    fontSize: 14,
+    fontWeight: "700",
+  },
+  actionRow: {
+    flexDirection: "row",
+    gap: 12,
+    marginTop: 8,
+  },
+  clearButton: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: "#dc2626",
+    borderRadius: 16,
+    paddingVertical: 14,
+    paddingHorizontal: 20,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  clearButtonText: {
+    color: "#dc2626",
     fontSize: 14,
     fontWeight: "700",
   },
