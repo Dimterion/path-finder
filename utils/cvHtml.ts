@@ -12,9 +12,23 @@ export function optional(value: string, render: (v: string) => string): string {
   return value.trim() ? render(value.trim()) : "";
 }
 
+export function normalizeUrl(value: string): string {
+  const trimmed = value.trim();
+
+  if (!trimmed) {
+    return "";
+  }
+
+  if (/^https?:\/\//i.test(trimmed)) {
+    return trimmed;
+  }
+
+  return `https://${trimmed}`;
+}
+
 export function isSafeHttpUrl(value: string): boolean {
   try {
-    const url = new URL(value.trim());
+    const url = new URL(value);
     return url.protocol === "https:" || url.protocol === "http:";
   } catch {
     return false;
@@ -22,13 +36,17 @@ export function isSafeHttpUrl(value: string): boolean {
 }
 
 export function optionalLink(value: string, label: string): string {
-  const trimmed = value.trim();
+  const trimmedInput = value.trim();
+  const normalizedUrl = normalizeUrl(trimmedInput);
+  const displayLabel = label.trim() || trimmedInput;
 
-  if (!trimmed || !isSafeHttpUrl(trimmed)) {
+  if (!normalizedUrl || !isSafeHttpUrl(normalizedUrl)) {
     return "";
   }
 
-  return `<a href="${escapeHtml(trimmed)}">${escapeHtml(label)}</a>`;
+  return `<a href="${escapeHtml(normalizedUrl)}">${escapeHtml(
+    displayLabel,
+  )}</a>`;
 }
 
 export function buildCvHtml(cv: CvData): string {
@@ -82,7 +100,7 @@ export function buildCvHtml(cv: CvData): string {
     .join("");
 
   const links = cv.links
-    .filter((link) => link.label.trim() && link.url.trim())
+    .filter((link) => link.url.trim())
     .map((link) => optionalLink(link.url, link.label))
     .filter(Boolean)
     .join(" &nbsp;·&nbsp; ");

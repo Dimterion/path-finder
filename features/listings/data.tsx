@@ -4641,6 +4641,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "owkin",
+    title: "Owkin",
+    websiteUrl: "https://www.owkin.com",
+    description:
+      "AI-powered drug discovery and diagnostics company. Combines multimodal patient data, biological models, and agentic AI to help biopharma companies identify targets, design experiments, and develop better treatments and diagnostics.",
+    tags: ["AI", "Biotech", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.owkin.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/owkin",
+      },
+    ],
+  },
+  {
     id: "padoa",
     title: "Padoa",
     websiteUrl: "https://www.padoa.fr",
@@ -5231,6 +5249,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "renaissance_fusion",
+    title: "Renaissance Fusion",
+    websiteUrl: "https://renfusion.eu",
+    description:
+      "Fusion-energy company developing simplified stellarator technology and enabling industrial systems. Works on high-temperature superconducting magnets, liquid-metal walls, fuel-cycle solutions, and lithium enrichment to advance scalable fusion power.",
+    tags: ["Climate", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://renfusion.eu/job-openings",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/renaissance-fusion",
+      },
+    ],
+  },
+  {
+    id: "reply",
+    title: "Reply",
+    websiteUrl: "https://www.reply.com",
+    description:
+      "Global consulting, systems-integration, and digital-services group. Helps enterprises transform through AI, data, cloud, cybersecurity, IoT, automation, and industry-specific digital platforms.",
+    tags: ["Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.reply.com/en/about/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/reply",
+      },
+    ],
+  },
+  {
     id: "rerun",
     title: "Rerun",
     websiteUrl: "https://rerun.io",
@@ -5263,6 +5317,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/tryriot",
+      },
+    ],
+  },
+  {
+    id: "rollstack",
+    title: "Rollstack",
+    websiteUrl: "https://www.rollstack.com",
+    description:
+      "AI presentation and reporting platform that turns business data into automated, up-to-date slides and documents. Connects analytics and BI tools to presentation workflows so teams can scale reporting and make faster data-driven decisions.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.rollstack.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/rollstack",
       },
     ],
   },
