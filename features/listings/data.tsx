@@ -5375,6 +5375,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "s_p_global",
+    title: "S&P Global",
+    websiteUrl: "https://www.spglobal.com",
+    description:
+      "Global provider of financial-market intelligence, benchmarks, credit ratings, commodity and energy data, ESG analytics, and risk solutions. Helps businesses, governments, and investors make decisions with trusted data and technology.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.spglobal.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/spglobal",
+      },
+    ],
+  },
+  {
     id: "saas.group",
     title: "saas.group",
     websiteUrl: "https://saas.group",
@@ -5483,6 +5501,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "savencia",
+    title: "Savencia",
+    websiteUrl: "https://savencia.com",
+    description:
+      "International family-owned food group focused on dairy and cocoa. Develops and sells premium food brands across retail, food service, and ingredients, including cheese, butter, chocolate, deli, and seafood products.",
+    tags: ["France"],
+    extraLinks: [
+      {
+        label: "Careers page (Oracle Cloud)",
+        url: "https://eoct.fa.em2.oraclecloud.com/hcmUI/CandidateExperience",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/savencia-groupe",
+      },
+    ],
+  },
+  {
+    id: "scalesys",
+    title: "Scalesys",
+    websiteUrl: "https://scalesys.fr",
+    description:
+      "French SAP consulting and systems-integration firm. Helps enterprises modernize and operate SAP environments through implementation, S/4HANA migration, managed services, support, and specialized SAP expertise.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://scalesys.fr/offre-emploi",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/scalesysfrance",
+      },
+    ],
+  },
+  {
     id: "scaleway",
     title: "Scaleway",
     websiteUrl: "https://www.scaleway.com",
@@ -5497,6 +5551,42 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/scaleway",
+      },
+    ],
+  },
+  {
+    id: "schneider_electric",
+    title: "Schneider Electric",
+    websiteUrl: "https://www.se.com",
+    description:
+      "Global energy-technology company enabling electrification, automation, and digitalization for buildings, data centers, industry, infrastructure, and grids. Provides electrical distribution, industrial automation, energy management, and AI-enabled digital services.",
+    tags: ["Climate", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.se.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/schneider-electric",
+      },
+    ],
+  },
+  {
+    id: "scoreplay",
+    title: "ScorePlay",
+    websiteUrl: "https://www.scoreplay.io",
+    description:
+      "AI-powered sports-media platform that helps teams, leagues, and federations create, manage, distribute, and monetize photo and video content. Centralizes media workflows across broadcast, digital channels, and commercial partnerships.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/scoreplay",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/scoreplay",
       },
     ],
   },
