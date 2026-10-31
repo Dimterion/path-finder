@@ -5807,6 +5807,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "skaleet",
+    title: "Skaleet",
+    websiteUrl: "https://skaleet.com",
+    description:
+      "Cloud-native core-banking SaaS platform for banks, fintechs, and embedded-finance providers. Provides modular, API-first infrastructure for accounts, cards, payments, lending, savings, KYC, and banking operations across EMEA.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.skaleet.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/skaleet",
+      },
+    ],
+  },
+  {
     id: "skello",
     title: "Skello",
     websiteUrl: "https://www.skello.io",
@@ -5933,6 +5951,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "spiko",
+    title: "Spiko",
+    websiteUrl: "https://www.spiko.io",
+    description:
+      "European cash-management fintech giving businesses, nonprofits, financial advisers, and fintechs access to institutional-grade money-market products through an app and API. Builds the full issuance, operating, and distribution infrastructure.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://spiko.teamtailor.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/spiko-tech",
+      },
+    ],
+  },
+  {
     id: "spinergie",
     title: "Spinergie",
     websiteUrl: "https://www.spinergie.com",
@@ -5987,6 +6023,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "steerlab",
+    title: "Steerlab",
+    websiteUrl: "https://www.steerlab.ai",
+    description:
+      "AI proposal-automation platform for B2B sales and security teams. Helps organizations respond to RFPs, RFIs, and security questionnaires with sourced answers, managed content libraries, collaboration workflows, and win-probability insights.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Notion)",
+        url: "https://steerlab.notion.site",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/steerlab",
+      },
+    ],
+  },
+  {
     id: "storyblok",
     title: "Storyblok",
     websiteUrl: "https://www.storyblok.com",
@@ -6019,6 +6073,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/strangebee",
+      },
+    ],
+  },
+  {
+    id: "streem_energy",
+    title: "Streem Energy",
+    websiteUrl: "https://www.streem.eu",
+    description:
+      "SaaS platform for commercial management of renewable-energy assets. Helps producers, aggregators, suppliers, and asset managers optimize operations, market participation, forecasting, contracts, and portfolio performance across Europe.",
+    tags: ["Climate", "AI", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (SmartRecruiters)",
+        url: "https://careers.smartrecruiters.com/StreemEnergy",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/streemenergy",
       },
     ],
   },
@@ -6109,6 +6181,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/syndigo",
+      },
+    ],
+  },
+  {
+    id: "synopsia",
+    title: "Synopsia",
+    websiteUrl: "https://www.synopsia.com",
+    description:
+      "Paris-based software-engineering company providing technical expertise, architecture, project management, and development services. Helps clients deliver custom digital projects and build long-term technology capabilities.",
+    tags: ["ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.synopsia.com/?page_id=682",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/synopsia",
       },
     ],
   },
