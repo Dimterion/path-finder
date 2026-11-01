@@ -4429,6 +4429,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "odyssee_technologies",
+    title: "Odyssee Technologies",
+    websiteUrl: "https://www.odyssee-technologies.com",
+    description:
+      "French precision-mechanics manufacturer serving aerospace, defense, energy, space, and industrial customers. Provides machining, grinding, electroerosion, assembly, quality control, and increasingly automated and AI-enabled production capabilities.",
+    tags: ["France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/odyssee-technologies",
+      },
+    ],
+  },
+  {
     id: "ogury",
     title: "Ogury",
     websiteUrl: "https://www.ogury.com",
@@ -6217,6 +6231,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "talan",
+    title: "Talan",
+    websiteUrl: "https://www.talan.com",
+    description:
+      "Global consulting firm combining strategy, data, AI, and technology delivery. Helps enterprises design and operationalize AI and data transformations, including cloud platforms, data engineering, generative AI, and business-process modernization.",
+    tags: ["AI", "Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.talan.com/global/en/our-job-offers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/talan",
+      },
+    ],
+  },
+  {
     id: "teads",
     title: "Teads",
     websiteUrl: "https://www.teads.com",
@@ -6349,6 +6381,38 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/tigerdata",
+      },
+    ],
+  },
+  {
+    id: "thelios",
+    title: "Thélios",
+    websiteUrl: "https://www.thelios.com",
+    description:
+      "LVMH-owned luxury eyewear company that designs, manufactures, and distributes eyewear for LVMH Maisons and partner brands. Combines craftsmanship, industrial production, retail, brand management, and digital innovation.",
+    tags: ["France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.thelios.com/static/tlk/en/index.html",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/thelios",
+      },
+    ],
+  },
+  {
+    id: "thundersoft",
+    title: "ThunderSoft",
+    websiteUrl: "https://www.thundersoft.com",
+    description:
+      "Global provider of intelligent operating-system technologies and solutions for automotive, mobile, AIoT, enterprise, and 5G. Builds smart-cockpit, autonomous-driving, edge-AI, IoT, and embedded-software products and services.",
+    tags: ["AI", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/thundersoft",
       },
     ],
   },
@@ -6525,6 +6589,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/shopupway",
+      },
+    ],
+  },
+  {
+    id: "uscreen",
+    title: "Uscreen",
+    websiteUrl: "https://www.uscreen.tv",
+    description:
+      "Video-monetization and membership platform for creators, coaches, and independent media businesses. Provides branded web, mobile, and TV apps, subscriptions, live streaming, communities, courses, and commerce tools.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (BambooHR)",
+        url: "https://uscreen.bamboohr.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/uscreen-tv",
       },
     ],
   },
