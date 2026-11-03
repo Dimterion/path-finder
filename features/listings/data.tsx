@@ -27,6 +27,24 @@ export type JobListing = {
 
 export const listings: JobListing[] = [
   {
+    id: "3commas",
+    title: "3Commas",
+    websiteUrl: "https://3commas.io",
+    description:
+      "Crypto trading-automation platform for retail and professional traders. Provides multi-exchange portfolio management, DCA/grid/signal bots, backtesting, SmartTrade execution, and AI-assisted strategy research through QuantPilot.",
+    tags: ["AI", "FinTech", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/3commas",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/3commas-io",
+      },
+    ],
+  },
+  {
     id: "360_learning",
     title: "360Learning",
     websiteUrl: "https://360learning.com",
@@ -117,6 +135,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "activeviam",
+    title: "ActiveViam",
+    websiteUrl: "https://www.activeviam.com",
+    description:
+      "Financial-data and risk-analytics company. Its Atoti platform gives capital-markets, treasury, and risk teams a real-time, AI-native view of trading, P&L, exposure, and regulatory data for faster decision-making.",
+    tags: ["AI", "FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.activeviam.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/activeviam",
+      },
+    ],
+  },
+  {
+    id: "adacore",
+    title: "AdaCore",
+    websiteUrl: "https://www.adacore.com",
+    description:
+      "Software-tools company for high-integrity development in Ada, SPARK, C/C++, and Rust. Provides compilers, IDEs, static analysis, verification, and certification-support tools for safety- and security-critical industries.",
+    tags: ["SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.adacore.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/adacore",
+      },
+    ],
+  },
+  {
     id: "adelean",
     title: "Adelean",
     websiteUrl: "https://www.adelean.com",
@@ -163,6 +217,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/aghanim",
+      },
+    ],
+  },
+  {
+    id: "agilebio",
+    title: "AgileBio",
+    websiteUrl: "https://agilebio.com",
+    description:
+      "Laboratory software and IT-solutions provider. Develops LabCollector LIMS/ELN and related hardware, integrations, hosting, and consulting to help labs manage samples, workflows, instruments, quality, and traceability.",
+    tags: ["Biotech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://agilebio.com/career-at-agilebio",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/agilebio",
       },
     ],
   },
@@ -293,6 +365,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "aldecis",
+    title: "Aldecis",
+    websiteUrl: "https://aldecis.com",
+    description:
+      "Paris-based decision-intelligence and business-analytics firm. Uses AI, OLAP, financial modeling, and lean-management methods to detect insights, explain performance, forecast scenarios, and recommend corrective actions.",
+    tags: ["AI", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/aldecis",
+      },
+    ],
+  },
+  {
     id: "aletiq",
     title: "Aletiq",
     websiteUrl: "https://www.aletiq.com",
@@ -383,6 +469,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "alpaca",
+    title: "Alpaca",
+    websiteUrl: "https://alpaca.markets",
+    description:
+      "Global brokerage-infrastructure platform for stocks, ETFs, options, crypto, and other assets. Provides APIs and embedded-finance tools that let fintechs, platforms, and developers build trading, investing, and wealth products.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://alpaca.markets/hiring",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/alpacamarkets",
+      },
+    ],
+  },
+  {
     id: "alpic",
     title: "Alpic",
     websiteUrl: "https://alpic.ai",
@@ -393,6 +497,20 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/alpic-ai",
+      },
+    ],
+  },
+  {
+    id: "alqen",
+    title: "Alqen",
+    websiteUrl: "https://alqen.com",
+    description:
+      "AI-powered marketplace intelligence platform for Amazon and Walmart sellers. Tracks competitors, buy-box ownership, inventory, pricing, and profitability to help sellers research products and maximize margins.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/alqenhq",
       },
     ],
   },
@@ -439,6 +557,20 @@ export const listings: JobListing[] = [
       {
         label: "Careers page",
         url: "https://www.amplemarket.com/careers",
+      },
+    ],
+  },
+  {
+    id: "amplitude_studios",
+    title: "Amplitude Studios",
+    websiteUrl: "https://www.amplitude-studios.com",
+    description:
+      "Video-game development studio known for strategy games and the Games2gether community-driven development model. Creates original game worlds, systems, and franchises for PC and console players.",
+    tags: ["Media", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/amplitude-studios",
       },
     ],
   },
@@ -497,6 +629,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "approach_people",
+    title: "Approach People",
+    websiteUrl: "https://www.approachpeople.com",
+    description:
+      "International recruitment agency specializing in technology, engineering, life sciences, finance, and business functions. Connects candidates with permanent and contract opportunities across Europe and North America.",
+    tags: ["Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.approachpeople.com/job-search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/approach-people-recruitment",
+      },
+    ],
+  },
+  {
     id: "apsia",
     title: "Apsia",
     websiteUrl: "https://www.apsia.eu",
@@ -511,6 +661,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/sharpdx",
+      },
+    ],
+  },
+  {
+    id: "argos_multilingual",
+    title: "Argos Multilingual",
+    websiteUrl: "https://www.argosmultilingual.com",
+    description:
+      "Global language-services provider offering translation, localization, interpretation, transcription, and multilingual content solutions. Supports enterprises across technology, life sciences, manufacturing, legal, and public-sector markets.",
+    tags: ["ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (BambooHR)",
+        url: "https://argosmultilingual.bamboohr.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/argos-multilingual",
       },
     ],
   },
@@ -605,6 +773,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "atlas_v",
+    title: "Atlas V",
+    websiteUrl: "https://atlasv.io",
+    description:
+      "Paris-based immersive-entertainment company creating VR, AR, mixed-reality, gaming, and location-based experiences. Its Albyon unit provides real-time production services at the intersection of games, film, and interactive storytelling.",
+    tags: ["Media", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://atlasv.io/career",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/atlasv",
+      },
+    ],
+  },
+  {
     id: "aubay",
     title: "Aubay",
     websiteUrl: "https://aubay.com",
@@ -669,6 +855,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/axa",
+      },
+    ],
+  },
+  {
+    id: "axway",
+    title: "Axway",
+    websiteUrl: "https://www.axway.com",
+    description:
+      "Global software company providing API management, integration, B2B connectivity, managed file transfer, and data-governance solutions. Helps enterprises securely connect systems, partners, data, and AI-enabled workflows.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (iCIMS)",
+        url: "https://careers-axway.icims.com/jobs/intro",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/axway",
       },
     ],
   },
@@ -6661,6 +6865,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "veeam",
+    title: "Veeam",
+    websiteUrl: "https://www.veeam.com",
+    description:
+      "Data resilience, cyber-resilience, and AI-trust platform provider. Helps organizations protect, recover, govern, and secure data across cloud, SaaS, Kubernetes, endpoints, and on-premises environments, with backup, disaster recovery, and AI-security capabilities.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.veeam.com/search-jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/veeam-software",
+      },
+    ],
+  },
+  {
     id: "veesual",
     title: "Veesual",
     websiteUrl: "https://www.veesual.ai",
@@ -6873,6 +7095,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "wezen",
+    title: "Wezen",
+    websiteUrl: "https://wezen.com",
+    description:
+      "SaaS platform for AI-assisted, multilingual content production. Helps brands and content teams create, localize, manage, and publish high-quality copy across markets, combining semantic analysis, collaboration, and AI workflows.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/wezen",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/wezentech",
+      },
+    ],
+  },
+  {
     id: "wiremind",
     title: "Wiremind",
     websiteUrl: "https://www.wiremind.io",
@@ -6963,6 +7203,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "xapo_bank",
+    title: "Xapo Bank",
+    websiteUrl: "https://www.xapobank.com",
+    description:
+      "Gibraltar-regulated private bank combining Bitcoin and traditional banking. Provides a fully remote banking platform where members can hold USD and BTC, earn interest, invest, and use Bitcoin payments through the Lightning Network.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.xapobank.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/xapobankapp",
+      },
+    ],
+  },
+  {
     id: "xbow",
     title: "XBOW",
     websiteUrl: "https://xbow.com",
@@ -6977,6 +7235,20 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/xbow",
+      },
+    ],
+  },
+  {
+    id: "ykone",
+    title: "YKONE",
+    websiteUrl: "https://ykone.com",
+    description:
+      "Global influencer-marketing and social-media group headquartered in Paris. Helps brands build campaigns and cultural programs through creator strategy, data intelligence, production, talent management, and its Campaygn technology platform.",
+    tags: ["Media", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/ykone",
       },
     ],
   },

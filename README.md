@@ -8,6 +8,7 @@ React Native / TypeScript application
 
 - [Introduction](#introduction)
 - [Tech Stack](#tech-stack)
+- [Live Version](#live-version)
 - [Contact Info](#contact-info)
 
 ## <a id="introduction"></a>🔎 Introduction
@@ -21,6 +22,12 @@ Pathfinder is a simple mobile app to organize your job search activities.
 - TypeScript
 - CSS
 - Prettier
+
+## <a id="live-version"></a>🔗 Live Version
+
+The app is still under development, but you can check its web version (work-in-progress) by using the following link:
+
+### [Job Search Platform](https://jobs.dimterion.com/)
 
 ## <a id="contact-info"></a>📫 Contact info
 
