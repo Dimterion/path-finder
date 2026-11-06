@@ -823,6 +823,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "aveva",
+    title: "AVEVA",
+    websiteUrl: "https://www.aveva.com",
+    description:
+      "Industrial-software company providing engineering, operations, asset-performance, and industrial AIoT solutions. Helps energy, manufacturing, infrastructure, chemicals, and utilities customers connect data, optimize operations, and use AI safely at industrial scale.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Workday)",
+        url: "https://aveva.wd3.myworkdayjobs.com/AVEVA_careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/aveva",
+      },
+    ],
+  },
+  {
     id: "aviv_group",
     title: "AVIV Group",
     websiteUrl: "https://www.aviv-group.com",
@@ -1279,6 +1297,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "capgemini",
+    title: "Capgemini",
+    websiteUrl: "https://www.capgemini.com",
+    description:
+      "Global consulting, technology-services, and digital-transformation company. Helps organizations with AI, cloud, data, cybersecurity, engineering, enterprise systems, and industry-specific digital platforms.",
+    tags: ["AI", "Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.capgemini.com/careers/join-capgemini/job-search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/capgemini",
+      },
+    ],
+  },
+  {
     id: "capi_money",
     title: "Capi Money",
     websiteUrl: "https://capimoney.com",
@@ -1315,6 +1351,38 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "catenda",
+    title: "Catenda",
+    websiteUrl: "https://catenda.com",
+    description:
+      "Open common-data-environment platform for architecture, engineering, construction, and operations. Connects BIM models, drawings, documents, project data, and AI workflows to improve collaboration and reduce rework across the asset lifecycle.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/catenda-as/",
+      },
+    ],
+  },
+  {
+    id: "cegedim",
+    title: "Cegedim",
+    websiteUrl: "https://www.cegedim.com",
+    description:
+      "French technology and services group for healthcare and B2B data flows. Provides health-professional software, insurance and payroll platforms, cloud and cybersecurity services, data hosting, document digitization, and business-process outsourcing.",
+    tags: ["SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.cegedim.com/annonces",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/cegedim",
+      },
+    ],
+  },
+  {
     id: "cegid",
     title: "Cegid",
     websiteUrl: "https://www.cegid.com",
@@ -1329,6 +1397,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/cegid",
+      },
+    ],
+  },
+  {
+    id: "cfm",
+    title: "CFM",
+    websiteUrl: "https://www.cfm.com",
+    description:
+      "Paris-based quantitative and systematic asset manager. Uses machine learning, data science, and large-scale market and alternative data to develop diversified investment strategies across global markets.",
+    tags: ["AI", "FinTech", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobs.cfm.com/search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/capital-fund-management",
       },
     ],
   },
@@ -1437,6 +1523,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "clone",
+    title: "Clone",
+    websiteUrl: "https://www.getclone.io",
+    description:
+      "Virtual-takeout platform for restaurants. Helps kitchens launch delivery-focused virtual brands, consolidate orders from major delivery platforms, optimize menus with data, and manage marketing and operations.",
+    tags: ["SaaS", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/clone-fr",
+      },
+    ],
+  },
+  {
     id: "cloudflare",
     title: "Cloudflare",
     websiteUrl: "https://www.cloudflare.com",
@@ -1455,6 +1555,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "coachhub",
+    title: "CoachHub",
+    websiteUrl: "https://www.coachhub.com",
+    description:
+      "Digital coaching and talent-development platform for enterprises. Combines human coaches, behavioral science, and its AIMY AI coach to deliver personalized, measurable coaching and leadership-development programs at scale.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/CoachHub%20Careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/coachhub",
+      },
+    ],
+  },
+  {
+    id: "cohere",
+    title: "Cohere",
+    websiteUrl: "https://cohere.com",
+    description:
+      "Enterprise AI company building foundation models, retrieval, and agentic AI solutions for businesses. Provides secure, deployable AI for search, generation, automation, and knowledge work across private and sovereign infrastructure.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/cohere",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/cohere-ai",
+      },
+    ],
+  },
+  {
     id: "coinspaid",
     title: "Coinspaid",
     websiteUrl: "https://coinspaid.com",
@@ -1469,6 +1605,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/coinspaid-com",
+      },
+    ],
+  },
+  {
+    id: "collective_work",
+    title: "Collective.work",
+    websiteUrl: "https://www.collective.work",
+    description:
+      "AI recruiting platform for modern talent teams. Provides an AI sourcing agent, ATS, job board, candidate matching, outreach, and workflow automation to help recruiters source and engage candidates more efficiently.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.collective.work/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/usecollective",
       },
     ],
   },
@@ -4319,6 +4473,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/molotov-tv",
+      },
+    ],
+  },
+  {
+    id: "monday_com",
+    title: "monday.com",
+    websiteUrl: "https://monday.com",
+    description:
+      "AI-powered work-management platform for projects, CRM, service desks, software development, and business operations. Combines no-code workflows, automations, dashboards, integrations, and AI agents to help teams execute work at scale.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://monday.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/mondaydotcom",
       },
     ],
   },
