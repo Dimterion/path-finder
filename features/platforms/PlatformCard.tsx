@@ -12,6 +12,8 @@ import {
 
 type PlatformCardProps = {
   item: JobPlatform;
+  selectedTags?: string[];
+  onTagClick?: (tag: string) => void;
 };
 
 async function openExternalLink(url: string): Promise<void> {
@@ -25,7 +27,11 @@ async function openExternalLink(url: string): Promise<void> {
   }
 }
 
-export default function PlatformCard({ item }: PlatformCardProps) {
+export default function PlatformCard({
+  item,
+  selectedTags = [],
+  onTagClick,
+}: PlatformCardProps) {
   const imageSource = item.imageKey ? platformImages[item.imageKey] : undefined;
 
   return (
@@ -37,11 +43,26 @@ export default function PlatformCard({ item }: PlatformCardProps) {
 
       {item.tags && item.tags.length > 0 ? (
         <View style={styles.tagsRow}>
-          {item.tags.map((tag) => (
-            <View key={tag} style={styles.tag}>
-              <Text style={styles.tagText}>{tag}</Text>
-            </View>
-          ))}
+          {item.tags.map((tag) => {
+            const isSelected = selectedTags.includes(tag);
+
+            return (
+              <Pressable
+                key={tag}
+                style={[styles.tag, isSelected && styles.tagSelected]}
+                onPress={() => onTagClick?.(tag)}
+                accessibilityRole="button"
+                accessibilityLabel={`Filter by ${tag}`}
+                accessibilityState={{ selected: isSelected }}
+              >
+                <Text
+                  style={[styles.tagText, isSelected && styles.tagTextSelected]}
+                >
+                  {tag}
+                </Text>
+              </Pressable>
+            );
+          })}
         </View>
       ) : null}
 
@@ -116,6 +137,12 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: "#1d4ed8",
     fontWeight: "600",
+  },
+  tagSelected: {
+    backgroundColor: "#1f6feb",
+  },
+  tagTextSelected: {
+    color: "#ffffff",
   },
   linkButton: {
     backgroundColor: "#1f6feb",
