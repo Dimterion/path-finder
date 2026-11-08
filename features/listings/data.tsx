@@ -1627,6 +1627,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "colonies",
+    title: "Colonies",
+    websiteUrl: "https://www.livecolonies.com",
+    description:
+      "Residential real-estate operator creating furnished coliving, shared apartments, and private apartments in major European cities. Combines housing design, operations, community services, and digital tools for flexible, all-inclusive living.",
+    tags: ["SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.livecolonies.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/colonies",
+      },
+    ],
+  },
+  {
     id: "connecting_flow",
     title: "Connecting Flow",
     websiteUrl: "https://www.connectingflow.com",
@@ -1645,6 +1663,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "connecting_food",
+    title: "Connecting Food",
+    websiteUrl: "https://connecting-food.com",
+    description:
+      "Supply-chain transparency platform for food, cosmetics, pharmaceuticals, and other resource-based industries. Helps companies collect, verify, and analyze upstream supplier data to improve traceability, compliance, quality, and sustainability.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://connecting-food.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/connecting-food",
+      },
+    ],
+  },
+  {
     id: "consensys",
     title: "Consensys",
     websiteUrl: "https://consensys.io",
@@ -1655,6 +1691,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/consensys-incorporated",
+      },
+    ],
+  },
+  {
+    id: "conserto",
+    title: "Conserto",
+    websiteUrl: "https://conserto.pro",
+    description:
+      "French digital-consulting and engineering firm specializing in software development, DevOps, cloud infrastructure, agile delivery, data, AI, and responsible technology. Helps enterprises design, build, run, and modernize digital systems.",
+    tags: ["AI", "Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://carrieres.conserto.pro/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/conserto",
       },
     ],
   },
@@ -1903,6 +1957,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "darktrace",
+    title: "Darktrace",
+    websiteUrl: "https://www.darktrace.com",
+    description:
+      "AI cybersecurity company providing behavioral defense across email, network, cloud, endpoint, and AI environments. Uses adaptive AI to detect anomalous activity, investigate threats, and automate response across enterprise systems.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Workday)",
+        url: "https://darktrace.wd3.myworkdayjobs.com/DarktaceExternal",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/darktrace",
+      },
+    ],
+  },
+  {
     id: "dash0",
     title: "Dash0",
     websiteUrl: "https://www.dash0.com",
@@ -1953,6 +2025,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/dashlane",
+      },
+    ],
+  },
+  {
+    id: "dassault_aviation",
+    title: "Dassault Aviation",
+    websiteUrl: "https://www.dassault-aviation.com",
+    description:
+      "French aerospace company designing, manufacturing, selling, and supporting military aircraft, business jets, and space systems. Works across aircraft design, production, software, avionics, supply chain, maintenance, and customer services.",
+    tags: ["France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/liste-offres.aspx",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/dassault-aviation",
       },
     ],
   },
@@ -2079,6 +2169,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "deepki",
+    title: "Deepki",
+    websiteUrl: "https://www.deepki.com",
+    description:
+      "ESG and sustainability intelligence platform for real estate. Helps owners, managers, and investors collect energy and environmental data, benchmark portfolios, identify savings, manage compliance, and accelerate decarbonization.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.deepki.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/deepki",
+      },
+    ],
+  },
+  {
     id: "deezer",
     title: "Deezer",
     websiteUrl: "https://www.deezer.com",
@@ -2093,6 +2201,23 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/deezer",
+      },
+    ],
+  },
+  {
+    id: "degetel",
+    title: "Degetel",
+    websiteUrl: "https://www.degetel.com",
+    description: "",
+    tags: [],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.degetel.com/nous-rejoindre",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/degetel",
       },
     ],
   },
@@ -3323,6 +3448,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "hijob_work",
+    title: "HiJob.work",
+    websiteUrl: "https://www.hijob.work",
+    description:
+      "AI-powered job-matching and remote-work ecosystem. Connects businesses with verified professionals, helping companies find talent and professionals discover remote opportunities through profiles, matching, and trust-based workflows.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/hijob-work",
+      },
+    ],
+  },
+  {
     id: "homa",
     title: "Homa",
     websiteUrl: "https://www.homagames.com",
@@ -3977,6 +4116,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/school/le-wagon",
+      },
+    ],
+  },
+  {
+    id: "leadfeeder",
+    title: "Leadfeeder",
+    websiteUrl: "https://www.leadfeeder.com",
+    description:
+      "B2B website-visitor identification and sales-intelligence platform. Helps marketing and sales teams identify companies visiting their site, understand intent and behavior, enrich accounts, and prioritize outbound and account-based marketing.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.leadfeeder.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/leadfeeder",
       },
     ],
   },
@@ -4761,6 +4918,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/nexway",
+      },
+    ],
+  },
+  {
+    id: "no_code_factory",
+    title: "Nocode Factory",
+    websiteUrl: "https://www.nocodefactory.fr",
+    description:
+      "Paris-based no-code and low-code agency building custom web and mobile products, internal tools, automations, and AI-enabled workflows. Supports clients from product definition through design, development, launch, and optimization.",
+    tags: ["AI", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.nocodefactory.fr/rejoindre-lequipe",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/nocode-factory",
       },
     ],
   },

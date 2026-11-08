@@ -68,7 +68,11 @@ export default function ListingsScreen() {
       data={filteredListings}
       keyExtractor={(item) => item.id}
       renderItem={({ item }) => (
-        <ListingCard item={item} onTagClick={handleTagClick} />
+        <ListingCard
+          item={item}
+          selectedTags={selectedTags}
+          onTagClick={handleTagClick}
+        />
       )}
       contentContainerStyle={styles.listContent}
       containerStyle={styles.container}

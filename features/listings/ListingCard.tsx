@@ -7,12 +7,12 @@ import {
   Pressable,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View,
 } from "react-native";
 
 type ListingCardProps = {
   item: JobListing;
+  selectedTags?: string[];
   onTagClick?: (tag: string) => void;
 };
 
@@ -27,7 +27,11 @@ async function openExternalLink(url: string): Promise<void> {
   }
 }
 
-export default function ListingCard({ item, onTagClick }: ListingCardProps) {
+export default function ListingCard({
+  item,
+  selectedTags = [],
+  onTagClick,
+}: ListingCardProps) {
   const imageSource = item.imageKey ? listingImages[item.imageKey] : undefined;
 
   return (
@@ -39,17 +43,26 @@ export default function ListingCard({ item, onTagClick }: ListingCardProps) {
 
       {item.tags && item.tags.length > 0 ? (
         <View style={styles.tagsRow}>
-          {item.tags.map((tag) => (
-            <TouchableOpacity
-              key={tag}
-              style={styles.tag}
-              onPress={() => onTagClick?.(tag)}
-              accessibilityRole="button"
-              accessibilityLabel={`Filter by ${tag} tag`}
-            >
-              <Text style={styles.tagText}>{tag}</Text>
-            </TouchableOpacity>
-          ))}
+          {item.tags.map((tag) => {
+            const isSelected = selectedTags.includes(tag);
+
+            return (
+              <Pressable
+                key={tag}
+                style={[styles.tag, isSelected && styles.tagSelected]}
+                onPress={() => onTagClick?.(tag)}
+                accessibilityRole="button"
+                accessibilityLabel={`Filter by ${tag}`}
+                accessibilityState={{ selected: isSelected }}
+              >
+                <Text
+                  style={[styles.tagText, isSelected && styles.tagTextSelected]}
+                >
+                  {tag}
+                </Text>
+              </Pressable>
+            );
+          })}
         </View>
       ) : null}
 
@@ -122,6 +135,12 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: "#1d4ed8",
     fontWeight: "600",
+  },
+  tagSelected: {
+    backgroundColor: "#1f6feb",
+  },
+  tagTextSelected: {
+    color: "#ffffff",
   },
   linkButton: {
     backgroundColor: "#1f6feb",
