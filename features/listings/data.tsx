@@ -2276,6 +2276,60 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "devoteam",
+    title: "Devoteam",
+    websiteUrl: "https://www.devoteam.com",
+    description:
+      "Tech-native AI consulting firm helping enterprises transform with cloud, data, cybersecurity, and agentic AI. Provides strategy, engineering, managed services, and forward-deployed teams across EMEA.",
+    tags: ["AI", "Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.devoteam.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/devoteam",
+      },
+    ],
+  },
+  {
+    id: "dext",
+    title: "Dext",
+    websiteUrl: "https://dext.com",
+    description:
+      "Accounting automation platform for accountants, bookkeepers, and finance teams. Uses AI and machine learning to capture, extract, validate, and reconcile financial documents, connecting accounting software with banks, suppliers, and marketplaces.",
+    tags: ["AI", "FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/Dext-Careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/dextfrance",
+      },
+    ],
+  },
+  {
+    id: "diabolocom",
+    title: "Diabolocom",
+    websiteUrl: "https://www.diabolocom.com",
+    description:
+      "European AI-first cloud contact-center and customer-experience platform. Combines proprietary AI, telecom infrastructure, CRM integrations, and omnichannel tools to automate service workflows and improve customer and agent experiences.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.eu.lever.co/diabolocom",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/diabolocom",
+      },
+    ],
+  },
+  {
     id: "diduenjoy",
     title: "Diduenjoy",
     websiteUrl: "https://www.diduenjoy.com",
@@ -2340,6 +2394,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/distribusion",
+      },
+    ],
+  },
+  {
+    id: "docebo",
+    title: "Docebo",
+    websiteUrl: "https://www.docebo.com",
+    description:
+      "AI-powered learning platform for enterprises. Helps organizations create, deliver, manage, and measure employee, customer, partner, and compliance training through an LMS, content tools, automation, and integrations.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.docebo.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/docebo",
       },
     ],
   },
