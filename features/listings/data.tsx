@@ -2470,6 +2470,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "edenity",
+    title: "edenity",
+    websiteUrl: "https://edenity.co",
+    description:
+      "Talent and organizational advisory firm for technology companies. Helps founders and leadership teams build product, engineering, data, and AI teams through executive search, workforce planning, embedded delivery, and market intelligence.",
+    tags: ["Consulting", "ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/edenity-talent",
+      },
+    ],
+  },
+  {
     id: "ekimetrics",
     title: "Ekimetrics",
     websiteUrl: "https://www.ekimetrics.com",
@@ -2574,6 +2588,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/ensol-solaire",
+      },
+    ],
+  },
+  {
+    id: "entrust",
+    title: "Entrust",
+    websiteUrl: "https://www.entrust.com",
+    description:
+      "Identity-centric security company providing digital identity verification, authentication, PKI, certificate and key management, HSMs, and post-quantum cryptography. Helps organizations secure people, devices, payments, and data.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Workday)",
+        url: "https://entrust.wd1.myworkdayjobs.com/EntrustCareers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/entrust",
       },
     ],
   },
@@ -2718,6 +2750,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "f4",
+    title: "F4",
+    websiteUrl: "https://www.f4-group.com",
+    description:
+      "Technology and consulting group helping enterprises modernize systems and operations. Provides engineering, cloud, data, AI, cybersecurity, and digital-transformation services across industries.",
+    tags: ["AI", "Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.f4-group.com/carrieres.html",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/f4-group",
+      },
+    ],
+  },
+  {
+    id: "fabulous",
+    title: "Fabulous",
+    websiteUrl: "https://www.thefabulous.co",
+    description:
+      "Health-and-wellness app company using behavioral science to help people build sustainable habits. Provides guided routines, coaching, and personalized programs for sleep, focus, fitness, stress, and wellbeing.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Workable)",
+        url: "https://apply.workable.com/fabulousco",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/fabulous-app",
+      },
+    ],
+  },
+  {
     id: "fairly_made",
     title: "Fairly Made",
     websiteUrl: "https://www.fairlymade.com",
@@ -2750,6 +2818,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/fairmat-tech",
+      },
+    ],
+  },
+  {
+    id: "featherless_ai",
+    title: "Featherless AI",
+    websiteUrl: "https://featherless.ai",
+    description:
+      "Serverless AI-inference platform giving developers API access to tens of thousands of open-source models. Provides GPU orchestration, model loading, fine-tuning, and cost-efficient deployment infrastructure for AI applications.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/featherlessai",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/featheress-ai",
       },
     ],
   },
@@ -2862,6 +2948,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "fnac_darty",
+    title: "Fnac Darty",
+    websiteUrl: "https://www.fnacdarty.com",
+    description:
+      "French retail group operating Fnac and Darty across consumer electronics, culture, leisure, home appliances, and services. Combines omnichannel retail, e-commerce, repair, installation, energy services, and customer support.",
+    tags: ["France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://carrieres.fnacdarty.com/search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/fnac-darty",
+      },
+    ],
+  },
+  {
     id: "forgotten_empires",
     title: "Forgotten Empires",
     websiteUrl: "https://www.forgottenempires.net",
@@ -2894,6 +2998,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/formancehq",
+      },
+    ],
+  },
+  {
+    id: "foundever",
+    title: "Foundever",
+    websiteUrl: "https://foundever.com",
+    description:
+      "Global customer-experience and business-process outsourcing company. Provides customer support, technical support, sales, digital CX, AI-enabled automation, consulting, and back-office services for major brands.",
+    tags: ["AI", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobs.foundever.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/foundever",
       },
     ],
   },
@@ -6832,6 +6954,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/streemenergy",
+      },
+    ],
+  },
+  {
+    id: "sunstice",
+    title: "Sunstice",
+    websiteUrl: "https://www.sunstice.com",
+    description:
+      "Supply-chain planning and revenue-growth-management software company, formerly FuturMaster. Helps consumer-goods, retail, and industrial companies forecast demand, optimize supply chains, plan promotions, and improve resilience.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.sunstice.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sunstice1",
       },
     ],
   },
