@@ -3070,6 +3070,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "gaijin_entertainment",
+    title: "Gaijin Entertainment",
+    websiteUrl: "https://gaijinent.com",
+    description:
+      "Independent European game developer and publisher behind War Thunder, Enlisted, Crossout, and CRSED. Builds cross-platform multiplayer games using its proprietary Dagor Engine, with teams across Europe and remote contributors worldwide.",
+    tags: ["Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://gaijinent.com/job",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/gaijinentertainment",
+      },
+    ],
+  },
+  {
     id: "galadrim",
     title: "Galadrim",
     websiteUrl: "https://galadrim.fr",
@@ -3138,6 +3156,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/gehealthcare",
+      },
+    ],
+  },
+  {
+    id: "genetec",
+    title: "Genetec",
+    websiteUrl: "https://www.genetec.com",
+    description:
+      "Security and public-safety software company providing unified physical-security, video-surveillance, access-control, ALPR, and cloud solutions. Helps cities, enterprises, transport operators, and critical infrastructure manage security and operations.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Workable)",
+        url: "https://apply.workable.com/genetec-inc",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/genetec",
       },
     ],
   },
@@ -3304,6 +3340,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "goodai",
+    title: "GoodAI",
+    websiteUrl: "https://www.goodai.com",
+    description:
+      "AI research and development company building general AI, long-term-memory agents, autonomous systems, and AI-enabled games. Works on LLM agents, robotics, simulation, and applied AI for entertainment, business, and science.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Greenhouse)",
+        url: "https://job-boards.eu.greenhouse.io/goodai-swarm-robotics",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/goodai",
+      },
+    ],
+  },
+  {
     id: "google",
     title: "Google",
     websiteUrl: "https://www.google.com",
@@ -3394,6 +3448,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "green_tomato_media",
+    title: "Green Tomato Media",
+    websiteUrl: "https://greentomatomedia.com",
+    description:
+      "Remote-first media and mobile-apps company building digital products and content networks. Operates SEO, YouTube, gaming, and iGaming-affiliate businesses, using AI, data, and performance marketing to grow audiences and monetize traffic.",
+    tags: ["Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (BambooHR)",
+        url: "https://greentomatomedialimited.bamboohr.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/greentomatomedia",
+      },
+    ],
+  },
+  {
+    id: "groupe_alliance",
+    title: "Groupe Alliance",
+    websiteUrl: "https://www.groupealliance.eu",
+    description:
+      "French IT consulting and engineering group helping enterprises modernize applications, cloud, data, AI, cybersecurity, and workplace infrastructure. Provides architecture, development, DevOps, managed services, and digital-transformation delivery.",
+    tags: ["AI", "Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.groupealliance.eu/carrieres",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/groupe-alliance",
+      },
+    ],
+  },
+  {
     id: "groupe_bpce",
     title: "Groupe BPCE",
     websiteUrl: "https://www.groupebpce.com",
@@ -3408,6 +3498,42 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/bpce",
+      },
+    ],
+  },
+  {
+    id: "groupe_creative",
+    title: "Groupe Créative",
+    websiteUrl: "https://www.groupe-creative.fr",
+    description:
+      "French IT consulting and software-engineering group specializing in custom applications, web platforms, mobile apps, testing, data, cloud, and legacy-system modernization. Serves enterprise clients through consulting and delivery teams.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Hellowork)",
+        url: "https://www.hellowork.com/fr-fr/entreprises/groupe-creative-15042.html",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/groupe-creative",
+      },
+    ],
+  },
+  {
+    id: "groupe_gr",
+    title: "Groupe GR",
+    websiteUrl: "https://www.groupe-gr.com",
+    description:
+      "French staffing and workforce-services group providing recruitment, interim staffing, and managed talent solutions. Its GR International Profiles practice places technical, administrative, and business professionals across client companies.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.groupe-gr.com/nos-offres/gr-interim-recrutement",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/groupegr",
       },
     ],
   },
@@ -3534,6 +3660,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "hellowork",
+    title: "HelloWork",
+    websiteUrl: "https://www.hellowork.com",
+    description:
+      "French employment, recruitment, and training technology group. Operates job-search and recruitment platforms, ATS and employer-branding tools, career sites, virtual recruitment events, and training-marketplace products.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://carrieres.hellowork-group.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/helloworkcom",
+      },
+    ],
+  },
+  {
     id: "helpline",
     title: "Helpline",
     websiteUrl: "https://www.helpline.fr",
@@ -3624,6 +3768,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "hicareer",
+    title: "HiCareer",
+    websiteUrl: "https://hicareer.com",
+    description:
+      "AI-powered career and recruitment platform. Helps candidates discover opportunities, tailor resumes, prepare for interviews, and track applications, while giving employers sourcing, talent-pool, and hiring tools.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/hicareer",
+      },
+    ],
+  },
+  {
     id: "hightouch",
     title: "Hightouch",
     websiteUrl: "https://hightouch.com",
@@ -3652,6 +3810,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/hijob-work",
+      },
+    ],
+  },
+  {
+    id: "hivemq",
+    title: "HiveMQ",
+    websiteUrl: "https://www.hivemq.com",
+    description:
+      "Industrial data and AI platform built on MQTT. Helps manufacturers, automotive companies, utilities, and other enterprises connect devices, stream and govern operational data, and deploy AI-ready workflows from edge to cloud.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.hivemq.com/company/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/hivemq-gmbh",
       },
     ],
   },
@@ -3742,6 +3918,78 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/hublo-fr",
+      },
+    ],
+  },
+  {
+    id: "hugging_face",
+    title: "Hugging Face",
+    websiteUrl: "https://huggingface.co",
+    description:
+      "AI platform and open-source community for machine learning. Provides models, datasets, Spaces, inference and training infrastructure, developer tools, and enterprise services that help teams build and deploy AI applications.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Workable)",
+        url: "https://apply.workable.com/huggingface",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/huggingface",
+      },
+    ],
+  },
+  {
+    id: "hunter_io",
+    title: "Hunter.io",
+    websiteUrl: "https://hunter.io",
+    description:
+      "B2B prospecting and email-intelligence platform. Helps sales, marketing, and recruiting teams find professional email addresses, verify contacts, enrich leads, and run outreach campaigns.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://hunter.io/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/hunterio",
+      },
+    ],
+  },
+  {
+    id: "hurryman",
+    title: "Hurryman",
+    websiteUrl: "https://www.hurryman.fr",
+    description:
+      "French recruitment firm specializing in cybersecurity, cloud, data, AI, and IT. Helps enterprises, software vendors, and consultancies hire technical talent and build critical technology capabilities.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://jobs.hurryman.fr/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/hurrymanpage",
+      },
+    ],
+  },
+  {
+    id: "huxley",
+    title: "Huxley",
+    websiteUrl: "https://www.huxley.com",
+    description:
+      "Global technology and financial-services recruitment consultancy within SThree. Connects enterprises with specialists across IT, fintech, data, cybersecurity, transformation, engineering, and supply chain.",
+    tags: ["Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.sthree.com/fr-fr/carrieres/job-search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/huxley",
       },
     ],
   },
@@ -4770,6 +5018,20 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/mintlify",
+      },
+    ],
+  },
+  {
+    id: "miralia",
+    title: "Miralia",
+    websiteUrl: "https://miralia.ai",
+    description:
+      "AI company building applied AI products and services. Develops AI-enabled solutions for business workflows, data, and automation, with a focus on practical deployment and enterprise adoption.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/miralia",
       },
     ],
   },
