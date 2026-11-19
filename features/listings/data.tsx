@@ -1189,6 +1189,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "braze",
+    title: "Braze",
+    websiteUrl: "https://www.braze.com",
+    description:
+      "Customer-engagement platform for brands and enterprises. Combines customer data, cross-channel messaging, journey orchestration, experimentation, and AI to help teams personalize and automate marketing across email, SMS, mobile, and web.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.braze.com/company/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/braze",
+      },
+    ],
+  },
+  {
     id: "brevo",
     title: "Brevo",
     websiteUrl: "https://www.brevo.com",
@@ -3994,6 +4012,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "ibanfirst",
+    title: "IBanFirst",
+    websiteUrl: "https://ibanfirst.com",
+    description:
+      "European cross-border payments and FX platform for SMEs. Provides multi-currency accounts, international payments, payment tracking, FX conversion, and hedging tools to help businesses trade and manage currency risk.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://ibanfirst.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/ibanfirst",
+      },
+    ],
+  },
+  {
     id: "ibm",
     title: "IBM",
     websiteUrl: "https://www.ibm.com",
@@ -4040,6 +4076,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/ideawise-group",
+      },
+    ],
+  },
+  {
+    id: "igalia",
+    title: "Igalia",
+    websiteUrl: "https://www.igalia.com",
+    description:
+      "Employee-owned open-source consultancy contributing to browsers, graphics, multimedia, JavaScript engines, and the Linux kernel. Helps device makers, platforms, and enterprises build and maintain critical open-source software.",
+    tags: ["AI", "ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.igalia.com/jobs/open",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/igalia",
       },
     ],
   },
@@ -4116,6 +4170,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "infinitivity_design_labs",
+    title: "Infinitivity Design Labs",
+    websiteUrl: "https://infinitivitydesignlabs.com",
+    description:
+      "French design and research studio combining UX, learning science, gamification, human-centered AI, explainable AI, NLP, and audiovisual signal processing. Builds digital-learning products and AI-enabled experiences for enterprise, education, and public-sector projects.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/infinitivitydesignlabs",
+      },
+    ],
+  },
+  {
     id: "infinity_constellation",
     title: "Infinity Constellation",
     websiteUrl: "https://www.infinityconstellation.com",
@@ -4170,6 +4238,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "initi8_recruitment",
+    title: "Initi8 Recruitment",
+    websiteUrl: "https://www.initi8recruitment.com",
+    description:
+      "International technology-recruitment agency placing permanent and contract talent across software, cloud, data, AI, product, architecture, and leadership roles. Serves clients in the UK, Europe, and the United States.",
+    tags: ["Consulting", "ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.initi8recruitment.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/initi8-recruitment",
+      },
+    ],
+  },
+  {
     id: "inpulse",
     title: "Inpulse",
     websiteUrl: "https://www.inpulse.ai",
@@ -4216,6 +4302,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/interex-group",
+      },
+    ],
+  },
+  {
+    id: "interstellar_lab",
+    title: "Interstellar Lab",
+    websiteUrl: "https://interstellarlab.com",
+    description:
+      "Deep-tech company building AI-powered biospheric systems and autonomous greenhouses. Its BioPods optimize plant cultivation for cosmetics, fragrance, pharmaceutical, and nutraceutical industries on Earth, while supporting plant research in space.",
+    tags: ["AI", "Climate", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Greenhouse)",
+        url: "https://job-boards.greenhouse.io/interstellarlab",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/interstellar-lab",
       },
     ],
   },
@@ -4328,6 +4432,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "kameleoon",
+    title: "Kameleoon",
+    websiteUrl: "https://www.kameleoon.com",
+    description:
+      "AI-powered experimentation and personalization platform for digital products and marketing. Helps teams run A/B and feature experiments, manage feature rollouts, personalize experiences, and use AI to build and optimize customer journeys.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://career.kameleoon.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/kameleoon",
+      },
+    ],
+  },
+  {
+    id: "kapela",
+    title: "Kapela",
+    websiteUrl: "https://www.kapela.fr",
+    description:
+      "French IT consulting and software-engineering firm within the Constellation group. Helps enterprises modernize information systems through custom software, data, sovereign AI, cloud-native architecture, DevOps, and digital-transformation programs.",
+    tags: ["AI", "Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Constellation)",
+        url: "https://recrutement.constellation.fr/constellation",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/kapelabyconstellation",
+      },
+    ],
+  },
+  {
     id: "katchme",
     title: "KatchMe",
     websiteUrl: "https://www.katchme.fr",
@@ -4360,6 +4500,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/kbrw",
+      },
+    ],
+  },
+  {
+    id: "kicklox",
+    title: "Kicklox",
+    websiteUrl: "https://www.kicklox.com",
+    description:
+      "French engineering and technology talent platform connecting companies with freelance and permanent engineers, developers, designers, and consultants. Provides AI-assisted matching, sourcing, contracting, and project delivery support.",
+    tags: ["AI", "Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://app.kicklox.com/missions",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/kicklox",
       },
     ],
   },
@@ -4490,6 +4648,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "l_acoustics",
+    title: "L-Acoustics",
+    websiteUrl: "https://www.l-acoustics.com",
+    description:
+      "Professional audio company designing and manufacturing loudspeakers, amplifiers, software, and immersive sound systems. Serves live events, festivals, venues, houses of worship, hospitality, retail, and residential installations worldwide.",
+    tags: ["AI", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Workday)",
+        url: "https://lgroup.wd3.myworkdayjobs.com/L-Acoustics_Group_career",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/l-acoustics",
+      },
+    ],
+  },
+  {
     id: "lagardère_travel_retail",
     title: "Lagardère Travel Retail",
     websiteUrl: "https://www.lagardere-tr.com",
@@ -4522,6 +4698,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/getlago",
+      },
+    ],
+  },
+  {
+    id: "larian",
+    title: "Larian",
+    websiteUrl: "https://larian.com",
+    description:
+      "Independent video-game developer and publisher known for the Divinity series and Baldur's Gate 3. Creates large-scale RPGs with its proprietary Divinity Engine, operating studios across Europe, Asia, and North America.",
+    tags: ["Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://larian.com/careers/search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/larian-studios",
       },
     ],
   },
@@ -4616,6 +4810,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "lefty",
+    title: "Lefty",
+    websiteUrl: "https://lefty.io",
+    description:
+      "Influencer-marketing platform for brands and agencies. Helps teams discover and qualify creators, manage ambassador relationships, track content, automate reporting, measure performance, and benchmark competitors.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/lefty/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lefty",
+      },
+    ],
+  },
+  {
     id: "lemlist",
     title: "Lemlist",
     websiteUrl: "https://www.lemlist.com",
@@ -4630,6 +4842,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/lemlist",
+      },
+    ],
+  },
+  {
+    id: "lexifi",
+    title: "LexiFi",
+    websiteUrl: "https://www.lexifi.com",
+    description:
+      "Financial-software company for derivatives and structured products. Provides pricing, lifecycle management, document generation, and risk tools for banks, asset managers, insurers, brokers, and fintech firms.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.lexifi.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lexifi",
       },
     ],
   },
@@ -4720,6 +4950,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "liss_solutions",
+    title: "Liss Solutions",
+    websiteUrl: "https://lisssolutions.com",
+    description:
+      "Digital agency providing web and app development, UI/UX design, branding, e-commerce, digital marketing, SEO, and AI-enabled automation. Helps businesses build and grow custom digital experiences.",
+    tags: ["AI", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/liss-solutions",
+      },
+    ],
+  },
+  {
     id: "lity",
     title: "Lity",
     websiteUrl: "https://lity.so",
@@ -4734,6 +4978,42 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/lityso",
+      },
+    ],
+  },
+  {
+    id: "lokad",
+    title: "Lokad",
+    websiteUrl: "https://www.lokad.com",
+    description:
+      "AI-native supply-chain optimization platform. Combines probabilistic forecasting, machine learning, and quantitative decision automation to help companies improve inventory, pricing, purchasing, and production planning.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.lokad.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lokad",
+      },
+    ],
+  },
+  {
+    id: "lr_technologies",
+    title: "LR Technologies",
+    websiteUrl: "https://lrtechnologies.fr",
+    description:
+      "French engineering and technology consulting group supporting complex industrial projects. Provides expertise in AI, cybersecurity, critical software, embedded systems, energy, aerospace, automotive, rail, defense, and industrial operations.",
+    tags: ["AI", "Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://groupelrtechnologies.teamtailor.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lr-technologies---groupe",
       },
     ],
   },
@@ -4806,6 +5086,42 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/lumiform",
+      },
+    ],
+  },
+  {
+    id: "lumy",
+    title: "Lumy",
+    websiteUrl: "https://lumy.studio",
+    description:
+      "Creative technology studio building AI-enabled digital products, interactive experiences, and generative tools. Combines design, engineering, and AI to help brands and teams create and scale new digital experiences.",
+    tags: ["AI", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Join)",
+        url: "https://join.com/companies/lumy",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lumy-agency",
+      },
+    ],
+  },
+  {
+    id: "lyceum",
+    title: "Lyceum",
+    websiteUrl: "https://lyceum.technology",
+    description:
+      "Sovereign European AI cloud for open-source model inference and GPU compute. Provides serverless inference APIs, GPU virtual machines, dedicated clusters, and European data-center infrastructure for AI workloads.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://lyceum.technology/company/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/lyceum-technology",
       },
     ],
   },
@@ -4896,6 +5212,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "matter_labs",
+    title: "Matter Labs",
+    websiteUrl: "https://matterlabs.com",
+    description:
+      "Blockchain infrastructure company building Prividium, an institutional platform for digital-asset services, and zero-knowledge technology for scalable, privacy-preserving finance. Develops zkSync and related cryptographic systems.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/matter-labs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/matter-labs",
+      },
+    ],
+  },
+  {
     id: "medusa",
     title: "Medusa",
     websiteUrl: "https://medusajs.com",
@@ -4910,6 +5244,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/medusajs",
+      },
+    ],
+  },
+  {
+    id: "meetic",
+    title: "Meetic",
+    websiteUrl: "https://www.meetic-europe.com",
+    description:
+      "European dating and social-discovery group within Match Group. Operates dating brands including Meetic, Match, DisonsDemain, OurTime, and LoveScout, combining product, AI, data, marketing, trust-and-safety, and customer-care capabilities.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.meetic-europe.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/meetic",
       },
     ],
   },
@@ -4964,6 +5316,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/metabase",
+      },
+    ],
+  },
+  {
+    id: "micro1",
+    title: "micro1",
+    websiteUrl: "https://www.micro1.ai",
+    description:
+      "AI data lab providing expert human data, reinforcement-learning environments, and evaluation infrastructure for frontier models and agents. Helps AI labs and enterprises train, benchmark, and improve AI systems across software, robotics, healthcare, and enterprise domains.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.micro1.ai/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/micro1",
       },
     ],
   },
@@ -5108,6 +5478,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "monster_theater",
+    title: "Monster Theater",
+    websiteUrl: "https://www.monstertheater.games",
+    description:
+      "Independent game developer and publisher making unconventional, comedic, and experimental games. Builds original titles such as Atomic Owl and The Dark Queen of Mortholme, while supporting creators through its Phantom Program.",
+    tags: ["Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/monster-theater",
+      },
+    ],
+  },
+  {
     id: "montreal_associates",
     title: "Montreal Associates",
     websiteUrl: "https://www.montrealassociates.com",
@@ -5126,6 +5510,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "moriarty_group",
+    title: "Moriarty Group",
+    websiteUrl: "https://www.moriartygroup.ie",
+    description:
+      "Irish family-owned retail and hospitality group operating SuperValu supermarkets, hotels, and food-service businesses in Dublin. Provides grocery retail, fresh food, accommodation, hospitality, and customer-service services.",
+    tags: ["Ireland"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.moriartygroup.ie/careers.html",
+      },
+    ],
+  },
+  {
     id: "mui",
     title: "MUI",
     websiteUrl: "https://mui.com",
@@ -5140,6 +5538,20 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/mui",
+      },
+    ],
+  },
+  {
+    id: "multiversx",
+    title: "MultiversX",
+    websiteUrl: "https://multiversx.com",
+    description:
+      "Layer-1 blockchain infrastructure company building scalable, secure, and interoperable decentralized networks. Provides adaptive state sharding, Secure Proof of Stake, smart contracts, developer tooling, and enterprise blockchain solutions.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/multiversx",
       },
     ],
   },
@@ -5252,6 +5664,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "nabla",
+    title: "Nabla",
+    websiteUrl: "https://www.nabla.com",
+    description:
+      "Clinical AI company building ambient documentation, dictation, coding, and agentic workflow tools for healthcare. Integrates with Epic and major EHRs to help clinicians reduce administrative burden and focus on patient care.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/nabla",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/nablahq",
+      },
+    ],
+  },
+  {
+    id: "nagarro",
+    title: "Nagarro",
+    websiteUrl: "https://www.nagarro.com",
+    description:
+      "Global digital-engineering and AI consulting company. Helps enterprises build intelligent products and platforms through software engineering, cloud, data, AI, automation, testing, ERP/CRM, and digital transformation.",
+    tags: ["AI", "Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.nagarro.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/nagarro",
+      },
+    ],
+  },
+  {
     id: "natixis",
     title: "Natixis",
     websiteUrl: "https://www.interepargne.natixis.com",
@@ -5270,6 +5718,20 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "nekki",
+    title: "Nekki",
+    websiteUrl: "https://nekki.com",
+    description:
+      "Game developer and publisher behind the Shadow Fight and Vector franchises. Creates mobile, PC, and console games and develops Cascadeur, an AI-assisted animation tool for physics-based character animation.",
+    tags: ["AI", "Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/nekki",
+      },
+    ],
+  },
+  {
     id: "neo4j",
     title: "Neo4j",
     websiteUrl: "https://neo4j.com",
@@ -5284,6 +5746,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/neo4j",
+      },
+    ],
+  },
+  {
+    id: "neomi",
+    title: "Neomi",
+    websiteUrl: "https://neomi.immo",
+    description:
+      "French proptech platform simplifying collaboration between real-estate developers, banks, and guarantors. Helps manage project financing, documentation, workflows, and funding follow-up across the development lifecycle.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://neomi.immo/carriere",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/neomi-immo",
       },
     ],
   },
@@ -5356,6 +5836,42 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/nexen-grid-technologies",
+      },
+    ],
+  },
+  {
+    id: "nextcloud",
+    title: "Nextcloud",
+    websiteUrl: "https://nextcloud.com",
+    description:
+      "Open-source content-collaboration and digital-sovereignty platform. Provides self-hosted file sharing, communication, office collaboration, workflow automation, and privacy-preserving AI tools for organizations and public institutions.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://nextcloud.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/nextcloud-gmbh",
+      },
+    ],
+  },
+  {
+    id: "nexters",
+    title: "Nexters",
+    websiteUrl: "https://www.nexters.com",
+    description:
+      "International game developer and publisher creating accessible mobile games with deep progression, multiplayer, and storytelling systems. Known for Hero Wars, Island Hoppers, and other free-to-play titles.",
+    tags: ["Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.nexters.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/nexters",
       },
     ],
   },
@@ -5486,6 +6002,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "numeral",
+    title: "Numeral",
+    websiteUrl: "https://www.numeral.com",
+    description:
+      "AI-native tax-compliance platform for digital businesses. Automates sales-tax registration, nexus monitoring, rate calculation, exemption management, filing, and remittance across U.S. and international jurisdictions.",
+    tags: ["AI", "FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.numeral.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/numeralhq",
+      },
+    ],
+  },
+  {
     id: "nunu_ai",
     title: "Nunu.ai",
     websiteUrl: "https://nunu.ai",
@@ -5500,6 +6034,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/nunu-ai",
+      },
+    ],
+  },
+  {
+    id: "octopus_energy",
+    title: "Octopus Energy",
+    websiteUrl: "https://octopus.energy",
+    description:
+      "Global clean-energy and technology group. Provides renewable electricity, smart tariffs, EV charging, heat pumps, solar and battery solutions, and Kraken software for energy retailers, utilities, and grid operators.",
+    tags: ["AI", "Climate", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://octopus.energy/careers/join-us",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/octopusenergy",
       },
     ],
   },
@@ -5626,6 +6178,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "onibi",
+    title: "Onibi",
+    websiteUrl: "https://www.onibi.gg",
+    description:
+      "Gaming company building AI-enabled products and experiences for players and game communities. Combines game design, AI, and interactive technology to create engaging player-facing products.",
+    tags: ["AI", "Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.onibi.gg/career",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/onibi-inc",
+      },
+    ],
+  },
+  {
     id: "openreplay",
     title: "OpenReplay",
     websiteUrl: "https://openreplay.com",
@@ -5636,6 +6206,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/openreplay",
+      },
+    ],
+  },
+  {
+    id: "opensuccess",
+    title: "OpenSuccess",
+    websiteUrl: "https://www.opensuccess.fr",
+    description:
+      "French recruitment and executive-search firm within the OpenSourcing group. Helps companies source, assess, and hire commercial, technical, and leadership talent through market mapping, direct approach, and AI-enabled sourcing.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://candidat.opensourcing.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/opensuccess",
       },
     ],
   },
@@ -6586,6 +7174,20 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/wearesander",
+      },
+    ],
+  },
+  {
+    id: "sandfall_interactive",
+    title: "Sandfall Interactive",
+    websiteUrl: "https://www.sandfall.co",
+    description:
+      "Montpellier-based game studio developing premium single-player 3D games for PC and consoles. Created Clair Obscur: Expedition 33, a turn-based RPG built in Unreal Engine 5 and published by Kepler Interactive.",
+    tags: ["Media", "France"],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sandfall-interactive",
       },
     ],
   },
