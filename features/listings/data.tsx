@@ -6483,8 +6483,9 @@ export const listings: JobListing[] = [
     id: "pathway",
     title: "Pathway",
     websiteUrl: "https://pathway.com",
-    description: "",
-    tags: [],
+    description:
+      "Frontier AI research company building post-transformer architectures and models that learn, reason, and adapt continuously. Develops BDH, a memory-and-reasoning architecture, alongside real-time data-processing infrastructure for enterprise AI applications.",
+    tags: ["AI", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page",
@@ -6572,8 +6573,9 @@ export const listings: JobListing[] = [
     id: "payxpert",
     title: "PayXpert",
     websiteUrl: "https://www.payxpert.com",
-    description: "",
-    tags: [],
+    description:
+      "European omnichannel payment provider and Société Générale subsidiary. Helps merchants accept and optimize payments online and in-store, including cross-border payments, fraud prevention, payment orchestration, and alternative payment methods.",
+    tags: ["FinTech", "SaaS", "Europe"],
     extraLinks: [
       {
         label: "Careers page",
@@ -6769,8 +6771,9 @@ export const listings: JobListing[] = [
     id: "playplay",
     title: "PlayPlay",
     websiteUrl: "https://playplay.com",
-    description: "",
-    tags: [],
+    description:
+      "AI-powered video and visual creation platform for marketing, communications, HR, and internal-communications teams. Lets non-specialists create professional, on-brand videos and images from templates or scratch, without traditional video-editing skills.",
+    tags: ["AI", "SaaS", "France"],
     extraLinks: [
       {
         label: "Careers page (Teamtailor)",
@@ -6822,8 +6825,9 @@ export const listings: JobListing[] = [
     id: "pragmatike",
     title: "Pragmatike",
     websiteUrl: "https://www.pragmatike.com",
-    description: "",
-    tags: [],
+    description:
+      "Remote tech-talent platform and recruitment firm matching companies with vetted software, AI/ML, data, product, design, and cybersecurity professionals. Provides candidate sourcing, technical screening, interview coordination, and onboarding support.",
+    tags: ["AI", "Consulting", "ITServices", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -6911,8 +6915,9 @@ export const listings: JobListing[] = [
     id: "psd_group",
     title: "PSD Group",
     websiteUrl: "https://psdgroup.com",
-    description: "",
-    tags: [],
+    description:
+      "International executive-search and recruitment consultancy specializing in executive, management, and board-level hires. Serves sectors including financial services, technology, hospitality, retail, industry, real estate, sport, and professional services.",
+    tags: ["Consulting", "ITServices", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -6978,8 +6983,9 @@ export const listings: JobListing[] = [
     id: "pydantic",
     title: "Pydantic",
     websiteUrl: "https://pydantic.dev",
-    description: "",
-    tags: [],
+    description:
+      "AI-engineering company building an end-to-end stack for teams shipping AI in production. Offers Pydantic AI for type-safe agents, Logfire for observability, Evals for evaluation, an AI Gateway, and Agent Sandboxes for running agent-generated code.",
+    tags: ["AI", "SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "Careers page",
@@ -8623,8 +8629,9 @@ export const listings: JobListing[] = [
     id: "velora",
     title: "Velora",
     websiteUrl: "https://www.velora.xyz",
-    description: "",
-    tags: [],
+    description:
+      "DeFi protocol and decentralized exchange aggregator, formerly ParaSwap. Connects wallets and traders to Ethereum-native tokens by routing trades across decentralized liquidity sources in a single interface.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
     extraLinks: [
       {
         label: "LinkedIn",
