@@ -6480,6 +6480,23 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "pathway",
+    title: "Pathway",
+    websiteUrl: "https://pathway.com",
+    description: "",
+    tags: [],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://pathway.com/join",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/pathway",
+      },
+    ],
+  },
+  {
     id: "patients_know_best",
     title: "Patients Know Best",
     websiteUrl: "https://patientsknowbest.com",
@@ -6548,6 +6565,23 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/payroll-panda",
+      },
+    ],
+  },
+  {
+    id: "payxpert",
+    title: "PayXpert",
+    websiteUrl: "https://www.payxpert.com",
+    description: "",
+    tags: [],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.payxpert.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/payxpert",
       },
     ],
   },
@@ -6732,6 +6766,23 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "playplay",
+    title: "PlayPlay",
+    websiteUrl: "https://playplay.com",
+    description: "",
+    tags: [],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://playplay.teamtailor.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/playplay",
+      },
+    ],
+  },
+  {
     id: "playrix",
     title: "Playrix",
     websiteUrl: "https://playrix.com",
@@ -6764,6 +6815,23 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/posthog",
+      },
+    ],
+  },
+  {
+    id: "pragmatike",
+    title: "Pragmatike",
+    websiteUrl: "https://www.pragmatike.com",
+    description: "",
+    tags: [],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.pragmatike.com/talents",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/pragmatikee",
       },
     ],
   },
@@ -6840,6 +6908,23 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "psd_group",
+    title: "PSD Group",
+    websiteUrl: "https://psdgroup.com",
+    description: "",
+    tags: [],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://psdgroup.com/current-opportunities",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/psd-group",
+      },
+    ],
+  },
+  {
     id: "pubstack",
     title: "Pubstack",
     websiteUrl: "https://www.pubstack.io",
@@ -6886,6 +6971,23 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/pwc-france",
+      },
+    ],
+  },
+  {
+    id: "pydantic",
+    title: "Pydantic",
+    websiteUrl: "https://pydantic.dev",
+    description: "",
+    tags: [],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://pydantic.dev/about",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/pydantic",
       },
     ],
   },
@@ -8514,6 +8616,19 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/veeva-systems",
+      },
+    ],
+  },
+  {
+    id: "velora",
+    title: "Velora",
+    websiteUrl: "https://www.velora.xyz",
+    description: "",
+    tags: [],
+    extraLinks: [
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/veloradex",
       },
     ],
   },
