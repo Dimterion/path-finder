@@ -7106,6 +7106,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "quotacom",
+    title: "Quotacom",
+    websiteUrl: "https://quotacom.com",
+    description:
+      "Executive-search firm specializing in digital transformation. Helps enterprises, scale-ups, and technology vendors hire leaders and specialists across AI, data and analytics, cloud, cybersecurity, IoT, and emerging technologies.",
+    tags: ["AI", "Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://quotacom.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/quotacom",
+      },
+    ],
+  },
+  {
     id: "reality_defender",
     title: "Reality Defender",
     websiteUrl: "https://www.realitydefender.com",
@@ -7196,6 +7214,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "revenuecat",
+    title: "RevenueCat",
+    websiteUrl: "https://www.revenuecat.com",
+    description:
+      "Subscription and in-app-purchase infrastructure for mobile and web apps. Provides SDKs, APIs, analytics, experiments, and revenue-management tools that help developers launch, operate, and grow subscription businesses across iOS, Android, and web.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/revenuecat",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/revenuecat",
+      },
+    ],
+  },
+  {
+    id: "right_hand_cybersecurity",
+    title: "Right-Hand Cybersecurity",
+    websiteUrl: "https://right-hand.ai",
+    description:
+      "AI-powered human-risk-management and security-awareness platform. Uses agentic AI, phishing and deepfake simulations, behavioral insights, and personalized training to help enterprises reduce social-engineering and workforce cyber risk.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://right-hand.ai/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/righthandai",
+      },
+    ],
+  },
+  {
     id: "riot",
     title: "Riot",
     websiteUrl: "https://tryriot.com",
@@ -7210,6 +7264,60 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/tryriot",
+      },
+    ],
+  },
+  {
+    id: "rise_up",
+    title: "Rise Up",
+    websiteUrl: "https://www.riseup.ai",
+    description:
+      "French learning-management and workforce-development platform. Helps organizations create, deliver, and manage blended learning through personalized learning paths, skills assessments, content authoring, virtual classrooms, and analytics.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://www.careers.riseup.ai/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/rise-up-ai-france",
+      },
+    ],
+  },
+  {
+    id: "riskdata",
+    title: "Riskdata",
+    websiteUrl: "https://www.riskdata.com",
+    description:
+      "Paris-based financial-risk technology company for asset managers. Provides real-time pre- and post-trade portfolio risk analytics, scenario analysis, and risk decomposition across asset classes for hedge funds and institutional investors.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.riskdata.com/career-opportunities",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/riskdata",
+      },
+    ],
+  },
+  {
+    id: "river",
+    title: "River",
+    websiteUrl: "https://river.com",
+    description:
+      "U.S. Bitcoin financial-services company. Offers Bitcoin brokerage, full-reserve cold-storage custody, recurring purchases, interest-bearing Bitcoin products, and proof-of-reserves for individuals and businesses.",
+    tags: ["FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/river",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/riverfinancial",
       },
     ],
   },
@@ -7246,6 +7354,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/rtb-house/",
+      },
+    ],
+  },
+  {
+    id: "runware",
+    title: "Runware",
+    websiteUrl: "https://runware.ai",
+    description:
+      "AI inference infrastructure company building a unified API for image, video, audio, 3D, and LLM models. Provides serverless GPU compute, dedicated capacity, and developer tooling designed to make AI features fast and cost-efficient to deploy.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Workable)",
+        url: "https://apply.workable.com/runware",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/runware",
       },
     ],
   },
