@@ -7552,6 +7552,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "scalemath",
+    title: "ScaleMath",
+    websiteUrl: "https://scalemath.com",
+    description:
+      "Growth and product-operations consultancy for startups and category-leading software companies. Provides senior teams and advisory across growth marketing, SEO, content strategy, product marketing, lifecycle marketing, paid acquisition, and product documentation.",
+    tags: ["Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://scalemath.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/scalemath",
+      },
+    ],
+  },
+  {
     id: "scalesys",
     title: "Scalesys",
     websiteUrl: "https://scalesys.fr",
@@ -7602,6 +7620,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/schneider-electric",
+      },
+    ],
+  },
+  {
+    id: "scopic",
+    title: "Scopic",
+    websiteUrl: "https://scopic.eu",
+    description:
+      "Fully remote custom-software and digital-marketing company. Builds AI applications, web and mobile software, data solutions, and marketing programs for clients worldwide, with a distributed team across the Americas, Europe, and APAC.",
+    tags: ["AI", "Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Zoho)",
+        url: "https://scopicsoftware.zohorecruit.com/jobs/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/scopic",
       },
     ],
   },
@@ -7930,6 +7966,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "solutec",
+    title: "Solutec",
+    websiteUrl: "https://www.solutec.fr",
+    description:
+      "French IT-engineering and consulting company. Provides software development, infrastructure and operations, project management, digital transformation, and business-support services, with a strong focus on recruiting and developing technical talent.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://career.solutec.fr",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/solutec",
+      },
+    ],
+  },
+  {
+    id: "soors",
+    title: "Soors",
+    websiteUrl: "https://soors.io",
+    description:
+      "French technology and AI consulting firm helping organizations design, deliver, and automate high-impact solutions. Works across software engineering, data, AI agents, product delivery, modernization, and recruitment automation.",
+    tags: ["AI", "Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Collective)",
+        url: "https://www.collective.work/company/soors/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/soors",
+      },
+    ],
+  },
+  {
     id: "sopra_steria",
     title: "Sopra Steria",
     websiteUrl: "https://www.soprasteria.com",
@@ -7944,6 +8016,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/soprasteria",
+      },
+    ],
+  },
+  {
+    id: "sparagus",
+    title: "Sparagus",
+    websiteUrl: "https://www.sparagus.be",
+    description:
+      "Belgian talent, consulting, and managed-services company. Connects enterprises with specialists across IT, engineering, business operations, energy, aerospace, manufacturing, and financial services through recruitment, project consulting, and managed delivery.",
+    tags: ["Consulting", "ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.sparagus.be/careers/work-at-sparagus",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sparagus",
       },
     ],
   },
@@ -8020,6 +8110,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "sporty_group",
+    title: "Sporty Group",
+    websiteUrl: "https://sportygroup.com",
+    description:
+      "Global consumer-internet and media company operating sports media, gaming, social, and fintech products. Builds SportyTV, Sporty.com, and SportyBet, serving large audiences across Africa, Europe, and other international markets.",
+    tags: ["FinTech", "Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.sporty.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sportygroup",
+      },
+    ],
+  },
+  {
     id: "stackblitz",
     title: "StackBlitz",
     websiteUrl: "https://stackblitz.com",
@@ -8034,6 +8142,60 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/boltdotnew",
+      },
+    ],
+  },
+  {
+    id: "stackdrop",
+    title: "Stackdrop",
+    websiteUrl: "https://stackdrop.co",
+    description:
+      "Software consultancy building production-critical internal platforms, workflow automation, data foundations, and AI-enabled systems for enterprises and startups. Uses Retool and Anthropic to turn fragmented operations into governed, maintainable software.",
+    tags: ["AI", "Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.stackdrop.co",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/stackdrop",
+      },
+    ],
+  },
+  {
+    id: "stakha",
+    title: "Stakha",
+    websiteUrl: "https://stakha.io",
+    description:
+      "Paris-based boutique recruitment and headhunting firm for technology, product, growth, and operations talent. Helps startups and scale-ups hire permanent employees and contractors through sourcing, screening, and embedded hiring sprints.",
+    tags: ["Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://stakha.io/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/stakha",
+      },
+    ],
+  },
+  {
+    id: "starbreeze",
+    title: "Starbreeze",
+    websiteUrl: "https://www.starbreeze.com",
+    description:
+      "Swedish independent game developer, publisher, and distributor behind the PAYDAY franchise. Creates long-lived multiplayer PC and console games through internal studios and external development partnerships.",
+    tags: ["Media", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://jobs.starbreeze.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/starbreeze",
       },
     ],
   },
@@ -8128,6 +8290,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "suez",
+    title: "SUEZ",
+    websiteUrl: "https://www.suez.com",
+    description:
+      "Global water and waste-management company providing drinking-water, wastewater, circular-economy, resource-recovery, and environmental-services solutions. Operates across more than 40 countries and combines infrastructure, operations, and digital services.",
+    tags: ["Climate", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.suez.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/suez",
+      },
+    ],
+  },
+  {
+    id: "sunday",
+    title: "Sunday",
+    websiteUrl: "https://sundayapp.com",
+    description:
+      "Restaurant-payments company offering QR-code-based ordering, bill splitting, tipping, and payment experiences for hospitality venues. Helps guests pay quickly at the table while giving restaurants tools for service and customer engagement.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.sundayapp.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/sundaytech",
+      },
+    ],
+  },
+  {
     id: "sunstice",
     title: "Sunstice",
     websiteUrl: "https://www.sunstice.com",
@@ -8164,6 +8362,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "survision",
+    title: "Survision",
+    websiteUrl: "https://www.survisiongroup.com",
+    description:
+      "French developer of LPR/ANPR cameras and vehicle-identification systems. Provides triggerless, serverless license-plate recognition for parking, access control, security, tolling, intelligent transportation, and smart-city applications.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.survisiongroup.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/survision",
+      },
+    ],
+  },
+  {
     id: "suse",
     title: "SUSE",
     websiteUrl: "https://www.suse.com",
@@ -8196,6 +8412,60 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/swan-embedded-banking",
+      },
+    ],
+  },
+  {
+    id: "swapcard",
+    title: "Swapcard",
+    websiteUrl: "https://www.swapcard.com",
+    description:
+      "AI-powered event-management platform for trade shows, conferences, associations, and communities. Helps organizers manage registration, matchmaking, networking, exhibitor ROI, content, and event operations across in-person, hybrid, and virtual formats.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.lever.co/swapcard",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/swapcard",
+      },
+    ],
+  },
+  {
+    id: "swissborg",
+    title: "SwissBorg",
+    websiteUrl: "https://swissborg.com",
+    description:
+      "Swiss wealth-management platform for crypto assets. Provides a mobile app for buying, holding, and managing digital assets, with community-driven investment products, analytics, and access to crypto markets.",
+    tags: ["FinTech", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.lever.co/swissborg",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/swissborg",
+      },
+    ],
+  },
+  {
+    id: "swivel",
+    title: "Swivel",
+    websiteUrl: "https://swivel.ai",
+    description:
+      "AI-powered operations platform for service businesses. Automates customer communication, scheduling, dispatch, and workflow coordination so teams can manage service delivery more efficiently.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://swivel.ai/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/swivel-ops",
       },
     ],
   },
@@ -8286,6 +8556,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "tapnation",
+    title: "TapNation",
+    websiteUrl: "https://www.tap-nation.io",
+    description:
+      "Paris-based mobile-game publisher that helps independent developers turn prototypes into global hits. Provides creative development, AI-driven user acquisition, monetization, live operations, and distribution across major mobile markets.",
+    tags: ["AI", "Media", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Teamtailor)",
+        url: "https://careers.tap-nation.io/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/tapnation",
+      },
+    ],
+  },
+  {
     id: "teads",
     title: "Teads",
     websiteUrl: "https://www.teads.com",
@@ -8322,6 +8610,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "techshack",
+    title: "TechShack",
+    websiteUrl: "https://www.tech-shack.co",
+    description:
+      "Technology recruitment firm connecting companies with software, data, cloud, cybersecurity, product, and digital-transformation talent. Supports permanent, contract, and project-based hiring across technology markets.",
+    tags: ["Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.tech-shack.co/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/https-www.tech-shack.co-about",
+      },
+    ],
+  },
+  {
     id: "tekkare",
     title: "Tekkare",
     websiteUrl: "https://tekkare.com",
@@ -8332,6 +8638,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/tekkare",
+      },
+    ],
+  },
+  {
+    id: "telmar",
+    title: "Telmar",
+    websiteUrl: "https://telmarhelixa.com",
+    description:
+      "Audience-intelligence and media-planning technology company, formerly Telmar and Helixa. Helps brands, agencies, and media owners understand audiences and optimize media investments through consumer insights, segmentation, campaign planning, and data analytics.",
+    tags: ["AI", "FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://telmarhelixa.com/people-culture",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/telmargroupinc",
       },
     ],
   },
@@ -8350,6 +8674,42 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/temporal-technologies",
+      },
+    ],
+  },
+  {
+    id: "tenable",
+    title: "Tenable",
+    websiteUrl: "https://www.tenable.com",
+    description:
+      "Cybersecurity company providing exposure-management software. Helps organizations identify, prioritize, and remediate vulnerabilities and cyber risk across cloud, identity, operational technology, and traditional IT environments.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.tenable.com/careers/search",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/tenableinc",
+      },
+    ],
+  },
+  {
+    id: "terminalfour",
+    title: "Terminalfour",
+    websiteUrl: "https://www.terminalfour.com",
+    description:
+      "Digital-engagement and web-content-management platform for higher education. Helps universities and colleges manage websites, portals, course search, personalization, AI search, email marketing, and online assessment.",
+    tags: ["AI", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (HireHive)",
+        url: "https://terminalfour.hirehive.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/terminalfour",
       },
     ],
   },
@@ -8422,6 +8782,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "tiffany_&_co",
+    title: "Tiffany & Co",
+    websiteUrl: "https://www.tiffany.com",
+    description:
+      "Global luxury jewelry and accessories brand founded in 1837. Designs, manufactures, and sells fine jewelry, watches, and home objects through retail stores, e-commerce, and client services worldwide.",
+    tags: ["SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.tiffanycareers.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/tiffany-and-co",
+      },
+    ],
+  },
+  {
     id: "thelios",
     title: "Thélios",
     websiteUrl: "https://www.thelios.com",
@@ -8486,6 +8864,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "toshiba_europe",
+    title: "Toshiba Europe",
+    websiteUrl: "https://www.toshiba.eu",
+    description:
+      "European arm of Toshiba delivering digital, quantum, and sustainable-transformation technologies. Provides energy systems, SCiB batteries, semiconductors, storage, IoT, smart metering, quantum-safe communications, and quantum-inspired optimization solutions.",
+    tags: ["AI", "Climate", "SaaS", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.toshiba.eu",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/toshibaemea",
+      },
+    ],
+  },
+  {
     id: "totalenergies",
     title: "TotalEnergies",
     websiteUrl: "https://totalenergies.com",
@@ -8500,6 +8896,60 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/totalenergies",
+      },
+    ],
+  },
+  {
+    id: "transatel",
+    title: "Transatel",
+    websiteUrl: "https://www.transatel.com",
+    description:
+      "Global cellular-connectivity and IoT company within NTT. Provides MVNO enablement, multi-country SIM and eSIM connectivity, Ubigi travel data, and managed connectivity for vehicles, industrial equipment, and consumer devices.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.transatel.com/join-us",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/transatel",
+      },
+    ],
+  },
+  {
+    id: "transcend",
+    title: "Transcend",
+    websiteUrl: "https://transcend.io",
+    description:
+      "Data-governance and AI-control platform for enterprises. Helps organizations manage consent, data rights, privacy, and AI-agent permissions in real time, enabling responsible use of customer data across products and AI systems.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://transcend.io/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/transcend-io",
+      },
+    ],
+  },
+  {
+    id: "tree_top_staffing",
+    title: "Tree Top Staffing",
+    websiteUrl: "https://treetopstaffing.com",
+    description:
+      "U.S. staffing and recruitment firm placing professionals across administrative, customer-service, project-management, HR, manufacturing, and operations roles. Supports employers with temporary, contract, and direct-hire workforce solutions.",
+    tags: ["Consulting", "ITServices", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://treetopstaffing.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/tree-top-staffing-llc",
       },
     ],
   },
