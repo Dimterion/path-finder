@@ -9044,6 +9044,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "upcominds",
+    title: "UpcoMinds",
+    websiteUrl: "https://upcominds.com",
+    description:
+      "European IT-services and AI consulting company with offices in Brussels, Athens, and Limassol. Provides staff augmentation, end-to-end software delivery, cloud and mobile development, AI/ML solutions, and R&D for finance, insurance, telecom, and public-sector clients.",
+    tags: ["AI", "Consulting", "ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page (Jobs4IT)",
+        url: "https://www.jobs4it.gr",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/upcominds",
+      },
+    ],
+  },
+  {
     id: "upfluence",
     title: "Upfluence",
     websiteUrl: "https://www.upfluence.com",
@@ -9166,6 +9184,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "veepee",
+    title: "Veepee",
+    websiteUrl: "http://www.veepee.com",
+    description:
+      "French members-only flash-sales retailer offering limited-time deals across fashion, home, beauty, travel, technology, and lifestyle categories. Operates Veepee and Privalia across European markets, combining merchandising, logistics, marketing, and technology.",
+    tags: ["FinTech", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.lever.co/veepee",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/veepee",
+      },
+    ],
+  },
+  {
     id: "veesual",
     title: "Veesual",
     websiteUrl: "https://www.veesual.ai",
@@ -9284,6 +9320,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "vo2_group",
+    title: "VO2 Group",
+    websiteUrl: "https://www.vo2-group.com",
+    description:
+      "French independent technology and digital consultancy. Helps enterprises deliver Salesforce, data, AI, cloud, CRM, and digital-transformation projects through consulting, implementation, managed services, and specialized talent.",
+    tags: ["AI", "Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Lever)",
+        url: "https://jobs.lever.co/vo2-group",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/vo2-group",
+      },
+    ],
+  },
+  {
     id: "voodoo",
     title: "Voodoo",
     websiteUrl: "https://voodoo.io",
@@ -9298,6 +9352,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/voodoo.io",
+      },
+    ],
+  },
+  {
+    id: "vusion",
+    title: "Vusion",
+    websiteUrl: "https://www.vusion.com",
+    description:
+      "Global provider of AI-powered digitalization solutions for physical retail. Provides electronic shelf labels, computer vision, smart-store infrastructure, and data platforms that help retailers automate pricing, inventory, and in-store operations.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (SmartRecruiters)",
+        url: "https://careers.smartrecruiters.com/VusionGroupSA",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/vusiongroup",
       },
     ],
   },
@@ -9338,6 +9410,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "we+",
+    title: "WE+",
+    websiteUrl: "https://www.we-plus.fr",
+    description:
+      "French IT and digital-transformation consultancy within the Alan Allman Associates ecosystem. Provides project management, business analysis, software development, QA, infrastructure, cloud, data, and AI services, with onshore and nearshore delivery capabilities.",
+    tags: ["AI", "Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.we-plus.fr/carriere",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/we-plus",
+      },
+    ],
+  },
+  {
     id: "webb_traders",
     title: "WEBB Traders",
     websiteUrl: "https://www.webbtraders.com",
@@ -9374,6 +9464,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "wedia",
+    title: "Wedia",
+    websiteUrl: "https://www.wedia-group.com",
+    description:
+      "Digital-asset-management and marketing-technology platform for global brands. Helps teams centralize, govern, enrich, distribute, and measure visual content across channels, with AI-powered tagging, search, content scoring, and brand-governance tools.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.wedia-group.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/wedia",
+      },
+    ],
+  },
+  {
+    id: "weglot",
+    title: "Weglot",
+    websiteUrl: "https://www.weglot.com",
+    description:
+      "No-code website-translation and localization platform. Helps businesses make websites multilingual through automated translation, human review, SEO optimization, language routing, and centralized multilingual content management.",
+    tags: ["AI", "SaaS", "France"],
+    extraLinks: [
+      {
+        label: "Careers page (Welcome to the Jungle)",
+        url: "https://www.welcometothejungle.com/companies-v1/weglot/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/weglot",
+      },
+    ],
+  },
+  {
     id: "welcome_to_the_jungle",
     title: "Welcome To The Jungle",
     websiteUrl: "https://www.welcometothejungle.com",
@@ -9406,6 +9532,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/wezentech",
+      },
+    ],
+  },
+  {
+    id: "whize",
+    title: "WHIZE",
+    websiteUrl: "https://whize.fr",
+    description:
+      "French technology consultancy and Neurones subsidiary specializing in cloud-native development, Microsoft 365, data intelligence, and custom software. Helps enterprises modernize applications and build serverless solutions on Azure, AWS, and Google Cloud.",
+    tags: ["AI", "Consulting", "ITServices", "France"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://whize.fr/offres-demploi",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/whize-france",
       },
     ],
   },
@@ -9482,6 +9626,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "wolters_kluwer",
+    title: "Wolters Kluwer",
+    websiteUrl: "https://www.wolterskluwer.com",
+    description:
+      "Global provider of expert software, information, and professional-services solutions. Serves healthcare, tax and accounting, legal and regulatory, financial compliance, and corporate performance markets with AI-powered workflow and knowledge platforms.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Workday)",
+        url: "https://wk.wd3.myworkdayjobs.com/External",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/wolters-kluwer",
+      },
+    ],
+  },
+  {
     id: "worldline",
     title: "Worldline",
     websiteUrl: "https://worldline.com",
@@ -9496,6 +9658,24 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/worldlineglobal",
+      },
+    ],
+  },
+  {
+    id: "workethix",
+    title: "WorkEthix",
+    websiteUrl: "https://workethixrec.com",
+    description:
+      "Technology recruitment consultancy focused on the Greek market. Helps startups and enterprises hire software, product, data, cybersecurity, and commercial talent through end-to-end recruitment and hiring advisory.",
+    tags: ["Consulting", "ITServices", "Europe"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://workethixrec.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/workethix",
       },
     ],
   },
@@ -9550,6 +9730,42 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "yodo1",
+    title: "Yodo1",
+    websiteUrl: "https://www.yodo1.com",
+    description:
+      "Global mobile-game growth company helping developers publish, monetize, and scale games. Provides managed ad monetization, user acquisition, live operations, China publishing, and IP collaborations between game studios and entertainment brands.",
+    tags: ["AI", "Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://www.yodo1.com/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/yodo1",
+      },
+    ],
+  },
+  {
+    id: "yuno",
+    title: "Yuno",
+    websiteUrl: "https://y.uno",
+    description:
+      "Global payment-orchestration platform for enterprises. Lets merchants integrate payment methods, processors, fraud-prevention tools, and financial services through one API, with real-time routing, reconciliation, and analytics.",
+    tags: ["AI", "FinTech", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://y.uno/careers",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/yunopay",
+      },
+    ],
+  },
+  {
     id: "youtrust",
     title: "Youtrust",
     websiteUrl: "https://youtrust.com",
@@ -9586,6 +9802,24 @@ export const listings: JobListing[] = [
     ],
   },
   {
+    id: "zapier",
+    title: "Zapier",
+    websiteUrl: "https://zapier.com",
+    description:
+      "Remote-first automation platform that connects more than 9,000 apps. Helps businesses and individuals build no-code workflows, automate repetitive tasks, and integrate AI across tools such as Gmail, Slack, Salesforce, and HubSpot.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://zapier.com/jobs",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/zapier",
+      },
+    ],
+  },
+  {
     id: "zeffy",
     title: "Zeffy",
     websiteUrl: "https://www.zeffy.com",
@@ -9618,6 +9852,42 @@ export const listings: JobListing[] = [
       {
         label: "LinkedIn",
         url: "https://www.linkedin.com/company/zefir-fr",
+      },
+    ],
+  },
+  {
+    id: "zenimax",
+    title: "ZeniMax",
+    websiteUrl: "https://www.zenimax.com",
+    description:
+      "Video-game developer and publisher within Microsoft Gaming, known for Bethesda, id Software, Arkane, MachineGames, and ZeniMax Online Studios. Creates and publishes major PC and console franchises including The Elder Scrolls, Fallout, DOOM, and Quake.",
+    tags: ["Media", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page",
+        url: "https://careers.zenimax.com",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/zenimax",
+      },
+    ],
+  },
+  {
+    id: "zoe",
+    title: "ZOE",
+    websiteUrl: "https://zoe.com",
+    description:
+      "Personalized-nutrition and health-science company. Uses microbiome testing, continuous glucose monitoring, AI-based recommendations, and clinical research to help people understand their individual responses to food and improve metabolic health.",
+    tags: ["AI", "SaaS", "Worldwide"],
+    extraLinks: [
+      {
+        label: "Careers page (Ashby)",
+        url: "https://jobs.ashbyhq.com/zoe",
+      },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/company/joinzoe",
       },
     ],
   },
